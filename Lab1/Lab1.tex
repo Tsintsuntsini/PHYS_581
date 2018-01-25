@@ -1,0 +1,74 @@
+\documentclass[twocolumn]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb} %Use of therefore symbol
+\usepackage{hyperref}
+\usepackage{caption}
+
+
+
+\begin{document}
+\title{Lab 1: Monte Carlo Methods}
+\author{Alex Matheson, Austin Nguyen}
+%\affiliation{Department of Physics and Astronomy, University of Calgary, Calgary AB T2N 1N4 Canada}
+\date{\today}
+\maketitle
+
+\section{Introduction}
+
+\section{Methods}
+\subsection{Random Numbers}
+
+
+\subsection{Light Diffusion}
+A number of equations were provided for different parameters in a light diffusion scenario. In this scenario, a photon enters a uniform slab and interacts with matter inside. The possible interactions are absorption, scattering, or exiting the medium. To simulate the path of a single photon through the slab, each parameter in the equations need to be randomly sampled. These parameters are not necessarily uniform. First, a sampling equation for optical depth was determined:
+\begin{equation}
+\begin{split}
+P(\tau) d\tau =& e^{-\tau} d\tau \\
+\therefore F_{\tau}(\tau) =& e^{-\tau} \\
+\tau =& F^{-1}_{\tau}(u) \\
+\tau =& e^{u}
+\end{split}
+\end{equation}
+
+Next, the distribution for initial orientation $\theta$ was provided. From this random samples could be determined:
+\begin{equation}
+\begin{split}
+P(\theta) d\theta =& \frac{1}{2} \sin(\theta) \\
+\therefore F_{\theta}(\theta) =& \frac{1}{2} \sin(\theta)\\
+\theta =& F^{-1}_{\theta}(u) \\
+\theta =& \sin^{-1}(2u)
+\end{split}
+\end{equation}
+
+Lastly, angle $\phi$ needed to be considered. Thankfully, this variable was already uniform.
+
+The length traveled through the medium was dependent on the optical depth.
+\begin{equation}
+\begin{split}
+L =& \int_{0}^{\tau_{max}}\sigma n dz \\
+\end{split}
+\end{equation}
+
+For most of the path of a photon, the exit condition will not be in play. For the rest of the medium, the probability of a photon being scattered is:
+\begin{equation}
+prob = \frac{P_s}{P_s + P_a}
+\end{equation}
+
+Since the two probabilities must add together to $1$, the absorb or scatter condition has value $1$ associated with complete scattering (when $P_s = 1$ and $P_a=0$) or value $0$ for complete absorption (when $P_s = 0$ and $P_a=1$).
+\section{Discussion}
+
+
+\section{Conclusion}
+
+\begin{thebibliography}{00}
+	\bibitem{ouyed}
+	Ouyed and Dobler, PHYS 581 course notes, Department of Physics and Astrophysics, University of Calgary (2016).
+	\bibitem{NR}
+	W. Press et al., \emph{Numerical Recipes} (Cambridge University Press, 2010) 2nd. Ed.
+\end{thebibliography}
+
+\section{Appendix}
+
+	
+\end{document}
