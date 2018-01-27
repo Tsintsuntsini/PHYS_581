@@ -43,7 +43,7 @@ P(\theta) d\theta =& \frac{1}{2} \sin(\theta) \\
 
 Lastly, angle $\phi$ needed to be considered. Thankfully, this variable was already uniform.
 
-The length traveled through the medium was dependent on the optical depth.
+The length travelled through the medium was dependent on the optical depth.
 \begin{equation}
 \begin{split}
 L =& \int_{0}^{\tau_{max}}\sigma n dz \\
@@ -56,6 +56,16 @@ prob = \frac{P_s}{P_s + P_a}
 \end{equation}
 
 Since the two probabilities must add together to $1$, the absorb or scatter condition has value $1$ associated with complete scattering (when $P_s = 1$ and $P_a=0$) or value $0$ for complete absorption (when $P_s = 0$ and $P_a=1$).
+
+\subsection{Annealing}
+In an annealing procedure, the acceptance probability of completing a change after a proposed step forward is modified by a temperature $T$. The acceptance is now defined as:
+$A(x_n \to x^*) = Min \Bigg( 1, \Big( \frac{P(x^*)}{P(x_n)}\Big) ^{ \frac{1}{T(n)} } \Bigg)$
+When $T=1$, the algorithm that is recovered is a simple metropolis algorithm. 
+
+In a hyporthetical scenario, the probability term is set to 0.5 and $T=100$ initially, yielding acceptance of $0.93$. After some time, $T=1$ and the acceptance reduces to $0.5$. After still more time, $T=0.1$ and the acceptance is $0.000977$. Because of the inverse nature of $T$ in the exponent, a reduction in $T$ makes a change exponentially less likely to occur. This is typically desirable when using annealing. Ideally, the random walker being used by the algorithm is able to escape local maxima and jump to other peaks in the region early on. As time goes on, the algorithm should lower the acceptance so that it hones in on the actual peak.
+
+%Seek clarification on e^-E question
+
 \section{Discussion}
 
 
