@@ -17,9 +17,9 @@ PROGRAM markov_chain
   p_sun(1) = 1
   p_notsun(1) = 0
   p_notrain(1) = 0
-  P_notsun(1) = 0
+  P_rain(1) = 1
   P = MATMUL(P0, P0)
-  
+ 
   ! Determine P^100
   DO i=1,99
      P = MATMUL(P,P0)

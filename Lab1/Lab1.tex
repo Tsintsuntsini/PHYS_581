@@ -151,7 +151,70 @@ Next, the simulation of a photon in a purely scattering medium was examined. The
 
 A test case with the probability of absorption and scattering equal ($P_a(x)=0.5$). The number of iterations had to be drastically higher ($10^9$), to account for the fact that almost all photons were absorbed or reflected back out of the slab in this simulation. 
 
+\subsection{Markov Chain Monte Carlo}
+To examine Markov Chain Monte Carlo, a simple meteorology problem was examined considering weather being rainy or sunny. The transition matrix is as follows:
 
+\[ P = \begin{pmatrix}
+	0.9 & 0.5 \\
+	0.1 & 0.5
+\end{pmatrix} \]
+
+This allows predictions to be made. If the weather is sunny today, then for tomorrow:
+\[ 
+\begin{pmatrix} 0.9 & 0.5 \\ 0.1 & 0.5 \end{pmatrix} \begin{pmatrix} 1 \\ 0\end{pmatrix}
+= \begin{pmatrix}0.9 \\ 0.1 \end{pmatrix}
+\]
+
+For two days from now:
+
+\[
+\begin{pmatrix} 0.9 & 0.5 \\ 0.1 & 0.5 \end{pmatrix} \begin{pmatrix} 0.9 & 0.5 \\ 0.1 & 0.5 \end{pmatrix} \begin{pmatrix} 1 \\ 0\end{pmatrix}
+=
+\begin{pmatrix} 0.86 \\ 0.14\end{pmatrix}
+\]
+
+Over time, a markov chain should reach an equilibrium. To examine this, the probability of sunny and rainy weather was forecast up to 100 days in the future. Figure \ref{fig:fig13} shows the forecast starting from both a sunny and rainy day.
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{fig13}
+\caption{Plots of probabilities of future weather. The upper plot starts from a sunny day and the lower plot from a rainy day. The blue line is the probability of a day being rainy, and the red of a day being sunny. In both cases the forcast reaches the same equilibrium.}
+\label{fig:fig13}
+\end{figure}
+
+Well before 100 days, the system in both cases reaches an equilibrium:
+\[ P^{100} = \begin{pmatrix}
+0.83 & 0.83 \\
+0.16 & 0.16
+\end{pmatrix} \]
+
+In general, markov chain equilibrium may be solved by a series of equations. In this case:
+\begin{equation}
+\begin{split}
+p_{sun} &= 0.9 p_{sun} + 0.5 p_{rain} \\
+p_{rain} &= 0.1 p_{sun} + 0.5 p_{rain} \\
+p_{sun} &+ p_{rain} = 1
+\end{split}
+\end{equation}
+
+These may be solved analytically to yield:
+\begin{equation}
+\begin{pmatrix} s \\ r \end{pmatrix}
+= \begin{pmatrix} 5/6 \\ 1/6 \end{pmatrix}
+\end{equation}
+
+Which matches the above findings.
+
+Lastly, it was demonstrated that no matter the starting situation, this was the end result. To demonstrate this, an extreme case was used where days could assume decimal values for either field, as long as both indices of the current-day vector summed to one. Figure \ref{fig:fig14} shows the outcome of this test.
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{fig14}
+\caption{Probability of a day n days into the future being sunny. Each coloured line represents a different starting state. In this example the extreme case of a day being a fraction sunny and having a starting vector with decimal places. In all cases, the equilibrium is the same.}
+\label{fig:fig14}
+\end{figure}
+
+\subsection{Metropolis-Hastings}
 \subsection{Annealing}
 In an annealing procedure, the acceptance probability of completing a change after a proposed step forward is modified by a temperature $T$. The acceptance is now defined as:
 $A(x_n \to x^*) = Min \Bigg( 1, \Big( \frac{P(x^*)}{P(x_n)}\Big) ^{ \frac{1}{T(n)} } \Bigg)$
@@ -159,7 +222,7 @@ When $T=1$, the algorithm that is recovered is a simple metropolis algorithm.
 
 In a hyporthetical scenario, the probability term is set to 0.5 and $T=100$ initially, yielding acceptance of $0.93$. After some time, $T=1$ and the acceptance reduces to $0.5$. After still more time, $T=0.1$ and the acceptance is $0.000977$. Because of the inverse nature of $T$ in the exponent, a reduction in $T$ makes a change exponentially less likely to occur. This is typically desirable when using annealing. Ideally, the random walker being used by the algorithm is able to escape local maxima and jump to other peaks in the region early on. As time goes on, the algorithm should lower the acceptance so that it hones in on the actual peak.
 
-%Seek clarification on e^-E question
+% HERE Seek clarification on e^-E question
 
 \section{Discussion}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.9.10)  31 JAN 2018 18:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.9.10)  31 JAN 2018 22:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -334,19 +334,19 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 16.
 (c:/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<fig1.png, id=39, 433.62pt x 289.08pt>
+<fig1.png, id=43, 433.62pt x 289.08pt>
 File: fig1.png Graphic file (type png)
  <use fig1.png>
 Package pdftex.def Info: fig1.png used on input line 28.
 (pdftex.def)             Requested size: 229.5pt x 152.99994pt.
 
-<fig2.png, id=41, 433.62pt x 289.08pt>
+<fig2.png, id=45, 433.62pt x 289.08pt>
 File: fig2.png Graphic file (type png)
  <use fig2.png>
 Package pdftex.def Info: fig2.png used on input line 35.
 (pdftex.def)             Requested size: 229.5pt x 152.99994pt.
 
-<fig3.png, id=44, 433.62pt x 289.08pt>
+<fig3.png, id=48, 433.62pt x 289.08pt>
 File: fig3.png Graphic file (type png)
  <use fig3.png>
 Package pdftex.def Info: fig3.png used on input line 42.
@@ -358,87 +358,107 @@ Underfull \vbox (badness 4001) has occurred while \output is active []
 
 
 ]
-<fig4.png, id=62, 433.62pt x 289.08pt>
+<fig4.png, id=66, 433.62pt x 289.08pt>
 File: fig4.png Graphic file (type png)
  <use fig4.png>
 Package pdftex.def Info: fig4.png used on input line 55.
 (pdftex.def)             Requested size: 229.5pt x 152.99994pt.
 
-<fig5.png, id=65, 433.62pt x 289.08pt>
+<fig5.png, id=69, 433.62pt x 289.08pt>
 File: fig5.png Graphic file (type png)
  <use fig5.png>
 Package pdftex.def Info: fig5.png used on input line 62.
 (pdftex.def)             Requested size: 229.5pt x 152.99994pt.
  [2 <./fig1.png> <./fig2.png> <./fig3.png>] [3 <./fig4.png> <./fig5.png>]
-<fig6.png, id=91, 433.62pt x 289.08pt>
+<fig6.png, id=95, 433.62pt x 289.08pt>
 File: fig6.png Graphic file (type png)
  <use fig6.png>
 Package pdftex.def Info: fig6.png used on input line 117.
 (pdftex.def)             Requested size: 229.5pt x 152.99994pt.
 
-<fig7.png, id=94, 433.62pt x 289.08pt>
+<fig7.png, id=98, 433.62pt x 289.08pt>
 File: fig7.png Graphic file (type png)
  <use fig7.png>
 Package pdftex.def Info: fig7.png used on input line 124.
 (pdftex.def)             Requested size: 229.5pt x 152.99994pt.
 
-<fig8.png, id=97, 433.62pt x 289.08pt>
+<fig8.png, id=101, 433.62pt x 289.08pt>
 File: fig8.png Graphic file (type png)
  <use fig8.png>
 Package pdftex.def Info: fig8.png used on input line 131.
 (pdftex.def)             Requested size: 229.5pt x 152.99994pt.
 
-<fig9.png, id=100, 433.62pt x 289.08pt>
+<fig9.png, id=104, 433.62pt x 289.08pt>
 File: fig9.png Graphic file (type png)
  <use fig9.png>
 Package pdftex.def Info: fig9.png used on input line 140.
 (pdftex.def)             Requested size: 229.5pt x 152.99994pt.
 
-<fig10.png, id=101, 433.62pt x 289.08pt>
+<fig10.png, id=105, 433.62pt x 289.08pt>
 File: fig10.png Graphic file (type png)
  <use fig10.png>
 Package pdftex.def Info: fig10.png used on input line 147.
 (pdftex.def)             Requested size: 229.5pt x 152.99994pt.
- [4 <./fig6.png> <./fig7.png> <./fig8.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 179.
- [5 <./fig9.png> <./fig10.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 179.
- (./Lab1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 179.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 179.
+ [4 <./fig6.png> <./fig7.png> <./fig8.png>] <fig13.png, id=119, 433.62pt x 289.
+08pt>
+File: fig13.png Graphic file (type png)
+ <use fig13.png>
+Package pdftex.def Info: fig13.png used on input line 180.
+(pdftex.def)             Requested size: 229.5pt x 152.99994pt.
+
+[5 <./fig9.png> <./fig10.png> <./fig13.png>]
+
+LaTeX Warning: Reference `fig:fig14' on page 6 undefined on input line 208.
+
+<fig14.png, id=129, 433.62pt x 289.08pt>
+File: fig14.png Graphic file (type png)
+ <use fig14.png>
+Package pdftex.def Info: fig14.png used on input line 212.
+(pdftex.def)             Requested size: 229.5pt x 152.99994pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 242.
+ [6 <./fig14.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 242.
+
+(./Lab1.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 242.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 242.
 Package rerunfilecheck Info: File `Lab1.out' has not changed.
-(rerunfilecheck)             Checksum: B774D4F114745291B71BC9B1642D9F11;407.
+(rerunfilecheck)             Checksum: 8A273A59AA404C3D4A7507779DC57565;480.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 179.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 242.
  ) 
 Here is how much of TeX's memory you used:
- 7039 strings out of 493091
- 104386 string characters out of 6138525
- 195861 words of memory out of 5000000
- 10427 multiletter control sequences out of 15000+600000
- 11541 words of font info for 45 fonts, out of 8000000 for 9000
+ 7060 strings out of 493091
+ 104651 string characters out of 6138525
+ 196156 words of memory out of 5000000
+ 10439 multiletter control sequences out of 15000+600000
+ 11849 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,17n,38p,1128b,328s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2015/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2015/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2015/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr12.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.
-pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2015/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2015/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmti10.pfb>
-Output written on Lab1.pdf (5 pages, 409805 bytes).
+ 36i,17n,38p,1128b,340s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2015/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2015/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2015/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi7.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
+.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2015/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2015/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy7.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmti10.pfb>
+Output written on Lab1.pdf (6 pages, 447431 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
- 133 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 115 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 204 PDF objects out of 1000 (max. 8388607)
+ 151 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 
