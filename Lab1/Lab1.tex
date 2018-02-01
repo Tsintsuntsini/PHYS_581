@@ -133,6 +133,25 @@ To test the above distributions, each random number formula was written in fortr
 	\label{fig:fig8}
 \end{figure}
 
+Next, the simulation of a photon in a purely scattering medium was examined. The simulation was allowed to run for $10^6$ iterations. The data were plotted in figure \ref{fig:fig9}. Once this was completed, the fortran script converted the histogram data to intensity of light at the corresponding angle, using the equation 18 in the lab handout. The data were then plotted against the expected values for this range of angles. Figure \ref{fig:fig10} shows the intensity of both experimental and theoretical light.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth]{fig9}
+\caption{Histogram of exit angles for photons travelling through a purely scattering slab.}
+\label{fig:fig9}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth]{fig10}
+\caption{Intensity of light exiting a purely scattering slab. The blue line represents the data found by simulation. The orange line is the expected theoretical value for the same range. Note that the experimental data were binned into 20 bins, resulting in a jagged appearance compared to the higher resolution expected curve.}
+\label{fig:fig10}
+\end{figure}
+
+A test case with the probability of absorption and scattering equal ($P_a(x)=0.5$). The number of iterations had to be drastically higher ($10^9$), to account for the fact that almost all photons were absorbed or reflected back out of the slab in this simulation. 
+
+
 \subsection{Annealing}
 In an annealing procedure, the acceptance probability of completing a change after a proposed step forward is modified by a temperature $T$. The acceptance is now defined as:
 $A(x_n \to x^*) = Min \Bigg( 1, \Big( \frac{P(x^*)}{P(x_n)}\Big) ^{ \frac{1}{T(n)} } \Bigg)$

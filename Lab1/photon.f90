@@ -6,12 +6,12 @@ PROGRAM photon_diffusion
 	INTEGER :: num_photons, i, j, num_reflected, num_absorbed
 	LOGICAL :: is_out, is_abs, is_refl
 
-    OPEN(15, FILE='histograms.txt')
-	OPEN(16, FILE='photon_output.txt')
+    OPEN(15, FILE='histograms_2.txt')
+	OPEN(16, FILE='photon_output_2.txt')
 	
 	!Initialize
-	num_photons = 1000000
-	p_abs = 0.
+	num_photons = 1000000000
+	p_abs = 0.5
 	num_absorbed = 0
 	num_reflected = 0
 	tmax = 10
