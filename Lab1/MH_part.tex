@@ -71,12 +71,95 @@ with the probabilities
 Continuing on with the example distribution \ref{eq:example}, the
 Metropolis-Hastings algorithm was implemented with three different values for
 standard deviation $\sigma = 0.025, 1.0, 50$ in order to compare the effects of
-using a very narrow or very wide proposal distribution.
+using a very narrow or very wide proposal distribution. As shown in figure
+\ref{fig:mcmc1}, a very narrow distribution confines the walkers to a limited
+space. The walkers will traverse the probability space much more slowly, and
+there is a greater chance of staying at a local maxima rather than exploring the
+entire space. This is the reason the narrow proposal distribution remains around
+$x = -1$. The wide distribution is the opposite and is able to explore the
+entire probability space. However, as the bottom half of figure \ref{fig:mcmc1}
+shows, the walker was also very likely to reject steps and remained stagnant for
+longer periods of time. A suitably chosen proposal distribution is very
+important for getting an accurate result.
 
-% Code results
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{mcmc1.png}
+  \caption{
+    The Metropolis-Hastings algorithm was used to sample the probability space
+    of equation \ref{eq:example} with a normal proposal distribution, run for
+    $1\,000$ steps. The width of the proposal distribution was varied, where
+    $\sigma$ is the standard deviation, and $\alpha$ is the acceptance rate. The
+    top half shows the resulting probability distribution by taking the
+    histogram of the random walk, as well as the true distribution $P(x)$. The
+    bottom half shows the Markov chain and the position of each walker over
+    time.
+  }
+  \label{fig:mcmc1}
+\end{figure}
+
+The program used in figure \ref{fig:mcmc1} was only run for $1000$ steps, and
+the law of large numbers states that the random walk should approach the correct
+distribution given a large number of steps. To test this, we ran the same
+program again with $50\,000$ steps, shown in figure \ref{fig:mcmc2}. As
+predicted, the results for the very narrow and very wide proposal distributions
+improved over time. However, it should be noted that with a very small $\sigma$,
+the walker was only able to explore the area around the local maxima where it
+started. The walker with very large $\sigma$ still has a very low acceptance
+rate, and the result is oversampling the global maxima. On the other hand, the
+reasonably chosen $\sigma$ has a very good fit under the curve, which has only
+improved over time.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{mcmc2.png}
+  \caption{
+    The Metropolis-Hastings algorithm was used in the same way as in figure
+    \ref{fig:mcmc1} but with $50\,000$ steps. No other parameters were changed.
+  }
+  \label{fig:mcmc2}
+\end{figure}
 
 \subsubsection{The Burn-in Phase}
 The burn-in phase refers to the process of the walkers moving toward an
 equilibrium. The number of steps this takes is highly dependent on the choice of
-starting values and how suitable the proposal distribution is. 
+starting values and how suitable the proposal distribution is. This time, all
+parameters will be kept the same, so the walkers all start at $x_0 = -3$,
+$\sigma = 0.2$, and are all run for $1\,000$ steps. The difference between the
+two experiments is only the distribution done at the end, where in figure
+\ref{fig:burn1} all steps are kept as the control case and \ref{fig:burn2} is
+the experiment with burn-in, and the first $200$ steps are discarded.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{burn1.png}
+  \caption{
+    The Metropolis-Hastings random-walk for three identitcal walkers, starting
+    at $x_0 = -3$, standard deviation $\sigma = 0.2$, and run for $1\,000$
+    steps. This is the control case where all steps are kept. This is to compare
+    with figure \ref{fig:burn2} where the burn-in phase is considered.
+  }
+  \label{fig:burn1}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{burn2.png}
+  \caption{
+    The Metropolis-Hastings random-walk with burn-in phase considered. The first
+    $200$ of $1\,000$ steps were discarded. Since this was run with identical
+    conditions as it was in figure \ref{fig:burn1}, the walks are very similar
+    since the same seed was used. The only difference is which steps were
+    discarded or kept.
+  }
+  \label{fig:burn2}
+\end{figure}
+
+By comparing figure \ref{fig:burn1} with figure \ref{fig:burn2}, the most
+obvious difference is how the experiment that considers the burn-in phase can
+avoid oversampling the local maxima centered around $x = -1$. The reason the
+oversampling occurs in the first place is the walkers began at the edge of the
+distribution, far away from the center of the distribution. This is not always a
+problem very easily solved, and is improved by allowing the system to reach a
+state closer to equilibrium before we begin considering every step.
 
