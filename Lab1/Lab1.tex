@@ -215,6 +215,87 @@ Lastly, it was demonstrated that no matter the starting situation, this was the 
 \end{figure}
 
 \subsection{Metropolis-Hastings}
+\subsubsection{The Algorithm}
+The Metropolis-Hastings algorithm is a variation of the Metropolis algorithm, so
+to explore this idea, a simple Metropolis random-walk is simulated. The big idea
+behind the Metropolis algorithm is creating ``walkers'' which travel through the
+probability space, and the walkers approach the correct probability distribution
+after a large number of steps. The main difference between Metropolis and
+Metropolis-Hastings is the addition of a proposal distribution from which the
+direction and size of each step is sampled from. The proposal distribution can
+be symmetrical, as is in the case of Metropolis, or asymmetrical, as it is in
+Metropolis-Hastings.
+
+Each step is given a weight, defined as
+\begin{equation}
+  \alpha(x') = \min \left( 1, \frac{p(x') q(x' | x)}{p(x) q(x | x')} \right)
+  \label{eq:acceptance}
+\end{equation}
+where $p$ is the target distribution, $q$ is the proposal distribution, and $x'$
+is the proposed step from $x$. This weighting forces steps toward a local
+maximum to always be accepted, but steps away from the local maximum are
+accepted with some probability. The state-to-state process describes a Markov
+chain, which was explored earlier. Another consequence of this weighting is that
+neither the target distribution nor the proposal distribution need to be
+normalized. This property can be very advantageous when sampling a complicated
+distribution.
+
+\subsubsection{A Simple Example}
+For a simple example, we consider the target distribution
+\begin{equation}
+  P(x) = \frac{1}{2 \sqrt{2}} \left( \sin(5x) + \sin(2x) + 2 \right) e^{-x^2}
+  \label{eq:example}
+\end{equation}
+and the proposal distribution
+\begin{equation}
+  q(x | x') = \frac{1}{\sqrt{2 \pi \sigma^2}} \exp \left( - \frac{(x' - x)^2}{2 \sigma^2} \right)
+\end{equation}
+Since the normal distribution is symmetrical, this is actually equivalent to
+distribution which moves in the opposite direction, from $x'$ to $x$, since the
+square term in the exponential can be reversed. Thus, for the normal
+distribution,
+\begin{equation}
+  q(x | x') = q(x' | x)
+\end{equation}
+
+The acceptance probability from \ref{eq:acceptance} is then reduced to
+\begin{equation}
+  \alpha(x') = \min \left( 1, \frac{p(x')}{p(x)} \right)
+\end{equation}
+This returns the acceptance probability of the simple Metropolis algorithm. The
+intuitive reason why the ratio of proposal distributions disapears is that the
+ratio describes the relative probability of moving one way, from $x$ to $x'$,
+versus the other. The reason this ratio is included is to give greater control
+over how the walkers traverse the probability space. The motivation to seek
+greater control is to avoid completely relying on the target distribution, where
+the walkers may get trapped in a local maxima. The problem is more daunting as
+the number of degrees of freedom increases, leading to the curse of
+dimensionality.
+
+Once the acceptance probability of a proposed step is calculated, a random
+number $r$ from a uniform distribution is generated, and the step is accepted
+with the probabilities
+\begin{equation}
+  x_{n+1} = \left\{
+    \begin{array}{lr}
+      x', & \text{if} \, r <= \alpha(x') \\
+      x_n & \text{if} \, r > \alpha(x')
+    \end{array}
+  \right.
+\end{equation}
+
+Continuing on with the example distribution \ref{eq:example}, the
+Metropolis-Hastings algorithm was implemented with three different values for
+standard deviation $\sigma = 0.025, 1.0, 50$ in order to compare the effects of
+using a very narrow or very wide proposal distribution.
+
+% Code results
+
+\subsubsection{The Burn-in Phase}
+The burn-in phase refers to the process of the walkers moving toward an
+equilibrium. The number of steps this takes is highly dependent on the choice of
+starting values and how suitable the proposal distribution is. 
+
 \subsection{Annealing}
 In an annealing procedure, the acceptance probability of completing a change after a proposed step forward is modified by a temperature $T$. The acceptance is now defined as:
 $A(x_n \to x^*) = Min \Bigg( 1, \Big( \frac{P(x^*)}{P(x_n)}\Big) ^{ \frac{1}{T(n)} } \Bigg)$
