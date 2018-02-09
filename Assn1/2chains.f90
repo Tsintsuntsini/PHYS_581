@@ -16,7 +16,7 @@ num_accepted = 0
 !Using a uniform sample
 x = x0
 DO i=1,num_steps
-	proposed = x + uniform(udev)    !Propose a move
+	proposed = uniform(udev)    !Propose a move
 	r = RAND()
 	accept = P(proposed)/P(x)       !Determine acceptance coefficient
 	IF (r .LT. accept) THEN         !If accepted, change current x position
@@ -32,8 +32,8 @@ x = x0
 x = x0
 num_accepted = 0
 DO i =1, num_steps
-	proposed = x + chi_sample(udev)           !Propose a move
-	accept = P(proposed) / P(x)           !Determine acceptance coefficient - chi sq. requires metro algorithm without hastings
+	proposed = chi_sample(udev)           !Propose a move
+	accept = (P(proposed) * chi(x) ) / (P(x) * chi(proposed) )           !Determine acceptance coefficient - chi sq. requires metro algorithm without hastings
 	r = RAND()
 	IF (r .LT. accept) THEN               !If accepted, change current x position
 		x = proposed

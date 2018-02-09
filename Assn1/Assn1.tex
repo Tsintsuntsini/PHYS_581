@@ -150,6 +150,7 @@ The same distribution was sampled using the accept/reject method to compare to t
 The Metropolis-Hastings algorithm is a more sophisticated version of Markov Chain Monte Carlo that takes into account the sampling of random steps. To provide an example of this method, the following PDF was considered:
 \begin{equation}
 P(x) = Cx^{-5/2}e^{-\frac{2}{x}}
+\label{PDF}
 \end{equation}
 
 In the case of a symmetric distribution, the acceptance probability is simply that of a standard Metropolis algorithm. Take for instance a proposal value $x^* = 39.82$ from an $x_n=0.0$. It would have an acceptance value of:
@@ -160,7 +161,25 @@ A(x_n \to x^*) =& Min \Bigg( 1, \frac{0.000095}{0.135} \Bigg) \\
 A(x_n \to x^*) =& 0.000703
 \end{split}
 \end{equation}
-In this case, the jump is far in the tail of the Gaussian, and is extremely unlikely to be accepted. 
+In this case, the jump is far in the tail of the Gaussian, and is extremely unlikely to be accepted. Figure \ref{fig:PDF} shows the probability distribution function.
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{PDF}
+\caption{A probability distribution function defined by equation \ref{PDF}}
+\label{fig:PDF}
+\end{figure}
+
+
+A code was written in fortran to sample from the PDF using two different proposal distributions. First, a uniform distribution on the range $(0,100)$ was used. Next, a proposal $\chi^2$ distribution was used to sample points.
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{mixed_chains}
+\caption{Samples from distribution \ref{PDF} using two different proposal distributions. In the upper histogram, a uniform distribution was used. In the bottom, a $\chi^2$ distribution was used. The plots were cropped from the range $(0,100)$ to $(0,30)$ to better show features near the origin. The uniform histogram has wider bins due to the high number of counts far from the origin. The $\chi^2$ histogram had an 'unlucky' spike past $x=10$ due to random draws.}
+\label{fig:mixed_chains}
+\end{figure}
+ 
 
 \subsection{Simulated Annealing}
 Simulated annealing is a method of 'honing in' on a value (usually a minimum or maximum) over some number of steps, where the likelihood of accepting low-probability moves decreases over iterations. To demonstrate this type of algorithm, a 1-dimensional potential was provided with two differernt depth potential wells separated by a small peak. The potential was as follows:
@@ -212,12 +231,12 @@ All of the schedules correctly identified both minima, as well as correctly iden
 \end{figure}
 
 \subsection{Traveling Salesman}
-The traveling salesman is a class of mathematical problem dealing with the optimization of path distances. In this example, a salesman must complete a trip to 5 separate cities in as little distance as possible. The distances between cities are shown in table \ref{tab:5cities}. Three different solutions were examined to this problem, nicknamed 'greedy', 'brute-force' and 'annealing'. The greedy method picked a starting city, and then proceeded to its nearest neighbor, repeating this process. The brute-force method calculated every possible path and compared them. The annealing method statistically sampled the path-space by making slight changes to the route and allowing less-optimal paths to be selected with some probability.
+The traveling salesman is a class of mathematical problem dealing with the optimization of path distances. In this example, a salesman must complete a trip to 5 separate cities in as little distance as possible. The distances between cities are shown in table \ref{tab:5cities}. Three different solutions were examined to this problem, nicknamed 'greedy', 'brute-force' and 'annealing'. The greedy method picked a starting city, and then proceeded to its nearest neighbor, repeating this process. The brute-force method calculated every possible path and compared them. The annealing method statistically sampled the path-space by making slight changes to the route and allowing less-optimal paths to be selected with some probability. Figures \ref{fig:greedy_4frames}, \ref{fig:brute_4frames}, and \ref{fig:anneal_4frames} showed each method respectively. 
 \begin{table}
 \begin{center}
 	\begin{tabular}{|c|c|c|c|c|c|}
 		\hline
-		City # & 0 & 1 & 2 & 3 & 4 \\
+		City $\#$ & 0 & 1 & 2 & 3 & 4 \\
 		\hline
 		0 & 0. & 3. & 4. & 2. & 7. \\
 		\hline
@@ -235,9 +254,41 @@ The traveling salesman is a class of mathematical problem dealing with the optim
 \end{center}
 \end{table}
 
-The brute-force method
-\section{Discussion}
+Each method was timed using python's timeit library. The timeit function tested the time to run each loop $10^4$ times. The greedy method was run to completion, beginning at city 3. The best route was found to be $3 \to 0 \to 1 \to 4 \to 2$. This code took of $0.0125s$ to run. The brute force method took $0.218s$ to run and from the complete solution found the best route to be $2 \to 3 \to 0 \to 1 \to 4$. The annealing algorithm produced the solution $4 \to 1 \to 0 \to 3 \to 2$ in a time of $0.596s$. The greedy algorithm produced a route of length 16 while the other two produced a length of 13.
 
+Of the three methods given, greedy was the only one to require the selection of a starting city. This matched the real world well, as many businesses have a starting location that a route should start and end at. The greedy method however produced a longer route than the other two methods, making it less reliable. The greedy method excelled in computation time, but the result was undesirable. The other two methods both found the same length 13 route. The brute force method in this case was faster, because even though the annealing method found the correct answer fastest in step 5, it had no way to know this, and continued on for many more instances. As the number of possible cities increases however, annealing would become a better method than brute force. Brute force has a factorial nature, meaning a single city increase has an increasingly negative impact on computation time.
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{greedy_4frames}
+\caption{Visualization of the greedy method. The method is initialized to start in city 3 in this simulation. In frame 1, the algorithm begins checking the distance from 3 to each other city, starting with 0. Frame 2 shows two steps later, when the algorithm checks the distance of $3 \to 2$ and compares this to the best previous result ($3 \to 0$). In frame 5, the route $3 \to 0$  was selected as the best first segment, and it begins sequentially checking next segments beginning with $0 \to 1$. Frame 10 shows the final result by this method.}
+\label{fig:greedy_4frames}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{brute_4frames}
+\caption{The brute force method checked every possible permulation of the five city route. Four of the possible permutations were shown here. Frame 61 was found to be the optimal route by this method.}
+\label{fig:brute_4frames}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{anneal_4frames}
+\caption{Visualization of the annealing method. In frame 01, a simple route was initialized. At each step, a new neighbor configuration was proposed. In frame 02, the positions of cities 0 and 4 were swapped. This configuration was accepted due to being lower total distance. Next, cities 1 and 2 were swapped. At low temperature, this move was accepted, even though it was a longer distance. In frame 05, the cities have found the lowest distance state of the run.}
+\label{fig:anneal_4frames}
+\end{figure}
+
+\section{Discussion}
+Random numbers are often counterintuitive when large statistical phenomena are at play. In the birthday problem it was shown that the probability of two people in a room of thirty having the same birthday are surprisingly high. The initial intuition, that the probability of two people having the same birthday as $1/365$ would lead to a low likelihood for the whole room, was wrong due to the number of combinations of possible people in the room. The problem was checked by generating rooms of people and determining if two individuals shared a birthday. It was found that nearly $70\%$ of rooms had a birthday match present
+
+Gaussians are extremenly common distributions across science, and in physics in particular. The accept/reject method was used to find a gaussian distribution. The result matched the analytical prediction extremely well. This was partially due to the high number of samples taken. The accept/reject method compared the function to a uniform distribution, resulting in many points being rejected. A better distribution, such as a parabola, might reduce the number of draws needed to produce a suitable Gaussian. Once samples were drawn, another distribution was created using sums of numbers drawn from the above Gaussian distribution. The result was taller and narrower, but again appeared to be Gaussian shaped. This is sensible, as the central limit theorem predicts that sums of independently random variables will in turn have a Gaussian distribution.
+
+%MARKOV CHAIN HERE HERE HERE
+
+Besides the accept/reject method, random walkers can be used to create sample distributions. These walkers did not immediately have a desired distribution, as each step was dependent on the last position of the walkers. Over 250 iterations, the distribution had a mean that matched the analytical mean. This is referred to as burn-in. The burn-in can be dependent on the distribution of possible steps for a walker. For this assignment, using $\delta = \pm \sigma$ where $\sigma$ was the standard deviation of the Gaussian,  produced a reasonably quick burn-in. Compared to the accept / reject method, the Markov chain method was significantly faster. This was due to the accept / reject method having a larger number of "wasted" steps with rejection. The accept / reject method has the benefit however of not requiring burn-in, as any number of sample points will obey the target distribution.
+
+The Metropolis-Hastings algorithm required minimal adjustments to the base Metropolis code. The effect of an appropriate proposal distribution was examined for this algorithm. Where earlier in this assignment a uniform distribution was considered acceptable for a proposal distribution, this example showed that a proposal distribution more closely matching the shape of the target distribution produced a better mixed Markov chain. In effect, this meant that the $\chi^2$ proposal distribution required a lower burn-in time than the uniform distribution to achieve a good sampling. 
  
 \section{Conclusion}
 
