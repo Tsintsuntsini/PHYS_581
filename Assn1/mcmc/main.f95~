@@ -1,0 +1,24 @@
+program main
+
+! ----------------------------------------------------------------------
+! Part 3: Markov Chain Monte Carlo
+! ----------------------------------------------------------------------
+use distributions, only: test, gaussian
+use random_distributions, only: random_uniform
+
+implicit none
+real :: delta, trial, x_0, x_n
+integer :: n, n_steps
+
+x_0 = 0.0
+do n=1, n_steps
+   trial = random_uniform() * delta
+
+   acceptance = test(trial) / test(x_n)
+   if (random_uniform() < acceptance) then
+      x_n = trial
+   end if
+
+end do
+
+end program main
