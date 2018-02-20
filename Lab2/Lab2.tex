@@ -1,0 +1,64 @@
+\documentclass[twocolumn]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{amssymb} %Use of therefore symbol
+\usepackage{hyperref}
+\usepackage{caption}
+
+
+
+\begin{document}
+\title{Lab 1: Monte Carlo Methods}
+\author{Alex Matheson, Austin Nhung}
+%\affiliation{Department of Physics and Astronomy, University of Calgary, Calgary AB T2N 1N4 Canada}
+\date{\today}
+\maketitle
+
+\section{Introduction}
+
+\section{Methods}
+Fourier series are defined by calculating the fourier coefficients $a_n$ and $b_n$. These coefficients may be replaced when in a complex fourier series using a term $c_n$. Using the following equations:
+\begin{equation}
+\begin{split}
+a_n =& c_n + c_{-n} \\
+b_n =& i(c_n - c_{-n}) \\
+c_n =& \frac{1}{2}(a_n - ib_n)
+\end{split}
+\end{equation}
+In fourier series, the $a_n$ and $b_n$ correspond to even and odd 'components' of the function. In the case of an even function:
+\begin{equation}
+\begin{split}
+a_n =& c_n + c_{-n} \\
+b_n =& 0 \\
+c_n =& \frac{1}{2}(a_n)
+\end{split}
+\end{equation}
+
+And for odd functions:
+\begin{equation}
+\begin{split}
+a_n =& 0 \\
+b_n =& i(c_n - c_{-n}) \\
+c_n =& \frac{-ib_n}{2}
+\end{split}
+\end{equation} 
+ 
+It may be shown in both of the above series that the $a_n$ term for even functions and $b_n$ for odd functions will be proportional to the $c_n$ terms. 
+\section{Conclusion}
+
+
+
+\begin{thebibliography}{00}
+	\bibitem{ouyed}
+	Ouyed and Dobler, PHYS 581 course notes, Department of Physics and Astrophysics, University of Calgary (2016).
+	\bibitem{NR}
+	W. Press et al., \emph{Numerical Recipes} (Cambridge University Press, 2010) 2nd. Ed.
+	\bibitem{Code}
+	C. Hass and J. Burniston, MCMC Hill Climbing. Jupyter notebook, 2018.
+\end{thebibliography}
+
+\section{Appendix}
+For access to the source codes used in this project, please visit \url{https://github.com/Tsintsuntsini/PHYS_581} for a list of files and times of most recent update.
+	
+\end{document}
