@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.9.10)  12 FEB 2018 22:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.9.10)  26 FEB 2018 22:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -340,42 +340,58 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 17.
 (c:/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \vbox (badness 1314) has occurred while \output is active []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
+<Figure1.png, id=34, 433.62pt x 289.08pt>
+File: Figure1.png Graphic file (type png)
+ <use Figure1.png>
+Package pdftex.def Info: Figure1.png used on input line 64.
+(pdftex.def)             Requested size: 229.5pt x 152.99994pt.
  [1{c:/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
+ <./Figure1.png>]
+<Figure2.png, id=59, 433.62pt x 289.08pt>
+File: Figure2.png Graphic file (type png)
+ <use Figure2.png>
+Package pdftex.def Info: Figure2.png used on input line 82.
+(pdftex.def)             Requested size: 229.5pt x 152.99994pt.
+ [2 <./Figure2.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 158.
+[3
+
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 158.
  (./Lab2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 158.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 158.
 Package rerunfilecheck Info: File `Lab2.out' has not changed.
-(rerunfilecheck)             Checksum: DBF0C3F32E64BBD99D303180BBFF1E67;177.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64.
+(rerunfilecheck)             Checksum: 38DB5F016FB093325F1B89A9202AE3F2;399.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 158.
  ) 
 Here is how much of TeX's memory you used:
- 7000 strings out of 493091
- 103946 string characters out of 6138525
- 196492 words of memory out of 5000000
- 10412 multiletter control sequences out of 15000+600000
- 11402 words of font info for 45 fonts, out of 8000000 for 9000
+ 7041 strings out of 493091
+ 104517 string characters out of 6138525
+ 198823 words of memory out of 5000000
+ 10436 multiletter control sequences out of 15000+600000
+ 12017 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,15n,38p,238b,320s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2015/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2015/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr17.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.
-pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Lab2.pdf (1 page, 110062 bytes).
+ 36i,19n,38p,575b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2015/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2015/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2015/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr12.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17
+.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2015/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2015/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmtt10.pfb>
+Output written on Lab2.pdf (3 pages, 185413 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 137 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 500000)
+ 67 words of extra memory for PDF output out of 10000 (max. 10000000)
 
