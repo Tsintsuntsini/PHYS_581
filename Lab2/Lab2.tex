@@ -274,11 +274,11 @@ This equation may be re-written using Fourier analysis. Two aids were used in th
 \begin{split}
 &\mathcal{F}\{ \frac{\partial^2 T}{\partial x^2} \} = \mathcal{F} \{ -q(x) \} \\
 &-k^2 \hat{T} = -\hat{q}(x) \\
-&\\
-\hat{q}(x) =& \mathcal{F} \{ \frac{\exp(-(x-x_0)^2/(2\sigma^2))}{\sqrt{2\pi\sigma^2}} \} \\
-\hat{q}(x) =& e^{-2\pi ikx_0} \times \mathcal{F} \{ \frac{\exp(-(x^2/(2\sigma^2))}{\sqrt{2\pi\sigma^2}} \} \\
-\hat{q}(x) =& \exp\bigg( \frac{-\sigma^2 k^2}{2} - 2\pi ikx_0 \bigg) \\
-\hat{T} =& \frac{1}{k^2} \exp\bigg( \frac{-\sigma^2 k^2}{2} - 2\pi ikx_0 \bigg)
+%&\\
+%\hat{q}(x) =& \mathcal{F} \{ \frac{\exp(-(x-x_0)^2/(2\sigma^2))}{\sqrt{2\pi\sigma^2}} \} \\
+%\hat{q}(x) =& e^{-2\pi ikx_0} \times \mathcal{F} \{ \frac{\exp(-(x^2/(2\sigma^2))}{\sqrt{2\pi\sigma^2}} \} \\
+%\hat{q}(x) =& \exp\bigg( \frac{-\sigma^2 k^2}{2} - 2\pi ikx_0 \bigg) \\
+%\hat{T} =& \frac{1}{k^2} \exp\bigg( \frac{-\sigma^2 k^2}{2} - 2\pi ikx_0 \bigg)
 %
 %\hat{q}(x) =& \frac{1}{\sqrt{2\pi\sigma^2}} \int_{-\infty}^{\infty} e^{2\pi ikx} e^{-(x-x_0)^2/\sqrt{2\sigma^2}} dx \\
 %\hat{q}(x) =& \frac{1}{\sqrt{2\pi\sigma^2}} \int_{-\infty}^{\infty} \cos(2\pi kx) e^{-(x-x_0)^2/\sqrt{2\sigma^2}} dx \\
@@ -289,7 +289,17 @@ This equation may be re-written using Fourier analysis. Two aids were used in th
 \label{eq:gauss_transform}
 \end{equation}
 
-In order to obtain a solution to the heat equation, a reverse transform could be applied on the above equation to return the original heat function.
+In order to numerically solve the heat equation, the function $q(x)$ should be Fourier transformed to obtain $\hat{q}(k)$. This term may then be divided by $k^2$ and reverse transformed to obtain the original $T(x)$. This yields a problem in the case where $k=0$. Since python interprets a division by zero by returning 'nan', replacing this 'nan' with some DC term will allow the inverse transform to perform correctly. Figure \ref{fig:temp} shows the result of performing this method. Since the 'DC' term for $k=0$ has been replaced, this is not the exact answer, and instead is shifted by the non-existent DC term. It was therefore possible to shift this data so that all points had a non-negative temperature by shifting by the global minimum value. 
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{temp}
+\caption{Temperature of a length $1$ rod corresponding to equation \ref{?}. The temperature may be off by a constant shift due to the deletion of the DC component in the frequency space.}
+\label{fig:temp}
+\end{figure}
+
+The limits of Fourier transform solutions were considered using the function $q(x) = 0$. For this case, the familar solution of $T(x) = Ax + B$ was obtained using analytical methods. For this particular case, the Fourier method of solutions breaks down. If we were to Fourier transform $q(x)$, the result would be $q(k)=0$. This in turn would lead to an overall solution $T(x) = 0$. This is a valid solution for the analysis above in the case $A=B=0$, however it is only one possible solution out of many.
+
 
 \section{Conclusion}
 
