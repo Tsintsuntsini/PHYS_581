@@ -18,7 +18,7 @@
 \section{Introduction}
 
 \section{Methods}
-Fourier series are defined by calculating the fourier coefficients $a_n$ and $b_n$. These coefficients may be replaced when in a complex fourier series using a term $c_n$. Using the following equations:
+Fourier series are defined by calculating the fourier coefficients $a_n$ and $b_n$. These coefficients may be replaced when in a complex Fourier series using a term $c_n$. Using the following equations:
 \begin{equation}
 \begin{split}
 a_n =& c_n + c_{-n} \\
@@ -97,10 +97,144 @@ Using this, the PSD of white noise may be calculated:
 \[ S(\omega) =  \sum_{i=-\infty}^{\infty} \delta (k) e^{-j\omega k}\\
 S(\omega) = \delta(k=0) e^{-j\omega * 0} \\
 S(\omega) = 1
-  \] 
+\] 
+
+The above mathematical relations were tested 
+
+% FIGURE OUT THE PROBLEM WITH THE AUTOCORRELATION FUNCTION
+
+\subsection{Spectral Subtraction}
+The spectral subtraction method involved Fourier transforming a signal, and then setting frequency bin values to zero if they were below a certain threshold. A signal was created using the formula $ x(t) = \sin (2\pi f_0t) + 0.5\sin (2\pi (2f_0)t)$ using $f_0=440$ Hz sampled at $22.2\mu s$, for $512$ intervals. Figure\ref{fig:spectral_filter}a shows this signal. The power spectrum of the signal was found using numpy's FFT package. Figure \ref{fig:spectral_filter}b shows this corresponding power spectrum. Two clear peaks were visible at $0.00976$ and $0.01953$. This matches almost exactly the expected values of $0.9768$ and $0.19536$ obtained by multiplying the frequency by the sampling period.
+
+To investigate the impact of noise on the signal, random noise on the order $\pm 0.5$ was added to the signal. Figures \ref{fig:spectral_filter}c and \ref{fig:spectral_filter}d show the noisy power spectrum. The noise in this power spectrum was almost imperceptible compared to the signal in the neighborhood of the expected peaks. By outputting the power data, it was seen that the noise was on the order of $10^{-1}$. Some noise was slightly beyond one order of magnitude above or below this, indicating that the noise was not 'ideal' white noise.
+
+Next, the threshold at which the magnitude of the noise cause the underlying signal to be totally obscured was determined. This was done by steadily increasing the noise magnitude until the signal peaks were on the order of the peaks from noise. Figure \ref{fig:spectral_filter}e and \ref{fig:spectral_filter}f show the corresponding signal and power spectrum.
 
 
+\begin{figure*}[t]
+	\centering
+	\includegraphics[height=\paperwidth]{spectral_filter}
+	\caption{Effects of uniformly distributed (in time space) noise on a signal. Subplot \textbf{a} shows the original input signal, subplot \textbf{c} a signal with noise of $\pm0.5$ from the original signal, and subplot \textbf{e} the signal with $\pm10$ noise. The subplots immediately to the right are the corresponding frequency power spectra.}
+	\label{fig:spectral_filter}
+\end{figure*}
+
+\subsubsection{Signals with Trends}
+In this section, a periodic signal was laid over a linear trend to produce a new function. The original periodic function was $x_i = 2\sin(\pi f_0 i) + \cos( \pi f_1 i)$ while the trend function was $g(i) = 1 + 0.025i$ (constants of $f_0 = 9/512$ and $f_1=4/512$ were used). When added together, the two functions produced a new function, visualized in figure \ref{fig:trend}.
+Next, the signal was made noisy using uniform noise of $\pm6$ added to the function. Figure \ref{noise_trend} shows the result.
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{trend}
+\caption{Function obtained by adding together a periodic and a linear function.}
+\label{fig:trend}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{noise_trend}
+\caption{Function from figure \ref{fig:trend} with uniform noise applied.}
+\label{fig:noise_trend}
+\end{figure}
+
+As earlier in this lab, the FFT was used to examine the data for the underlying periodicity. Figure \ref{fig:trend_fft} showed the resulting power spectrum. The data was confined to a single, massive spike at $f=0$. For a noisy signal, the noise would be expected to manifest as a uniform addition across the power spectrum. This would still allow the original frequencies to be recovered. The lack of any distinct periodic peaks (the $f=0$ peak corresponds to non-periodic components) suggests that the linear component has erased the ability to check periodicity in the power spectrum. 
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{trend_fft}
+\caption{FFT of the noisy function in figure \ref{fig:noise_trend}. The result was focused on the region near $f=0$ to ensure that there were not peaks close to $f=0$. Regions outside this window continued at an amplitude of approximately zero. Note that the amplitude axis is scaled by a factor of $10^{7}$.}
+\label{fig:trend_fft}
+\end{figure}
+
+While it has been shown that the periodicity of the data are obscured, it might have still been possible to remove the noise across all frequencies, and attempt to recover the original, noiseless function. To attempt this, all frequencies with a magnitude of less than $180$ were removed. Figure \ref{fig:Reconstruction} shows the result. Clearly this method has not been successful. 
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{Reconstruction}
+\caption{Reconstruction of the signal in figure \ref{fig:trend} using an inverse FFT. Note that the trend $g(i)$ does not appear as expected in the reconstruction. This result was one of many: each separate run of the program produced a different reconstruction based on the different random noise changes.}
+\label{fig:Reconstruction}
+\end{figure}
+
+Next, a different method of uncovering the original $x(i)$ function was attempted. First, the $g(i)$ term was removed from $x(i)$. This new modified $x(i)$ was then Fourier transformed. The noise was again removed from the signal using only frequency magnitudes greater that $180$. It was found that using the suggested filtering value of 9 from the lab instructions did not yield the correct results. Using the filtered frequency spectrum, the inverse Fourier transform, that is the noiseless $x(i) - g(i)$ was obtained. Finally, the trend $g(i)$ was added back to the signal. Originally, this yielded a massive sinusoid without upward trend. To fix this, after the frequency spectrum was returned to the time domain, the result was re-normalized to the maximum of the original trend-less $x(i)$. This was cheating somewhat, as in real experiments, the maximum of the original function might not be known. Once the signal was re-normalized and had $g(i)$ added back in, the signal behaved more similarly to what was expected. Figure \ref{reconstruction_fixed} shows the final result.
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{reconstruction_fixed}
+\caption{Reconstruction of the original signal from figure \ref{fig:trend}. Note the aparent scale difference between the two lines.}
+\label{fig:reconstruction_fixed}
+\end{figure}
+
+\subsubsection{Autocorrelation and Power Spectra}
+The autocorrelation function and the power spectrum of signals are related. This may be demonstrated analytically with relative ease. Essential to these derivations is the Fourier shift theorem. The theorem provides a quick way to simply a Fourier transform when the function in question contains a shift in the coordinate being transformed. The theorem is derived below:
+\begin{equation}
+\begin{split}
+\mathcal{F} \{f(t - a)\} = & \int_{-\infty}^{\infty} f(t-a) e^{2\pi i\omega t} dt \\
+= & \int_{-\infty}^{\infty} f(t-a) e^{2\pi i\omega t} e^{2\pi i\omega a} e^{-2\pi i\omega a} dt \\
+= & e^{2\pi i\omega a} \int_{-\infty}^{\infty} f(t-a) e^{2\pi i\omega t}  e^{-2\pi i\omega a} dt \\
+= & e^{2\pi i\omega a} \int_{-\infty}^{\infty} f(t-a) e^{2\pi i\omega (t - a)} dt \\
+= & e^{2\pi i\omega a} \int_{-\infty}^{\infty} f(t') e^{2\pi i\omega t'} dt' \\
+= & e^{2\pi i\omega a} \mathcal{F} \{f(t)\}
+\end{split}
+\end{equation}
+
+First, a proof will be shown for $C(\omega) = \sqrt{2\pi} Y^*(\omega)X^*(\omega)$:
+
+\begin{equation}
+\begin{split}
+c(\tau) = & \int_{-\infty}^{\infty} y^*(t - \tau) x(t) dt\\
+\mathcal{F} \{c(\tau)\} = & \mathcal{F} \{\int_{-\infty}^{\infty} y^*(t - \tau) x(t) dt\} \\
+C(\omega) = & \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} y^*(t - \tau) x(t) e^{2\pi i \omega \tau} dt d\tau \\
+= & \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} y^*(-\tau) x(t) e^{2\pi i \omega t} e^{2\pi i \omega \tau} dt d\tau \\
+= & \int_{-\infty}^{\infty}y^*(\tau) e^{2\pi i \omega (-\tau)}  d\tau \int_{-\infty}^{\infty}  x(t)  e^{2\pi i \omega t} dt \\
+= &\sqrt{2\pi} Y^*(\omega)X(\omega)
+\end{split}
+\end{equation}
+
+Related to the correlation function is the autocorrelation function. The autocorrelation function may be defined as a convolution of a function with itself. From this term's Fourier material, it has been stated that a convolution in one space is a product in the corresponding Fourier space. From this, the relation between the autocorrelation and the power spectrum of a signal have been linked. This may be proved, as shown below:
+
+\begin{equation}
+\begin{split}
+AC(\tau) = & \int_{-\infty}^{\infty} y^*(t) y(t + \tau) dt\\
+\mathcal{F} \{AC(\tau)\} = & \mathcal{F} \{\int_{-\infty}^{\infty} y^*(t - \tau) y(t) dt\} \\
+AC(\omega) = & \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} y^*(t - \tau) y(t) e^{2\pi i \omega \tau} dt d\tau \\
+= & \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} y^*(-\tau) y(t) e^{2\pi i \omega t} e^{2\pi i \omega \tau} dt d\tau \\
+= & \int_{-\infty}^{\infty}y^*(\tau) e^{2\pi i \omega (-\tau)}  d\tau \int_{-\infty}^{\infty}  y(t)  e^{2\pi i \omega t} dt \\
+= &\sqrt{2\pi} Y^*(\omega)Y(\omega) \\
+= & \sqrt{2\pi} |Y(\omega)|^2
+\end{split}
+\end{equation}
+
+The auto-correlation function of white noise was explored earlier in this assignment. The findings of that computation may be verified analytically. Given that white noise should exist equally at all, infinite frequencies in the frequency domain, the autocorrelation may be determined by reverse Fourier transform. To begin, an assumption is made that the power of all frequencies is $S(f) = k$.
+\begin{equation}
+\begin{split}
+S(f) =& k \\
+AC(\tau) =& \mathcal{F}^{-1} \{ S(f) \} \\
+AC(\tau) =& \sqrt{2\pi} \int_{-\infty}^{\infty} k e^{-2\pi i f \tau} df \\
+AC(\tau) =& \sqrt{2\pi}k \int_{-\infty}^{\infty} e^{- i \omega \tau} \frac{d\omega}{2\pi} \\
+AC(\tau) =& \frac{k}{\sqrt{2\pi}} \int_{-\infty}^{\infty} e^{- i \omega \tau} d\omega \\
+AC(\tau) =& \frac{k}{\sqrt{2\pi}} \delta(\tau) \\
+\end{split}
+\end{equation}
 \subsection{Applications}
+\subsubsection{The Lorenz System}
+The Lorenz system is a description of physical systems where a large number of variables are interrelated through differential equations. For this example, a system with three variables and three parameters will be considered. Equations \ref{difs} shows the system of equations in question.
+\begin{equation} \label{difs}
+\begin{split}
+\frac{\partial x}{\partial t} =& \sigma (y - x) \\
+\frac{\partial y}{\partial t} =& rx - y - xz \\
+\frac{\partial y}{\partial t} =& xy - bz \\
+\end{split}
+\end{equation}
+
+The equation will reach an equilibrium in the case where all the partial derivatives are zero. The $x$, $y$, and $z$ equilibrium values may be found analytically:
+\begin{equation} \label{equilibrium}
+\begin{split}
+0 = \sigma (y - x) \quad \to  & \quad x = y\\
+0 = xy - bz \quad \to & \quad y = \sqrt{(bz)}\\
+0 = rx - y - xz \quad \to & \quad z = r-1\\
+\therefore x = y =& \sqrt{(b(r-1))}
+\end{split}
+\end{equation}
+
 \subsubsection{ODEs and the Fourier Transform}
 The Fourier transform can be use to reduce the dimensionality of a differential equation. In essence, if the fourier transform is used, a PDE with two different differentials may be reduced to an ODE or and ODE to a polynomial equation. The original solution may then be recovered by reverse transforming the result. Below are a few examples of simplifying differential equations through Fourier transform:
 

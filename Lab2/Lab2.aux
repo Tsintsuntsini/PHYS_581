@@ -23,14 +23,36 @@
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:square}{{1}{1}{A square wave function. The period of the function has been set to $T=1$, periodic from $T=-1/2$ to $T=1/2$.\relax }{figure.caption.1}{}}
 \newlabel{eq:complex_coefficients}{{4}{1}{Methods}{equation.2.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Values of each term $c_n$ in the complex fourier series.\relax }}{2}{figure.caption.2}}
+\newlabel{fig:Figure2}{{2}{2}{Values of each term $c_n$ in the complex fourier series.\relax }{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Noise}{2}{subsection.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1}Autocorrelation and PSD}{2}{subsubsection.2.1.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Spectral Subtraction}{2}{subsection.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Signals with Trends}{3}{subsubsection.2.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Autocorrelation and Power Spectra}{3}{subsubsection.2.2.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Applications}{4}{subsection.2.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}The Lorenz System}{4}{subsubsection.2.3.1}}
+\newlabel{difs}{{9}{4}{The Lorenz System}{equation.2.9}{}}
+\newlabel{equilibrium}{{10}{4}{The Lorenz System}{equation.2.10}{}}
+\citation{gauss_trans}
 \bibcite{ouyed}{1}
 \bibcite{NR}{2}
 \bibcite{Code}{3}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Values of each term $c_n$ in the complex fourier series.\relax }}{2}{figure.caption.2}}
-\newlabel{fig:Figure2}{{2}{2}{Values of each term $c_n$ in the complex fourier series.\relax }{figure.caption.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Applications}{2}{subsection.2.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1}ODEs and the Fourier Transform}{2}{subsubsection.2.1.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.2}Heat Equation}{2}{subsubsection.2.1.2}}
-\newlabel{eq:gauss_transform}{{9}{2}{Heat Equation}{equation.2.9}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Conclusion}{2}{section.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Appendix}{3}{section.4}}
+\bibcite{gauss_trans}{4}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}ODEs and the Fourier Transform}{5}{subsubsection.2.3.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.3}Heat Equation}{5}{subsubsection.2.3.3}}
+\newlabel{eq:gauss_transform}{{15}{5}{Heat Equation}{equation.2.15}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Conclusion}{5}{section.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Appendix}{5}{section.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Effects of uniformly distributed (in time space) noise on a signal. Subplot \textbf  {a} shows the original input signal, subplot \textbf  {c} a signal with noise of $\pm 0.5$ from the original signal, and subplot \textbf  {e} the signal with $\pm 10$ noise. The subplots immediately to the right are the corresponding frequency power spectra.\relax }}{6}{figure.caption.3}}
+\newlabel{fig:spectral_filter}{{3}{6}{Effects of uniformly distributed (in time space) noise on a signal. Subplot \textbf {a} shows the original input signal, subplot \textbf {c} a signal with noise of $\pm 0.5$ from the original signal, and subplot \textbf {e} the signal with $\pm 10$ noise. The subplots immediately to the right are the corresponding frequency power spectra.\relax }{figure.caption.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Function obtained by adding together a periodic and a linear function.\relax }}{7}{figure.caption.4}}
+\newlabel{fig:trend}{{4}{7}{Function obtained by adding together a periodic and a linear function.\relax }{figure.caption.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Function from figure \ref  {fig:trend} with uniform noise applied.\relax }}{7}{figure.caption.5}}
+\newlabel{fig:noise_trend}{{5}{7}{Function from figure \ref {fig:trend} with uniform noise applied.\relax }{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces FFT of the noisy function in figure \ref  {fig:noise_trend}. The result was focused on the region near $f=0$ to ensure that there were not peaks close to $f=0$. Regions outside this window continued at an amplitude of approximately zero. Note that the amplitude axis is scaled by a factor of $10^{7}$.\relax }}{7}{figure.caption.6}}
+\newlabel{fig:trend_fft}{{6}{7}{FFT of the noisy function in figure \ref {fig:noise_trend}. The result was focused on the region near $f=0$ to ensure that there were not peaks close to $f=0$. Regions outside this window continued at an amplitude of approximately zero. Note that the amplitude axis is scaled by a factor of $10^{7}$.\relax }{figure.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Reconstruction of the signal in figure \ref  {fig:trend} using an inverse FFT. Note that the trend $g(i)$ does not appear as expected in the reconstruction. This result was one of many: each separate run of the program produced a different reconstruction based on the different random noise changes.\relax }}{7}{figure.caption.7}}
+\newlabel{fig:Reconstruction}{{7}{7}{Reconstruction of the signal in figure \ref {fig:trend} using an inverse FFT. Note that the trend $g(i)$ does not appear as expected in the reconstruction. This result was one of many: each separate run of the program produced a different reconstruction based on the different random noise changes.\relax }{figure.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Reconstruction of the original signal from figure \ref  {fig:trend}. Note the aparent scale difference between the two lines.\relax }}{8}{figure.caption.8}}
+\newlabel{fig:reconstruction_fixed}{{8}{8}{Reconstruction of the original signal from figure \ref {fig:trend}. Note the aparent scale difference between the two lines.\relax }{figure.caption.8}{}}
