@@ -19,52 +19,79 @@
 The Fourier transform is one of the mathematical marvels of the modern world. While it was invented in the early 19th century, it was instrumental in the communication's revolution beginning with radio, and continuing into the modern digital world. The Fourier transform is an extension of the fourier series, which expresses a function in terms of a basis of sinusoids or exponentials. The Fourier transform allows one to work on a problem either in its original space or in that of a Fourier space. There are many pairs of variables that may be connected by Fourier transform including time/frequency and position/wavenumber. By working in Fourier space, certain periodic patterns may be emphasized or de-emphasized in data. This is the basis of modern signal processing and filtering to remove noise. Fourier techniques have myriad applications outside the mathematical context of this assignment including audio-processing, radio-astronomy, and medical imaging.
 
 \section{Methods}
-Fourier series are defined by calculating the fourier coefficients $a_n$ and $b_n$. These coefficients may be replaced when in a complex Fourier series using a term $c_n$. Using the following equations:
+\subsection{Fourier Series}
+Fourier series are defined by calculating the Fourier coefficients $a_n$ and
+$b_n$. These coefficients may be replaced with a complex Fourier series using
+a single complex coefficient $c_n$. These coefficients are related through the
+equations:
 \begin{equation}
-\begin{split}
-a_n =& c_n + c_{-n} \\
-b_n =& i(c_n - c_{-n}) \\
-c_n =& \frac{1}{2}(a_n - ib_n)
-\end{split}
+	\begin{split}
+		a_n =& c_n + c_{-n} \\
+		b_n =& i(c_n - c_{-n}) \\
+		c_n =& \frac{1}{2}(a_n - ib_n)
+	\end{split}
 \end{equation}
-In fourier series, the $a_n$ and $b_n$ correspond to even and odd 'components' of the function. In the case of an even function:
+In Fourier series, $a_n$ and $b_n$ correspond to even and odd 'components' of
+the function, respectively. In the case of an even function, their relations
+simplify to:
 \begin{equation}
-\begin{split}
-a_n =& c_n + c_{-n} \\
-b_n =& 0 \\
-c_n =& \frac{1}{2}(a_n)
-\end{split}
+	\begin{split}
+		a_n =& c_n + c_{-n} \\
+		b_n =& 0 \\
+		c_n =& \frac{1}{2}(a_n)
+	\end{split}
 \end{equation}
-And for odd functions:
+
+Meanwhile, odd functions simplfiy to:
 \begin{equation}
-\begin{split}
-a_n =& 0 \\
-b_n =& i(c_n - c_{-n}) \\
-c_n =& \frac{-ib_n}{2}
-\end{split}
+	\begin{split}
+		a_n =& 0 \\
+		b_n =& i(c_n - c_{-n}) \\
+		c_n =& \frac{-ib_n}{2}
+	\end{split}
 \end{equation} 
 
-\begin{figure}[t]
-	\centering
-	\includegraphics[width=\linewidth]{Figure1}
-	\caption{A square wave function. The period of the function has been set to $T=1$, periodic from $T=-1/2$ to $T=1/2$.}
-	\label{fig:square}
-\end{figure}
-
-It may be shown in both of the above series that the $a_n$ term for even functions and $b_n$ for odd functions will be proportional to the $c_n$ terms. 
-
-Parseval's theorem relates the Fourier coefficients of a function to its power spectrum. Using the above relations, it may be restated in terms of sine and cosine coefficients, as shown below.
-
+It can be shown in both of the above series that the $a_n$ term for even
+functions and $b_n$ for odd functions will be proportional to the $c_n$ terms.
+The complex coefficients are alternatively defined as:
 \begin{equation}
-\begin{split}
-\int_{-\infty}^{\infty} |x(t)|^2 dt =& \sum_{n=-\infty}^{\infty} |c_n|^2 \\
-\sum_{-\infty}^{\infty} |c_n|^2 =& \sum_{n=-\infty}^{\infty} |\frac{1}{2}(a_n - ib_n)|^2 \\
-=& \frac{1}{2^2}\sum_{n=-\infty}^{\infty} (a_n - ib_n)(a_n + ib_n) \\
-=& \frac{1}{2^2}\sum_{n=-\infty}^{\infty} |a_n|^2 + |b_n|^2 \\
-=& \frac{1}{2^2}\sum_{n=0}^{\infty} |a_n|^2 + |b_n|^2 \\
-=& \frac{|a_0|^2}{2^2} + \frac{1}{2^2}\sum_{n=1}^{\infty} |a_n|^2 + |b_n|^2 \\
-\end{split}
+	c_n = \frac{1}{2 \pi} \int_{-\pi}^{+\pi} f(x) e^{-inx} dx
 \end{equation}
+It is easy to see that $c_{-n} = c_n^{\ast}$, where $c_n^{\ast}$ is the complex
+conjugate of $c_n$. The relation of squares can then be expressed:
+\begin{equation}
+	\begin{aligned}
+		\sum_{n = -\infty}^{+\infty} \left| c_n \right|^2
+		&= \sum_{n = -\infty}^{+\infty} \left| \frac{1}{2} (a_n - ib_n) \right|^2 \\
+		&= \frac{1}{4} \sum_{n = -\infty}^{+\infty} \left(
+		\left| a_n \right| + \left| b_n \right|^2
+		\right)
+		&= \frac{1}{2} \sum_{n=0}^{\infty} \left(
+		\left| a_n \right|^2 + \left| b_n \right|^2
+		\right)
+	\end{aligned}
+\end{equation}
+Using the definition of $b_n$, this result can be further simplified knowing
+that $b_0 = i(c_0 - c_0) = 0$ to reach the final form
+\begin{equation}
+	\sum_{n = -\infty}^{+\infty} \left\| c_n \right\|^2
+	= \left\| \frac{a_0}{2} \right\|^2 + \frac{1}{2} \sum_{n=0}^{\infty} \left(
+	\left| a_n \right|^2 + \left| b_n \right|^2
+	\right)
+\end{equation}
+
+%Parseval's theorem relates the Fourier coefficients of a function to its power spectrum. Using the above relations, it may be restated in terms of sine and cosine coefficients, as shown below.
+
+%\begin{equation}
+%\begin{split}
+%\int_{-\infty}^{\infty} |x(t)|^2 dt =& \sum_{n=-\infty}^{\infty} |c_n|^2 \\
+%\sum_{-\infty}^{\infty} |c_n|^2 =& \sum_{n=-\infty}^{\infty} |\frac{1}{2}(a_n - ib_n)|^2 \\
+%=& \frac{1}{2^2}\sum_{n=-\infty}^{\infty} (a_n - ib_n)(a_n + ib_n) \\
+%=& \frac{1}{2^2}\sum_{n=-\infty}^{\infty} |a_n|^2 + |b_n|^2 \\
+%=& \frac{1}{2^2}\sum_{n=0}^{\infty} |a_n|^2 + |b_n|^2 \\
+%=& \frac{|a_0|^2}{2^2} + \frac{1}{2^2}\sum_{n=1}^{\infty} |a_n|^2 + |b_n|^2 \\
+%\end{split}
+%\end{equation}
 
 Next, a square wave function was considered as defined below: 
 
@@ -77,7 +104,15 @@ f(t)=
 \end{cases}
 \]
 
-This function was periodic between $-T/2$ and $T/2$. The function was visualized in figure \ref{fig:square}. As with any function, this could be re-stated using complex Fourier series. To compute the series, the coefficients $c_n$ were determined according to equation \ref{eq:complex_coefficients}. 
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{Figure1}
+\caption{Piecewise function defined in equation \ref{eq:square}. The function is a form of a traditional square wave.}
+\label{fig:Figure1}
+\end{figure}
+
+
+This function was periodic between $-T/2$ and $T/2$. The function was visualized in figure \ref{fig:Figure1}. As with any function, this could be re-stated using complex Fourier series. To compute the series, the coefficients $c_n$ were determined according to equation \ref{eq:complex_coefficients}. 
 
 \begin{equation}
 c_n = \frac{1}{T} \int_{-T/2}^{T/2} f(t) \exp(-i\frac{2\pi nt}{T}) dt
@@ -97,6 +132,59 @@ f(t) = \sum_{n= -\infty}^{\infty} -\frac{i}{\pi n} \exp(-i \frac{2\pi nt}{T})
 \label{fig:Figure2}
 \end{figure}
 
+The Nyquist frequency defines the upper limit of frequency detectable by a given sample rate. This principle also works in reverse. Since the human ear can hear frequencies up to 20 kHz, a sampling inteval would need to be less than 25 $\mu s$ for a sampling rate of 40 kHz.
+
+\subsection{FFT}
+Four simple analog signals were used to analyze the behaviour and consequences
+of sampling a signal and using the discrete Fourier transform. The signals used
+were:
+\begin{equation}
+	\begin{aligned}
+		f_1(t)  &= \sin(2 \pi \times 100 t) + \frac{1}{2} \sin(2 \pi \times 200 t) \\
+		f_2(t) &= \sin(2 \pi \times 100.5 t) + \frac{1}{2} \sin(2 \pi \times 200 t) \\
+		f_3(t) &= \left( 2 + \sin(2 \pi \times 8 t) \right) \times \sin(2 \pi \times 100 t) \\
+		f_4(t) &= \sin \left( 2 \pi \times 100 \left( 1 + \frac{1}{10} \sin(2 \pi \times 8 t) \right) t \right)
+	\end{aligned}
+	\label{fft_eqs}
+\end{equation}
+
+These signals were sampled at a rate of $1024$ samples per second for one second
+each. They were then transformed into the frequency domain using the fast
+Fourier transform (FFT). The amplitudes and power spectra are shown in figure \ref{fig:fft_exs}.
+
+\begin{figure*}
+	\includegraphics[width=\linewidth]{fft_examples.png}
+	\caption{
+		The amplitude (top row) and corresponding power (bottom row) spectra of the
+		signals described in \ref{fft_eqs} in the same order from left to right.
+	}
+	\label{fig:fft_exs}
+\end{figure*}
+
+The first signal is simply the sum of two sines at frequencies $100$Hz and
+$200$Hz with amplitudes $1$ and $0.5$, respectively. This is evident on the
+two leftmost panels in figure \ref{fig:fft_exs}. The second signal is only
+slightly different from the first, yet the amplitude and width of the peak at
+$100$Hz is noticably different. This is because the number of samples limits the
+number of bins that will be calculated and the sampling frequency limits the
+highest frequency. Since the sampling rate is $1024$Hz and there are $1024$
+samples, each frequency bin is $2$Hz. $100$Hz was easily resolved since it is a
+multiple of $2$, but this is also the reason why $100.5$Hz was not.
+
+The other signals are examples of amplitude and frequency modulation. The
+amplitude modulated signal involves multiplying sines together, which can be
+expressed as:
+\begin{equation}
+	\sin(\alpha) \times \sin(\beta) = \frac{1}{2} \left(
+	\cos(\alpha - \beta) - \cos(\alpha + \beta)
+	\right)
+\end{equation}
+This is the resulting signal in the third column of figure \ref{fig:fft_exs}
+where the peaks occur at $100$Hz as well as $100 \pm 8$Hz. Frequency
+modulation can be thought of as varying the frequency of the signal over time.
+This is the reason that its Fourier transform is spread across the entire range
+of frequencies.
+
 \subsection{Noise}
 \subsubsection{Autocorrelation and PSD}
 The autocorrelation function was examined in a previous lab. It turns out that the auto-correlation function may be applied to random signals (i.e. noise) as well. For white noise created from a uniform distribution of frequencies, the autocorrelation function is expected to be a delta function. Consider an ideal random number generator separate from the realities of computing. By definition, a number correlates with itself completely, forming a spike at $k=0$. For ideal noise, there is no relation between the first number generated, and any subsequent number generated. This means that subsequent values should yield $k=0$. Taken together, this is a description of $\delta(k)$.
@@ -107,10 +195,13 @@ The power spectral density function is connected to the auto-correlation functio
 
 Using this, the PSD of white noise may be calculated:
 
-\[ S(\omega) =  \sum_{i=-\infty}^{\infty} \delta (k) e^{-j\omega k}\\
-S(\omega) = \delta(k=0) e^{-j\omega * 0} \\
-S(\omega) = 1
-\] 
+\begin{equation}
+\begin{split}
+S(\omega) =&  \sum_{i=-\infty}^{\infty} \delta (k) e^{-j\omega k}\\
+S(\omega) =& \delta(k=0) e^{-j\omega * 0} \\
+S(\omega) =& 1
+\end{split}
+\end{equation}
 
 The above mathematical relations were tested using uniform random numbers on the interval $[0,1)$. For $8192$ numbers, the auto-correlation and associated power spectral density were plotted in figures \ref{fig:uniformAC} and \ref{fig:uniformS}. In order for these plots to behave as expected, the algorithm for auto-correlation provided in lab 1 required modification. The original algorithm for each $k$ summed over terms $1\to N-k$. This meant that higher $k$ values were subject to wide fluctuations due to deceasing denominator terms. By writing the algorithm to consider all other random numbers except the 'kth' random number in sums, the results were as expected. The power spectral density fluxuated, but had a mean of $0.969$ near the expected $S(\omega)=1$.
 
@@ -130,7 +221,7 @@ The above mathematical relations were tested using uniform random numbers on the
 
 Calculation of the auto-correlation function and PSD was repeated for white noise generated by a Gaussian distribution. Figures \ref{fig:GaussianAC} and \ref{fig:GaussianS} show the results obtained. The PSD had a mean value of $1.07$.
 
-\begin{figure}
+\begin{figure}[t]
 \centering
 \includegraphics[width=\linewidth]{GaussianAC}
 \caption{Autocorrelation function of white noise generated by random Gaussian numbers.}
@@ -153,7 +244,7 @@ To investigate the impact of noise on the signal, random noise on the order $\pm
 Next, the threshold at which the magnitude of the noise cause the underlying signal to be totally obscured was determined. This was done by steadily increasing the noise magnitude until the signal peaks were on the order of the peaks from noise. Figure \ref{fig:spectral_filter}e and \ref{fig:spectral_filter}f show the corresponding signal and power spectrum.
 
 
-\begin{figure*}[t]
+\begin{figure*}[pt!]
 	\centering
 	\includegraphics[height=\paperwidth]{spectral_filter}
 	\caption{Effects of uniformly distributed (in time space) noise on a signal. Subplot \textbf{a} shows the original input signal, subplot \textbf{c} a signal with noise of $\pm0.5$ from the original signal, and subplot \textbf{e} the signal with $\pm10$ noise. The subplots immediately to the right are the corresponding frequency power spectra.}
@@ -162,9 +253,10 @@ Next, the threshold at which the magnitude of the noise cause the underlying sig
 
 \subsubsection{Signals with Trends}
 In this section, a periodic signal was laid over a linear trend to produce a new function. The original periodic function was $x_i = 2\sin(\pi f_0 i) + \cos( \pi f_1 i)$ while the trend function was $g(i) = 1 + 0.025i$ (constants of $f_0 = 9/512$ and $f_1=4/512$ were used). When added together, the two functions produced a new function, visualized in figure \ref{fig:trend}.
-Next, the signal was made noisy using uniform noise of $\pm6$ added to the function. Figure \ref{noise_trend} shows the result.
 
-\begin{figure}
+Next, the signal was made noisy using uniform noise of $\pm6$ added to the function. Figure \ref{fig:trendy} shows the result. The shape is largely still visible, only appearing "fuzzier".
+
+\begin{figure}[t]
 \centering
 \includegraphics[width=\linewidth]{trend}
 \caption{Function obtained by adding together a periodic and a linear function.}
@@ -175,7 +267,7 @@ Next, the signal was made noisy using uniform noise of $\pm6$ added to the funct
 \centering
 \includegraphics[width=\linewidth]{noise_trend}
 \caption{Function from figure \ref{fig:trend} with uniform noise applied.}
-\label{fig:noise_trend}
+\label{fig:trendy}
 \end{figure}
 
 As earlier in this lab, the FFT was used to examine the data for the underlying periodicity. Figure \ref{fig:trend_fft} showed the resulting power spectrum. The data was confined to a single, massive spike at $f=0$. For a noisy signal, the noise would be expected to manifest as a uniform addition across the power spectrum. This would still allow the original frequencies to be recovered. The lack of any distinct periodic peaks (the $f=0$ peak corresponds to non-periodic components) suggests that the linear component has erased the ability to check periodicity in the power spectrum. 
@@ -204,6 +296,8 @@ Next, a different method of uncovering the original $x(i)$ function was attempte
 \caption{Reconstruction of the original signal from figure \ref{fig:trend}. Note the aparent scale difference between the two lines.}
 \label{fig:reconstruction_fixed}
 \end{figure}
+
+Trends have been shown to make Fourier analysis impossible without knowledge of the underlying trend. Even a slight trend in data could wreak havoc on the analysis. The trend in this example was shown to be stronger than the underlying frequencies, suggesting that different filtering regimes would be largely useless. This provides an effective encryption masking underlying periodicity. Unless the exact trend was known, the attempts to recover the original signal would be largely gibberish. By transmitting the trend function as some sort of key, this provides a basic form of encryption.
 
 \subsubsection{Autocorrelation and Power Spectra}
 The autocorrelation function and the power spectrum of signals are related. This may be demonstrated analytically with relative ease. Essential to these derivations is the Fourier shift theorem. The theorem provides a quick way to simply a Fourier transform when the function in question contains a shift in the coordinate being transformed. The theorem is derived below:
@@ -257,25 +351,103 @@ AC(\tau) =& \frac{k}{\sqrt{2\pi}} \delta(\tau) \\
 \end{split}
 \end{equation}
 \subsection{Applications}
-\subsubsection{The Lorenz System}
+\subsection{The Lorenz System}
 The Lorenz system is a description of physical systems where a large number of variables are interrelated through differential equations. For this example, a system with three variables and three parameters will be considered. Equations \ref{difs} shows the system of equations in question.
 \begin{equation} \label{difs}
-\begin{split}
-\frac{\partial x}{\partial t} =& \sigma (y - x) \\
-\frac{\partial y}{\partial t} =& rx - y - xz \\
-\frac{\partial y}{\partial t} =& xy - bz \\
-\end{split}
+	\begin{split}
+		\frac{\partial x}{\partial t} =& \sigma (y - x) \\
+		\frac{\partial y}{\partial t} =& rx - y - xz \\
+		\frac{\partial y}{\partial t} =& xy - bz \\
+	\end{split}
 \end{equation}
 
 The equation will reach an equilibrium in the case where all the partial derivatives are zero. The $x$, $y$, and $z$ equilibrium values may be found analytically:
 \begin{equation} \label{equilibrium}
-\begin{split}
-0 = \sigma (y - x) \quad \to  & \quad x = y\\
-0 = xy - bz \quad \to & \quad y = \sqrt{(bz)}\\
-0 = rx - y - xz \quad \to & \quad z = r-1\\
-\therefore x = y =& \sqrt{(b(r-1))}
-\end{split}
+	\begin{split}
+		0 = \sigma (y - x) \quad \to  & \quad x_{eq} = y_{eq}\\
+		0 = xy - bz \quad \to & \quad y_{eq} = \sqrt{(bz_{eq})}\\
+		0 = rx - y - xz \quad \to & \quad z_{eq} = r-1\\
+		\therefore x_{eq} = y_{eq} =& \sqrt{b(r-1)}
+	\end{split}
 \end{equation}
+This is only true if $x = y \neq 0$. Otherwise, the other equilibrium state is
+when all positions are at zero: $x = y = z = 0$.
+
+Numerical solutions to the Lorenz equations were calculated using the
+fourth-order Runge-Kutta scheme (RK4). In the first batch of simulations run,
+different initial conditions were used while keeping the other variables
+constant, with $\sigma = 10, b = 8/3, r = 28$. The phase spaces from these
+simulations are shown in figure \ref{fig:sims_init}.
+
+\begin{figure}
+	\includegraphics[width=\linewidth]{sims1.png}
+	\caption{
+		Simulations of the Lorenz system with varying initial conditions. The
+		variables that remained constant are $\sigma=10, b=8/3, r=28$. Starting from
+		the initial conditions are, from the top left,
+		$(x_0, y_0, z_0) = \{
+		(5, 5, 5),(0, 0, 0),
+		(0.1, 0.1, 0.1), (0, 0, 20)$ $
+		(100, 100, 100), (8.5,8.5, 27) \}$
+	}
+	\label{fig:sims_init}
+\end{figure}
+
+The top left panel begins with the initial condition $(x_0, y_0, z_0) = (5, 5,
+5)$, and it is evident that one of the reasons that Lorenz may have used the
+term ``butterfly'' to describe the evolution of this system because the solution
+maps out two wings at an angle like a butterfly's. From the simulations, there
+are four general ways the simulation can end up: orbiting in the butterfly
+wings, circularly orbiting a single point, halting halfway between the two possible equilibrium points, or being ejected from the system in a straight line. When the system is plotted in the 'butterfly' case in an animation, the system never reaches equilibrium, instead orbiting around the points $(\pm 6\sqrt{2},\pm 6\sqrt{2}, 27)$. 
+
+\begin{figure}
+	\includegraphics[width=\linewidth]{sims2.png}
+	\caption{
+		Simulations of the Lorenz system while varying the variable $r$. All other
+		variables remain constant at $\sigma=10, b=8/3$ and initial condition $(x_0,
+		y_0, z_0) = (5, 5, 5)$.
+	}
+	\label{fig:sims_vary_r}
+\end{figure}
+
+The second batch of simulations vary the value of $r$ and starting all of them
+with the initial condition $(x_0, y_0, z_0) = (5, 5, 5)$, shown in figure
+\ref{fig:sims_vary_r}. When the value is $0 < r < 24.74$, the system evolves as
+a spiral, spiraling outwards faster as the value of $r$ decreases. In the other
+regime, when $27.74 < r < 100$, system remains in orbit about the two butterfly
+wings, with the steps increasing in size as the value of $r$ increases.
+
+\begin{figure}
+	\includegraphics[width=\linewidth]{bifurcation.png}
+	\caption{
+		The bifurcation diagram of the Lorenz system obtained by gradually changing
+		the value of $r$ from $0$ to $30$.
+	}
+	\label{fig:bifurcation}
+\end{figure}
+
+To further investigate the effect of $r$ on the system, the value was gradually
+increased from $0$ to $30$ to create a bifurcation diagram of the Lorenz system,
+shown in figure \ref{fig:bifurcation}. Once the value of $r$ was raised to the
+value $27.74$, the system began to show pitchfork bifurcation, where the number
+of fixed points transitions from one to three. At this critical point, the bifurcation plot becomes incredibly turbulent. In profile (i.e.: an r vs x(t) plot for given t) the r values begin to form sharp, close together peaks, resembling pitchforks.
+
+The x component of the system was analyzed in a number of different ways. Figure \ref{fig:15spectra} shows the different Fourier power spectra for 5 different values of r. The DC component of the frequency was set to $0$ for each of the power spectra since the DC term tended to obscenely dominate. The power spectra show when periodic behaviour changes in the different r cases. When the system begins to orbit a single point, a single frequency appears in the power spectrum. After bifurcation begins, the power spectrum becomes far more messy, with periodic behaviour appearing at many more frequencies. The Fourier analysis was also extended to a three dimensional power spectrum shown in figure \ref{fig:power}. From this diagram it was apparent that much of the frequency data was clustered near the zero frequency, forming a ridge through the plot. This ridge seemed to split along certain r values. The system has near zero frequencies grow until approximately $r=14$, where a sudden decrease in these frequencies occurs. After this point, the spectra become more turbulent, splitting into the butterfly pattern, with the frequency spectrum broadening. Where earlier the identification of different patterns occured by fiddling with r on two dimensional plots, the three dimensional power spectrum provides a visual way to evaluate changes in the system. The Fourier analysis also describes the system well: low r regions are highly periodic (spiraling), and high r regions are much more chaotic. They are still periodic in some ways, but much more convoluted.
+
+\begin{figure*}[p!]
+\centering
+\includegraphics[trim= 0 +5cm 0 +12cm, width=\linewidth]{15spectra}
+\caption{Fourier analysis of the Lorenz system for different r values. Each row represents a different value of r. The leftmost column shows the x position versus time for each r. The middle portion shows the trajectory through space, and the rightmost column the Fourier power spectrum.}
+\label{fig:15spectra}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\linewidth]{power}
+\caption{3-dimensional power spectra for varying frequency and r.}
+\label{fig:power}
+\end{figure*}
+
 
 \subsubsection{ODEs and the Fourier Transform}
 The Fourier transform can be use to reduce the dimensionality of a differential equation. In essence, if the fourier transform is used, a PDE with two different differentials may be reduced to an ODE or and ODE to a polynomial equation. The original solution may then be recovered by reverse transforming the result. Below are a few examples of simplifying differential equations through Fourier transform:
@@ -336,7 +508,7 @@ In order to numerically solve the heat equation, the function $q(x)$ should be F
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{temp}
-\caption{Temperature of a length $1$ rod corresponding to equation \ref{?}. The temperature may be off by a constant shift due to the deletion of the DC component in the frequency space.}
+\caption{Temperature of a length $1$ rod corresponding to equation \ref{eq:gauss_transform}. The temperature may be off by a constant shift due to the deletion of the DC component in the frequency space.}
 \label{fig:temp}
 \end{figure}
 
@@ -368,6 +540,8 @@ A transformed differential equation, specifically the heat equation, was examine
 	C. Hass and J. Burniston, MCMC Hill Climbing. Jupyter notebook, 2018.
 	\bibitem{gauss_trans}
 	K. Derpanis, Fourier Transform of the Gaussian, 2005, accessed at \url{http://www.cse.yorku.ca/~kosta/CompVis_Notes/fourier_transform_Gaussian.pdf}.
+	\bibitem{RK4}
+	Rosetta Code, "Runge-Kutta method", online publication: \url{https://rosettacode.org/wiki/Runge-Kutta_method.}
 \end{thebibliography}
 
 \section{Appendix}
