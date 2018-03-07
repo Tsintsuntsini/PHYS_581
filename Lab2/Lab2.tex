@@ -9,7 +9,7 @@
 
 
 \begin{document}
-\title{Lab 1: Monte Carlo Methods}
+\title{Lab 2: Fourier Transforms}
 \author{Alex Matheson, Austin Nhung}
 %\affiliation{Department of Physics and Astronomy, University of Calgary, Calgary AB T2N 1N4 Canada}
 \date{\today}
@@ -17,8 +17,11 @@
 
 \section{Introduction}
 
-\section{Methods}
-Fourier series are defined by calculating the fourier coefficients $a_n$ and $b_n$. These coefficients may be replaced when in a complex Fourier series using a term $c_n$. Using the following equations:
+\subsection{Fourier Series}
+Fourier series are defined by calculating the Fourier coefficients $a_n$ and
+$b_n$. These coefficients may be replaced with a complex Fourier series using
+a single complex coefficient $c_n$. These coefficients are related through the
+equations:
 \begin{equation}
 \begin{split}
 a_n =& c_n + c_{-n} \\
@@ -26,7 +29,9 @@ b_n =& i(c_n - c_{-n}) \\
 c_n =& \frac{1}{2}(a_n - ib_n)
 \end{split}
 \end{equation}
-In fourier series, the $a_n$ and $b_n$ correspond to even and odd 'components' of the function. In the case of an even function:
+In Fourier series, $a_n$ and $b_n$ correspond to even and odd 'components' of
+the function, respectively. In the case of an even function, their relations
+simplify to:
 \begin{equation}
 \begin{split}
 a_n =& c_n + c_{-n} \\
@@ -35,7 +40,7 @@ c_n =& \frac{1}{2}(a_n)
 \end{split}
 \end{equation}
 
-And for odd functions:
+Meanwhile, odd functions simplfiy to:
 \begin{equation}
 \begin{split}
 a_n =& 0 \\
@@ -44,10 +49,36 @@ c_n =& \frac{-ib_n}{2}
 \end{split}
 \end{equation} 
  
-It may be shown in both of the above series that the $a_n$ term for even functions and $b_n$ for odd functions will be proportional to the $c_n$ terms. 
+It can be shown in both of the above series that the $a_n$ term for even
+functions and $b_n$ for odd functions will be proportional to the $c_n$ terms.
+The complex coefficients are alternatively defined as:
+\begin{equation}
+  c_n = \frac{1}{2 \pi} \int_{-\pi}^{+\pi} f(x) e^{-inx} dx
+\end{equation}
+It is easy to see that $c_{-n} = c_n^{\ast}$, where $c_n^{\ast}$ is the complex
+conjugate of $c_n$. The relation of squares can then be expressed:
+\begin{equation}
+  \begin{aligned}
+    \sum_{n = -\infty}^{+\infty} \left| c_n \right|^2
+    &= \sum_{n = -\infty}^{+\infty} \left| \frac{1}{2} (a_n - ib_n) \right|^2 \\
+    &= \frac{1}{4} \sum_{n = -\infty}^{+\infty} \left(
+      \left| a_n \right| + \left| b_n \right|^2
+    \right)
+    &= \frac{1}{2} \sum_{n=0}^{\infty} \left(
+      \left| a_n \right|^2 + \left| b_n \right|^2
+    \right)
+  \end{aligned}
+\end{equation}
+Using the definition of $b_n$, this result can be further simplified knowing
+that $b_0 = i(c_0 - c_0) = 0$ to reach the final form
+\begin{equation}
+  \sum_{n = -\infty}^{+\infty} \left\| c_n \right\|^2
+  = \left\| \frac{a_0}{2} \right\|^2 + \frac{1}{2} \sum_{n=0}^{\infty} \left(
+    \left| a_n \right|^2 + \left| b_n \right|^2
+  \right)
+\end{equation}
 
 Next, a square wave function was considered as defined below: 
-
 \[ 
 f(t)=
 \begin{cases}
@@ -57,7 +88,10 @@ f(t)=
 \end{cases}
 \]
 
-This function was periodic between $-T/2$ and $T/2$. The function was visualized in figure \ref{fig:square}. As with any function, this could be re-stated using complex Fourier series. To compute the series, the coefficients $c_n$ were determined according to equation \ref{eq:complex_coefficients}. 
+This function is periodic between $-T/2$ and $T/2$. The function is visualized
+in figure \ref{fig:square}. As with any function, this can be restated using a
+complex Fourier series. To compute the series, the coefficients $c_n$ are
+determined according to equation \ref{eq:complex_coefficients}.
 
 \begin{figure}
 \centering
@@ -71,8 +105,13 @@ c_n = \frac{1}{T} \int_{-T/2}^{T/2} f(t) \exp(-i\frac{2\pi nt}{T}) dt
 \label{eq:complex_coefficients}
 \end{equation}
 
-The coefficients could be solved analytically, yielding the answer $c_n = \frac{-i}{\pi n}$ for $n = 1, 3, 5, ...$. As the found $n$ values suggest, the original function was purely odd, meaning that the function could be constructed from purely sine terms. Due to this, all even $c_n$ terms (including $c_0$) are $0$. The values of the different $c_n$ terms may also be plotted, as shown in figure \ref{fig:Figure2}. The values in this plot show that the odd $n$ terms follow a hyperbolic sinusoid path. The complete series may be written as:
-
+The coefficients can be solved analytically, yielding the solution $c_n =
+\frac{-i}{\pi n}$ for $n = 1, 3, 5, \ldots$. As the values of $n$ suggest, the
+original function is purely odd, meaning that the function can be constructed
+purely from sine terms. Due to this, all even $c_n$ terms (including $c_0$) are
+$0$. The values of the different $c_n$ terms are shown in figure
+\ref{fig:Figure2}. The values in this plot show that the odd $n$ terms follow a
+hyperbolic sinusoid path. The complete series may be written as:
 \[
 f(t) = \sum_{n= -\infty}^{\infty} -\frac{i}{\pi n} \exp(-i \frac{2\pi nt}{T})
 \]
@@ -83,6 +122,60 @@ f(t) = \sum_{n= -\infty}^{\infty} -\frac{i}{\pi n} \exp(-i \frac{2\pi nt}{T})
 \caption{Values of each term $c_n$ in the complex fourier series.}
 \label{fig:Figure2}
 \end{figure}
+
+
+\subsection{FFT}
+Four simple analog signals were used to analyze the behaviour and consequences
+of sampling a signal and using the discrete Fourier transform. The signals used
+were:
+\begin{equation}
+  \begin{aligned}
+    f_1(t)  &= \sin(2 \pi \times 100 t) + \frac{1}{2} \sin(2 \pi \times 200 t) \\
+    f_2(t) &= \sin(2 \pi \times 100.5 t) + \frac{1}{2} \sin(2 \pi \times 200 t) \\
+    f_3(t) &= \left( 2 + \sin(2 \pi \times 8 t) \right) \times \sin(2 \pi \times 100 t) \\
+    f_4(t) &= \sin \left( 2 \pi \times 100 \left( 1 + \frac{1}{10} \sin(2 \pi \times 8 t) \right) t \right)
+  \end{aligned}
+  \label{fft_eqs}
+\end{equation}
+
+These signals were sampled at a rate of $1024$ samples per second for one second
+each. They were then transformed into the frequency domain using the fast
+Fourier transform (FFT). The amplitudes and power spectra are shown in figure
+
+\ref{fig:fft_exs}.
+\begin{figure*}
+  \includegraphics[width=\pagewidth]{fft_examples.png}
+  \caption{
+    The amplitude (top row) and corresponding power (bottom row) spectra of the
+    signals described in \ref{fft_eqs} in the same order from left to right.
+  }
+  \label{fig:fft_exs}
+\end{figure*}
+
+The first signal is simply the sum of two sines at frequencies $100$Hz and
+$200$Hz with amplitudes $1$ and $0.5$, respectively. This is evident on the
+two leftmost panels in figure \ref{fig:fft_exs}. The second signal is only
+slightly different from the first, yet the amplitude and width of the peak at
+$100$Hz is noticably different. This is because the number of samples limits the
+number of bins that will be calculated and the sampling frequency limits the
+highest frequency. Since the sampling rate is $1024$Hz and there are $1024$
+samples, each frequency bin is $2$Hz. $100$Hz was easily resolved since it is a
+multiple of $2$, but this is also the reason why $100.5$Hz was not.
+
+The other signals are examples of amplitude and frequency modulation. The
+amplitude modulated signal involves multiplying sines together, which can be
+expressed as:
+\begin{equation}
+  \sin(\alpha) \times \sin(\beta) = \frac{1}{2} \left(
+    \cos(\alpha - \beta) - \cos(\alpha + \beta)
+  \right)
+\end{equation}
+This is the resulting signal in the third column of figure \ref{fig:fft_exs}
+where the peaks occur at $100$Hz as well as $100 \plusminus 8$Hz. Frequency
+modulation can be thought of as varying the frequency of the signal over time.
+This is the reason that its Fourier transform is spread across the entire range
+of frequencies.
+
 
 \subsection{Noise}
 \subsubsection{Autocorrelation and PSD}
@@ -214,8 +307,11 @@ AC(\tau) =& \frac{k}{\sqrt{2\pi}} \int_{-\infty}^{\infty} e^{- i \omega \tau} d\
 AC(\tau) =& \frac{k}{\sqrt{2\pi}} \delta(\tau) \\
 \end{split}
 \end{equation}
-\subsection{Applications}
-\subsubsection{The Lorenz System}
+
+
+\section{Applications}
+
+\subsection{The Lorenz System}
 The Lorenz system is a description of physical systems where a large number of variables are interrelated through differential equations. For this example, a system with three variables and three parameters will be considered. Equations \ref{difs} shows the system of equations in question.
 \begin{equation} \label{difs}
 \begin{split}
@@ -231,11 +327,73 @@ The equation will reach an equilibrium in the case where all the partial derivat
 0 = \sigma (y - x) \quad \to  & \quad x = y\\
 0 = xy - bz \quad \to & \quad y = \sqrt{(bz)}\\
 0 = rx - y - xz \quad \to & \quad z = r-1\\
-\therefore x = y =& \sqrt{(b(r-1))}
+\therefore x = y =& \sqrt{b(r-1)}
 \end{split}
 \end{equation}
+This is only true if $x = y \neq 0$. Otherwise, the other equilibrium state is
+when all positions are at zero: $x = y = z = 0$.
 
-\subsubsection{ODEs and the Fourier Transform}
+Numerical solutions to the Lorenz equations were calculated using the
+fourth-order Runge-Kutta scheme (RK4). In the first batch of simulations run,
+different initial conditions were used while keeping the other variables
+constant, with $\sigma = 10, b = 8/3, r = 28$. The phase spaces from these
+simulations are shown in figure \ref{fig:sims_init}.
+
+\begin{figure}
+  \includegraphics[width=\linewidth]{sims1.png}
+  \caption{
+    Simulations of the Lorenz system with varying initial conditions. The
+    variables that remained constant are $\sigma=10, b=8/3, r=28$. Starting from
+    the initial conditions are, from the top left, $(x_0, y_0, z_0) = \left\{
+    (5, 5, 5), (0, 0, 0), (0.1, 0.1, 0.1), (0, 0, 20), (100, 100, 100), (8.5,
+    8.5, 27) \right\}$.
+  }
+  \label{fig:sims_init}
+\end{figure}
+
+The top left panel begins with the initial condition $(x_0, y_0, z_0) = (5, 5,
+5)$, and it is evident that one of the reasons that Lorenz may have used the
+term ``butterfly'' to describe the evolution of this system because the solution
+maps out two wings at an angle like a butterfly's. From the simulations, there
+are three general ways the simulation can end up: orbiting in the butterfly
+wings, come to a halt at the equilibrium points, or move completely out of the
+any periodic system.
+
+\begin{figure}
+  \includegraphics[width=\linewidth]{sims2.png}
+  \caption{
+    Simulations of the Lorenz system while varying the variable $r$. All other
+    variables remain constant at $\sigma=10, b=8/3$ and initial condition $(x_0,
+    y_0, z_0) = (5, 5, 5)$.
+  }
+  \label{fig:sims_vary_r}
+\end{figure}
+
+The second batch of simulations vary the value of $r$ and starting all of them
+with the initial condition $(x_0, y_0, z_0) = (5, 5, 5)$, shown in figure
+\ref{fig:sims_vary_r}. When the value is $0 < r < 24.74$, the system evolves as
+a spiral, spiraling outwards faster as the value of $r$ decreases. In the other
+regime, when $27.74 < r < 100$, system remains in orbit about the two butterfly
+wings, with the steps increasing in size as the value of $r$ increases.
+
+\begin{figure}
+  \includegraphics[width=\linewidth]{bifurcation.png}
+  \caption{
+    The bifurcation diagram of the Lorenz system obtained by gradually changing
+    the value of $r$ from $0$ to $30$.
+  }
+  \label{fig:bifurcation}
+\end{figure}
+
+To further investigate the effect of $r$ on the system, the value was gradually
+increased from $0$ to $30$ to create a bifurcation diagram of the Lorenz system,
+shown in figure \ref{fig:bifurcation}. Once the value of $r$ was raised to the
+value $27.74$, the system began to show pitchfork bifurcation, where the number
+of fixed points transitions from one to three.
+
+\subsubsection{The Fourier Analysis}
+
+\subsection{ODEs and the Fourier Transform}
 The Fourier transform can be use to reduce the dimensionality of a differential equation. In essence, if the fourier transform is used, a PDE with two different differentials may be reduced to an ODE or and ODE to a polynomial equation. The original solution may then be recovered by reverse transforming the result. Below are a few examples of simplifying differential equations through Fourier transform:
 
 \begin{equation}
@@ -289,7 +447,7 @@ This equation may be re-written using Fourier analysis. Two aids were used in th
 \label{eq:gauss_transform}
 \end{equation}
 
-In order to numerically solve the heat equation, the function $q(x)$ should be Fourier transformed to obtain $\hat{q}(k)$. This term may then be divided by $k^2$ and reverse transformed to obtain the original $T(x)$. This yields a problem in the case where $k=0$. Since python interprets a division by zero by returning 'nan', replacing this 'nan' with some DC term will allow the inverse transform to perform correctly. Figure \ref{fig:temp} shows the result of performing this method. Since the 'DC' term for $k=0$ has been replaced, this is not the exact answer, and instead is shifted by the non-existent DC term. It was therefore possible to shift this data so that all points had a non-negative temperature by shifting by the global minimum value. 
+In order to numerically solve the heat equation, the function $q(x)$ should be Fourier transformed to obtain $\hat{q}(k)$. This term may then be divided by $k^2$ and reverse transformed to obtain the original $T(x)$. This yields a problem in the case where $k=0$. Since python interprets a division by zero by returning 'nan'', replacing this 'nan' with some DC term will allow the inverse transform to perform correctly. Figure \ref{fig:temp} shows the result of performing this method. Since the 'DC' term for $k=0$ has been replaced, this is not the exact answer, and instead is shifted by the non-existent DC term. It was therefore possible to shift this data so that all points had a non-negative temperature by shifting by the global minimum value. 
 
 \begin{figure}
 \centering
