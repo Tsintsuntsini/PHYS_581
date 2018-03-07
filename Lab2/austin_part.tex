@@ -1,0 +1,24 @@
+\begin{document}
+
+% Section 1.2
+\subsection{FFT}
+
+\begin{equation}
+  \label{fft_eqs}
+  \begin{aligned}
+    f_1(t)  &= \sin(2 \pi \times 100 t) + \frac{1}{2} \sin(2 \pi \times 200 t) \\
+    f_2(t) &= \sin(2 \pi \times 100.5 t) + \frac{1}{2} \sin(2 \pi \times 200 t) \\
+    f_3(t) &= \left( 2 + \sin(2 \pi \times 8 t) \right) \times \sin(2 \pi \times 100 t) \\
+    f_4(t) &= \sin \left( 2 \pi \times 100 \left( 1 + \frac{1}{10} \sin(2 \pi \times 8 t) \right) t \right)
+  \end{aligned}
+\end{equation}
+
+\begin{figure}
+  \includegraphics{width=\pagewidth}{fft_examples.png}
+  \caption{
+    The amplitude (top row) and corresponding power (bottom row) spectra of the
+    signals described in \ref{fft_eqs} in the same order from left to right. The
+    first is simply a sum of two sinusoids with frequencies of $100$Hz and
+    $200$Hz, and its Fourier transform has the correct amplitudes of $1$ and
+    $0.5$, respectively. The second plot 
+  }
