@@ -1,0 +1,71 @@
+\documentclass[11pt, letterpage]{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\section{Selected Topics}
+
+\subsection{DFT vs. FFT}
+This section investigates different aspects of the discrete Fourier transform
+(DFT) and its inverse (IDFT). First, consider the discrete boxcar frequency
+spectrum:
+\begin{equation}
+  X(\omega) = \left\{
+  \begin{array}{ll}
+    1, & \text{for} \; |\omega| \leq \frac{\pi}{3} \\
+    0, & \text{otherwise}
+  \end{array}
+  \right.
+\end{equation}
+We can transform this back into time space using the inverse transform.
+
+Both the forward and inverse Fourier transform can be thought of as a linear
+transformation on a vector, and thus can be represented through matrix
+multiplication, with each element corresponding to the equation
+\begin{equation}
+  \begin{aligned}
+    F_{nm} &= e^{- 2 \pi i \frac{nm}{N}} \\
+    F_{nm}^{-1} &= \frac{1}{N} e^{2 \pi i \frac{nm}{N}}
+  \end{aligned}
+  \label{fft_mat_el}
+\end{equation}
+where $N$ is the total number of points. To transform a $3$-point vector, the
+forward transformation matrix is then the $3 \times 3$ matrix
+\begin{equation}
+  F =
+  \begin{pmatrix}
+    e^{- \frac{2 \pi}{3} i} & e^{- \frac{4 \pi}{3} i} & e^{- 2 \pi i} \\
+    e^{- \frac{4 \pi}{3} i} & e^{- \frac{8 \pi}{3} i} & e^{- 4 \pi i} \\
+    e^{- 2 \pi i} & e^{- 4 \pi i} & e^{- 6 \pi i}
+  \end{pmatrix}
+\end{equation}
+and its inverse is
+\begin{equation}
+  F^{-1} = \frac{1}{3}
+  \begin{pmatrix}
+    e^{\frac{2 \pi}{3} i} & e^{\frac{4 \pi}{3} i} & e^{2 \pi i} \\
+    e^{\frac{4 \pi}{3} i} & e^{\frac{8 \pi}{3} i} & e^{4 \pi i} \\
+    e^{2 \pi i} & e^{4 \pi i} & e^{6 \pi i}
+  \end{pmatrix}
+\end{equation}
+We can easily confirm that these matrices are inverses of one another through
+matrix multiplication so that their product is the identity matrix:
+\begin{equation}
+  F_{nm}F_{nm}^{-1}
+  = \begin{pmatrix}
+    1 & 0 & 0 \\
+    0 & 1 & 0 \\
+    0 & 0 & 1
+  \end{pmatrix}
+\end{equation}
+We can also prove this by applying the forward and inverse transformation to a
+simple vector such as $x = \begin{bmatrix} 1 & 0 & -1 & 0 \end{bmatrix}^T$:
+\begin{equation}
+  \begin{aligned}
+    \mathbb{F} \left\{ x \right\}
+    = F_{nm}
+  \end{aligned}
+\end{equation}
+
+
+\end{document}

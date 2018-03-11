@@ -1,0 +1,243 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=prv_austin_report 2018.3.11)  11 MAR 2018 01:21
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**&prv_austin_report _region_.tex
+(./_region_.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+CUSTOMISED FORMAT. Preloaded files:
+        .
+ article.cls    2014/09/29 v1.4h Standard LaTeX document class
+  size11.clo    2014/09/29 v1.4h Standard LaTeX file (size option)
+ amsmath.sty    2017/09/02 v2.17a AMS math features
+ amstext.sty    2000/06/29 v2.01 AMS text
+  amsgen.sty    1999/11/30 v2.0 generic functions
+  amsbsy.sty    1999/11/29 v1.2d Bold Symbols
+  amsopn.sty    2016/03/08 v2.02 operator names
+        .
+
+LaTeX Warning: Unused global option(s):
+    [letterpage].
+
+No file _region_.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+(/home/augh/.emacs.d/elpa/auctex-12.1.0/latex/preview.sty
+Package: preview 2017/04/24 12.1 (AUCTeX/preview-latex)
+ (/usr/share/texmf-dist/tex/generic/luatex85/luatex85.sty
+Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
+) (/home/augh/.emacs.d/elpa/auctex-12.1.0/latex/prtightpage.def
+\PreviewBorder=\dimen112
+) (/home/augh/.emacs.d/elpa/auctex-12.1.0/latex/prauctex.def
+No auxiliary output files.
+
+
+\hbadness=\count99
+\hfuzz=\dimen113
+(/home/augh/.emacs.d/elpa/auctex-12.1.0/latex/prauctex.cfg)) (/home/augh/.emacs.d/elpa/auctex-12.1.0/latex/prfootnotes.def)
+\pr@snippet=\count100
+\pr@box=\box28
+\pr@output=\toks19
+
+Preview: Fontsize 10.95pt
+Preview: PDFoutput 1
+)  !name(austin_report.tex) !offset(-3) 
+! Preview: Snippet 1 started.
+<-><->
+      
+l.9 \section
+            {Selected Topics}
+Not a real error.
+
+Preview: Tightpage -32891 -32891 32891 32891
+! Preview: Snippet 1 ended.(655359+183500x23592960).
+<-><->
+      
+l.9 \section{Selected Topics}
+                             
+Not a real error.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+! Preview: Snippet 2 started.
+<-><->
+      
+l.11 \subsection
+                {DFT vs. FFT}
+Not a real error.
+
+! Preview: Snippet 2 ended.(539580+0x23592960).
+<-><->
+      
+l.11 \subsection{DFT vs. FFT}
+                             
+Not a real error.
+
+[2
+
+]
+! Preview: Snippet 3 started.
+<-><->
+      
+l.15 \begin{equation}
+                     
+Not a real error.
+
+! Preview: Snippet 3 ended.(1782578+0x23592960).
+<-><->
+      
+l.22 \end{equation}
+                   
+Not a real error.
+
+[3]
+! Preview: Snippet 4 started.
+<-><->
+      
+l.28 \begin{equation}
+                     
+Not a real error.
+
+! Preview: Snippet 4 ended.(2649668+0x23592960).
+<-><->
+      
+l.34 \end{equation}
+                   
+Not a real error.
+
+[4
+
+]
+! Preview: Snippet 5 started.
+<-><->
+      
+l.35 where $
+            N$ is the total number of points. To transform a $3$-point vecto...
+Not a real error.
+
+! Preview: Snippet 5 ended.(490372+0x654826).
+<-><->
+      
+l.35 where $N$
+               is the total number of points. To transform a $3$-point vecto...
+Not a real error.
+
+[5]
+! Preview: Snippet 6 started.
+<-><->
+      
+l.35 ...e total number of points. To transform a $
+                                                  3$-point vector, the
+Not a real error.
+
+! Preview: Snippet 6 ended.(462465+0x358810).
+<-><->
+      
+l.35 ...total number of points. To transform a $3$
+                                                  -point vector, the
+Not a real error.
+
+[6]
+! Preview: Snippet 7 started.
+<-><->
+      
+l.36 forward transformation matrix is then the $
+                                                3 \times 3$ matrix
+Not a real error.
+
+! Preview: Snippet 7 ended.(462465+59802x1594706).
+<-><->
+      
+l.36 ...sformation matrix is then the $3 \times 3$
+                                                   matrix
+Not a real error.
+
+[7]
+! Preview: Snippet 8 started.
+<-><->
+      
+l.37 \begin{equation}
+                     
+Not a real error.
+
+! Preview: Snippet 8 ended.(3014029+0x23592960).
+<-><->
+      
+l.44 \end{equation}
+                   
+Not a real error.
+
+[8]
+! Preview: Snippet 9 started.
+<-><->
+      
+l.46 \begin{equation}
+                     
+Not a real error.
+
+! Preview: Snippet 9 ended.(3014029+0x23592960).
+<-><->
+      
+l.53 \end{equation}
+                   
+Not a real error.
+
+[9]
+! Preview: Snippet 10 started.
+<-><->
+      
+l.56 \begin{equation}
+                     
+Not a real error.
+
+! Preview: Snippet 10 ended.(2673867+0x23592960).
+<-><->
+      
+l.63 \end{equation}
+                   
+Not a real error.
+
+[10]
+! Preview: Snippet 11 started.
+<-><->
+      
+l.65 simple vector such as $
+                            x = \begin{bmatrix} 1 & 0 & -1 & 0 \end{bmatrix}^T$
+Not a real error.
+
+! Preview: Snippet 11 ended.(775781+266240x6358902).
+<-><->
+      
+l.65 ...n{bmatrix} 1 & 0 & -1 & 0 \end{bmatrix}^T$
+                                                  
+Not a real error.
+
+[11] ) 
+Here is how much of TeX's memory you used:
+ 185 strings out of 492117
+ 2729 string characters out of 6128725
+ 68825 words of memory out of 5000000
+ 4637 multiletter control sequences out of 15000+600000
+ 10048 words of font info for 36 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 22i,11n,24p,170b,171s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on _region_.pdf (11 pages, 90665 bytes).
+PDF statistics:
+ 80 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
