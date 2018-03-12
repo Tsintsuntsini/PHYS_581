@@ -36,6 +36,9 @@ f1 = 2.0 * np.cos(2 * np.pi * t - np.pi / 2.0)
 f2 = 3.0 * np.cos(4 * np.pi * t)
 f = dc + f1 + f2
 
+print('f(t) = ', f[0:4])
+print('F{f(t)} = ', np.fft.fft(f[0:4]))
+
 plt.title('Components of a Signal')
 plt.xlabel('Time')
 plt.ylabel('Amplitude')

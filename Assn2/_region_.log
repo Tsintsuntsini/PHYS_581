@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=prv_austin_report 2018.3.11)  11 MAR 2018 01:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=prv_austin_report 2018.3.11)  11 MAR 2018 13:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -214,30 +214,56 @@ Not a real error.
 <-><->
       
 l.65 simple vector such as $
-                            x = \begin{bmatrix} 1 & 0 & -1 & 0 \end{bmatrix}^T$
+                            x = \begin{bmatrix} 1 & 0 & -1 & 0 \end{bmatrix}...
 Not a real error.
 
 ! Preview: Snippet 11 ended.(775781+266240x6358902).
 <-><->
       
 l.65 ...n{bmatrix} 1 & 0 & -1 & 0 \end{bmatrix}^T$
-                                                  
+                                                  :
 Not a real error.
 
-[11] ) 
+[11]
+! Preview: Snippet 12 started.
+<-><->
+      
+l.66 \begin{equation}
+                     
+Not a real error.
+
+! Undefined control sequence.
+<recently read> \mathbb 
+                        
+l.68     \mathbb
+                {F} \left\{ x \right\}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Preview: Snippet 12 ended.(891289+0x23592960).
+<-><->
+      
+l.71 \end{equation}
+                   
+Not a real error.
+
+[12] ) 
 Here is how much of TeX's memory you used:
- 185 strings out of 492117
- 2729 string characters out of 6128725
+ 186 strings out of 492117
+ 2735 string characters out of 6128725
  68825 words of memory out of 5000000
- 4637 multiletter control sequences out of 15000+600000
+ 4638 multiletter control sequences out of 15000+600000
  10048 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  22i,11n,24p,170b,171s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on _region_.pdf (11 pages, 90665 bytes).
+Output written on _region_.pdf (12 pages, 91562 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 83 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
