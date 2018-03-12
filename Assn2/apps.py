@@ -16,8 +16,11 @@ beats_fft = np.fft.fft(beats)
 plt.title('Frequency Spectrum of Heart Beats')
 plt.xlabel('Frequency')
 plt.ylabel('Amplitude')
+plt.xlim(-20, +20)
+plt.yscale('log')
 plt.plot(freq, np.abs(beats_fft))
 plt.savefig('beats')
+plt.clf()
 
 
 # 2.4 Application to Financial Series
@@ -25,29 +28,29 @@ plt.savefig('beats')
 with open('phys581-stocks.txt', 'r') as file:
     stocks = [line.split() for line in file.readlines()[1:]]
 
-months = np.arange(0, stocks.size)
-stocks = np.array([list(map(float, line)) for line in stocks[:][1:]]).T
+stocks = np.array(list(map(list, zip(*stocks)))[1:], dtype=float)
+months = np.arange(0, len(stocks[0]))
 sandp, ford, gm, microsoft, sun, ustb3m = stocks
 
 plt.title('Company Stocks from 2002-2007')
 plt.xlabel('Months')
 plt.ylabel('Stock Price')
-plt.legend(loc='best')
 plt.plot(months, sandp, label='SandP')
 plt.plot(months, ford, label='Ford')
 plt.plot(months, gm, label='GM')
 plt.plot(months, microsoft, label='Microsoft')
 plt.plot(months, sun, label='Sun')
 plt.plot(months, ustb3m, label='USTB3M')
+plt.legend(loc='best')
 plt.savefig('stocks_time')
 
 returns = np.array(
-    [np.log(stocks[i,:] - stocks[i-1,:]) for i in range(len(stocks))]
-)
-months = np.arange(0, len(returns))
+    [np.log(stocks[:,i] - stocks[:,i-1]) for i in range(1, months.size)]
+).T
+months = np.arange(0, len(returns[0]))
 sandp, ford, gm, microsoft, sun, ustb3m = returns
 
-fig, subs = plt.subplots(nrows=2, ncols=3, fig_size=(12, 8))
+fig, subs = plt.subplots(nrows=2, ncols=3, figsize=(12, 8))
 subs[0][0].set_title('SandP')
 subs[0][0].set_xlabel('Months')
 subs[0][0].set_ylabel('Continuously Compounded Returns')
@@ -63,7 +66,7 @@ subs[0][2].plot(months, gm)
 subs[1][0].set_title('Mircosoft')
 subs[1][0].set_xlabel('Months')
 subs[1][0].set_ylabel('Continuously Compounded Returns')
-subs[1][0].plot(months, mircosoft)
+subs[1][0].plot(months, microsoft)
 subs[1][1].set_title('Sun')
 subs[1][1].set_xlabel('Months')
 subs[1][1].set_ylabel('Continuously Compounded Returns')
