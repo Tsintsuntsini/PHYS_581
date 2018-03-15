@@ -28,7 +28,7 @@ def blackmann_harris_window(size):
 
 # part b: first plot
 # - - - - - - - - - -
-t = np.arange(0, 250) / 240.0
+t = np.linspace(0, 1, 250)
 freq = np.fft.fftshift(np.fft.fftfreq(t.size, t[1] - t[0]))
 
 samples_0 = wave(t, amp=10, freq=60)
@@ -39,8 +39,9 @@ fig, subs = plt.subplots(nrows=2, figsize=(8, 10), dpi=300)
 subs[0].set_title('Power Spectrum of Sine at $60$Hz')
 subs[0].set_xlabel('Frequency')
 subs[0].set_ylabel('Power')
+subs[0].set_ylim(10**-1, 10**7)
 subs[0].set_yscale('log')
-subs[0].plot(freq, power_0)
+subs[0].plot(freq[125:], power_0[125:])
 
 # part c: second plot
 # - - - - - - - - - - -
@@ -50,10 +51,19 @@ power_1 = power_spectrum(samples_1)
 subs[1].set_title('Power Spectrum of Sine at $59.673$Hz')
 subs[1].set_xlabel('Frequency')
 subs[1].set_ylabel('Power')
+subs[1].set_ylim(10**-1, 10**7)
 subs[1].set_yscale('log')
-subs[1].plot(freq, power_1)
+subs[1].plot(freq[125:], power_1[125:])
 
 plt.savefig('power_spectrum')
+
+with open('out.txt', 'w') as file:
+    file.write(
+        'Power of 30Hz-60Hz for 60Hz: {}\n'.format(str(np.sum(power_0[155:185])))
+    )
+    file.write(
+        'Power of 30Hz-60Hz for 59.673Hz: {}\n'.format(str(np.sum(power_1[155:185])))
+    )
 
 # part d: hann window
 # - - - - - - - - - - -
@@ -88,8 +98,10 @@ subs[0].plot(t, hann_0)
 subs[1].set_title('DFT of Hann Windowed Sine at $60$Hz')
 subs[1].set_xlabel('Frequency')
 subs[1].set_ylabel('Amplitude')
+subs[1].set_xlim(0, 125)
+subs[1].set_ylim(10**-10, 10**6)
 subs[1].set_yscale('log')
-subs[1].plot(freq, power_spectrum(hann_0))
+subs[1].plot(freq[125:], power_spectrum(hann_0)[125:])
 
 plt.savefig('hann_0')
 
@@ -107,8 +119,9 @@ subs[0].plot(t, hann_1)
 subs[1].set_title('DFT of Hann Windowed Sine at $59.673$Hz')
 subs[1].set_xlabel('Frequency')
 subs[1].set_ylabel('Power')
+subs[1].set_xlim(0, 125)
 subs[1].set_yscale('log')
-subs[1].plot(freq, power_spectrum(hann_1))
+subs[1].plot(freq[125:], power_spectrum(hann_1)[125:])
 
 plt.savefig('hann_1')
 
@@ -139,8 +152,10 @@ subs[0][1].plot(t, bh_0)
 subs[1][1].set_title('Power Spectrum of Windowed Sine at $60$Hz')
 subs[1][1].set_xlabel('Frequency')
 subs[1][1].set_ylabel('Power')
+subs[1][1].set_xlim(0, 125)
+subs[1][1].set_ylim(10**-14, 10**5)
 subs[1][1].set_yscale('log')
-subs[1][1].plot(freq, power_spectrum(bh_0))
+subs[1][1].plot(freq[125:], power_spectrum(bh_0)[125:])
 
 subs[0][2].set_title('Windowed Sine at $59.673$Hz')
 subs[0][2].set_xlabel('Time')
@@ -150,7 +165,8 @@ subs[0][2].plot(t, bh_1)
 subs[1][2].set_title('Power Spectrum of Windowed Sine at $59.673$Hz')
 subs[1][2].set_xlabel('Frequency')
 subs[1][2].set_ylabel('Power')
+subs[1][2].set_xlim(0, 125)
 subs[1][2].set_yscale('log')
-subs[1][2].plot(freq, power_spectrum(bh_1))
+subs[1][2].plot(freq[125:], power_spectrum(bh_1)[125:])
 
 plt.savefig('blackman_harris')

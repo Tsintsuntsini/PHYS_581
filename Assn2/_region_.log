@@ -1,26 +1,28 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=prv_austin_report 2018.3.15)  15 MAR 2018 01:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=prv_austin_report 2018.3.15)  15 MAR 2018 11:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **&prv_austin_report _region_.tex
 (./_region_.tex
-LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
 CUSTOMISED FORMAT. Preloaded files:
         .
- article.cls    2014/09/29 v1.4h Standard LaTeX document class
-  size11.clo    2014/09/29 v1.4h Standard LaTeX file (size option)
- amsmath.sty    2017/09/02 v2.17a AMS math features
- amstext.sty    2000/06/29 v2.01 AMS text
-  amsgen.sty    1999/11/30 v2.0 generic functions
-  amsbsy.sty    1999/11/29 v1.2d Bold Symbols
-  amsopn.sty    2016/03/08 v2.02 operator names
-graphicx.sty    2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
-  keyval.sty    2014/10/28 v1.15 key=value parser (DPC)
-graphics.sty    2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
-    trig.sty    2016/01/03 v1.10 sin cos tan (DPC)
-graphics.cfg    2016/06/04 v1.11 sample graphics configuration
-  pdftex.def    2018/01/08 v1.0l Graphics/color driver for pdftex
+ article.cls    2007/10/19 v1.4h Standard LaTeX document class
+  size11.clo    2007/10/19 v1.4h Standard LaTeX file (size option)
+ amsmath.sty    2013/01/14 v2.14 AMS math features
+ amstext.sty    2000/06/29 v2.01
+  amsgen.sty    1999/11/30 v2.0
+  amsbsy.sty    1999/11/29 v1.2d
+  amsopn.sty    1999/12/14 v2.01 operator names
+graphicx.sty    1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+  keyval.sty    1999/03/16 v1.13 key=value parser (DPC)
+graphics.sty    2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+    trig.sty    1999/03/16 v1.09 sin cos tan (DPC)
+graphics.cfg    2010/04/23 v1.9 graphics configuration of TeX Live
+  pdftex.def    2011/05/27 v0.06d Graphics/color for pdfTeX
+infwarerr.sty    2010/04/08 v1.3 Providing info/warning/error messages (HO)
+ ltxcmds.sty    2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
         .
 
 LaTeX Warning: Unused global option(s):
@@ -39,79 +41,88 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
-(/home/augh/.emacs.d/elpa/auctex-12.1.0/latex/preview.sty
-Package: preview 2017/04/24 12.1 (AUCTeX/preview-latex)
- (/usr/share/texmf-dist/tex/generic/luatex85/luatex85.sty
-Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
-) (/home/augh/.emacs.d/elpa/auctex-12.1.0/latex/prtightpage.def
+(/usr/share/texmf/tex/latex/preview/preview.sty
+Package: preview 2010/02/14 11.87 (AUCTeX/preview-latex)
+
+(/usr/share/texmf/tex/latex/preview/prtightpage.def
 \PreviewBorder=\dimen114
-) (/home/augh/.emacs.d/elpa/auctex-12.1.0/latex/prauctex.def
+)
+(/usr/share/texmf/tex/latex/preview/prauctex.def
 No auxiliary output files.
 
 
-\hbadness=\count99
+\hbadness=\count100
 \hfuzz=\dimen115
-(/home/augh/.emacs.d/elpa/auctex-12.1.0/latex/prauctex.cfg)) (/home/augh/.emacs.d/elpa/auctex-12.1.0/latex/prfootnotes.def)
-\pr@snippet=\count100
+(/usr/share/texmf/tex/latex/preview/prauctex.cfg))
+(/usr/share/texmf/tex/latex/preview/prfootnotes.def)
+\pr@snippet=\count101
 \pr@box=\box28
 \pr@output=\toks20
 
 Preview: Fontsize 10.95pt
 Preview: PDFoutput 1
-) (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+) (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count101
+\scratchcounter=\count102
 \scratchdimen=\dimen116
 \scratchbox=\box29
-\nofMPsegments=\count102
-\nofMParguments=\count103
+\nofMPsegments=\count103
+\nofMParguments=\count104
 \everyMPshowfont=\toks21
-\MPscratchCnt=\count104
+\MPscratchCnt=\count105
 \MPscratchDim=\dimen117
-\MPnumerator=\count105
-\makeMPintoPDFobject=\count106
+\MPnumerator=\count106
+\makeMPintoPDFobject=\count107
 \everyMPtoPDFconversion=\toks22
-) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
- (/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-) (/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
- (/usr/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
- (/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-))) (/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
- (/usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
- (/usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
- (/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-))) (/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO)
- (/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
 Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
- (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-))  !name(austin_report.tex) !offset(-3) 
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+ !name(austin_report.tex) !offset(-3) 
 ! Preview: Snippet 1 started.
 <-><->
       
@@ -120,7 +131,7 @@ l.10 \section
 Not a real error.
 
 Preview: Tightpage -32891 -32891 32891 32891
-! Preview: Snippet 1 ended.(655359+183500x23592960).
+! Preview: Snippet 1 ended.(655359+183500x15040512).
 <-><->
       
 l.10 \section{Selected Topics}
@@ -137,7 +148,7 @@ l.11 \subsection
                 {Power Spectrum and Filtering}
 Not a real error.
 
-! Preview: Snippet 2 ended.(546132+152916x23592960).
+! Preview: Snippet 2 ended.(546132+152916x15040512).
 <-><->
       
 l.11 \subsection{Power Spectrum and Filtering}
@@ -154,7 +165,7 @@ l.14 \begin{equation}
                      
 Not a real error.
 
-! Preview: Snippet 3 ended.(747801+0x23592960).
+! Preview: Snippet 3 ended.(747801+0x15040512).
 <-><->
       
 l.17 \end{equation}
@@ -171,7 +182,7 @@ l.23 \subsubsection
                    {Power Spectra}
 Not a real error.
 
-! Preview: Snippet 4 ended.(492366+139537x23592960).
+! Preview: Snippet 4 ended.(492366+139537x15040512).
 <-><->
       
 l.23 \subsubsection{Power Spectra}
@@ -200,14 +211,14 @@ Not a real error.
 <-><->
       
 l.29 and $
-          f = 59.673$Hz.
+          f = 59.673$Hz. These
 Not a real error.
 
 ! Preview: Snippet 6 ended.(498346+139537x3378789).
 <-><->
       
 l.29 and $f = 59.673$
-                     Hz.
+                     Hz. These
 Not a real error.
 
 [6]
@@ -220,19 +231,20 @@ Not a real error.
 
 <power_spectrum.png, id=27, 578.16pt x 722.7pt>
 File: power_spectrum.png Graphic file (type png)
-<use power_spectrum.png>
-Package pdftex.def Info: power_spectrum.png  used on input line 32.
-(pdftex.def)             Requested size: 360.0pt x 449.99918pt.
-
-LaTeX Warning: Reference `eq:sine' on page 1 undefined on input line 35.
+ <use power_spectrum.png>
+Package pdftex.def Info: power_spectrum.png used on input line 32.
+(pdftex.def)             Requested size: 229.5pt x 286.86937pt.
 
 
-LaTeX Warning: Reference `eq:sine' on page 1 undefined on input line 35.
+LaTeX Warning: Reference `eq:sine' on page 1 undefined on input line 37.
 
-! Preview: Snippet 7 ended.(31177333+0x23592960).
+
+LaTeX Warning: Reference `eq:sine' on page 1 undefined on input line 37.
+
+! Preview: Snippet 7 ended.(23020791+0x15040512).
 <-><->
       
-l.37 \end{figure}
+l.39 \end{figure}
                  
 Not a real error.
 
@@ -243,14 +255,14 @@ Not a real error.
 ! Preview: Snippet 8 started.
 <-><->
       
-l.39 \subsubsection
+l.41 \subsubsection
                    {Windows}
 Not a real error.
 
-! Preview: Snippet 8 ended.(498346+0x23592960).
+! Preview: Snippet 8 ended.(498346+0x15040512).
 <-><->
       
-l.39 \subsubsection{Windows}
+l.41 \subsubsection{Windows}
                             
 Not a real error.
 
@@ -258,24 +270,26 @@ Not a real error.
 
 ]
 
-LaTeX Warning: Reference `fig:hann_window' on page 1 undefined on input line 44.
+LaTeX Warning: Reference `fig:hann_window' on page 1 undefined on input line 50
+.
 
 ! Preview: Snippet 9 started.
 <-><->
       
-l.46 \begin{figure}
+l.55 \begin{figure}
                    
 Not a real error.
 
 <hann_window.png, id=37, 578.16pt x 722.7pt>
 File: hann_window.png Graphic file (type png)
-<use hann_window.png>
-Package pdftex.def Info: hann_window.png  used on input line 47.
-(pdftex.def)             Requested size: 360.0pt x 449.99918pt.
-! Preview: Snippet 9 ended.(32068623+0x23592960).
+ <use hann_window.png>
+Package pdftex.def Info: hann_window.png used on input line 56.
+(pdftex.def)             Requested size: 229.5pt x 286.86937pt.
+
+! Preview: Snippet 9 ended.(22269038+0x15040512).
 <-><->
       
-l.53 \end{figure}
+l.62 \end{figure}
                  
 Not a real error.
 
@@ -286,114 +300,607 @@ Not a real error.
 ! Preview: Snippet 10 started.
 <-><->
       
-l.56 with frequencies $
+l.65 with frequencies $
                        60$Hz and $59.673$Hz, shown in figures \ref{fig:hann_...
+
 Not a real error.
 
 ! Preview: Snippet 10 ended.(462465+0x717620).
 <-><->
       
-l.56 with frequencies $60$
+l.65 with frequencies $60$
                           Hz and $59.673$Hz, shown in figures \ref{fig:hann_...
+
 Not a real error.
 
 [10]
 ! Preview: Snippet 11 started.
 <-><->
       
-l.56 with frequencies $60$Hz and $
+l.65 with frequencies $60$Hz and $
                                   59.673$Hz, shown in figures \ref{fig:hann_...
+
 Not a real error.
 
 ! Preview: Snippet 11 ended.(462465+0x1993389).
 <-><->
       
-l.56 with frequencies $60$Hz and $59.673$
+l.65 with frequencies $60$Hz and $59.673$
                                          Hz, shown in figures \ref{fig:hann_...
+
 Not a real error.
 
 [11]
 
-LaTeX Warning: Reference `fig:hann_0' on page 1 undefined on input line 56.
+LaTeX Warning: Reference `fig:hann_0' on page 1 undefined on input line 65.
 
 
-LaTeX Warning: Reference `fig:hann_1' on page 1 undefined on input line 57.
+LaTeX Warning: Reference `fig:hann_1' on page 1 undefined on input line 66.
+
+
+LaTeX Warning: Reference `fig:hann_0' on page 1 undefined on input line 67.
+
+
+LaTeX Warning: Reference `fig:hann_1' on page 1 undefined on input line 72.
 
 ! Preview: Snippet 12 started.
 <-><->
       
-l.59 \begin{figure}
-                   
+l.72 \ref{fig:hann_1} for the frequency $
+                                         f = 59.673$, though the
 Not a real error.
 
-<hann_0.png, id=48, 578.16pt x 722.7pt>
-File: hann_0.png Graphic file (type png)
-<use hann_0.png>
-Package pdftex.def Info: hann_0.png  used on input line 60.
-(pdftex.def)             Requested size: 360.0pt x 449.99918pt.
-
-LaTeX Warning: Reference `eq:sine' on page 1 undefined on input line 64.
-
-
-LaTeX Warning: Reference `eq:sine' on page 1 undefined on input line 64.
-
-! Preview: Snippet 12 ended.(32108490+0x23592960).
+! Preview: Snippet 12 ended.(498346+139537x3378789).
 <-><->
       
-l.66 \end{figure}
-                 
+l.72 ...fig:hann_1} for the frequency $f = 59.673$
+                                                  , though the
 Not a real error.
 
-[12
-
-
- <./hann_0.png>]
+[12]
 ! Preview: Snippet 13 started.
 <-><->
       
-l.68 \begin{figure}
+l.75 \begin{figure}
                    
 Not a real error.
 
-<hann_1.png, id=53, 578.16pt x 722.7pt>
-File: hann_1.png Graphic file (type png)
-<use hann_1.png>
-Package pdftex.def Info: hann_1.png  used on input line 69.
-(pdftex.def)             Requested size: 360.0pt x 449.99918pt.
-
-LaTeX Warning: Reference `eq:sine' on page 1 undefined on input line 73.
+<hann_0.png, id=51, 578.16pt x 722.7pt>
+File: hann_0.png Graphic file (type png)
+ <use hann_0.png>
+Package pdftex.def Info: hann_0.png used on input line 76.
+(pdftex.def)             Requested size: 229.5pt x 286.86937pt.
 
 
-LaTeX Warning: Reference `eq:sine' on page 1 undefined on input line 73.
+LaTeX Warning: Reference `eq:sine' on page 1 undefined on input line 80.
 
-! Preview: Snippet 13 ended.(32108490+0x23592960).
+
+LaTeX Warning: Reference `eq:sine' on page 1 undefined on input line 80.
+
+! Preview: Snippet 13 ended.(22308905+0x15040512).
 <-><->
       
-l.75 \end{figure}
+l.82 \end{figure}
                  
 Not a real error.
 
 [13
 
 
+ <./hann_0.png>]
+! Preview: Snippet 14 started.
+<-><->
+      
+l.84 \begin{figure}
+                   
+Not a real error.
+
+<hann_1.png, id=57, 578.16pt x 722.7pt>
+File: hann_1.png Graphic file (type png)
+ <use hann_1.png>
+Package pdftex.def Info: hann_1.png used on input line 85.
+(pdftex.def)             Requested size: 229.5pt x 286.86937pt.
+
+
+LaTeX Warning: Reference `eq:sine' on page 1 undefined on input line 89.
+
+
+LaTeX Warning: Reference `eq:sine' on page 1 undefined on input line 89.
+
+! Preview: Snippet 14 ended.(22308905+0x15040512).
+<-><->
+      
+l.91 \end{figure}
+                 
+Not a real error.
+
+[14
+
+
  <./hann_1.png>]
+! Preview: Snippet 15 started.
+<-><->
+      
+l.96 \begin{figure*}
+                    
+Not a real error.
+
+<blackman_harris.png, id=62, 1300.86pt x 722.7pt>
+File: blackman_harris.png Graphic file (type png)
+ <use blackman_harris.png>
+Package pdftex.def Info: blackman_harris.png used on input line 97.
+(pdftex.def)             Requested size: 469.0pt x 260.55775pt.
+
+
+LaTeX Warning: Reference `eq:sin' on page 1 undefined on input line 103.
+
+
+LaTeX Warning: Reference `eq:sin' on page 1 undefined on input line 103.
+
+! Preview: Snippet 15 ended.(21296433+0x30736384).
+<-><->
+      
+l.105 \end{figure*}
+                   
+Not a real error.
+
+[15
+
+
+ <./blackman_harris.png>]
+! Preview: Snippet 16 started.
+<-><->
+      
+l.107 \section
+              {General Applications}
+Not a real error.
+
+! Preview: Snippet 16 ended.(655359+183500x15040512).
+<-><->
+      
+l.107 \section{General Applications}
+                                    
+Not a real error.
+
+[16
+
+]
+! Preview: Snippet 17 started.
+<-><->
+      
+l.109 \subsection
+                 {Heart Beats}
+Not a real error.
+
+! Preview: Snippet 17 ended.(539580+0x15040512).
+<-><->
+      
+l.109 \subsection{Heart Beats}
+                              
+Not a real error.
+
+[17
+
+]
+! Preview: Snippet 18 started.
+<-><->
+      
+l.110 ...time sequence of heart beats sampled at $
+                                                  125$Hz. Since the data
+Not a real error.
+
+! Preview: Snippet 18 ended.(462465+0x1076430).
+<-><->
+      
+l.110 ... sequence of heart beats sampled at $125$
+                                                  Hz. Since the data
+Not a real error.
+
+[18]
+
+LaTeX Warning: Reference `fig:beats' on page 1 undefined on input line 113.
+
+! Preview: Snippet 19 started.
+<-><->
+      
+l.113 ... dominant frequencies are approximately $
+                                                  2$Hz and
+Not a real error.
+
+! Preview: Snippet 19 ended.(462465+0x358810).
+<-><->
+      
+l.113 ...ominant frequencies are approximately $2$
+                                                  Hz and
+Not a real error.
+
+[19]
+! Preview: Snippet 20 started.
+<-><->
+      
+l.114 $
+       4$kHz, with corresponding periods $0.5$s and $0.25$s, respectively.
+Not a real error.
+
+! Preview: Snippet 20 ended.(462465+0x358810).
+<-><->
+      
+l.114 $4$
+         kHz, with corresponding periods $0.5$s and $0.25$s, respectively.
+Not a real error.
+
+[20]
+! Preview: Snippet 21 started.
+<-><->
+      
+l.114 $4$kHz, with corresponding periods $
+                                          0.5$s and $0.25$s, respectively.
+Not a real error.
+
+! Preview: Snippet 21 ended.(462465+0x916959).
+<-><->
+      
+l.114 $4$kHz, with corresponding periods $0.5$
+                                              s and $0.25$s, respectively.
+Not a real error.
+
+[21]
+! Preview: Snippet 22 started.
+<-><->
+      
+l.114 ..., with corresponding periods $0.5$s and $
+                                                  0.25$s, respectively.
+Not a real error.
+
+! Preview: Snippet 22 ended.(462465+0x1275769).
+<-><->
+      
+l.114 ...h corresponding periods $0.5$s and $0.25$
+                                                  s, respectively.
+Not a real error.
+
+[22]
+! Preview: Snippet 23 started.
+<-><->
+      
+l.116 \begin{figure}
+                    
+Not a real error.
+
+<beats.png, id=89, 578.16pt x 433.62pt>
+File: beats.png Graphic file (type png)
+ <use beats.png>
+Package pdftex.def Info: beats.png used on input line 117.
+(pdftex.def)             Requested size: 229.5pt x 172.12163pt.
+
+! Preview: Snippet 23 ended.(14748930+0x15040512).
+<-><->
+      
+l.123 \end{figure}
+                  
+Not a real error.
+
+[23
+
+
+ <./beats.png>]
+! Preview: Snippet 24 started.
+<-><->
+      
+l.125 The average resting heart rate is about $
+                                               60$ to $100$ beats per minute...
+
+Not a real error.
+
+! Preview: Snippet 24 ended.(462465+0x717620).
+<-><->
+      
+l.125 The average resting heart rate is about $60$
+                                                   to $100$ beats per minute...
+
+Not a real error.
+
+[24]
+! Preview: Snippet 25 started.
+<-><->
+      
+l.125 ...age resting heart rate is about $60$ to $
+                                                  100$ beats per minute. How...
+
+Not a real error.
+
+! Preview: Snippet 25 ended.(462465+0x1076430).
+<-><->
+      
+l.125 ...resting heart rate is about $60$ to $100$
+                                                   beats per minute. However,
+Not a real error.
+
+[25]
+! Preview: Snippet 26 started.
+<-><->
+      
+l.126 ...translates to periods within a range of $
+                                                  1$s to $1.6$s, which are
+Not a real error.
+
+! Preview: Snippet 26 ended.(462465+0x358810).
+<-><->
+      
+l.126 ...anslates to periods within a range of $1$
+                                                  s to $1.6$s, which are
+Not a real error.
+
+[26]
+! Preview: Snippet 27 started.
+<-><->
+      
+l.126 ...es to periods within a range of $1$s to $
+                                                  1.6$s, which are
+Not a real error.
+
+! Preview: Snippet 27 ended.(462465+0x916959).
+<-><->
+      
+l.126 ...o periods within a range of $1$s to $1.6$
+                                                  s, which are
+Not a real error.
+
+[27]
+! Preview: Snippet 28 started.
+<-><->
+      
+l.131 \subsection
+                 {Financial Series}
+Not a real error.
+
+! Preview: Snippet 28 ended.(546132+0x15040512).
+<-><->
+      
+l.131 \subsection{Financial Series}
+                                   
+Not a real error.
+
+[28
+
+]
+
+LaTeX Warning: Reference `fig:stocks_time' on page 1 undefined on input line 13
+3.
+
+! Preview: Snippet 29 started.
+<-><->
+      
+l.135 \begin{figure}
+                    
+Not a real error.
+
+<stocks_time.png, id=110, 578.16pt x 1011.78pt>
+File: stocks_time.png Graphic file (type png)
+ <use stocks_time.png>
+Package pdftex.def Info: stocks_time.png used on input line 136.
+(pdftex.def)             Requested size: 229.5pt x 401.61713pt.
+
+! Preview: Snippet 29 ended.(28897857+0x15040512).
+<-><->
+      
+l.141 \end{figure}
+                  
+Not a real error.
+
+[29
+
+
+ <./stocks_time.png>]
+! Preview: Snippet 30 started.
+<-><->
+      
+l.143 ...ute the continuously compounded returns $
+                                                  R_i$,
+Not a real error.
+
+! Preview: Snippet 30 ended.(490372+107642x767306).
+<-><->
+      
+l.143 ...the continuously compounded returns $R_i$
+                                                  ,
+Not a real error.
+
+[30]
+! Preview: Snippet 31 started.
+<-><->
+      
+l.145 \begin{equation}
+                      
+Not a real error.
+
+! Preview: Snippet 31 ended.(1722303+0x15040512).
+<-><->
+      
+l.148 \end{equation}
+                    
+Not a real error.
+
+[31
+
+]
+
+LaTeX Warning: Reference `fig:stocks_returns' on page 1 undefined on input line
+ 149.
+
+
+LaTeX Warning: Reference `fig:stocks_ac' on page 1 undefined on input line 150.
+
+
+! Preview: Snippet 32 started.
+<-><->
+      
+l.152 \begin{figure*}
+                     
+Not a real error.
+
+<stocks_returns.png, id=125, 1011.78pt x 1011.78pt>
+File: stocks_returns.png Graphic file (type png)
+ <use stocks_returns.png>
+Package pdftex.def Info: stocks_returns.png used on input line 153.
+(pdftex.def)             Requested size: 469.0pt x 469.00618pt.
+
+
+LaTeX Warning: Reference `fig:stocks_time' on page 1 undefined on input line 15
+8.
+
+
+LaTeX Warning: Reference `ccr' on page 1 undefined on input line 158.
+
+
+LaTeX Warning: Reference `fig:stocks_time' on page 1 undefined on input line 15
+8.
+
+
+LaTeX Warning: Reference `ccr' on page 1 undefined on input line 158.
+
+! Preview: Snippet 32 ended.(33314266+0x30736384).
+<-><->
+      
+l.160 \end{figure*}
+                   
+Not a real error.
+
+[32
+
+
+ <./stocks_returns.png>]
+! Preview: Snippet 33 started.
+<-><->
+      
+l.162 \begin{figure*}
+                     
+Not a real error.
+
+<stocks_ac.png, id=130, 1011.78pt x 1011.78pt>
+File: stocks_ac.png Graphic file (type png)
+ <use stocks_ac.png>
+Package pdftex.def Info: stocks_ac.png used on input line 163.
+(pdftex.def)             Requested size: 469.0pt x 469.00618pt.
+
+! Preview: Snippet 33 ended.(32422976+0x30736384).
+<-><->
+      
+l.168 \end{figure*}
+                   
+Not a real error.
+
+[33
+
+
+ <./stocks_ac.png>]
+! Preview: Snippet 34 started.
+<-><->
+      
+l.170 \begin{figure*}
+                     
+Not a real error.
+
+<stocks_power_spectrum.png, id=135, 1011.78pt x 867.24pt>
+File: stocks_power_spectrum.png Graphic file (type png)
+
+<use stocks_power_spectrum.png>
+Package pdftex.def Info: stocks_power_spectrum.png used on input line 171.
+(pdftex.def)             Requested size: 469.0pt x 402.00531pt.
+
+! Preview: Snippet 34 ended.(28923297+0x30736384).
+<-><->
+      
+l.177 \end{figure*}
+                   
+Not a real error.
+
+[34
+
+
+ <./stocks_power_spectrum.png>]
+
+LaTeX Warning: Reference `fig:dow' on page 1 undefined on input line 179.
+
+! Preview: Snippet 35 started.
+<-><->
+      
+l.181 \begin{figure*}
+                     
+Not a real error.
+
+<dow.png, id=140, 867.24pt x 578.16pt>
+File: dow.png Graphic file (type png)
+ <use dow.png>
+Package pdftex.def Info: dow.png used on input line 182.
+(pdftex.def)             Requested size: 469.0pt x 312.66931pt.
+
+! Preview: Snippet 35 ended.(23068573+0x30736384).
+<-><->
+      
+l.187 \end{figure*}
+                   
+Not a real error.
+
+[35
+
+
+ <./dow.png>]
+! Preview: Snippet 36 started.
+<-><->
+      
+l.189 \begin{figure}
+                    
+Not a real error.
+
+<dow_ac.png, id=145, 578.16pt x 433.62pt>
+File: dow_ac.png Graphic file (type png)
+ <use dow_ac.png>
+Package pdftex.def Info: dow_ac.png used on input line 190.
+(pdftex.def)             Requested size: 229.5pt x 172.12163pt.
+
+
+LaTeX Warning: Reference `fig:dow' on page 1 undefined on input line 193.
+
+
+LaTeX Warning: Reference `fig:dow' on page 1 undefined on input line 193.
+
+! Preview: Snippet 36 ended.(13857640+0x15040512).
+<-><->
+      
+l.195 \end{figure}
+                  
+Not a real error.
+
+[36
+
+
+ <./dow_ac.png>]
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 1022 strings out of 491733
- 15795 string characters out of 6123751
- 89801 words of memory out of 5000000
- 5789 multiletter control sequences out of 15000+600000
+ 900 strings out of 491854
+ 14003 string characters out of 6121814
+ 95536 words of memory out of 5000000
+ 5758 multiletter control sequences out of 15000+600000
  10048 words of font info for 36 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 41i,6n,25p,294b,251s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on _region_.pdf (13 pages, 1246562 bytes).
+ 957 hyphenation exceptions out of 8191
+ 37i,6n,23p,282b,253s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy8.pfb>
+Output written on _region_.pdf (36 pages, 1292268 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
+ 181 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,2 @@
+Power of 30Hz-60Hz for 60Hz: 81350.5327138
+Power of 30Hz-60Hz for 59.673Hz: 22159.6415556
