@@ -9,7 +9,7 @@ import numpy as np
 with open('phys581-beats.txt', 'r') as file:
     beats = np.array(list(map(float, file.readlines())))
 
-f_s = 125.0    # Hz
+f_s = 125.0
 freq = np.fft.fftfreq(beats.size, 1 / f_s)
 beats_fft = np.fft.fft(beats)
 
@@ -45,6 +45,7 @@ subs[0].set_xticklabels([2002, 2003, 2004, 2005, 2006, 2007])
 subs[0].tick_params(axis='x', rotation=45)
 subs[0].plot(months, sandp)
 subs[0].grid()
+
 subs[1].set_title('Company Stocks from 2002-2007')
 subs[1].set_xlabel('Months')
 subs[1].set_ylabel('Stock Price')
@@ -60,6 +61,7 @@ subs[1].plot(months, sun, label='Sun')
 subs[1].plot(months, ustb3m, label='USTB3M')
 subs[1].grid()
 subs[1].legend(loc='best')
+
 plt.savefig('stocks_time')
 
 # Part b: compounded returns

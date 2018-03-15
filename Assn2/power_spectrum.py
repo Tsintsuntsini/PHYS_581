@@ -8,11 +8,14 @@ import numpy as np
 def wave(t, amp=1, freq=1, phase=0):
     return amp * np.sin(2 * np.pi * freq * t - phase)
 
-def hann_window():
-    return None
+def hann_window(size):
+    return 0.5 * (1 - np.cos(2 * np.pi * np.arange(0, size) / (size - 1)))
 
-def blackmann_harris_window():
-    return None
+def blackmann_harris_window(size):
+    t = 2 * np.pi * np.arange(0, size) / (size - 1)
+    window = 0.35875 - 0.48829 * np.cos(t) + 0.14128 * np.cos(2 * t) \
+             - 0.01168 * np.cos(3 * t)
+    return window
 
 # part a: proof
 # - - - - - - - -
@@ -27,6 +30,9 @@ power_0 = t.size / 2 * np.abs(np.fft.fft(samples_0))**2
 
 fig, subs = plt.subplot(nrows=2, dpi=300)
 
+subs[0].set_title('Power of Sine at $60$Hz')
+subs[0].set_xlabel('Frequency')
+subs[0].set_ylabel('Power')
 subs[0].plot(freq, power_0)
 
 # part c: second plot
@@ -36,21 +42,103 @@ freq = np.fft.fftfreq(t.size, t[1] - t[0])
 samples_1 = wave(t, amp=10, freq=59.673)
 power_1 = t.size / 2 * np.abs(np.fft.fft(samples_1))**2
 
+subs[1].set_title('Power of Sine at $59.673Hz')
+subs[1].set_xlabel('Frequency')
+subs[1].set_ylabel('Power')
 subs[1].plot(freq, power_1)
 
 plt.savefig('power_spectrum')
 
 # part d: hann window
 # - - - - - - - - - - -
-# plot hann window and its fft
-plt.plot(t, hann(t))
+hann = hann_window(t.size)
+
+fig, subs = plt.subplot(nrows=2, dpi=300)
+
+subs[0].set_title('Hann Window')
+subs[0].set_xlabel('Time')
+subs[0].set_ylabel('Amplitude')
+subs[0].plot(t, hann)
+
+subs[1].set_title('DFT of Hann Window')
+subs[1].set_xlabel('Frequency')
+subs[1].set_ylabel('Amplitude')
+subs[1].plot(freq, np.abs(np.fft.fft(hann)))
+
+plt.savefig('hann_window')
 
 # part e: apply on part b
 # - - - - - - - - - - - - -
-hann_0 = hann(samples_0)
-plt.plot(t, hann_0)
+hann_0 = samples_0 * hann_window(samples_0.size)
+
+fig, subs = plt.subplot(nrows=2, dpi=300)
+
+subs[0].set_title('Hann Windowed Sine at $60$Hz')
+subs[0].set_xlabel('Time')
+subs[0].set_ylabel('Amplitude')
+subs[0].plot(t, hann_0)
+
+subs[1].set_title('DFT of Hann Windowed Sine at $60$Hz')
+subs[1].set_xlabel('Frequency')
+subs[1].set_ylabel('Amplitude')
+subs[1].plot(freq, np.abs(np.fft.fft(hann_0)))
+
+plt.savefig('hann_60Hz')
 
 # part f: apply on part c
 # - - - - - - - - - - - - -
-hann_1 = hann(samples_1)
-plt.plot(freq, np.fft.fft(hann_1)
+hann_1 = samples_1 * hann_window(samples_1.size)
+
+fig, subs = plt.subplot(nrows=2, dpi=300)
+
+subs[0].set_title('Hann Windowed Sine at $59.673$Hz')
+subs[0].set_xlabel('Time')
+subs[0].set_ylabel('Amplitude')
+subs[0].plot(t, hann_1)
+
+subs[1].set_title('DFT of Hann Windowed Sine at $59.673$Hz')
+subs[1].set_xlabel('Frequency')
+subs[1].set_ylabel('Power')
+subs[1].plot(freq, np.abs(np.fft.fft(hann_1))**2)
+
+plt.savefig('hann_59Hz')
+
+# part g: blackman-harris window
+# - - - - - - - - - - - - - - - -
+bh = blackmann_harris_window(t.size)
+bh_0 = samples_0 * bh
+bh_1 = smaples_1 * bh
+
+fig, subs = plt.subplot(nrows=2, ncols=3, dpi=300)
+
+subs[0][0].set_title('Blackman-Harris Window')
+subs[0][0].set_xlabel('Time')
+subs[0][0].set_ylabel('Amplitude')
+subs[0][0].plot(t, bh)
+
+subs[1][0].set_title('DFT of Blackman-Harris Window')
+subs[1][0].set_xlabel('Frequency')
+subs[1][0].set_ylabel('Amplitude')
+subs[1][0].plot(freq, np.abs(np.fft.fft(bh)))
+
+subs[0][1].set_title('Windowed Sine at $60$Hz')
+subs[0][1].set_xlabel('Time')
+subs[0][1].set_ylabel('Amplitude')
+subs[0][1].plot(t, bh_0)
+
+subs[1][1].set_title('Power of Windowed Sine at $60$Hz')
+subs[1][1].set_xlabel('Frequency')
+subs[1][1].set_ylabel('Power')
+subs[1][1].plot(freq, np.abs(np.fft.fft(bh_0))**2)
+
+subs[0][2].set_title('Windowed Sine at $59.673$Hz')
+subs[0][2].set_xlabel('Time')
+subs[0][2].set_ylabel('Amplitude')
+subs[0][2].plot(t, bh_1)
+
+subs[1][2].set_title('Power of Windowed Sine at $59.673$Hz')
+subs[1][2].set_xlabel('Frequency')
+subs[1][2].set_ylabel('Power')
+subs[1][2].plot(freq, np.abs(np.fft.fft(bh_1))**2)
+
+plt.savefig('blackman_harris')
