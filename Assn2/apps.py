@@ -4,6 +4,19 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
+def autocorrelation(x):
+    def ac(x, k):
+        size = x.size
+        mean = np.mean(x)
+
+        x = np.append(x, x)
+        upper = np.sum((x[:size] - mean) * (x[k:size+k] - mean))
+        lower = np.sum((x[:size] - mean) * (x[:size] - mean))
+        return upper / lower
+
+    return np.array([ac(x, k) for k in range(0, x.size)])
+
+
 # 2.2 Heart Beats
 # -----------------
 with open('phys581-beats.txt', 'r') as file:
