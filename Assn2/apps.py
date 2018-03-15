@@ -5,16 +5,51 @@ import numpy as np
 
 
 def autocorrelation(x):
+    """Calculates the autocorrelation of an array.
+
+    The autocorrelation is calculated using the equation
+    \begin{equation}
+      \begin{aligned}
+        AC(k)
+        &= \frac{1}{(N - k) \sigma^2}
+           \sum_{n=1}^{N-k} (x_n - \bar{x}) (x_{n+k} - \bar{x}) \\
+        &= \frac{\sum_{n=1}^{N-k} (x_n - \bar{x}) (x_{n+k} - \bar{x})}
+                {\sum_{n=1}^{N-k} (x_n - \bar{x})^2}
+      \end{aligned}
+    \end{equation}
+
+    Parameters
+    ------------
+    x : (1D np.array or list) vector of values.
+
+    Returns
+    ---------
+    The autocorrelation vector of the same size as the input vector.
+    """
     def ac(x, k):
         size = x.size
         mean = np.mean(x)
 
-        x = np.append(x, x)
-        upper = np.sum((x[:size] - mean) * (x[k:size+k] - mean))
-        lower = np.sum((x[:size] - mean) * (x[:size] - mean))
+        upper = np.sum((x[:size-k] - mean) * (x[k:] - mean))
+        lower = np.sum((x[:size-k] - mean) * (x[:size-k] - mean))
         return upper / lower
 
+    try:
+        x = np.array(x)
+    except Exception:
+        raise ValueError('Input should be a list or numpy array')
+
+    if len(x.shape) != 1:
+        raise TypeError(
+            """Input should be an one-dimensional list or array, given array
+            has dimension {}""".format(x.shape)
+         )
+
     return np.array([ac(x, k) for k in range(0, x.size)])
+
+
+def power_spectrum(x):
+    return np.abs(np.fft.fftshift(np.fft.fft(x)))**2
 
 
 # 2.2 Heart Beats
@@ -23,8 +58,8 @@ with open('phys581-beats.txt', 'r') as file:
     beats = np.array(list(map(float, file.readlines())))
 
 f_s = 125.0
-freq = np.fft.fftfreq(beats.size, 1 / f_s)
-beats_fft = np.fft.fft(beats)
+freq = np.fft.fftshift(np.fft.fftfreq(beats.size, 1 / f_s))
+beats_fft = np.fft.fftshift(np.fft.fft(beats))
 
 plt.title('Frequency Spectrum of Heart Beats')
 plt.xlabel('Frequency')
@@ -46,6 +81,7 @@ with open('phys581-stocks.txt', 'r') as file:
 
 stocks = np.array(list(map(list, zip(*stocks)))[1:], dtype=float)
 months = np.arange(0, len(stocks[0]))
+freq = np.fft.fftshift(np.fft.fftfreq(months.size))
 sandp, ford, gm, microsoft, sun, ustb3m = stocks
 
 fig, subs = plt.subplots(nrows=2, figsize=(8, 14), dpi=300)
@@ -60,7 +96,7 @@ subs[0].plot(months, sandp)
 subs[0].grid()
 
 subs[1].set_title('Company Stocks from 2002-2007')
-subs[1].set_xlabel('Months')
+subs[1].set_xlabel('Time')
 subs[1].set_ylabel('Stock Price')
 subs[1].set_xlim(0, 65)
 subs[1].set_ylim(0, 100)
@@ -82,19 +118,20 @@ plt.savefig('stocks_time')
 returns = np.array(
     [np.log(stocks[:,i] / stocks[:,i-1]) for i in range(1, months.size)]
 ).T
-months = np.arange(0, len(returns[0]))
-sandp, ford, gm, microsoft, sun, ustb3m = returns
+months_ret = np.arange(0, len(returns[0]))
+sandp_ret, ford_ret, gm_ret, microsoft_ret, sun_ret, ustb3m_ret = returns
 
 fig, subs = plt.subplots(nrows=2, ncols=3, figsize=(14, 14), dpi=300)
 
 subs[0][0].set_title('SandP')
 subs[0][0].set_xlabel('Months')
+
 subs[0][0].set_ylabel('Continuously Compounded Returns')
 subs[0][0].set_xlim(0, 65)
 subs[0][0].set_xticks(range(0, months.size, 12))
 subs[0][0].set_xticklabels([2002, 2003, 2004, 2005, 2006, 2007])
 subs[0][0].tick_params(axis='x', rotation=45)
-subs[0][0].plot(months, sandp)
+subs[0][0].plot(months_ret, sandp_ret)
 subs[0][0].grid()
 
 subs[0][1].set_title('Ford')
@@ -103,7 +140,7 @@ subs[0][1].set_xlim(0, 65)
 subs[0][1].set_xticks(range(0, months.size, 12))
 subs[0][1].set_xticklabels([2002, 2003, 2004, 2005, 2006, 2007])
 subs[0][1].tick_params(axis='x', rotation=45)
-subs[0][1].plot(months, ford)
+subs[0][1].plot(months_ret, ford_ret)
 subs[0][1].grid()
 
 subs[0][2].set_title('GM')
@@ -112,7 +149,7 @@ subs[0][2].set_xlim(0, 65)
 subs[0][2].set_xticks(range(0, months.size, 12))
 subs[0][2].set_xticklabels([2002, 2003, 2004, 2005, 2006, 2007])
 subs[0][2].tick_params(axis='x', rotation=45)
-subs[0][2].plot(months, gm)
+subs[0][2].plot(months_ret, gm_ret)
 subs[0][2].grid()
 
 subs[1][0].set_title('Mircosoft')
@@ -122,7 +159,7 @@ subs[1][0].set_xlim(0, 65)
 subs[1][0].set_xticks(range(0, months.size, 12))
 subs[1][0].set_xticklabels([2002, 2003, 2004, 2005, 2006, 2007])
 subs[1][0].tick_params(axis='x', rotation=45)
-subs[1][0].plot(months, microsoft)
+subs[1][0].plot(months_ret, microsoft_ret)
 subs[1][0].grid()
 
 subs[1][1].set_title('Sun')
@@ -131,7 +168,7 @@ subs[1][1].set_xlim(0, 65)
 subs[1][1].set_xticks(range(0, months.size, 12))
 subs[1][1].set_xticklabels([2002, 2003, 2004, 2005, 2006, 2007])
 subs[1][1].tick_params(axis='x', rotation=45)
-subs[1][1].plot(months, sun)
+subs[1][1].plot(months_ret, sun_ret)
 subs[1][1].grid()
 
 subs[1][2].set_title('USTB3M')
@@ -140,16 +177,117 @@ subs[1][2].set_xlim(0, 65)
 subs[1][2].set_xticks(range(0, months.size, 12))
 subs[1][2].set_xticklabels([2002, 2003, 2004, 2005, 2006, 2007])
 subs[1][2].tick_params(axis='x', rotation=45)
-subs[1][2].plot(months, ustb3m)
+subs[1][2].plot(months_ret, ustb3m_ret)
 subs[1][2].grid()
 
 plt.savefig('stocks_returns')
 
 # Part c: autocorrelation
 # - - - - - - - - - - - - -
+fig, subs = plt.subplots(nrows=2, ncols=3, figsize=(14, 14), dpi=300)
+
+subs[0][0].set_title('SandP')
+subs[0][0].set_xlabel('Months')
+subs[0][0].set_ylabel('Autocorrelation Value')
+subs[0][0].set_xlim(0, 65)
+subs[0][0].set_xticks(range(0, months.size, 12))
+subs[0][0].set_xticklabels([2002, 2003, 2004, 2005, 2006, 2007])
+subs[0][0].tick_params(axis='x', rotation=45)
+subs[0][0].plot(months, autocorrelation(sandp))
+subs[0][0].grid()
+
+subs[0][1].set_title('Ford')
+subs[0][1].set_xlabel('Months')
+subs[0][1].set_xlim(0, 65)
+subs[0][1].set_xticks(range(0, months.size, 12))
+subs[0][1].set_xticklabels([2002, 2003, 2004, 2005, 2006, 2007])
+subs[0][1].tick_params(axis='x', rotation=45)
+subs[0][1].plot(months, autocorrelation(ford))
+subs[0][1].grid()
+
+subs[0][2].set_title('GM')
+subs[0][2].set_xlabel('Months')
+subs[0][2].set_xlim(0, 65)
+subs[0][2].set_xticks(range(0, months.size, 12))
+subs[0][2].set_xticklabels([2002, 2003, 2004, 2005, 2006, 2007])
+subs[0][2].tick_params(axis='x', rotation=45)
+subs[0][2].plot(months, autocorrelation(gm))
+subs[0][2].grid()
+
+subs[1][0].set_title('Mircosoft')
+subs[1][0].set_xlabel('Months')
+subs[1][0].set_ylabel('Autocorrelation Value')
+subs[1][0].set_xlim(0, 65)
+subs[1][0].set_xticks(range(0, months.size, 12))
+subs[1][0].set_xticklabels([2002, 2003, 2004, 2005, 2006, 2007])
+subs[1][0].tick_params(axis='x', rotation=45)
+subs[1][0].plot(months, autocorrelation(microsoft))
+subs[1][0].grid()
+
+subs[1][1].set_title('Sun')
+subs[1][1].set_xlabel('Months')
+subs[1][1].set_xlim(0, 65)
+subs[1][1].set_xticks(range(0, months.size, 12))
+subs[1][1].set_xticklabels([2002, 2003, 2004, 2005, 2006, 2007])
+subs[1][1].tick_params(axis='x', rotation=45)
+subs[1][1].plot(months, autocorrelation(sun))
+subs[1][1].grid()
+
+subs[1][2].set_title('USTB3M')
+subs[1][2].set_xlabel('Months')
+subs[1][2].set_xlim(0, 65)
+subs[1][2].set_xticks(range(0, months.size, 12))
+subs[1][2].set_xticklabels([2002, 2003, 2004, 2005, 2006, 2007])
+subs[1][2].tick_params(axis='x', rotation=45)
+subs[1][2].plot(months, autocorrelation(ustb3m))
+subs[1][2].grid()
+
+plt.savefig('stocks_ac')
 
 # Part d: power spectrum
 # - - - - - - - - - - - -
+fig, subs = plt.subplots(nrows=2, ncols=3, sharey=True, figsize=(14, 12), dpi=300)
+
+subs[0][0].set_title('SandP')
+subs[0][0].set_xlabel('Frequency')
+subs[0][0].set_ylabel('Power')
+subs[0][0].set_yscale('log')
+subs[0][0].plot(freq, power_spectrum(sandp))
+subs[0][0].grid()
+
+subs[0][1].set_title('Ford')
+subs[0][1].set_xlabel('Frequency')
+subs[0][1].set_yscale('log')
+subs[0][1].plot(freq, power_spectrum(ford))
+subs[0][1].grid()
+
+subs[0][2].set_title('GM')
+subs[0][2].set_xlabel('Frequency')
+subs[0][2].set_yscale('log')
+subs[0][2].plot(freq, power_spectrum(gm))
+subs[0][2].grid()
+
+subs[1][0].set_title('Mircosoft')
+subs[1][0].set_xlabel('Frequency')
+subs[1][0].set_ylabel('Power')
+subs[1][0].set_yscale('log')
+subs[1][0].plot(freq, power_spectrum(microsoft))
+subs[1][0].grid()
+
+subs[1][1].set_title('Sun')
+subs[1][1].set_xlabel('Frequency')
+subs[1][1].set_yscale('log')
+subs[1][1].plot(freq, power_spectrum(sun))
+subs[1][1].grid()
+
+subs[1][2].set_title('USTB3M')
+subs[1][2].set_xlabel('Frequency')
+subs[1][2].set_yscale('log')
+subs[1][2].plot(freq, power_spectrum(ustb3m))
+subs[1][2].grid()
+
+plt.savefig('stocks_power_spectrum')
+
 
 # Part e: dow jones
 # - - - - - - - - - -
@@ -158,16 +296,23 @@ with open('phys581-dow.txt', 'r') as file:
 
 t = np.arange(0, dow.size)
 freq = np.fft.fftfreq(t.size)
-dow_fft = np.abs(np.fft.fft(dow))**2
 
 fig, subs = plt.subplots(ncols=2)
 
 subs[0].plot(t, dow)
 
-subs[1].plot(freq, dow_fft)
+subs[1].plot(freq, power_spectrum(dow))
 subs[1].set_yscale('log')
 
 plt.savefig('dow')
 
 # Part f: autocorrelation
 # - - - - - - - - - - - - -
+plt.figure(dpi=300)
+
+plt.title('Autocorrelation of Dow Jones')
+plt.xlabel('Time')
+plt.ylabel('Autocorrelation Value')
+plt.plot(t, autocorrelation(dow))
+
+plt.savefig('dow_ac')

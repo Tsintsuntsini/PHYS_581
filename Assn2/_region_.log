@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=prv_austin_report 2018.3.11)  11 MAR 2018 13:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=prv_austin_report 2018.3.15)  15 MAR 2018 01:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -15,57 +15,116 @@ CUSTOMISED FORMAT. Preloaded files:
   amsgen.sty    1999/11/30 v2.0 generic functions
   amsbsy.sty    1999/11/29 v1.2d Bold Symbols
   amsopn.sty    2016/03/08 v2.02 operator names
+graphicx.sty    2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+  keyval.sty    2014/10/28 v1.15 key=value parser (DPC)
+graphics.sty    2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+    trig.sty    2016/01/03 v1.10 sin cos tan (DPC)
+graphics.cfg    2016/06/04 v1.11 sample graphics configuration
+  pdftex.def    2018/01/08 v1.0l Graphics/color driver for pdftex
         .
 
 LaTeX Warning: Unused global option(s):
     [letterpage].
 
 No file _region_.aux.
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
 (/home/augh/.emacs.d/elpa/auctex-12.1.0/latex/preview.sty
 Package: preview 2017/04/24 12.1 (AUCTeX/preview-latex)
  (/usr/share/texmf-dist/tex/generic/luatex85/luatex85.sty
 Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
 ) (/home/augh/.emacs.d/elpa/auctex-12.1.0/latex/prtightpage.def
-\PreviewBorder=\dimen112
+\PreviewBorder=\dimen114
 ) (/home/augh/.emacs.d/elpa/auctex-12.1.0/latex/prauctex.def
 No auxiliary output files.
 
 
 \hbadness=\count99
-\hfuzz=\dimen113
+\hfuzz=\dimen115
 (/home/augh/.emacs.d/elpa/auctex-12.1.0/latex/prauctex.cfg)) (/home/augh/.emacs.d/elpa/auctex-12.1.0/latex/prfootnotes.def)
 \pr@snippet=\count100
 \pr@box=\box28
-\pr@output=\toks19
+\pr@output=\toks20
 
 Preview: Fontsize 10.95pt
 Preview: PDFoutput 1
-)  !name(austin_report.tex) !offset(-3) 
+) (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count101
+\scratchdimen=\dimen116
+\scratchbox=\box29
+\nofMPsegments=\count102
+\nofMParguments=\count103
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count104
+\MPscratchDim=\dimen117
+\MPnumerator=\count105
+\makeMPintoPDFobject=\count106
+\everyMPtoPDFconversion=\toks22
+) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+ (/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+) (/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+ (/usr/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+ (/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+))) (/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+ (/usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+ (/usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+ (/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+))) (/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+ (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))  !name(austin_report.tex) !offset(-3) 
 ! Preview: Snippet 1 started.
 <-><->
       
-l.9 \section
-            {Selected Topics}
+l.10 \section
+             {Selected Topics}
 Not a real error.
 
 Preview: Tightpage -32891 -32891 32891 32891
 ! Preview: Snippet 1 ended.(655359+183500x23592960).
 <-><->
       
-l.9 \section{Selected Topics}
-                             
+l.10 \section{Selected Topics}
+                              
 Not a real error.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
@@ -75,14 +134,14 @@ Not a real error.
 <-><->
       
 l.11 \subsection
-                {DFT vs. FFT}
+                {Power Spectrum and Filtering}
 Not a real error.
 
-! Preview: Snippet 2 ended.(539580+0x23592960).
+! Preview: Snippet 2 ended.(546132+152916x23592960).
 <-><->
       
-l.11 \subsection{DFT vs. FFT}
-                             
+l.11 \subsection{Power Spectrum and Filtering}
+                                              
 Not a real error.
 
 [2
@@ -91,30 +150,32 @@ Not a real error.
 ! Preview: Snippet 3 started.
 <-><->
       
-l.15 \begin{equation}
+l.14 \begin{equation}
                      
 Not a real error.
 
-! Preview: Snippet 3 ended.(1782578+0x23592960).
+! Preview: Snippet 3 ended.(747801+0x23592960).
 <-><->
       
-l.22 \end{equation}
+l.17 \end{equation}
                    
 Not a real error.
 
-[3]
+[3
+
+]
 ! Preview: Snippet 4 started.
 <-><->
       
-l.28 \begin{equation}
-                     
+l.23 \subsubsection
+                   {Power Spectra}
 Not a real error.
 
-! Preview: Snippet 4 ended.(2649668+0x23592960).
+! Preview: Snippet 4 ended.(492366+139537x23592960).
 <-><->
       
-l.34 \end{equation}
-                   
+l.23 \subsubsection{Power Spectra}
+                                  
 Not a real error.
 
 [4
@@ -123,147 +184,216 @@ Not a real error.
 ! Preview: Snippet 5 started.
 <-><->
       
-l.35 where $
-            N$ is the total number of points. To transform a $3$-point vecto...
+l.28 ...ly different frequencies are considered: $
+                                                  f = 60$Hz
 Not a real error.
 
-! Preview: Snippet 5 ended.(490372+0x654826).
+! Preview: Snippet 5 ended.(498346+139537x2103020).
 <-><->
       
-l.35 where $N$
-               is the total number of points. To transform a $3$-point vecto...
+l.28 ...erent frequencies are considered: $f = 60$
+                                                  Hz
 Not a real error.
 
 [5]
 ! Preview: Snippet 6 started.
 <-><->
       
-l.35 ...e total number of points. To transform a $
-                                                  3$-point vector, the
+l.29 and $
+          f = 59.673$Hz.
 Not a real error.
 
-! Preview: Snippet 6 ended.(462465+0x358810).
+! Preview: Snippet 6 ended.(498346+139537x3378789).
 <-><->
       
-l.35 ...total number of points. To transform a $3$
-                                                  -point vector, the
+l.29 and $f = 59.673$
+                     Hz.
 Not a real error.
 
 [6]
 ! Preview: Snippet 7 started.
 <-><->
       
-l.36 forward transformation matrix is then the $
-                                                3 \times 3$ matrix
+l.31 \begin{figure}
+                   
 Not a real error.
 
-! Preview: Snippet 7 ended.(462465+59802x1594706).
+<power_spectrum.png, id=27, 578.16pt x 722.7pt>
+File: power_spectrum.png Graphic file (type png)
+<use power_spectrum.png>
+Package pdftex.def Info: power_spectrum.png  used on input line 32.
+(pdftex.def)             Requested size: 360.0pt x 449.99918pt.
+
+LaTeX Warning: Reference `eq:sine' on page 1 undefined on input line 35.
+
+
+LaTeX Warning: Reference `eq:sine' on page 1 undefined on input line 35.
+
+! Preview: Snippet 7 ended.(31177333+0x23592960).
 <-><->
       
-l.36 ...sformation matrix is then the $3 \times 3$
-                                                   matrix
+l.37 \end{figure}
+                 
 Not a real error.
 
-[7]
+[7
+
+
+ <./power_spectrum.png>]
 ! Preview: Snippet 8 started.
 <-><->
       
-l.37 \begin{equation}
-                     
+l.39 \subsubsection
+                   {Windows}
 Not a real error.
 
-! Preview: Snippet 8 ended.(3014029+0x23592960).
+! Preview: Snippet 8 ended.(498346+0x23592960).
 <-><->
       
-l.44 \end{equation}
-                   
+l.39 \subsubsection{Windows}
+                            
 Not a real error.
 
-[8]
+[8
+
+]
+
+LaTeX Warning: Reference `fig:hann_window' on page 1 undefined on input line 44.
+
 ! Preview: Snippet 9 started.
 <-><->
       
-l.46 \begin{equation}
-                     
-Not a real error.
-
-! Preview: Snippet 9 ended.(3014029+0x23592960).
-<-><->
-      
-l.53 \end{equation}
+l.46 \begin{figure}
                    
 Not a real error.
 
-[9]
+<hann_window.png, id=37, 578.16pt x 722.7pt>
+File: hann_window.png Graphic file (type png)
+<use hann_window.png>
+Package pdftex.def Info: hann_window.png  used on input line 47.
+(pdftex.def)             Requested size: 360.0pt x 449.99918pt.
+! Preview: Snippet 9 ended.(32068623+0x23592960).
+<-><->
+      
+l.53 \end{figure}
+                 
+Not a real error.
+
+[9
+
+
+ <./hann_window.png>]
 ! Preview: Snippet 10 started.
 <-><->
       
-l.56 \begin{equation}
-                     
+l.56 with frequencies $
+                       60$Hz and $59.673$Hz, shown in figures \ref{fig:hann_...
 Not a real error.
 
-! Preview: Snippet 10 ended.(2673867+0x23592960).
+! Preview: Snippet 10 ended.(462465+0x717620).
 <-><->
       
-l.63 \end{equation}
-                   
+l.56 with frequencies $60$
+                          Hz and $59.673$Hz, shown in figures \ref{fig:hann_...
 Not a real error.
 
 [10]
 ! Preview: Snippet 11 started.
 <-><->
       
-l.65 simple vector such as $
-                            x = \begin{bmatrix} 1 & 0 & -1 & 0 \end{bmatrix}...
+l.56 with frequencies $60$Hz and $
+                                  59.673$Hz, shown in figures \ref{fig:hann_...
 Not a real error.
 
-! Preview: Snippet 11 ended.(775781+266240x6358902).
+! Preview: Snippet 11 ended.(462465+0x1993389).
 <-><->
       
-l.65 ...n{bmatrix} 1 & 0 & -1 & 0 \end{bmatrix}^T$
-                                                  :
+l.56 with frequencies $60$Hz and $59.673$
+                                         Hz, shown in figures \ref{fig:hann_...
 Not a real error.
 
 [11]
+
+LaTeX Warning: Reference `fig:hann_0' on page 1 undefined on input line 56.
+
+
+LaTeX Warning: Reference `fig:hann_1' on page 1 undefined on input line 57.
+
 ! Preview: Snippet 12 started.
 <-><->
       
-l.66 \begin{equation}
-                     
-Not a real error.
-
-! Undefined control sequence.
-<recently read> \mathbb 
-                        
-l.68     \mathbb
-                {F} \left\{ x \right\}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Preview: Snippet 12 ended.(891289+0x23592960).
-<-><->
-      
-l.71 \end{equation}
+l.59 \begin{figure}
                    
 Not a real error.
 
-[12] ) 
+<hann_0.png, id=48, 578.16pt x 722.7pt>
+File: hann_0.png Graphic file (type png)
+<use hann_0.png>
+Package pdftex.def Info: hann_0.png  used on input line 60.
+(pdftex.def)             Requested size: 360.0pt x 449.99918pt.
+
+LaTeX Warning: Reference `eq:sine' on page 1 undefined on input line 64.
+
+
+LaTeX Warning: Reference `eq:sine' on page 1 undefined on input line 64.
+
+! Preview: Snippet 12 ended.(32108490+0x23592960).
+<-><->
+      
+l.66 \end{figure}
+                 
+Not a real error.
+
+[12
+
+
+ <./hann_0.png>]
+! Preview: Snippet 13 started.
+<-><->
+      
+l.68 \begin{figure}
+                   
+Not a real error.
+
+<hann_1.png, id=53, 578.16pt x 722.7pt>
+File: hann_1.png Graphic file (type png)
+<use hann_1.png>
+Package pdftex.def Info: hann_1.png  used on input line 69.
+(pdftex.def)             Requested size: 360.0pt x 449.99918pt.
+
+LaTeX Warning: Reference `eq:sine' on page 1 undefined on input line 73.
+
+
+LaTeX Warning: Reference `eq:sine' on page 1 undefined on input line 73.
+
+! Preview: Snippet 13 ended.(32108490+0x23592960).
+<-><->
+      
+l.75 \end{figure}
+                 
+Not a real error.
+
+[13
+
+
+ <./hann_1.png>]
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 186 strings out of 492117
- 2735 string characters out of 6128725
- 68825 words of memory out of 5000000
- 4638 multiletter control sequences out of 15000+600000
+ 1022 strings out of 491733
+ 15795 string characters out of 6123751
+ 89801 words of memory out of 5000000
+ 5789 multiletter control sequences out of 15000+600000
  10048 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 22i,11n,24p,170b,171s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on _region_.pdf (12 pages, 91562 bytes).
+ 41i,6n,25p,294b,251s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on _region_.pdf (13 pages, 1246562 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 80 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

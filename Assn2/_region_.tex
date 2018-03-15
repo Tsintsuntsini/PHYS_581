@@ -1,5 +1,6 @@
 \message{ !name(austin_report.tex)}\documentclass[11pt, letterpage]{article}
 \usepackage{amsmath}
+\usepackage{graphicx}
 
 \begin{document}
 
@@ -7,69 +8,72 @@
 
 
 \section{Selected Topics}
+\subsection{Power Spectrum and Filtering}
+To investigate the properties of the power spectrum and the effects of
+filtering, we consider the simple discretely sampled sinusoidal signal:
+\begin{equation}
+  V_j = A \sin(2 \pi f t_j - \phi)
+  \label{eq:sine}
+\end{equation}
 
-\subsection{DFT vs. FFT}
-This section investigates different aspects of the discrete Fourier transform
-(DFT) and its inverse (IDFT). First, consider the discrete boxcar frequency
-spectrum:
-\begin{equation}
-  X(\omega) = \left\{
-  \begin{array}{ll}
-    1, & \text{for} \; |\omega| \leq \frac{\pi}{3} \\
-    0, & \text{otherwise}
-  \end{array}
-  \right.
-\end{equation}
-We can transform this back into time space using the inverse transform.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% SHOW POWER IS CONFINED TO ONE BIN
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Both the forward and inverse Fourier transform can be thought of as a linear
-transformation on a vector, and thus can be represented through matrix
-multiplication, with each element corresponding to the equation
-\begin{equation}
-  \begin{aligned}
-    F_{nm} &= e^{- 2 \pi i \frac{nm}{N}} \\
-    F_{nm}^{-1} &= \frac{1}{N} e^{2 \pi i \frac{nm}{N}}
-  \end{aligned}
-  \label{fft_mat_el}
-\end{equation}
-where $N$ is the total number of points. To transform a $3$-point vector, the
-forward transformation matrix is then the $3 \times 3$ matrix
-\begin{equation}
-  F =
-  \begin{pmatrix}
-    e^{- \frac{2 \pi}{3} i} & e^{- \frac{4 \pi}{3} i} & e^{- 2 \pi i} \\
-    e^{- \frac{4 \pi}{3} i} & e^{- \frac{8 \pi}{3} i} & e^{- 4 \pi i} \\
-    e^{- 2 \pi i} & e^{- 4 \pi i} & e^{- 6 \pi i}
-  \end{pmatrix}
-\end{equation}
-and its inverse is
-\begin{equation}
-  F^{-1} = \frac{1}{3}
-  \begin{pmatrix}
-    e^{\frac{2 \pi}{3} i} & e^{\frac{4 \pi}{3} i} & e^{2 \pi i} \\
-    e^{\frac{4 \pi}{3} i} & e^{\frac{8 \pi}{3} i} & e^{4 \pi i} \\
-    e^{2 \pi i} & e^{4 \pi i} & e^{6 \pi i}
-  \end{pmatrix}
-\end{equation}
-We can easily confirm that these matrices are inverses of one another through
-matrix multiplication so that their product is the identity matrix:
-\begin{equation}
-  F_{nm}F_{nm}^{-1}
-  = \begin{pmatrix}
-    1 & 0 & 0 \\
-    0 & 1 & 0 \\
-    0 & 0 & 1
-  \end{pmatrix}
-\end{equation}
-We can also prove this by applying the forward and inverse transformation to a
-simple vector such as $x = \begin{bmatrix} 1 & 0 & -1 & 0 \end{bmatrix}^T$:
-\begin{equation}
-  \begin{aligned}
-    \mathbb{F} \left\{ x \right\}
-    = F_{nm}
-  \end{aligned}
-\end{equation}
+\subsubsection{Power Spectra}
+The power spectrum of a continuous signal is simply the square of the continuous
+Fourier transform. However, when computing the power spectrum of a discretely
+sampled signal, the leakage of power from some frequencies to others is a
+problematic result of the digitization of the signal. To illustrate this, the
+power spectra for two slightly different frequencies are considered: $f = 60$Hz
+and $f = 59.673$Hz.
+
+\begin{figure}
+  \includegraphics[width=\linewidth]{power_spectrum.png}
+  \caption{
+    The power spectra of equation \ref{eq:sine} with two very close frequencies.
+  }
+  \label{}
+\end{figure}
+
+\subsubsection{Windows}
+One of the standard ways to reduce spectral leakage is to multiply the data in
+time space with a window before performing the Fourier transform. Two of the
+most common windows we look into are the Hann window and the Blackman-Harris
+window. The Hann function and its Fourier transform are shown in figure
+\ref{fig:hann_window}.
+
+\begin{figure}
+  \includegraphics[width=\linewidth]{hann_window.png}
+  \caption{
+    The Hann window (top) and its Fourier transform (bottom). It can be thought
+    of as a portion of a cosine wave.
+  }
+  \label{fig:hann_window}
+\end{figure}
+
+Now the Hann window can be applied to the two signals that were used previously
+with frequencies $60$Hz and $59.673$Hz, shown in figures \ref{fig:hann_0} and
+\ref{fig:hann_1}, respectively. 
+
+\begin{figure}
+  \includegraphics[width=\linewidth]{hann_0.png}
+  \caption{
+    The Hann window applied to equation \ref{eq:sine} with $f = 60$Hz in time
+    space (top) and in frequency space (bottom).
+  }
+  \label{fig:hann_0}
+\end{figure}
+
+\begin{figure}
+  \includegraphics[width=\linewidth]{hann_1.png}
+  \caption{
+    The Hann window applied to equation \ref{eq:sine} with $f = 59.673$Hz in
+    time space (top) and in frequency space (bottom).
+  }
+  \label{fig:hann_1}
+\end{figure}
 
 
 \end{document}
-\message{ !name(austin_report.tex) !offset(-75) }
+\message{ !name(austin_report.tex) !offset(-79) }
