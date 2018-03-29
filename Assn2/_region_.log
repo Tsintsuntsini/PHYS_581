@@ -1,0 +1,2269 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=prv_Assn2 2018.3.15)  15 MAR 2018 13:16
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**&prv_Assn2 _region_.tex
+(./_region_.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
+CUSTOMISED FORMAT. Preloaded files:
+        .
+ article.cls    2007/10/19 v1.4h Standard LaTeX document class
+  size10.clo    2007/10/19 v1.4h Standard LaTeX file (size option)
+graphicx.sty    1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+  keyval.sty    1999/03/16 v1.13 key=value parser (DPC)
+graphics.sty    2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+    trig.sty    1999/03/16 v1.09 sin cos tan (DPC)
+graphics.cfg    2010/04/23 v1.9 graphics configuration of TeX Live
+  pdftex.def    2011/05/27 v0.06d Graphics/color for pdfTeX
+infwarerr.sty    2010/04/08 v1.3 Providing info/warning/error messages (HO)
+ ltxcmds.sty    2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+ amsmath.sty    2013/01/14 v2.14 AMS math features
+ amstext.sty    2000/06/29 v2.01
+  amsgen.sty    1999/11/30 v2.0
+  amsbsy.sty    1999/11/29 v1.2d
+  amsopn.sty    1999/12/14 v2.01 operator names
+   float.sty    2001/11/08 v1.3d Float enhancements (AL)
+ amssymb.sty    2013/01/14 v3.01 AMS font symbols
+amsfonts.sty    2013/01/14 v3.01 Basic AMSFonts support
+hyperref.sty    2012/11/06 v6.83m Hypertext links for LaTeX
+hobsub-hyperref.sty    2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+hobsub-generic.sty    2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+  hobsub.sty    2012/05/28 v1.13 Construct package bundles (HO)
+ifluatex.sty    2010/03/01 v1.3 Provides the ifluatex switch (HO)
+  ifvtex.sty    2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+ intcalc.sty    2007/09/27 v1.1 Expandable calculations with integers (HO)
+   ifpdf.sty    2011/01/30 v2.3 Provides the ifpdf switch (HO)
+etexcmds.sty    2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+kvsetkeys.sty    2012/04/25 v1.16 Key value parser (HO)
+kvdefinekeys.sty    2011/04/07 v1.3 Define keys (HO)
+pdftexcmds.sty    2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
+pdfescape.sty    2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+bigintcalc.sty    2012/04/08 v1.3 Expandable calculations on big integers (HO)
+  bitset.sty    2011/01/30 v1.1 Handle bit-vector datatype (HO)
+uniquecounter.sty    2011/01/30 v1.2 Provide unlimited unique counter (HO)
+letltxmacro.sty    2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+ hopatch.sty    2012/05/28 v1.2 Wrapper for package hooks (HO)
+xcolor-patch.sty    2011/01/30 xcolor patch
+atveryend.sty    2011/06/30 v1.8 Hooks at the very end of document (HO)
+atbegshi.sty    2011/10/05 v1.16 At begin shipout hook (HO)
+refcount.sty    2011/10/16 v3.4 Data extraction from label references (HO)
+ hycolor.sty    2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+ ifxetex.sty    2010/09/12 v0.6 Provides ifxetex conditional
+ auxhook.sty    2011/03/04 v1.3 Hooks for auxiliary files (HO)
+kvoptions.sty    2011/06/30 v3.11 Key value format for package options (HO)
+  pd1enc.def    2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+hyperref.cfg    2002/06/06 v1.2 hyperref configuration of TeXLive
+     url.sty    2013/09/16  ver 3.4  Verb mode for urls, etc.
+ hpdftex.def    2012/11/06 v6.83m Hyperref driver for pdfTeX
+rerunfilecheck.sty    2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+ caption.sty    2013/05/02 v3.3-89 Customizing captions (AR)
+caption3.sty    2013/05/02 v1.6-88 caption3 kernel (AR)
+    umsa.fd    2013/01/14 v3.01 AMS symbols A
+    umsb.fd    2013/01/14 v3.01 AMS symbols B
+        .
+No file _region_.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+(/usr/share/texmf/tex/latex/preview/preview.sty
+Package: preview 2010/02/14 11.87 (AUCTeX/preview-latex)
+
+(/usr/share/texmf/tex/latex/preview/prtightpage.def
+\PreviewBorder=\dimen125
+)
+(/usr/share/texmf/tex/latex/preview/prauctex.def
+No auxiliary output files.
+
+
+\hbadness=\count112
+\hfuzz=\dimen126
+(/usr/share/texmf/tex/latex/preview/prauctex.cfg))
+(/usr/share/texmf/tex/latex/preview/prfootnotes.def)
+\pr@snippet=\count113
+\pr@box=\box30
+\pr@output=\toks22
+
+Preview: Fontsize 10pt
+Preview: PDFoutput 1
+) (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count114
+\scratchdimen=\dimen127
+\scratchbox=\box31
+\nofMPsegments=\count115
+\nofMParguments=\count116
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count117
+\MPscratchDim=\dimen128
+\MPnumerator=\count118
+\makeMPintoPDFobject=\count119
+\everyMPtoPDFconversion=\toks24
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box32
+Package hyperref Info: Link coloring OFF on input line 11.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count120
+)
+LaTeX Info: Redefining \ref on input line 11.
+LaTeX Info: Redefining \pageref on input line 11.
+LaTeX Info: Redefining \nameref on input line 11.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: Incompatible package detected (regarding \caption).
+(caption)             \caption = \protected\long macro:->\pr@protect@domacro {}
+{##1{}}\pr@\caption .
+
+
+Package caption Warning: \caption will not be redefined since it's already
+(caption)                redefined by a document class or package which is
+(caption)                unknown to the caption package.
+See the caption package documentation for explanation.
+
+Package caption Info: End \AtBeginDocument code.
+ !name(Assn2.tex) !offset(-3) 
+! Preview: Snippet 1 started.
+<-><->
+      
+l.21 \section
+             {Introduction}
+Not a real error.
+
+Preview: Tightpage -32891 -32891 32891 32891
+! Preview: Snippet 1 ended.(655359+0x15040512).
+<-><->
+      
+l.21 \section{Introduction}
+                           
+Not a real error.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+! Preview: Snippet 2 started.
+<-><->
+      
+l.22 \subsection
+                {DFT vs FFT}
+Not a real error.
+
+! Preview: Snippet 2 ended.(539580+0x15040512).
+<-><->
+      
+l.22 \subsection{DFT vs FFT}
+                            
+Not a real error.
+
+[2
+
+]
+! Preview: Snippet 3 started.
+<-><->
+      
+l.24 \begin{equation}
+                     
+Not a real error.
+
+! Preview: Snippet 3 ended.(2029074+0x15040512).
+<-><->
+      
+l.26 \end{equation}
+                   
+Not a real error.
+
+[3]
+! Preview: Snippet 4 started.
+<-><->
+      
+l.29 \begin{equation}
+                     
+Not a real error.
+
+! Preview: Snippet 4 ended.(1966099+0x15040512).
+<-><->
+      
+l.34 \end{equation}
+                   
+Not a real error.
+
+[4]
+! Preview: Snippet 5 started.
+<-><->
+      
+l.36 ... be sampled at given frequency intervals $
+                                                  \Delta \omega = 1$ to give...
+
+Not a real error.
+
+! Preview: Snippet 5 ended.(447828+0x2179066).
+<-><->
+      
+l.36 ...en frequency intervals $\Delta \omega = 1$
+                                                   to give a series of four ...
+
+Not a real error.
+
+[5]
+! Preview: Snippet 6 started.
+<-><->
+      
+l.38 \begin{equation}
+                     
+Not a real error.
+
+! Preview: Snippet 6 ended.(11538950+0x15040512).
+<-><->
+      
+l.55 \end{equation}
+                   
+Not a real error.
+
+[6]
+! Preview: Snippet 7 started.
+<-><->
+      
+l.57 ... nature of the iDFT equation, the matrix $
+                                                  W$ will always have the sa...
+
+Not a real error.
+
+! Preview: Snippet 7 ended.(447828+0x709974).
+<-><->
+      
+l.57 ...ature of the iDFT equation, the matrix $W$
+                                                   will always have the same...
+
+Not a real error.
+
+[7]
+! Preview: Snippet 8 started.
+<-><->
+      
+l.57 ... a series of different points since both $
+                                                  n$ and $k$ are integers re...
+
+Not a real error.
+
+! Preview: Snippet 8 ended.(282168+0x393370).
+<-><->
+      
+l.57 ... series of different points since both $n$
+                                                   and $k$ are integers rela...
+
+Not a real error.
+
+[8]
+! Preview: Snippet 9 started.
+<-><->
+      
+l.57 ...s of different points since both $n$ and $
+                                                  k$ are integers related to...
+
+Not a real error.
+
+! Preview: Snippet 9 ended.(455111+0x361814).
+<-><->
+      
+l.57 ...of different points since both $n$ and $k$
+                                                   are integers related to $...
+
+Not a real error.
+
+[9]
+! Preview: Snippet 10 started.
+<-><->
+      
+l.57 ...both $n$ and $k$ are integers related to $
+                                                  N$. We can therefore use t...
+
+Not a real error.
+
+! Preview: Snippet 10 ended.(447828+0x598014).
+<-><->
+      
+l.57 ...th $n$ and $k$ are integers related to $N$
+                                                  . We can therefore use thi...
+
+Not a real error.
+
+[10]
+! Preview: Snippet 11 started.
+<-><->
+      
+l.59 \begin{equation}
+                     
+Not a real error.
+
+! Preview: Snippet 11 ended.(17067897+0x15040512).
+<-><->
+      
+l.72 \end{equation}
+                   
+Not a real error.
+
+[11]
+! Preview: Snippet 12 started.
+<-><->
+      
+l.74 Using the same DFT matrix, the transform of $
+                                                  x=[1,0,-1,0]^T$ may be obt...
+
+Not a real error.
+
+! Preview: Snippet 12 ended.(551306+163840x4719563).
+<-><->
+      
+l.74 ... matrix, the transform of $x=[1,0,-1,0]^T$
+                                                   may be obtained:
+Not a real error.
+
+[12]
+! Preview: Snippet 13 started.
+<-><->
+      
+l.75 \begin{equation}
+                     
+Not a real error.
+
+! Preview: Snippet 13 ended.(11048808+0x15040512).
+<-><->
+      
+l.92 \end{equation}
+                   
+Not a real error.
+
+[13]
+! Preview: Snippet 14 started.
+<-><->
+      
+l.95 \begin{equation}
+                     
+Not a real error.
+
+! Preview: Snippet 14 ended.(655360+0x15040512).
+<-><->
+      
+l.97 \end{equation}
+                   
+Not a real error.
+
+[14]
+! Preview: Snippet 15 started.
+<-><->
+      
+l.99 ... function has two driving frequencies at $
+                                                  1Hz$ and $2Hz$ and a non-p...
+
+Not a real error.
+
+! Preview: Snippet 15 ended.(447828+0x1259293).
+<-><->
+      
+l.99 ...ction has two driving frequencies at $1Hz$
+                                                   and $2Hz$ and a non-perio...
+
+Not a real error.
+
+[15]
+! Preview: Snippet 16 started.
+<-><->
+      
+l.99 ...has two driving frequencies at $1Hz$ and $
+                                                  2Hz$ and a non-periodic co...
+
+Not a real error.
+
+! Preview: Snippet 16 ended.(447828+0x1259293).
+<-><->
+      
+l.99 ...two driving frequencies at $1Hz$ and $2Hz$
+                                                   and a non-periodic compon...
+
+Not a real error.
+
+[16]
+! Preview: Snippet 17 started.
+<-><->
+      
+l.99 ... and $2Hz$ and a non-periodic component ($
+                                                  0Hz$). Each of these three...
+
+Not a real error.
+
+! Preview: Snippet 17 ended.(447828+0x1259293).
+<-><->
+      
+l.99 ... $2Hz$ and a non-periodic component ($0Hz$
+                                                  ). Each of these three com...
+
+Not a real error.
+
+[17]
+
+LaTeX Warning: Reference `fig:3functions' on page 2 undefined on input line 99.
+
+
+! Preview: Snippet 18 started.
+<-><->
+      
+l.101 \begin{figure*}
+                     
+Not a real error.
+
+<"3 functions".png, id=73, 1445.4pt x 289.08pt>
+File: "3 functions".png Graphic file (type png)
+ <use "3 functions".png>
+Package pdftex.def Info: "3 functions".png used on input line 103.
+(pdftex.def)             Requested size: 469.0pt x 93.7999pt.
+
+! Preview: Snippet 18 ended.(8375494+0x30736384).
+<-><->
+      
+l.106 \end{figure*}
+                   
+Not a real error.
+
+[18
+
+
+
+ <./3 functions.png>]
+! Preview: Snippet 19 started.
+<-><->
+      
+l.109 ... The first four sampled values are then $
+                                                  f(0)= 8$, $f(1/4)=4$, $f(2...
+
+Not a real error.
+
+! Preview: Snippet 19 ended.(491520+163840x2430292).
+<-><->
+      
+l.109 ...st four sampled values are then $f(0)= 8$
+                                                  , $f(1/4)=4$, $f(2/4)=8$, ...
+
+Not a real error.
+
+[19]
+! Preview: Snippet 20 started.
+<-><->
+      
+l.109 ...four sampled values are then $f(0)= 8$, $
+                                                  f(1/4)=4$, $f(2/4)=8$, and...
+
+Not a real error.
+
+! Preview: Snippet 20 ended.(491520+163840x3085654).
+<-><->
+      
+l.109 ...led values are then $f(0)= 8$, $f(1/4)=4$
+                                                  , $f(2/4)=8$, and $f(3/4)=...
+
+Not a real error.
+
+[20]
+! Preview: Snippet 21 started.
+<-><->
+      
+l.109 ... values are then $f(0)= 8$, $f(1/4)=4$, $
+                                                  f(2/4)=8$, and $f(3/4)=0$....
+
+Not a real error.
+
+! Preview: Snippet 21 ended.(491520+163840x3085654).
+<-><->
+      
+l.109 ...re then $f(0)= 8$, $f(1/4)=4$, $f(2/4)=8$
+                                                  , and $f(3/4)=0$. If inste...
+
+Not a real error.
+
+[21]
+! Preview: Snippet 22 started.
+<-><->
+      
+l.109 ... $f(0)= 8$, $f(1/4)=4$, $f(2/4)=8$, and $
+                                                  f(3/4)=0$. If instead the ...
+
+Not a real error.
+
+! Preview: Snippet 22 ended.(491520+163840x3085654).
+<-><->
+      
+l.109 ...$, $f(1/4)=4$, $f(2/4)=8$, and $f(3/4)=0$
+                                                  . If instead the function ...
+
+Not a real error.
+
+[22]
+! Preview: Snippet 23 started.
+<-><->
+      
+l.109 ...at 1 sample per second, the samples are $
+                                                  f(0)=f(1)=f(2)=f(3)=8$.
+Not a real error.
+
+! Preview: Snippet 23 ended.(491520+163840x8738125).
+<-><->
+      
+l.109 ..., the samples are $f(0)=f(1)=f(2)=f(3)=8$
+                                                  .
+Not a real error.
+
+[23]
+! Preview: Snippet 24 started.
+<-><->
+      
+l.111 Since sampling at $
+                         4Hz$ is exactly at the Nyquist frequency, it should...
+
+Not a real error.
+
+! Preview: Snippet 24 ended.(447828+0x1259293).
+<-><->
+      
+l.111 Since sampling at $4Hz$
+                              is exactly at the Nyquist frequency, it should...
+
+Not a real error.
+
+[24]
+! Preview: Snippet 25 started.
+<-><->
+      
+l.113 \begin{equation}
+                      
+Not a real error.
+
+! Preview: Snippet 25 ended.(11048808+0x15040512).
+<-><->
+      
+l.130 \end{equation}
+                    
+Not a real error.
+
+[25]
+! Preview: Snippet 26 started.
+<-><->
+      
+l.132 For the full set of data from $
+                                     t=0$ to $t=100$ sampled at $4Hz$, the d...
+
+Not a real error.
+
+! Preview: Snippet 26 ended.(422343+0x1438145).
+<-><->
+      
+l.132 For the full set of data from $t=0$
+                                          to $t=100$ sampled at $4Hz$, the d...
+
+Not a real error.
+
+[26]
+! Preview: Snippet 27 started.
+<-><->
+      
+l.132 For the full set of data from $t=0$ to $
+                                              t=100$ sampled at $4Hz$, the d...
+
+Not a real error.
+
+! Preview: Snippet 27 ended.(422343+0x2093507).
+<-><->
+      
+l.132 ...he full set of data from $t=0$ to $t=100$
+                                                   sampled at $4Hz$, the dif...
+
+Not a real error.
+
+[27]
+! Preview: Snippet 28 started.
+<-><->
+      
+l.132 ...f data from $t=0$ to $t=100$ sampled at $
+                                                  4Hz$, the different DFT co...
+
+Not a real error.
+
+! Preview: Snippet 28 ended.(447828+0x1259293).
+<-><->
+      
+l.132 ...ta from $t=0$ to $t=100$ sampled at $4Hz$
+                                                  , the different DFT coeffi...
+
+Not a real error.
+
+[28]
+
+LaTeX Warning: Reference `fig:Coefficients' on page 2 undefined on input line 1
+32.
+
+! Preview: Snippet 29 started.
+<-><->
+      
+l.132 ...cies of each of the three components to $
+                                                  f(t)$. When these coeffici...
+
+Not a real error.
+
+! Preview: Snippet 29 ended.(491520+163840x1137782).
+<-><->
+      
+l.132 ...of each of the three components to $f(t)$
+                                                  . When these coefficients ...
+
+Not a real error.
+
+[29]
+! Preview: Snippet 30 started.
+<-><->
+      
+l.134 \begin{figure}
+                    
+Not a real error.
+
+<Coefficients.png, id=116, 433.62pt x 289.08pt>
+File: Coefficients.png Graphic file (type png)
+ <use Coefficients.png>
+Package pdftex.def Info: Coefficients.png used on input line 136.
+(pdftex.def)             Requested size: 229.5pt x 152.99994pt.
+
+! Preview: Snippet 30 ended.(13041660+0x15040512).
+<-><->
+      
+l.139 \end{figure}
+                  
+Not a real error.
+
+[30
+
+
+ <./Coefficients.png>]
+! Preview: Snippet 31 started.
+<-><->
+      
+l.144 \subsection
+                 {Power Spectrum and Filtering}
+Not a real error.
+
+! Preview: Snippet 31 ended.(546132+152916x15040512).
+<-><->
+      
+l.144 \subsection{Power Spectrum and Filtering}
+                                               
+Not a real error.
+
+[31
+
+]
+! Preview: Snippet 32 started.
+<-><->
+      
+l.147 \begin{equation}
+                      
+Not a real error.
+
+! Preview: Snippet 32 ended.(679024+0x15040512).
+<-><->
+      
+l.150 \end{equation}
+                    
+Not a real error.
+
+[32
+
+]
+! Preview: Snippet 33 started.
+<-><->
+      
+l.156 \subsubsection
+                    {Power Spectra}
+Not a real error.
+
+! Preview: Snippet 33 ended.(449650+127431x15040512).
+<-><->
+      
+l.156 \subsubsection{Power Spectra}
+                                   
+Not a real error.
+
+[33
+
+]
+! Preview: Snippet 34 started.
+<-><->
+      
+l.161 ...y different frequencies are considered: $
+                                                  f = 60$Hz
+Not a real error.
+
+! Preview: Snippet 34 ended.(455111+127431x1920566).
+<-><->
+      
+l.161 ...rent frequencies are considered: $f = 60$
+                                                  Hz
+Not a real error.
+
+[34]
+! Preview: Snippet 35 started.
+<-><->
+      
+l.162 and $
+           f = 59.673$Hz. These
+Not a real error.
+
+! Preview: Snippet 35 ended.(455111+127431x3085654).
+<-><->
+      
+l.162 and $f = 59.673$
+                      Hz. These
+Not a real error.
+
+[35]
+! Preview: Snippet 36 started.
+<-><->
+      
+l.164 \begin{figure}
+                    
+Not a real error.
+
+<power_spectrum.png, id=142, 578.16pt x 722.7pt>
+File: power_spectrum.png Graphic file (type png)
+ <use power_spectrum.png>
+Package pdftex.def Info: power_spectrum.png used on input line 165.
+(pdftex.def)             Requested size: 229.5pt x 286.86937pt.
+
+
+LaTeX Warning: Reference `eq:sine' on page 2 undefined on input line 170.
+
+
+LaTeX Warning: Reference `eq:sine' on page 2 undefined on input line 170.
+
+! Preview: Snippet 36 ended.(21814927+0x15040512).
+<-><->
+      
+l.172 \end{figure}
+                  
+Not a real error.
+
+[36
+
+
+ <./power_spectrum.png>]
+! Preview: Snippet 37 started.
+<-><->
+      
+l.174 \subsubsection
+                    {Windows}
+Not a real error.
+
+! Preview: Snippet 37 ended.(455111+0x15040512).
+<-><->
+      
+l.174 \subsubsection{Windows}
+                             
+Not a real error.
+
+[37
+
+]
+
+LaTeX Warning: Reference `fig:hann_window' on page 2 undefined on input line 18
+3.
+
+! Preview: Snippet 38 started.
+<-><->
+      
+l.188 \begin{figure}
+                    
+Not a real error.
+
+<hann_window.png, id=153, 578.16pt x 722.7pt>
+File: hann_window.png Graphic file (type png)
+ <use hann_window.png>
+Package pdftex.def Info: hann_window.png used on input line 189.
+(pdftex.def)             Requested size: 229.5pt x 286.86937pt.
+
+! Preview: Snippet 38 ended.(21814927+0x15040512).
+<-><->
+      
+l.195 \end{figure}
+                  
+Not a real error.
+
+[38
+
+
+ <./hann_window.png>]
+! Preview: Snippet 39 started.
+<-><->
+      
+l.198 with frequencies $
+                        60$Hz and $59.673$Hz, shown in figures \ref{fig:hann...
+
+Not a real error.
+
+! Preview: Snippet 39 ended.(422343+0x655362).
+<-><->
+      
+l.198 with frequencies $60$
+                           Hz and $59.673$Hz, shown in figures \ref{fig:hann...
+
+Not a real error.
+
+[39]
+! Preview: Snippet 40 started.
+<-><->
+      
+l.198 with frequencies $60$Hz and $
+                                   59.673$Hz, shown in figures \ref{fig:hann...
+
+Not a real error.
+
+! Preview: Snippet 40 ended.(422343+0x1820450).
+<-><->
+      
+l.198 with frequencies $60$Hz and $59.673$
+                                          Hz, shown in figures \ref{fig:hann...
+
+Not a real error.
+
+[40]
+
+LaTeX Warning: Reference `fig:hann_0' on page 2 undefined on input line 198.
+
+
+LaTeX Warning: Reference `fig:hann_1' on page 2 undefined on input line 199.
+
+
+LaTeX Warning: Reference `fig:hann_0' on page 2 undefined on input line 200.
+
+
+LaTeX Warning: Reference `fig:hann_1' on page 2 undefined on input line 205.
+
+! Preview: Snippet 41 started.
+<-><->
+      
+l.205 \ref{fig:hann_1} for the frequency $
+                                          f = 59.673$, though the
+Not a real error.
+
+! Preview: Snippet 41 ended.(455111+127431x3085654).
+<-><->
+      
+l.205 ...ig:hann_1} for the frequency $f = 59.673$
+                                                  , though the
+Not a real error.
+
+[41]
+! Preview: Snippet 42 started.
+<-><->
+      
+l.208 \begin{figure}
+                    
+Not a real error.
+
+<hann_0.png, id=169, 578.16pt x 722.7pt>
+File: hann_0.png Graphic file (type png)
+ <use hann_0.png>
+Package pdftex.def Info: hann_0.png used on input line 209.
+(pdftex.def)             Requested size: 229.5pt x 286.86937pt.
+
+
+LaTeX Warning: Reference `eq:sine' on page 3 undefined on input line 213.
+
+
+LaTeX Warning: Reference `eq:sine' on page 3 undefined on input line 213.
+
+! Preview: Snippet 42 ended.(21814927+0x15040512).
+<-><->
+      
+l.215 \end{figure}
+                  
+Not a real error.
+
+[42
+
+
+ <./hann_0.png>]
+! Preview: Snippet 43 started.
+<-><->
+      
+l.217 \begin{figure}
+                    
+Not a real error.
+
+<hann_1.png, id=175, 578.16pt x 722.7pt>
+File: hann_1.png Graphic file (type png)
+ <use hann_1.png>
+Package pdftex.def Info: hann_1.png used on input line 218.
+(pdftex.def)             Requested size: 229.5pt x 286.86937pt.
+
+
+LaTeX Warning: Reference `eq:sine' on page 3 undefined on input line 222.
+
+
+LaTeX Warning: Reference `eq:sine' on page 3 undefined on input line 222.
+
+! Preview: Snippet 43 ended.(21814927+0x15040512).
+<-><->
+      
+l.224 \end{figure}
+                  
+Not a real error.
+
+[43
+
+
+ <./hann_1.png>]
+
+LaTeX Warning: Reference `fig:blackman_harris' on page 3 undefined on input lin
+e 227.
+
+! Preview: Snippet 44 started.
+<-><->
+      
+l.229 applied to the signal, the peaks at $
+                                           60$Hz also have distinct minima
+Not a real error.
+
+! Preview: Snippet 44 ended.(422343+0x655362).
+<-><->
+      
+l.229 applied to the signal, the peaks at $60$
+                                              Hz also have distinct minima
+Not a real error.
+
+[44]
+! Preview: Snippet 45 started.
+<-><->
+      
+l.233 \begin{figure*}
+                     
+Not a real error.
+
+<blackman_harris.png, id=185, 1300.86pt x 722.7pt>
+File: blackman_harris.png Graphic file (type png)
+ <use blackman_harris.png>
+Package pdftex.def Info: blackman_harris.png used on input line 234.
+(pdftex.def)             Requested size: 469.0pt x 260.55775pt.
+
+
+LaTeX Warning: Reference `eq:sin' on page 3 undefined on input line 240.
+
+
+LaTeX Warning: Reference `eq:sin' on page 3 undefined on input line 240.
+
+! Preview: Snippet 45 ended.(20090569+0x30736384).
+<-><->
+      
+l.242 \end{figure*}
+                   
+Not a real error.
+
+[45
+
+
+ <./blackman_harris.png>]
+! Preview: Snippet 46 started.
+<-><->
+      
+l.245 \section
+              {Applications}
+Not a real error.
+
+! Preview: Snippet 46 ended.(655359+183500x15040512).
+<-><->
+      
+l.245 \section{Applications}
+                            
+Not a real error.
+
+[46
+
+]
+! Preview: Snippet 47 started.
+<-><->
+      
+l.246 \subsection
+                 {Stellar Binary System}
+Not a real error.
+
+! Preview: Snippet 47 ended.(546132+152916x15040512).
+<-><->
+      
+l.246 \subsection{Stellar Binary System}
+                                        
+Not a real error.
+
+[47
+
+]
+
+LaTeX Warning: Reference `fig:binary_time' on page 3 undefined on input line 25
+0.
+
+
+LaTeX Warning: Reference `fig:BinarySpectrum' on page 3 undefined on input line
+ 250.
+
+! Preview: Snippet 48 started.
+<-><->
+      
+l.250 ...f five prominent peaks at values around $
+                                                  0.9Hz$, $1.6Hz$, $2.3Hz$, ...
+
+Not a real error.
+
+! Preview: Snippet 48 ended.(447828+0x1769019).
+<-><->
+      
+l.250 ... prominent peaks at values around $0.9Hz$
+                                                  , $1.6Hz$, $2.3Hz$, $3.2Hz...
+
+Not a real error.
+
+[48]
+! Preview: Snippet 49 started.
+<-><->
+      
+l.250 ...ominent peaks at values around $0.9Hz$, $
+                                                  1.6Hz$, $2.3Hz$, $3.2Hz$ a...
+
+Not a real error.
+
+! Preview: Snippet 49 ended.(447828+0x1769019).
+<-><->
+      
+l.250 ...t peaks at values around $0.9Hz$, $1.6Hz$
+                                                  , $2.3Hz$, $3.2Hz$ and $4....
+
+Not a real error.
+
+[49]
+! Preview: Snippet 50 started.
+<-><->
+      
+l.250 ...eaks at values around $0.9Hz$, $1.6Hz$, $
+                                                  2.3Hz$, $3.2Hz$ and $4.0Hz...
+
+Not a real error.
+
+! Preview: Snippet 50 ended.(447828+0x1769019).
+<-><->
+      
+l.250 ...t values around $0.9Hz$, $1.6Hz$, $2.3Hz$
+                                                  , $3.2Hz$ and $4.0Hz$ show...
+
+Not a real error.
+
+[50]
+! Preview: Snippet 51 started.
+<-><->
+      
+l.250 ...alues around $0.9Hz$, $1.6Hz$, $2.3Hz$, $
+                                                  3.2Hz$ and $4.0Hz$ shows t...
+
+Not a real error.
+
+! Preview: Snippet 51 ended.(447828+0x1769019).
+<-><->
+      
+l.250 ...around $0.9Hz$, $1.6Hz$, $2.3Hz$, $3.2Hz$
+                                                   and $4.0Hz$ shows that th...
+
+Not a real error.
+
+[51]
+! Preview: Snippet 52 started.
+<-><->
+      
+l.250 ... $0.9Hz$, $1.6Hz$, $2.3Hz$, $3.2Hz$ and $
+                                                  4.0Hz$ shows that the syst...
+
+Not a real error.
+
+! Preview: Snippet 52 ended.(447828+0x1769019).
+<-><->
+      
+l.250 ...z$, $1.6Hz$, $2.3Hz$, $3.2Hz$ and $4.0Hz$
+                                                   shows that the system is ...
+
+Not a real error.
+
+[52]
+
+LaTeX Warning: Reference `fig:binaryZoom' on page 3 undefined on input line 251
+.
+
+! Preview: Snippet 53 started.
+<-><->
+      
+l.251 ...fig:binaryZoom} shows the region around $
+                                                  f=0$. There are a few smal...
+
+Not a real error.
+
+! Preview: Snippet 53 ended.(455111+127431x1592885).
+<-><->
+      
+l.251 ...binaryZoom} shows the region around $f=0$
+                                                  . There are a few small pe...
+
+Not a real error.
+
+[53]
+! Preview: Snippet 54 started.
+<-><->
+      
+l.253 \begin{figure*}
+                     
+Not a real error.
+
+<binary_time.png, id=218, 1445.4pt x 289.08pt>
+File: binary_time.png Graphic file (type png)
+ <use binary_time.png>
+Package pdftex.def Info: binary_time.png used on input line 255.
+(pdftex.def)             Requested size: 469.0pt x 93.7999pt.
+
+! Preview: Snippet 54 ended.(8375494+0x30736384).
+<-><->
+      
+l.258 \end{figure*}
+                   
+Not a real error.
+
+[54
+
+
+ <./binary_time.png>]
+! Preview: Snippet 55 started.
+<-><->
+      
+l.260 \begin{figure*}
+                     
+Not a real error.
+
+<BinarySpectrum.png, id=224, 1445.4pt x 289.08pt>
+File: BinarySpectrum.png Graphic file (type png)
+ <use BinarySpectrum.png>
+Package pdftex.def Info: BinarySpectrum.png used on input line 262.
+(pdftex.def)             Requested size: 469.0pt x 93.7999pt.
+
+! Preview: Snippet 55 ended.(9948358+0x30736384).
+<-><->
+      
+l.265 \end{figure*}
+                   
+Not a real error.
+
+[55
+
+
+ <./BinarySpectrum.png>]
+! Preview: Snippet 56 started.
+<-><->
+      
+l.267 \begin{figure}
+                    
+Not a real error.
+
+<binaryZoom.png, id=231, 433.62pt x 289.08pt>
+File: binaryZoom.png Graphic file (type png)
+ <use binaryZoom.png>
+Package pdftex.def Info: binaryZoom.png used on input line 269.
+(pdftex.def)             Requested size: 229.5pt x 152.99994pt.
+
+
+LaTeX Warning: Reference `fig:BinarySpectrum' on page 3 undefined on input line
+ 270.
+
+
+LaTeX Warning: Reference `fig:BinarySpectrum' on page 3 undefined on input line
+ 270.
+
+! Preview: Snippet 56 ended.(13828092+0x15040512).
+<-><->
+      
+l.272 \end{figure}
+                  
+Not a real error.
+
+[56
+
+
+ <./binaryZoom.png>]
+! Preview: Snippet 57 started.
+<-><->
+      
+l.274 \subsection
+                 {Heart Beats}
+Not a real error.
+
+! Preview: Snippet 57 ended.(539580+0x15040512).
+<-><->
+      
+l.274 \subsection{Heart Beats}
+                              
+Not a real error.
+
+[57
+
+]
+! Preview: Snippet 58 started.
+<-><->
+      
+l.275 ...time sequence of heart beats sampled at $
+                                                  125$Hz. Since the data
+Not a real error.
+
+! Preview: Snippet 58 ended.(422343+0x983043).
+<-><->
+      
+l.275 ... sequence of heart beats sampled at $125$
+                                                  Hz. Since the data
+Not a real error.
+
+[58]
+
+LaTeX Warning: Reference `fig:beats' on page 3 undefined on input line 278.
+
+! Preview: Snippet 59 started.
+<-><->
+      
+l.278 ... dominant frequencies are approximately $
+                                                  2$Hz and
+Not a real error.
+
+! Preview: Snippet 59 ended.(422343+0x327681).
+<-><->
+      
+l.278 ...ominant frequencies are approximately $2$
+                                                  Hz and
+Not a real error.
+
+[59]
+! Preview: Snippet 60 started.
+<-><->
+      
+l.279 $
+       4$kHz, with corresponding periods $0.5$s and $0.25$s, respectively.
+Not a real error.
+
+! Preview: Snippet 60 ended.(422343+0x327681).
+<-><->
+      
+l.279 $4$
+         kHz, with corresponding periods $0.5$s and $0.25$s, respectively.
+Not a real error.
+
+[60]
+! Preview: Snippet 61 started.
+<-><->
+      
+l.279 $4$kHz, with corresponding periods $
+                                          0.5$s and $0.25$s, respectively.
+Not a real error.
+
+! Preview: Snippet 61 ended.(422343+0x837407).
+<-><->
+      
+l.279 $4$kHz, with corresponding periods $0.5$
+                                              s and $0.25$s, respectively.
+Not a real error.
+
+[61]
+! Preview: Snippet 62 started.
+<-><->
+      
+l.279 ..., with corresponding periods $0.5$s and $
+                                                  0.25$s, respectively.
+Not a real error.
+
+! Preview: Snippet 62 ended.(422343+0x1165088).
+<-><->
+      
+l.279 ...h corresponding periods $0.5$s and $0.25$
+                                                  s, respectively.
+Not a real error.
+
+[62]
+! Preview: Snippet 63 started.
+<-><->
+      
+l.281 \begin{figure}
+                    
+Not a real error.
+
+<beats.png, id=257, 578.16pt x 433.62pt>
+File: beats.png Graphic file (type png)
+ <use beats.png>
+Package pdftex.def Info: beats.png used on input line 282.
+(pdftex.def)             Requested size: 229.5pt x 172.12163pt.
+
+! Preview: Snippet 63 ended.(14294819+0x15040512).
+<-><->
+      
+l.288 \end{figure}
+                  
+Not a real error.
+
+[63
+
+
+ <./beats.png>]
+! Preview: Snippet 64 started.
+<-><->
+      
+l.290 The average resting heart rate is about $
+                                               60$ to $100$ beats per minute...
+
+Not a real error.
+
+! Preview: Snippet 64 ended.(422343+0x655362).
+<-><->
+      
+l.290 The average resting heart rate is about $60$
+                                                   to $100$ beats per minute...
+
+Not a real error.
+
+[64]
+! Preview: Snippet 65 started.
+<-><->
+      
+l.290 ...age resting heart rate is about $60$ to $
+                                                  100$ beats per minute. How...
+
+Not a real error.
+
+! Preview: Snippet 65 ended.(422343+0x983043).
+<-><->
+      
+l.290 ...resting heart rate is about $60$ to $100$
+                                                   beats per minute. However,
+Not a real error.
+
+[65]
+! Preview: Snippet 66 started.
+<-><->
+      
+l.291 ...translates to periods within a range of $
+                                                  1$s to $1.6$s, which are
+Not a real error.
+
+! Preview: Snippet 66 ended.(422343+0x327681).
+<-><->
+      
+l.291 ...anslates to periods within a range of $1$
+                                                  s to $1.6$s, which are
+Not a real error.
+
+[66]
+! Preview: Snippet 67 started.
+<-><->
+      
+l.291 ...es to periods within a range of $1$s to $
+                                                  1.6$s, which are
+Not a real error.
+
+! Preview: Snippet 67 ended.(422343+0x837407).
+<-><->
+      
+l.291 ...o periods within a range of $1$s to $1.6$
+                                                  s, which are
+Not a real error.
+
+[67]
+! Preview: Snippet 68 started.
+<-><->
+      
+l.294 heart rate. The $
+                       2$Hz heart rate can be explained through the patient
+Not a real error.
+
+! Preview: Snippet 68 ended.(422343+0x327681).
+<-><->
+      
+l.294 heart rate. The $2$
+                         Hz heart rate can be explained through the patient
+Not a real error.
+
+[68]
+! Preview: Snippet 69 started.
+<-><->
+      
+l.295 ...l condition. However, the heart rate of $
+                                                  4$Hz,
+Not a real error.
+
+! Preview: Snippet 69 ended.(422343+0x327681).
+<-><->
+      
+l.295 ...condition. However, the heart rate of $4$
+                                                  Hz,
+Not a real error.
+
+[69]
+! Preview: Snippet 70 started.
+<-><->
+      
+l.296 or $
+          240$ beats per minute, is much more unrealistic. There are peaks
+Not a real error.
+
+! Preview: Snippet 70 ended.(422343+0x983043).
+<-><->
+      
+l.296 or $240$
+               beats per minute, is much more unrealistic. There are peaks
+Not a real error.
+
+[70]
+! Preview: Snippet 71 started.
+<-><->
+      
+l.300 \subsection
+                 {Solar Activity}
+Not a real error.
+
+! Preview: Snippet 71 ended.(546132+152916x15040512).
+<-><->
+      
+l.300 \subsection{Solar Activity}
+                                 
+Not a real error.
+
+[71
+
+]
+! Preview: Snippet 72 started.
+<-><->
+      
+l.303 \begin{figure*}
+                     
+Not a real error.
+
+<"sunspot time".png, id=289, 1445.4pt x 289.08pt>
+File: "sunspot time".png Graphic file (type png)
+ <use "sunspot time".png>
+Package pdftex.def Info: "sunspot time".png used on input line 305.
+(pdftex.def)             Requested size: 469.0pt x 93.7999pt.
+
+! Preview: Snippet 72 ended.(9948358+0x30736384).
+<-><->
+      
+l.308 \end{figure*}
+                   
+Not a real error.
+
+[72
+
+
+ <./sunspot time.png>]
+! Preview: Snippet 73 started.
+<-><->
+      
+l.310 ... was obtained. The best found guess was $
+                                                  130$ months. This guess wa...
+
+Not a real error.
+
+! Preview: Snippet 73 ended.(422343+0x983043).
+<-><->
+      
+l.310 ... obtained. The best found guess was $130$
+                                                   months. This guess was th...
+
+Not a real error.
+
+[73]
+! Preview: Snippet 74 started.
+<-><->
+      
+l.310 ... data. Since the number of data points ($
+                                                  2141$) was not a power of ...
+
+Not a real error.
+
+! Preview: Snippet 74 ended.(422343+0x1310724).
+<-><->
+      
+l.310 .... Since the number of data points ($2141$
+                                                  ) was not a power of 2, th...
+
+Not a real error.
+
+[74]
+! Preview: Snippet 75 started.
+<-><->
+      
+l.310 ...ccurred at a frequency corresponding to $
+                                                  T=130.875$ months. This wa...
+
+Not a real error.
+
+! Preview: Snippet 75 ended.(447828+0x3495936).
+<-><->
+      
+l.310 ... a frequency corresponding to $T=130.875$
+                                                   months. This was extremel...
+
+Not a real error.
+
+[75]
+! Preview: Snippet 76 started.
+<-><->
+      
+l.312 \begin{figure}
+                    
+Not a real error.
+
+<SunSpotPowerSpectrum.png, id=305, 433.62pt x 289.08pt>
+File: SunSpotPowerSpectrum.png Graphic file (type png)
+
+<use SunSpotPowerSpectrum.png>
+Package pdftex.def Info: SunSpotPowerSpectrum.png used on input line 314.
+(pdftex.def)             Requested size: 229.5pt x 152.99994pt.
+
+
+LaTeX Warning: Reference `fig:sunspottime' on page 4 undefined on input line 31
+5.
+
+
+LaTeX Warning: Reference `fig:sunspottime' on page 4 undefined on input line 31
+5.
+
+! Preview: Snippet 76 ended.(13041660+0x15040512).
+<-><->
+      
+l.317 \end{figure}
+                  
+Not a real error.
+
+[76
+
+
+ <./SunSpotPowerSpectrum.png>]
+! Preview: Snippet 77 started.
+<-><->
+      
+l.319 \subsection
+                 {Financial Series}
+Not a real error.
+
+! Preview: Snippet 77 ended.(546132+0x15040512).
+<-><->
+      
+l.319 \subsection{Financial Series}
+                                   
+Not a real error.
+
+[77
+
+]
+
+LaTeX Warning: Reference `fig:stocks_time' on page 4 undefined on input line 32
+1.
+
+! Preview: Snippet 78 started.
+<-><->
+      
+l.323 \begin{figure}
+                    
+Not a real error.
+
+<stocks_time.png, id=315, 578.16pt x 1011.78pt>
+File: stocks_time.png Graphic file (type png)
+ <use stocks_time.png>
+Package pdftex.def Info: stocks_time.png used on input line 324.
+(pdftex.def)             Requested size: 229.5pt x 401.61713pt.
+
+! Preview: Snippet 78 ended.(28548604+0x15040512).
+<-><->
+      
+l.329 \end{figure}
+                  
+Not a real error.
+
+[78
+
+
+ <./stocks_time.png>]
+! Preview: Snippet 79 started.
+<-><->
+      
+l.331 ...ute the continuously compounded returns $
+                                                  R_i$,
+Not a real error.
+
+! Preview: Snippet 79 ended.(447828+98303x715796).
+<-><->
+      
+l.331 ...the continuously compounded returns $R_i$
+                                                  ,
+Not a real error.
+
+[79]
+! Preview: Snippet 80 started.
+<-><->
+      
+l.333 \begin{equation}
+                      
+Not a real error.
+
+! Preview: Snippet 80 ended.(1572879+0x15040512).
+<-><->
+      
+l.336 \end{equation}
+                    
+Not a real error.
+
+[80
+
+]
+
+LaTeX Warning: Reference `fig:stocks_returns' on page 4 undefined on input line
+ 337.
+
+
+LaTeX Warning: Reference `fig:stocks_ac' on page 4 undefined on input line 338.
+
+
+! Preview: Snippet 81 started.
+<-><->
+      
+l.340 \begin{figure*}
+                     
+Not a real error.
+
+<stocks_returns.png, id=329, 1011.78pt x 1011.78pt>
+File: stocks_returns.png Graphic file (type png)
+ <use stocks_returns.png>
+Package pdftex.def Info: stocks_returns.png used on input line 341.
+(pdftex.def)             Requested size: 469.0pt x 469.00618pt.
+
+
+LaTeX Warning: Reference `fig:stocks_time' on page 4 undefined on input line 34
+6.
+
+
+LaTeX Warning: Reference `ccr' on page 4 undefined on input line 346.
+
+
+LaTeX Warning: Reference `fig:stocks_time' on page 4 undefined on input line 34
+6.
+
+
+LaTeX Warning: Reference `ccr' on page 4 undefined on input line 346.
+
+! Preview: Snippet 81 ended.(32965013+0x30736384).
+<-><->
+      
+l.348 \end{figure*}
+                   
+Not a real error.
+
+[81
+
+
+ <./stocks_returns.png>]
+! Preview: Snippet 82 started.
+<-><->
+      
+l.350 \begin{figure*}
+                     
+Not a real error.
+
+<stocks_ac.png, id=335, 1011.78pt x 1011.78pt>
+File: stocks_ac.png Graphic file (type png)
+ <use stocks_ac.png>
+Package pdftex.def Info: stocks_ac.png used on input line 351.
+(pdftex.def)             Requested size: 469.0pt x 469.00618pt.
+
+! Preview: Snippet 82 ended.(32178581+0x30736384).
+<-><->
+      
+l.356 \end{figure*}
+                   
+Not a real error.
+
+[82
+
+
+ <./stocks_ac.png>]
+! Preview: Snippet 83 started.
+<-><->
+      
+l.358 \begin{figure*}
+                     
+Not a real error.
+
+<stocks_power_spectrum.png, id=342, 1011.78pt x 867.24pt>
+File: stocks_power_spectrum.png Graphic file (type png)
+
+<use stocks_power_spectrum.png>
+Package pdftex.def Info: stocks_power_spectrum.png used on input line 359.
+(pdftex.def)             Requested size: 469.0pt x 402.00531pt.
+
+! Preview: Snippet 83 ended.(28574044+0x30736384).
+<-><->
+      
+l.365 \end{figure*}
+                   
+Not a real error.
+
+[83
+
+
+ <./stocks_power_spectrum.png>]
+
+LaTeX Warning: Reference `fig:dow' on page 4 undefined on input line 369.
+
+
+LaTeX Warning: Reference `fig:dow_ac' on page 4 undefined on input line 371.
+
+! Preview: Snippet 84 started.
+<-><->
+      
+l.372 ... best time to buy stocks are. At around $
+                                                  200$ days,
+Not a real error.
+
+! Preview: Snippet 84 ended.(422343+0x983043).
+<-><->
+      
+l.372 ...t time to buy stocks are. At around $200$
+                                                   days,
+Not a real error.
+
+[84]
+! Preview: Snippet 85 started.
+<-><->
+      
+l.375 ...wing a market crash beginning at around $
+                                                  450$
+Not a real error.
+
+! Preview: Snippet 85 ended.(422343+0x983043).
+<-><->
+      
+l.375 ... a market crash beginning at around $450$
+                                                  
+Not a real error.
+
+[85]
+! Preview: Snippet 86 started.
+<-><->
+      
+l.389 \begin{figure*}
+                     
+Not a real error.
+
+<dow.png, id=355, 867.24pt x 578.16pt>
+File: dow.png Graphic file (type png)
+ <use dow.png>
+Package pdftex.def Info: dow.png used on input line 390.
+(pdftex.def)             Requested size: 469.0pt x 312.66931pt.
+
+! Preview: Snippet 86 ended.(22719320+0x30736384).
+<-><->
+      
+l.395 \end{figure*}
+                   
+Not a real error.
+
+[86
+
+
+ <./dow.png>]
+! Preview: Snippet 87 started.
+<-><->
+      
+l.397 \begin{figure}
+                    
+Not a real error.
+
+<dow_ac.png, id=361, 578.16pt x 433.62pt>
+File: dow_ac.png Graphic file (type png)
+ <use dow_ac.png>
+Package pdftex.def Info: dow_ac.png used on input line 398.
+(pdftex.def)             Requested size: 229.5pt x 172.12163pt.
+
+
+LaTeX Warning: Reference `fig:dow' on page 4 undefined on input line 401.
+
+
+LaTeX Warning: Reference `fig:dow' on page 4 undefined on input line 401.
+
+! Preview: Snippet 87 ended.(13508387+0x15040512).
+<-><->
+      
+l.403 \end{figure}
+                  
+Not a real error.
+
+[87
+
+
+ <./dow_ac.png>]
+! Preview: Snippet 88 started.
+<-><->
+      
+l.405 \subsection
+                 {Global Warming}
+Not a real error.
+
+! Preview: Snippet 88 ended.(546132+152916x15040512).
+<-><->
+      
+l.405 \subsection{Global Warming}
+                                 
+Not a real error.
+
+[88
+
+]
+
+LaTeX Warning: Reference `fig:co2trend' on page 4 undefined on input line 406.
+
+
+LaTeX Warning: Reference `fig:co2trend' on page 4 undefined on input line 406.
+
+! Preview: Snippet 89 started.
+<-><->
+      
+l.408 \begin{figure*}
+                     
+Not a real error.
+
+<co2trend.png, id=371, 1445.4pt x 289.08pt>
+File: co2trend.png Graphic file (type png)
+ <use co2trend.png>
+Package pdftex.def Info: co2trend.png used on input line 410.
+(pdftex.def)             Requested size: 469.0pt x 93.7999pt.
+
+! Preview: Snippet 89 ended.(8375494+0x30736384).
+<-><->
+      
+l.413 \end{figure*}
+                   
+Not a real error.
+
+[89
+
+
+ <./co2trend.png>]
+
+LaTeX Warning: Reference `fig:co2power' on page 4 undefined on input line 415.
+
+! Preview: Snippet 90 started.
+<-><->
+      
+l.415 ...nfluence. The other peak was located at $
+                                                  f=0.0804 months^{-1}$ or $...
+
+Not a real error.
+
+! Preview: Snippet 90 ended.(533465+127431x5997160).
+<-><->
+      
+l.415 ...eak was located at $f=0.0804 months^{-1}$
+                                                   or $T=11.90 months$. This...
+
+Not a real error.
+
+[90]
+! Preview: Snippet 91 started.
+<-><->
+      
+l.415 ...as located at $f=0.0804 months^{-1}$ or $
+                                                  T=11.90 months$. This was ...
+
+Not a real error.
+
+! Preview: Snippet 91 ended.(455111+0x5048476).
+<-><->
+      
+l.415 ...f=0.0804 months^{-1}$ or $T=11.90 months$
+                                                  . This was to be expected,...
+
+Not a real error.
+
+[91]
+! Preview: Snippet 92 started.
+<-><->
+      
+l.417 \begin{figure}
+                    
+Not a real error.
+
+<co2power.png, id=384, 433.62pt x 289.08pt>
+File: co2power.png Graphic file (type png)
+ <use co2power.png>
+Package pdftex.def Info: co2power.png used on input line 419.
+(pdftex.def)             Requested size: 229.5pt x 152.99994pt.
+
+! Preview: Snippet 92 ended.(12255228+0x15040512).
+<-><->
+      
+l.422 \end{figure}
+                  
+Not a real error.
+
+[92
+
+
+ <./co2power.png>]
+! Preview: Snippet 93 started.
+<-><->
+      
+l.424 ...ingly toxic to animals. Assuming that a $
+                                                  10\%$ $[CO_2]$ leads to to...
+
+Not a real error.
+
+! Preview: Snippet 93 ended.(491520+36408x1201497).
+<-><->
+      
+l.424 ... toxic to animals. Assuming that a $10\%$
+                                                   $[CO_2]$ leads to toxicit...
+
+Not a real error.
+
+[93]
+! Preview: Snippet 94 started.
+<-><->
+      
+l.424 ...oxic to animals. Assuming that a $10\%$ $
+                                                  [CO_2]$ leads to toxicity,...
+
+Not a real error.
+
+! Preview: Snippet 94 ended.(491520+163840x1673262).
+<-><->
+      
+l.424 ... animals. Assuming that a $10\%$ $[CO_2]$
+                                                   leads to toxicity, the li...
+
+Not a real error.
+
+[94]
+! Preview: Snippet 95 started.
+<-><->
+      
+l.424 ...arth's atmosphere would become toxic in $
+                                                  841,000$ months or $70,166...
+
+Not a real error.
+
+! Preview: Snippet 95 ended.(422343+127431x2257355).
+<-><->
+      
+l.424 ...tmosphere would become toxic in $841,000$
+                                                   months or $70,166$ years....
+
+Not a real error.
+
+[95]
+! Preview: Snippet 96 started.
+<-><->
+      
+l.424 ...uld become toxic in $841,000$ months or $
+                                                  70,166$ years. This is ass...
+
+Not a real error.
+
+! Preview: Snippet 96 ended.(422343+127431x1929674).
+<-><->
+      
+l.424 ...ome toxic in $841,000$ months or $70,166$
+                                                   years. This is assuming t...
+
+Not a real error.
+
+[96]
+
+LaTeX Warning: Reference `fig:co2trend' on page 4 undefined on input line 424.
+
+! Preview: Snippet 97 started.
+<-><->
+      
+l.424 ...hile the quadratic term was very small ($
+                                                  82.8 \times 10^{-6}$), the...
+
+Not a real error.
+
+! Preview: Snippet 97 ended.(533465+54613x3325044).
+<-><->
+      
+l.424 ...erm was very small ($82.8 \times 10^{-6}$
+                                                  ), the result was nonethel...
+
+Not a real error.
+
+[97]
+! Preview: Snippet 98 started.
+<-><->
+      
+l.426 \section
+              {Discussion}
+Not a real error.
+
+! Preview: Snippet 98 ended.(655359+0x15040512).
+<-><->
+      
+l.426 \section{Discussion}
+                          
+Not a real error.
+
+[98
+
+]
+! Preview: Snippet 99 started.
+<-><->
+      
+l.431 ...ghout the spectrum, including some near $
+                                                  f=0$, corresponding to ver...
+
+Not a real error.
+
+! Preview: Snippet 99 ended.(455111+127431x1592885).
+<-><->
+      
+l.431 ...t the spectrum, including some near $f=0$
+                                                  , corresponding to very lo...
+
+Not a real error.
+
+[99]
+
+LaTeX Warning: Citation `pulsar' on page 5 undefined on input line 431.
+
+! Preview: Snippet 100 started.
+<-><->
+      
+l.433 ...dding might have been required than the $
+                                                  954$ padded cell differenc...
+
+Not a real error.
+
+! Preview: Snippet 100 ended.(422343+0x983043).
+<-><->
+      
+l.433 ...g might have been required than the $954$
+                                                   padded cell difference be...
+
+Not a real error.
+
+[100]
+! Preview: Snippet 101 started.
+<-><->
+      
+l.433 ... difference between the sample size and $
+                                                  2^{12}$. Instead, many mod...
+
+Not a real error.
+
+! Preview: Snippet 101 ended.(533465+0x882919).
+<-><->
+      
+l.433 ...ence between the sample size and $2^{12}$
+                                                  . Instead, many modern alg...
+
+Not a real error.
+
+[101]
+
+LaTeX Warning: Citation `sunspots' on page 5 undefined on input line 433.
+
+! Preview: Snippet 102 started.
+<-><->
+      
+l.433 ...th of moderate power frequencies around $
+                                                  f=0$. This suggests that t...
+
+Not a real error.
+
+! Preview: Snippet 102 ended.(455111+127431x1592885).
+<-><->
+      
+l.433 ...f moderate power frequencies around $f=0$
+                                                  . This suggests that there...
+
+Not a real error.
+
+[102]
+
+LaTeX Warning: Citation `sunspots' on page 5 undefined on input line 433.
+
+
+LaTeX Warning: Reference `fig:co2trend' on page 5 undefined on input line 435.
+
+! Preview: Snippet 103 started.
+<-><->
+      
+l.435 ...rend} shows quite clearly an increasing $
+                                                  CO_2$ concentration. Fouri...
+
+Not a real error.
+
+! Preview: Snippet 103 ended.(447828+98303x1309172).
+<-><->
+      
+l.435 ... shows quite clearly an increasing $CO_2$
+                                                   concentration. Fourier an...
+
+Not a real error.
+
+[103]
+! Preview: Snippet 104 started.
+<-><->
+      
+l.435 ...along with a slightly broad spread near $
+                                                  f=0$. This indicated that ...
+
+Not a real error.
+
+! Preview: Snippet 104 ended.(455111+127431x1592885).
+<-><->
+      
+l.435 ...g with a slightly broad spread near $f=0$
+                                                  . This indicated that the ...
+
+Not a real error.
+
+[104]
+! Preview: Snippet 105 started.
+<-><->
+      
+l.435 ...n frequency space when convolved with a $
+                                                  f=1/1yr$ function would re...
+
+Not a real error.
+
+! Preview: Snippet 105 ended.(491520+163840x2906947).
+<-><->
+      
+l.435 ...ncy space when convolved with a $f=1/1yr$
+                                                   function would result in ...
+
+Not a real error.
+
+[105]
+
+LaTeX Warning: Reference `fig:co2power' on page 5 undefined on input line 435.
+
+! Preview: Snippet 106 started.
+<-><->
+      
+l.437 \section
+              {Conclusion}
+Not a real error.
+
+! Preview: Snippet 106 ended.(655359+0x15040512).
+<-><->
+      
+l.437 \section{Conclusion}
+                          
+Not a real error.
+
+[106
+
+]
+! Preview: Snippet 107 started.
+<-><->
+      
+l.441 \begin{thebibliography}{00}
+                                 
+Not a real error.
+
+! Preview: Snippet 107 ended.(655359+0x15040512).
+<-><->
+      
+l.441 \begin{thebibliography}{00}
+                                 
+Not a real error.
+
+[107]
+! Preview: Snippet 108 started.
+<-><->
+      
+l.452 \section
+              {Appendix}
+Not a real error.
+
+! Preview: Snippet 108 ended.(655359+183500x15040512).
+<-><->
+      
+l.452 \section{Appendix}
+                        
+Not a real error.
+
+[108
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 455.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 455.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 455.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 455.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 455.
+ ) 
+Here is how much of TeX's memory you used:
+ 923 strings out of 486883
+ 13789 string characters out of 6043989
+ 199347 words of memory out of 5000000
+ 10648 multiletter control sequences out of 15000+600000
+ 12681 words of font info for 49 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 28i,23n,36p,1340b,348s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy7.pfb>
+Output written on _region_.pdf (108 pages, 1717073 bytes).
+PDF statistics:
+ 493 PDF objects out of 1000 (max. 8388607)
+ 325 compressed objects within 4 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+

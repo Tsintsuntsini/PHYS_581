@@ -1,0 +1,1954 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=prv_Assn1 2018.3.10)  10 MAR 2018 23:59
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**&prv_Assn1 _region_.tex
+(./_region_.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+CUSTOMISED FORMAT. Preloaded files:
+        .
+ article.cls    2014/09/29 v1.4h Standard LaTeX document class
+  size10.clo    2014/09/29 v1.4h Standard LaTeX file (size option)
+graphicx.sty    2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+  keyval.sty    2014/10/28 v1.15 key=value parser (DPC)
+graphics.sty    2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+    trig.sty    2016/01/03 v1.10 sin cos tan (DPC)
+graphics.cfg    2016/06/04 v1.11 sample graphics configuration
+  pdftex.def    2018/01/08 v1.0l Graphics/color driver for pdftex
+ amsmath.sty    2017/09/02 v2.17a AMS math features
+ amstext.sty    2000/06/29 v2.01 AMS text
+  amsgen.sty    1999/11/30 v2.0 generic functions
+  amsbsy.sty    1999/11/29 v1.2d Bold Symbols
+  amsopn.sty    2016/03/08 v2.02 operator names
+   float.sty    2001/11/08 v1.3d Float enhancements (AL)
+ amssymb.sty    2013/01/14 v3.01 AMS font symbols
+amsfonts.sty    2013/01/14 v3.01 Basic AMSFonts support
+hyperref.sty    2018/02/06 v6.86b Hypertext links for LaTeX
+hobsub-hyperref.sty    2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+hobsub-generic.sty    2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+  hobsub.sty    2016/05/16 v1.14 Construct package bundles (HO)
+infwarerr.sty    2016/05/16 v1.4 Providing info/warning/error messages (HO)
+ ltxcmds.sty    2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+ifluatex.sty    2016/05/16 v1.4 Provides the ifluatex switch (HO)
+  ifvtex.sty    2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+ intcalc.sty    2016/05/16 v1.2 Expandable calculations with integers (HO)
+   ifpdf.sty    2017/03/15 v3.2 Provides the ifpdf switch
+etexcmds.sty    2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+kvsetkeys.sty    2016/05/16 v1.17 Key value parser (HO)
+kvdefinekeys.sty    2016/05/16 v1.4 Define keys (HO)
+pdftexcmds.sty    2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO)
+pdfescape.sty    2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+bigintcalc.sty    2016/05/16 v1.4 Expandable calculations on big integers (HO)
+  bitset.sty    2016/05/16 v1.2 Handle bit-vector datatype (HO)
+uniquecounter.sty    2016/05/16 v1.3 Provide unlimited unique counter (HO)
+letltxmacro.sty    2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+ hopatch.sty    2016/05/16 v1.3 Wrapper for package hooks (HO)
+xcolor-patch.sty    2016/05/16 xcolor patch
+atveryend.sty    2016/05/16 v1.9 Hooks at the very end of document (HO)
+atbegshi.sty    2016/06/09 v1.18 At begin shipout hook (HO)
+refcount.sty    2016/05/16 v3.5 Data extraction from label references (HO)
+ hycolor.sty    2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+ ifxetex.sty    2010/09/12 v0.6 Provides ifxetex conditional
+ auxhook.sty    2016/05/16 v1.4 Hooks for auxiliary files (HO)
+kvoptions.sty    2016/05/16 v3.12 Key value format for package options (HO)
+  pd1enc.def    2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+hyperref.cfg    2002/06/06 v1.2 hyperref configuration of TeXLive
+     url.sty    2013/09/16  ver 3.4  Verb mode for urls, etc.
+ hpdftex.def    2018/02/06 v6.86b Hyperref driver for pdfTeX
+rerunfilecheck.sty    2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+ caption.sty    2016/02/21 v3.3-144 Customizing captions (AR)
+caption3.sty    2016/05/22 v1.7-166 caption3 kernel (AR)
+    umsa.fd    2013/01/14 v3.01 AMS symbols A
+    umsb.fd    2013/01/14 v3.01 AMS symbols B
+        .
+No file _region_.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+(/home/augh/.emacs.d/elpa/auctex-12.1.0/latex/preview.sty
+Package: preview 2017/04/24 12.1 (AUCTeX/preview-latex)
+ (/usr/share/texmf-dist/tex/generic/luatex85/luatex85.sty
+Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
+) (/home/augh/.emacs.d/elpa/auctex-12.1.0/latex/prtightpage.def
+\PreviewBorder=\dimen125
+) (/home/augh/.emacs.d/elpa/auctex-12.1.0/latex/prauctex.def
+No auxiliary output files.
+
+
+\hbadness=\count111
+\hfuzz=\dimen126
+(/home/augh/.emacs.d/elpa/auctex-12.1.0/latex/prauctex.cfg)) (/home/augh/.emacs.d/elpa/auctex-12.1.0/latex/prfootnotes.def)
+\pr@snippet=\count112
+\pr@box=\box30
+\pr@output=\toks22
+
+Preview: Fontsize 10pt
+Preview: PDFoutput 1
+) (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count113
+\scratchdimen=\dimen127
+\scratchbox=\box31
+\nofMPsegments=\count114
+\nofMParguments=\count115
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count116
+\MPscratchDim=\dimen128
+\MPnumerator=\count117
+\makeMPintoPDFobject=\count118
+\everyMPtoPDFconversion=\toks24
+) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+ (/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+ (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+\AtBeginShipoutBox=\box32
+Package hyperref Info: Link coloring OFF on input line 11.
+ (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+ (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count119
+)
+LaTeX Info: Redefining \ref on input line 11.
+LaTeX Info: Redefining \pageref on input line 11.
+LaTeX Info: Redefining \nameref on input line 11.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: Incompatible package detected (regarding \caption).
+(caption)             \caption = \protected\long macro:->\pr@protect@domacro {}{##1{}}\pr@\caption .
+
+
+Package caption Warning: \caption will not be redefined since it's already
+(caption)                redefined by a document class or package which is
+(caption)                unknown to the caption package.
+See the caption package documentation for explanation.
+
+Package caption Info: End \AtBeginDocument code.
+ !name(Assn1.tex) !offset(-3) 
+! Preview: Snippet 1 started.
+<-><->
+      
+l.21 \section
+             {Introduction}
+Not a real error.
+
+Preview: Tightpage -32891 -32891 32891 32891
+! Preview: Snippet 1 ended.(655359+0x15040512).
+<-><->
+      
+l.21 \section{Introduction}
+                           
+Not a real error.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+! Preview: Snippet 2 started.
+<-><->
+      
+l.24 \section
+             {Methods}
+Not a real error.
+
+! Preview: Snippet 2 ended.(655359+0x15040512).
+<-><->
+      
+l.24 \section{Methods}
+                      
+Not a real error.
+
+[2
+
+]
+! Preview: Snippet 3 started.
+<-><->
+      
+l.25 \subsection
+                {Random Numbers}
+Not a real error.
+
+! Preview: Snippet 3 ended.(546132+0x15040512).
+<-><->
+      
+l.25 \subsection{Random Numbers}
+                                
+Not a real error.
+
+[3
+
+]
+! Preview: Snippet 4 started.
+<-><->
+      
+l.26 ...sonable by intuition. Within a room with $
+                                                  35$ people, the number of ...
+Not a real error.
+
+! Preview: Snippet 4 ended.(422343+0x655362).
+<-><->
+      
+l.26 ...able by intuition. Within a room with $35$
+                                                   people, the number of pai...
+Not a real error.
+
+[4]
+! Preview: Snippet 5 started.
+<-><->
+      
+l.27 \begin{equation}
+                     
+Not a real error.
+
+! Preview: Snippet 5 ended.(1348012+0x15040512).
+<-><->
+      
+l.29 \end{equation}
+                   
+Not a real error.
+
+[5]
+! Preview: Snippet 6 started.
+<-><->
+      
+l.30 ... two people have different birthdays was $
+                                                  \frac{364}{365}$. This pro...
+Not a real error.
+
+! Preview: Snippet 6 ended.(553676+225995x940991).
+<-><->
+      
+l.30 ... different birthdays was $\frac{364}{365}$
+                                                  . This probability then ne...
+Not a real error.
+
+[6]
+! Preview: Snippet 7 started.
+<-><->
+      
+l.31 \begin{equation}
+                     
+Not a real error.
+
+! Preview: Snippet 7 ended.(1706501+0x15040512).
+<-><->
+      
+l.33 \end{equation}
+                   
+Not a real error.
+
+[7]
+! Preview: Snippet 8 started.
+<-><->
+      
+l.35 Hence, there was a $
+                         30.3\% $ chance of no-one in the room having the sa...
+Not a real error.
+
+! Preview: Snippet 8 ended.(491520+36408x1711223).
+<-><->
+      
+l.35 Hence, there was a $30.3\% $
+                                  chance of no-one in the room having the sa...
+Not a real error.
+
+[8]
+! Preview: Snippet 9 started.
+<-><->
+      
+l.35 ... the room having the same birthday, or a $
+                                                  69.7\%$ chance that at lea...
+Not a real error.
+
+! Preview: Snippet 9 ended.(491520+36408x1711223).
+<-><->
+      
+l.35 ...om having the same birthday, or a $69.7\%$
+                                                   chance that at lease two ...
+Not a real error.
+
+[9]
+! Preview: Snippet 10 started.
+<-><->
+      
+l.35 ...f birthdays. After this code was run for $
+                                                  10,000$ loops, 6989 loops ...
+Not a real error.
+
+! Preview: Snippet 10 ended.(422343+127431x1929674).
+<-><->
+      
+l.35 ...days. After this code was run for $10,000$
+                                                   loops, 6989 loops were fo...
+Not a real error.
+
+[10]
+! Preview: Snippet 11 started.
+<-><->
+      
+l.37 ...ted on a Gaussian distribution with mean $
+                                                  \mu=5$ and standard deviat...
+Not a real error.
+
+! Preview: Snippet 11 ended.(422343+127431x1596373).
+<-><->
+      
+l.37 ... a Gaussian distribution with mean $\mu=5$
+                                                   and standard deviation $\...
+Not a real error.
+
+[11]
+! Preview: Snippet 12 started.
+<-><->
+      
+l.37 ...with mean $\mu=5$ and standard deviation $
+                                                  \sigma=1.25$. In order to ...
+Not a real error.
+
+! Preview: Snippet 12 ended.(422343+0x2436888).
+<-><->
+      
+l.37 ...mu=5$ and standard deviation $\sigma=1.25$
+                                                  . In order to simplify the...
+Not a real error.
+
+[12]
+! Preview: Snippet 13 started.
+<-><->
+      
+l.37 ...s chosen that was a uniform step between $
+                                                  y=0$ and $y=10$. The heigh...
+Not a real error.
+
+! Preview: Snippet 13 ended.(422343+127431x1546311).
+<-><->
+      
+l.37 ...osen that was a uniform step between $y=0$
+                                                   and $y=10$. The height of...
+Not a real error.
+
+[13]
+! Preview: Snippet 14 started.
+<-><->
+      
+l.37 ...hat was a uniform step between $y=0$ and $
+                                                  y=10$. The height of this ...
+Not a real error.
+
+! Preview: Snippet 14 ended.(422343+127431x1873992).
+<-><->
+      
+l.37 ...as a uniform step between $y=0$ and $y=10$
+                                                  . The height of this distr...
+Not a real error.
+
+[14]
+! Preview: Snippet 15 started.
+<-><->
+      
+l.37 ... mean value, resulting in a peak of size $
+                                                  (2 \pi \sigma^2)^{\frac{-1...
+Not a real error.
+
+! Preview: Snippet 15 ended.(659005+163840x5061118).
+<-><->
+      
+l.37 ... $(2 \pi \sigma^2)^{\frac{-1}{2}} = 0.356$
+                                                  .
+Not a real error.
+
+[15]
+! Preview: Snippet 16 started.
+<-><->
+      
+l.39 The code was run for $
+                           10^6$ iterations to create a distribution along $...
+Not a real error.
+
+! Preview: Snippet 16 ended.(533465+0x949365).
+<-><->
+      
+l.39 The code was run for $10^6$
+                                 iterations to create a distribution along $...
+Not a real error.
+
+[16]
+! Preview: Snippet 17 started.
+<-><->
+      
+l.39 ...terations to create a distribution along $
+                                                  y$ matching a Gaussian dis...
+Not a real error.
+
+! Preview: Snippet 17 ended.(282168+127431x344824).
+<-><->
+      
+l.39 ...rations to create a distribution along $y$
+                                                   matching a Gaussian distr...
+Not a real error.
+
+[17]
+
+LaTeX Warning: Reference `fig:Gauss_Dist' on page 2 undefined on input line 39.
+
+! Preview: Snippet 18 started.
+<-><->
+      
+l.39 ...e would be more points accepted from the $
+                                                  10^6$ proposed points. Ano...
+Not a real error.
+
+! Preview: Snippet 18 ended.(533465+0x949365).
+<-><->
+      
+l.39 ...ld be more points accepted from the $10^6$
+                                                   proposed points. Another ...
+Not a real error.
+
+[18]
+! Preview: Snippet 19 started.
+<-><->
+      
+l.39 ... points from the above Gaussian sampler. $
+                                                  10^4$ sums $s$ were comple...
+Not a real error.
+
+! Preview: Snippet 19 ended.(533465+0x949365).
+<-><->
+      
+l.39 ...ts from the above Gaussian sampler. $10^4$
+                                                   sums $s$ were completed, ...
+Not a real error.
+
+[19]
+! Preview: Snippet 20 started.
+<-><->
+      
+l.39 ... the above Gaussian sampler. $10^4$ sums $
+                                                  s$ were completed, and the...
+Not a real error.
+
+! Preview: Snippet 20 ended.(282168+0x307200).
+<-><->
+      
+l.39 ...he above Gaussian sampler. $10^4$ sums $s$
+                                                   were completed, and then ...
+Not a real error.
+
+[20]
+! Preview: Snippet 21 started.
+<-><->
+      
+l.39 ...nd then the distribution of these points $
+                                                  s$ was plotted. Figure \re...
+Not a real error.
+
+! Preview: Snippet 21 ended.(282168+0x307200).
+<-><->
+      
+l.39 ... then the distribution of these points $s$
+                                                   was plotted. Figure \ref{...
+Not a real error.
+
+[21]
+
+LaTeX Warning: Reference `fig:Gauss_sum' on page 2 undefined on input line 39.
+
+! Preview: Snippet 22 started.
+<-><->
+      
+l.41 \begin{figure}
+                   
+Not a real error.
+
+<../Assn1/Gauss_Dist.png, id=84, 433.62pt x 289.08pt>
+File: ../Assn1/Gauss_Dist.png Graphic file (type png)
+<use ../Assn1/Gauss_Dist.png>
+Package pdftex.def Info: ../Assn1/Gauss_Dist.png  used on input line 43.
+(pdftex.def)             Requested size: 229.5pt x 152.99994pt.
+! Preview: Snippet 22 ended.(13828092+0x15040512).
+<-><->
+      
+l.46 \end{figure}
+                 
+Not a real error.
+
+[22
+
+
+
+ <../Assn1/Gauss_Dist.png>]
+! Preview: Snippet 23 started.
+<-><->
+      
+l.48 \begin{figure}
+                   
+Not a real error.
+
+<../Assn1/Gauss_sum.png, id=91, 433.62pt x 289.08pt>
+File: ../Assn1/Gauss_sum.png Graphic file (type png)
+<use ../Assn1/Gauss_sum.png>
+Package pdftex.def Info: ../Assn1/Gauss_sum.png  used on input line 50.
+(pdftex.def)             Requested size: 229.5pt x 152.99994pt.
+! Preview: Snippet 23 ended.(14614524+0x15040512).
+<-><->
+      
+l.53 \end{figure}
+                 
+Not a real error.
+
+[23
+
+
+ <../Assn1/Gauss_sum.png>]
+
+LaTeX Warning: Reference `tab:CDF' on page 2 undefined on input line 55.
+
+! Preview: Snippet 24 started.
+<-><->
+      
+l.57 \begin{table*}
+                   [h]
+Not a real error.
+
+! Preview: Snippet 24 ended.(3748658+0x30736384).
+<-><->
+      
+l.67 \end{table*}
+                 
+Not a real error.
+
+[24
+
+
+]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+! Preview: Snippet 25 started.
+<-><->
+      
+l.69 \subsection
+                {Markov Chain}
+Not a real error.
+
+! Preview: Snippet 25 ended.(546132+0x15040512).
+<-><->
+      
+l.69 \subsection{Markov Chain}
+                              
+Not a real error.
+
+[25
+
+]
+! Preview: Snippet 26 started.
+<-><->
+      
+l.71 \[
+        P = \begin{pmatrix}
+Not a real error.
+
+! Preview: Snippet 26 ended.(3145758+0x12099703).
+<-><->
+      
+l.76 \end{pmatrix} \]
+                     
+Not a real error.
+
+[26]
+! Preview: Snippet 27 started.
+<-><->
+      
+l.79 \begin{equation}
+                     
+Not a real error.
+
+! Preview: Snippet 27 ended.(4718592+0x15040512).
+<-><->
+      
+l.87 \end{equation}
+                   
+Not a real error.
+
+[27]
+! Preview: Snippet 28 started.
+<-><->
+      
+l.89 This yields a solution of $
+                                p_1 = p_2 = p_3 = p_4 = 0.25$. Another metho...
+Not a real error.
+
+! Preview: Snippet 28 ended.(422343+127431x7155236).
+<-><->
+      
+l.89 ...solution of $p_1 = p_2 = p_3 = p_4 = 0.25$
+                                                  . Another method for findi...
+Not a real error.
+
+[28]
+! Preview: Snippet 29 started.
+<-><->
+      
+l.89 ...ound using the determinant method to be: $
+                                                  \lambda_1 = 1$, $\lambda_2...
+Not a real error.
+
+! Preview: Snippet 29 ended.(455111+98303x1877785).
+<-><->
+      
+l.89 ... determinant method to be: $\lambda_1 = 1$
+                                                  , $\lambda_2 = -\frac{2}{3...
+Not a real error.
+
+[29]
+! Preview: Snippet 30 started.
+<-><->
+      
+l.89 ...terminant method to be: $\lambda_1 = 1$, $
+                                                  \lambda_2 = -\frac{2}{3}$,...
+Not a real error.
+
+! Preview: Snippet 30 ended.(553676+225995x2478351).
+<-><->
+      
+l.89 ...\lambda_1 = 1$, $\lambda_2 = -\frac{2}{3}$
+                                                  , $\lambda_3 = -\frac{1}{3...
+Not a real error.
+
+[30]
+! Preview: Snippet 31 started.
+<-><->
+      
+l.89 ...mbda_1 = 1$, $\lambda_2 = -\frac{2}{3}$, $
+                                                  \lambda_3 = -\frac{1}{3}$,...
+Not a real error.
+
+! Preview: Snippet 31 ended.(553676+225995x2478351).
+<-><->
+      
+l.89 ... -\frac{2}{3}$, $\lambda_3 = -\frac{1}{3}$
+                                                  , and $\lambda_4 = 0$. Whe...
+Not a real error.
+
+[31]
+! Preview: Snippet 32 started.
+<-><->
+      
+l.89 ...{2}{3}$, $\lambda_3 = -\frac{1}{3}$, and $
+                                                  \lambda_4 = 0$. When plugg...
+Not a real error.
+
+! Preview: Snippet 32 ended.(455111+98303x1877785).
+<-><->
+      
+l.89 ...bda_3 = -\frac{1}{3}$, and $\lambda_4 = 0$
+                                                  . When plugging these valu...
+Not a real error.
+
+[32]
+! Preview: Snippet 33 started.
+<-><->
+      
+l.89 ... plugging these values into the equation $
+                                                  PI-\lambda=0$, the followi...
+Not a real error.
+
+! Preview: Snippet 33 ended.(455111+54613x3236057).
+<-><->
+      
+l.89 ...se values into the equation $PI-\lambda=0$
+                                                  , the following four eigen...
+Not a real error.
+
+[33]
+! Preview: Snippet 34 started.
+<-><->
+      
+l.91 \[
+       
+Not a real error.
+
+! Preview: Snippet 34 ended.(3152080+0x14879680).
+<-><->
+      
+l.93 \]
+       
+Not a real error.
+
+[34]
+! Preview: Snippet 35 started.
+<-><->
+      
+l.100 \[
+        
+Not a real error.
+
+! Preview: Snippet 35 ended.(2359318+0x11189479).
+<-><->
+      
+l.106 \]
+        
+Not a real error.
+
+[35]
+! Preview: Snippet 36 started.
+<-><->
+      
+l.108 ...carriers have a current market share of $
+                                                  45\%$, $25\%$, and $30\%$....
+Not a real error.
+
+! Preview: Snippet 36 ended.(491520+36408x1201497).
+<-><->
+      
+l.108 ...ers have a current market share of $45\%$
+                                                  , $25\%$, and $30\%$. Afte...
+Not a real error.
+
+[36]
+! Preview: Snippet 37 started.
+<-><->
+      
+l.108 ... have a current market share of $45\%$, $
+                                                  25\%$, and $30\%$. After 1...
+Not a real error.
+
+! Preview: Snippet 37 ended.(491520+36408x1201497).
+<-><->
+      
+l.108 ... a current market share of $45\%$, $25\%$
+                                                  , and $30\%$. After 1 iter...
+Not a real error.
+
+[37]
+! Preview: Snippet 38 started.
+<-><->
+      
+l.108 ...ent market share of $45\%$, $25\%$, and $
+                                                  30\%$. After 1 iteration o...
+Not a real error.
+
+! Preview: Snippet 38 ended.(491520+36408x1201497).
+<-><->
+      
+l.108 ...arket share of $45\%$, $25\%$, and $30\%$
+                                                  . After 1 iteration of the...
+Not a real error.
+
+[38]
+! Preview: Snippet 39 started.
+<-><->
+      
+l.109 \[
+        
+Not a real error.
+
+! Preview: Snippet 39 ended.(2359318+0x13627855).
+<-><->
+      
+l.115 \]
+        
+Not a real error.
+
+[39]
+! Preview: Snippet 40 started.
+<-><->
+      
+l.118 \[
+        
+Not a real error.
+
+! Preview: Snippet 40 ended.(2359318+0x14119377).
+<-><->
+      
+l.124 \]
+        
+Not a real error.
+
+[40]
+! Preview: Snippet 41 started.
+<-><->
+      
+l.126 ...the equilibrium market distribution was $
+                                                  S_1 = S_2 = S_3 = 0.33$ wh...
+Not a real error.
+
+! Preview: Snippet 41 ended.(447828+98303x5874104).
+<-><->
+      
+l.126 ...distribution was $S_1 = S_2 = S_3 = 0.33$
+                                                   where $S_n$ is the market...
+Not a real error.
+
+[41]
+! Preview: Snippet 42 started.
+<-><->
+      
+l.126 ...tion was $S_1 = S_2 = S_3 = 0.33$ where $
+                                                  S_n$ is the market share o...
+Not a real error.
+
+! Preview: Snippet 42 ended.(447828+98303x758597).
+<-><->
+      
+l.126 ... was $S_1 = S_2 = S_3 = 0.33$ where $S_n$
+                                                   is the market share of br...
+Not a real error.
+
+[42]
+! Preview: Snippet 43 started.
+<-><->
+      
+l.126 ...here $S_n$ is the market share of brand $
+                                                  n$. The equilibrium foreca...
+Not a real error.
+
+! Preview: Snippet 43 ended.(282168+0x393370).
+<-><->
+      
+l.126 ...re $S_n$ is the market share of brand $n$
+                                                  . The equilibrium forecast...
+Not a real error.
+
+[43]
+! Preview: Snippet 44 started.
+<-><->
+      
+l.126 ...is probabilistic by nature: there is an $
+                                                  80\%$ chance that a custom...
+Not a real error.
+
+! Preview: Snippet 44 ended.(491520+36408x1201497).
+<-><->
+      
+l.126 ...obabilistic by nature: there is an $80\%$
+                                                   chance that a customer wi...
+Not a real error.
+
+[44]
+! Preview: Snippet 45 started.
+<-><->
+      
+l.126 ...ds. This is not the same as saying that $
+                                                  80\%$ of customers in a gi...
+Not a real error.
+
+! Preview: Snippet 45 ended.(491520+36408x1201497).
+<-><->
+      
+l.126 ...his is not the same as saying that $80\%$
+                                                   of customers in a given m...
+Not a real error.
+
+[45]
+! Preview: Snippet 46 started.
+<-><->
+      
+l.126 ...em eventually reached an equilibrium of $
+                                                  0.86$ sun, however the sys...
+Not a real error.
+
+! Preview: Snippet 46 ended.(422343+0x1165088).
+<-><->
+      
+l.126 ...entually reached an equilibrium of $0.86$
+                                                   sun, however the system c...
+Not a real error.
+
+[46]
+! Preview: Snippet 47 started.
+<-><->
+      
+l.126 ...however the system can only have states $
+                                                  0$ or $1$ for whether or n...
+Not a real error.
+
+! Preview: Snippet 47 ended.(422343+0x327681).
+<-><->
+      
+l.126 ...wever the system can only have states $0$
+                                                   or $1$ for whether or not...
+Not a real error.
+
+[47]
+! Preview: Snippet 48 started.
+<-><->
+      
+l.126 ... the system can only have states $0$ or $
+                                                  1$ for whether or not the ...
+Not a real error.
+
+! Preview: Snippet 48 ended.(422343+0x327681).
+<-><->
+      
+l.126 ...he system can only have states $0$ or $1$
+                                                   for whether or not the st...
+Not a real error.
+
+[48]
+! Preview: Snippet 49 started.
+<-><->
+      
+l.128 \subsection
+                 {Markov Chain Monte Carlo}
+Not a real error.
+
+! Preview: Snippet 49 ended.(546132+0x15040512).
+<-><->
+      
+l.128 \subsection{Markov Chain Monte Carlo}
+                                           
+Not a real error.
+
+[49
+
+]
+! Preview: Snippet 50 started.
+<-><->
+      
+l.130  \begin{equation}
+                       
+Not a real error.
+
+! Preview: Snippet 50 ended.(730073+0x15040512).
+<-><->
+      
+l.133  \end{equation}
+                     
+Not a real error.
+
+[50
+
+]
+
+LaTeX Warning: Reference `fig:MCMCmean' on page 3 undefined on input line 135.
+
+! Preview: Snippet 51 started.
+<-><->
+      
+l.137  \begin{figure}
+                     
+Not a real error.
+
+<MCMCmean.png, id=189, 433.62pt x 289.08pt>
+File: MCMCmean.png Graphic file (type png)
+<use MCMCmean.png>
+Package pdftex.def Info: MCMCmean.png  used on input line 139.
+(pdftex.def)             Requested size: 229.5pt x 152.99994pt.
+! Preview: Snippet 51 ended.(16973820+0x15040512).
+<-><->
+      
+l.142 \end{figure}
+                  
+Not a real error.
+
+[51
+
+
+ <./MCMCmean.png>]
+! Preview: Snippet 52 started.
+<-><->
+      
+l.144 \begin{figure}
+                    
+Not a real error.
+
+<MCMChisto.png, id=195, 433.62pt x 289.08pt>
+File: MCMChisto.png Graphic file (type png)
+<use MCMChisto.png>
+Package pdftex.def Info: MCMChisto.png  used on input line 146.
+(pdftex.def)             Requested size: 229.5pt x 152.99994pt.
+
+LaTeX Warning: Reference `lilgauss' on page 3 undefined on input line 147.
+
+
+LaTeX Warning: Reference `lilgauss' on page 3 undefined on input line 147.
+
+! Preview: Snippet 52 ended.(13041660+0x15040512).
+<-><->
+      
+l.149 \end{figure}
+                  
+Not a real error.
+
+[52
+
+
+ <./MCMChisto.png>]
+! Preview: Snippet 53 started.
+<-><->
+      
+l.151 ...hod was significantly slower, requiring $
+                                                  152s$ to complete as oppos...
+Not a real error.
+
+! Preview: Snippet 53 ended.(422343+0x1290243).
+<-><->
+      
+l.151 ...as significantly slower, requiring $152s$
+                                                   to complete as opposed to...
+Not a real error.
+
+[53]
+! Preview: Snippet 54 started.
+<-><->
+      
+l.151 ...ng $152s$ to complete as opposed to the $
+                                                  7.81E-02s$ required for th...
+Not a real error.
+
+! Preview: Snippet 54 ended.(447828+54613x3450196).
+<-><->
+      
+l.151 ...to complete as opposed to the $7.81E-02s$
+                                                   required for the Markov m...
+Not a real error.
+
+[54]
+! Preview: Snippet 55 started.
+<-><->
+      
+l.154 \begin{equation}
+                      
+Not a real error.
+
+! Preview: Snippet 55 ended.(821720+0x15040512).
+<-><->
+      
+l.157 \end{equation}
+                    
+Not a real error.
+
+[55
+
+]
+! Preview: Snippet 56 started.
+<-><->
+      
+l.159 ...thm. Take for instance a proposal value $
+                                                  x^* = 39.82$ from an $x_n=...
+Not a real error.
+
+! Preview: Snippet 56 ended.(451272+0x3042415).
+<-><->
+      
+l.159 ...r instance a proposal value $x^* = 39.82$
+                                                   from an $x_n=0.0$. It wou...
+Not a real error.
+
+[56]
+! Preview: Snippet 57 started.
+<-><->
+      
+l.159 ... a proposal value $x^* = 39.82$ from an $
+                                                  x_n=0.0$. It would have an...
+Not a real error.
+
+! Preview: Snippet 57 ended.(422343+98303x2442503).
+<-><->
+      
+l.159 ...sal value $x^* = 39.82$ from an $x_n=0.0$
+                                                  . It would have an accepta...
+Not a real error.
+
+[57]
+! Preview: Snippet 58 started.
+<-><->
+      
+l.160 \begin{equation}
+                      
+Not a real error.
+
+! Preview: Snippet 58 ended.(5242918+0x15040512).
+<-><->
+      
+l.166 \end{equation}
+                    
+Not a real error.
+
+[58]
+
+LaTeX Warning: Reference `fig:PDF' on page 4 undefined on input line 167.
+
+! Preview: Snippet 59 started.
+<-><->
+      
+l.169 \begin{figure}
+                    
+Not a real error.
+
+<PDF.png, id=225, 433.62pt x 289.08pt>
+File: PDF.png Graphic file (type png)
+<use PDF.png>
+Package pdftex.def Info: PDF.png  used on input line 171.
+(pdftex.def)             Requested size: 229.5pt x 152.99994pt.
+
+LaTeX Warning: Reference `PDF' on page 4 undefined on input line 172.
+
+
+LaTeX Warning: Reference `PDF' on page 4 undefined on input line 172.
+
+! Preview: Snippet 59 ended.(12255228+0x15040512).
+<-><->
+      
+l.174 \end{figure}
+                  
+Not a real error.
+
+[59
+
+
+ <./PDF.png>]
+! Preview: Snippet 60 started.
+<-><->
+      
+l.177 ...st, a uniform distribution on the range $
+                                                  (0,100)$ was used. Next, a...
+Not a real error.
+
+! Preview: Snippet 60 ended.(491520+163840x2111719).
+<-><->
+      
+l.177 ...iform distribution on the range $(0,100)$
+                                                   was used. Next, a proposa...
+Not a real error.
+
+[60]
+! Preview: Snippet 61 started.
+<-><->
+      
+l.177 ...ge $(0,100)$ was used. Next, a proposal $
+                                                  \chi^2$ distribution was u...
+Not a real error.
+
+! Preview: Snippet 61 ended.(533465+127431x704056).
+<-><->
+      
+l.177 ...100)$ was used. Next, a proposal $\chi^2$
+                                                   distribution was used to ...
+Not a real error.
+
+[61]
+! Preview: Snippet 62 started.
+<-><->
+      
+l.179 \begin{figure}
+                    
+Not a real error.
+
+<mixed_chains.png, id=238, 433.62pt x 289.08pt>
+File: mixed_chains.png Graphic file (type png)
+<use mixed_chains.png>
+Package pdftex.def Info: mixed_chains.png  used on input line 181.
+(pdftex.def)             Requested size: 229.5pt x 152.99994pt.
+
+LaTeX Warning: Reference `PDF' on page 4 undefined on input line 182.
+
+
+LaTeX Warning: Reference `PDF' on page 4 undefined on input line 182.
+
+! Preview: Snippet 62 ended.(17760252+0x15040512).
+<-><->
+      
+l.184 \end{figure}
+                  
+Not a real error.
+
+[62
+
+
+ <./mixed_chains.png>]
+! Preview: Snippet 63 started.
+<-><->
+      
+l.187 \subsection
+                 {Simulated Annealing}
+Not a real error.
+
+! Preview: Snippet 63 ended.(546132+152916x15040512).
+<-><->
+      
+l.187 \subsection{Simulated Annealing}
+                                      
+Not a real error.
+
+[63
+
+]
+! Preview: Snippet 64 started.
+<-><->
+      
+l.190 \begin{equation}
+                      
+Not a real error.
+
+! Preview: Snippet 64 ended.(730073+0x15040512).
+<-><->
+      
+l.193 \end{equation}
+                    
+Not a real error.
+
+[64
+
+]
+! Preview: Snippet 65 started.
+<-><->
+      
+l.195 The global minimum was located at $
+                                         (-0.7,-0.3199)$ and the local minim...
+Not a real error.
+
+! Preview: Snippet 65 ended.(491520+163840x4478304).
+<-><->
+      
+l.195 ...l minimum was located at $(-0.7,-0.3199)$
+                                                   and the local minimum at ...
+Not a real error.
+
+[65]
+! Preview: Snippet 66 started.
+<-><->
+      
+l.195 ...-0.7,-0.3199)$ and the local minimum at $
+                                                  (0.7, -0.1799)$. The funct...
+Not a real error.
+
+! Preview: Snippet 66 ended.(491520+163840x3968578).
+<-><->
+      
+l.195 ...and the local minimum at $(0.7, -0.1799)$
+                                                  . The function was visuali...
+Not a real error.
+
+[66]
+! Preview: Snippet 67 started.
+<-><->
+      
+l.197 \begin{figure}
+                    
+Not a real error.
+
+<PotentialWell.png, id=258, 433.62pt x 289.08pt>
+File: PotentialWell.png Graphic file (type png)
+<use PotentialWell.png>
+Package pdftex.def Info: PotentialWell.png  used on input line 199.
+(pdftex.def)             Requested size: 229.5pt x 152.99994pt.
+
+LaTeX Warning: Reference `eq:well' on page 4 undefined on input line 200.
+
+
+LaTeX Warning: Reference `eq:well' on page 4 undefined on input line 200.
+
+! Preview: Snippet 67 ended.(12255228+0x15040512).
+<-><->
+      
+l.202 \end{figure}
+                  
+Not a real error.
+
+[67
+
+
+ <./PotentialWell.png>]
+! Preview: Snippet 68 started.
+<-><->
+      
+l.204 ...ules were kept at constant temperatures $
+                                                  T=1$, $T=0.4$ and $T=0.1$ ...
+Not a real error.
+
+! Preview: Snippet 68 ended.(447828+0x1675486).
+<-><->
+      
+l.204 ... were kept at constant temperatures $T=1$
+                                                  , $T=0.4$ and $T=0.1$ whil...
+Not a real error.
+
+[68]
+! Preview: Snippet 69 started.
+<-><->
+      
+l.204 ...re kept at constant temperatures $T=1$, $
+                                                  T=0.4$ and $T=0.1$ while t...
+Not a real error.
+
+! Preview: Snippet 69 ended.(447828+0x2185212).
+<-><->
+      
+l.204 ...t at constant temperatures $T=1$, $T=0.4$
+                                                   and $T=0.1$ while the fin...
+Not a real error.
+
+[69]
+! Preview: Snippet 70 started.
+<-><->
+      
+l.204 ...onstant temperatures $T=1$, $T=0.4$ and $
+                                                  T=0.1$ while the final sch...
+Not a real error.
+
+! Preview: Snippet 70 ended.(447828+0x2185212).
+<-><->
+      
+l.204 ...t temperatures $T=1$, $T=0.4$ and $T=0.1$
+                                                   while the final schedule ...
+Not a real error.
+
+[70]
+! Preview: Snippet 71 started.
+<-><->
+      
+l.204 ... final schedule linearly decreased from $
+                                                  T=1$ to $T=0.001$ Figures ...
+Not a real error.
+
+! Preview: Snippet 71 ended.(447828+0x1675486).
+<-><->
+      
+l.204 ...al schedule linearly decreased from $T=1$
+                                                   to $T=0.001$ Figures \ref...
+Not a real error.
+
+[71]
+! Preview: Snippet 72 started.
+<-><->
+      
+l.204 ...hedule linearly decreased from $T=1$ to $
+                                                  T=0.001$ Figures \ref{fig:...
+Not a real error.
+
+! Preview: Snippet 72 ended.(447828+0x2840574).
+<-><->
+      
+l.204 ...inearly decreased from $T=1$ to $T=0.001$
+                                                   Figures \ref{fig:annealT1...
+Not a real error.
+
+[72]
+
+LaTeX Warning: Reference `fig:annealT1' on page 4 undefined on input line 204.
+
+
+LaTeX Warning: Reference `fig:annealT04' on page 4 undefined on input line 204.
+
+
+LaTeX Warning: Reference `fig:annealT01' on page 4 undefined on input line 204.
+
+
+LaTeX Warning: Reference `fig:anneal_full' on page 4 undefined on input line 204.
+
+! Preview: Snippet 73 started.
+<-><->
+      
+l.206 ...nded on the schedule used, however. The $
+                                                  T=0.1$ schedule had the hi...
+Not a real error.
+
+! Preview: Snippet 73 ended.(447828+0x2185212).
+<-><->
+      
+l.206 ...n the schedule used, however. The $T=0.1$
+                                                   schedule had the highest ...
+Not a real error.
+
+[73]
+! Preview: Snippet 74 started.
+<-><->
+      
+l.206 ...lue, followed by the full schedule, the $
+                                                  T=0.4$ schedule and the $T...
+Not a real error.
+
+! Preview: Snippet 74 ended.(447828+0x2185212).
+<-><->
+      
+l.206 ...ollowed by the full schedule, the $T=0.4$
+                                                   schedule and the $T=1$ sc...
+Not a real error.
+
+[74]
+! Preview: Snippet 75 started.
+<-><->
+      
+l.206 ... schedule, the $T=0.4$ schedule and the $
+                                                  T=1$ schedules. This was a...
+Not a real error.
+
+! Preview: Snippet 75 ended.(447828+0x1675486).
+<-><->
+      
+l.206 ...edule, the $T=0.4$ schedule and the $T=1$
+                                                   schedules. This was as ex...
+Not a real error.
+
+[75]
+! Preview: Snippet 76 started.
+<-><->
+      
+l.206 ...hedules. This was as expected, as lower $
+                                                  T$ would keep a walker clo...
+Not a real error.
+
+! Preview: Snippet 76 ended.(447828+0x473999).
+<-><->
+      
+l.206 ...dules. This was as expected, as lower $T$
+                                                   would keep a walker close...
+Not a real error.
+
+[76]
+! Preview: Snippet 77 started.
+<-><->
+      
+l.206 ...ure iterations. The success of the pure $
+                                                  T=0.1$ schedule may be att...
+Not a real error.
+
+! Preview: Snippet 77 ended.(447828+0x2185212).
+<-><->
+      
+l.206 ...erations. The success of the pure $T=0.1$
+                                                   schedule may be attribute...
+Not a real error.
+
+[77]
+! Preview: Snippet 78 started.
+<-><->
+      
+l.206 ...ed. By having steps up to a distance of $
+                                                  1$ away, it was always pos...
+Not a real error.
+
+! Preview: Snippet 78 ended.(422343+0x327681).
+<-><->
+      
+l.206 .... By having steps up to a distance of $1$
+                                                   away, it was always possi...
+Not a real error.
+
+[78]
+! Preview: Snippet 79 started.
+<-><->
+      
+l.208 \begin{figure}
+                    
+Not a real error.
+
+<annealT1.png, id=299, 1156.32pt x 578.16pt>
+File: annealT1.png Graphic file (type png)
+<use annealT1.png>
+Package pdftex.def Info: annealT1.png  used on input line 210.
+(pdftex.def)             Requested size: 229.5pt x 114.74774pt.
+
+LaTeX Warning: Reference `eq:well' on page 4 undefined on input line 211.
+
+
+LaTeX Warning: Reference `eq:well' on page 4 undefined on input line 211.
+
+! Preview: Snippet 79 ended.(12894060+0x15040512).
+<-><->
+      
+l.213 \end{figure}
+                  
+Not a real error.
+
+[79
+
+
+ <./annealT1.png>]
+! Preview: Snippet 80 started.
+<-><->
+      
+l.215 \begin{figure}
+                    
+Not a real error.
+
+<annealT04.png, id=306, 1156.32pt x 578.16pt>
+File: annealT04.png Graphic file (type png)
+<use annealT04.png>
+Package pdftex.def Info: annealT04.png  used on input line 217.
+(pdftex.def)             Requested size: 229.5pt x 114.74774pt.
+
+LaTeX Warning: Reference `fig:annealT1' on page 4 undefined on input line 218.
+
+
+LaTeX Warning: Reference `fig:annealT1' on page 4 undefined on input line 218.
+
+! Preview: Snippet 80 ended.(10534764+0x15040512).
+<-><->
+      
+l.220 \end{figure}
+                  
+Not a real error.
+
+[80
+
+
+ <./annealT04.png>]
+! Preview: Snippet 81 started.
+<-><->
+      
+l.222 \begin{figure}
+                    
+Not a real error.
+
+<annealT01.png, id=312, 1156.32pt x 578.16pt>
+File: annealT01.png Graphic file (type png)
+<use annealT01.png>
+Package pdftex.def Info: annealT01.png  used on input line 224.
+(pdftex.def)             Requested size: 229.5pt x 114.74774pt.
+
+LaTeX Warning: Reference `fig:annealT1' on page 4 undefined on input line 225.
+
+
+LaTeX Warning: Reference `fig:annealT1' on page 4 undefined on input line 225.
+
+! Preview: Snippet 81 ended.(10534764+0x15040512).
+<-><->
+      
+l.227 \end{figure}
+                  
+Not a real error.
+
+[81
+
+
+ <./annealT01.png>]
+! Preview: Snippet 82 started.
+<-><->
+      
+l.229 \begin{figure}
+                    
+Not a real error.
+
+<anneal_full.png, id=318, 1156.32pt x 578.16pt>
+File: anneal_full.png Graphic file (type png)
+<use anneal_full.png>
+Package pdftex.def Info: anneal_full.png  used on input line 231.
+(pdftex.def)             Requested size: 229.5pt x 114.74774pt.
+
+LaTeX Warning: Reference `fig:annealT1' on page 4 undefined on input line 232.
+
+
+LaTeX Warning: Reference `fig:annealT1' on page 4 undefined on input line 232.
+
+! Preview: Snippet 82 ended.(11321196+0x15040512).
+<-><->
+      
+l.234 \end{figure}
+                  
+Not a real error.
+
+[82
+
+
+ <./anneal_full.png>]
+! Preview: Snippet 83 started.
+<-><->
+      
+l.236 \subsection
+                 {Traveling Salesman}
+Not a real error.
+
+! Preview: Snippet 83 ended.(546132+152916x15040512).
+<-><->
+      
+l.236 \subsection{Traveling Salesman}
+                                     
+Not a real error.
+
+[83
+
+]
+
+LaTeX Warning: Reference `tab:5cities' on page 4 undefined on input line 237.
+
+
+LaTeX Warning: Reference `fig:greedy_4frames' on page 4 undefined on input line 237.
+
+
+LaTeX Warning: Reference `fig:brute_4frames' on page 4 undefined on input line 237.
+
+
+LaTeX Warning: Reference `fig:anneal_4frames' on page 4 undefined on input line 237.
+
+! Preview: Snippet 84 started.
+<-><->
+      
+l.238 \begin{table}
+                   
+Not a real error.
+
+! Preview: Snippet 84 ended.(7130314+0x15040512).
+<-><->
+      
+l.258 \end{table}
+                 
+Not a real error.
+
+[84
+
+
+]
+! Preview: Snippet 85 started.
+<-><->
+      
+l.260 ...nction tested the time to run each loop $
+                                                  10^4$ times. The greedy me...
+Not a real error.
+
+! Preview: Snippet 85 ended.(533465+0x949365).
+<-><->
+      
+l.260 ...n tested the time to run each loop $10^4$
+                                                   times. The greedy method ...
+Not a real error.
+
+[85]
+! Preview: Snippet 86 started.
+<-><->
+      
+l.260 ... city 3. The best route was found to be $
+                                                  3 \to 0 \to 1 \to 4 \to 2$...
+Not a real error.
+
+! Preview: Snippet 86 ended.(422343+0x5716169).
+<-><->
+      
+l.260 ...s found to be $3 \to 0 \to 1 \to 4 \to 2$
+                                                  . This code took of $0.012...
+Not a real error.
+
+[86]
+! Preview: Snippet 87 started.
+<-><->
+      
+l.260 ...0 \to 1 \to 4 \to 2$. This code took of $
+                                                  0.0125s$ to run. The brute...
+Not a real error.
+
+! Preview: Snippet 87 ended.(422343+0x2127650).
+<-><->
+      
+l.260 ...\to 4 \to 2$. This code took of $0.0125s$
+                                                   to run. The brute force m...
+Not a real error.
+
+[87]
+! Preview: Snippet 88 started.
+<-><->
+      
+l.260 ...5s$ to run. The brute force method took $
+                                                  0.218s$ to run and from th...
+Not a real error.
+
+! Preview: Snippet 88 ended.(422343+0x1799969).
+<-><->
+      
+l.260 ...run. The brute force method took $0.218s$
+                                                   to run and from the compl...
+Not a real error.
+
+[88]
+! Preview: Snippet 89 started.
+<-><->
+      
+l.260 ...ete solution found the best route to be $
+                                                  2 \to 3 \to 0 \to 1 \to 4$...
+Not a real error.
+
+! Preview: Snippet 89 ended.(422343+0x5716169).
+<-><->
+      
+l.260 ...t route to be $2 \to 3 \to 0 \to 1 \to 4$
+                                                  . The annealing algorithm ...
+Not a real error.
+
+[89]
+! Preview: Snippet 90 started.
+<-><->
+      
+l.260 ...nealing algorithm produced the solution $
+                                                  4 \to 1 \to 0 \to 3 \to 2$...
+Not a real error.
+
+! Preview: Snippet 90 ended.(422343+0x5716169).
+<-><->
+      
+l.260 ... the solution $4 \to 1 \to 0 \to 3 \to 2$
+                                                   in a time of $0.596s$. Th...
+Not a real error.
+
+[90]
+! Preview: Snippet 91 started.
+<-><->
+      
+l.260 ...4 \to 1 \to 0 \to 3 \to 2$ in a time of $
+                                                  0.596s$. The greedy algori...
+Not a real error.
+
+! Preview: Snippet 91 ended.(422343+0x1799969).
+<-><->
+      
+l.260 ... \to 0 \to 3 \to 2$ in a time of $0.596s$
+                                                  . The greedy algorithm pro...
+Not a real error.
+
+[91]
+! Preview: Snippet 92 started.
+<-><->
+      
+l.264 \begin{figure}
+                    
+Not a real error.
+
+<greedy_4frames.png, id=356, 459.27585pt x 305.7021pt>
+File: greedy_4frames.png Graphic file (type png)
+<use greedy_4frames.png>
+Package pdftex.def Info: greedy_4frames.png  used on input line 266.
+(pdftex.def)             Requested size: 229.5pt x 152.76204pt.
+! Preview: Snippet 92 ended.(19317525+0x15040512).
+<-><->
+      
+l.269 \end{figure}
+                  
+Not a real error.
+
+[92
+
+
+ <./greedy_4frames.png>]
+! Preview: Snippet 93 started.
+<-><->
+      
+l.271 \begin{figure}
+                    
+Not a real error.
+
+<brute_4frames.png, id=362, 443.0151pt x 298.4751pt>
+File: brute_4frames.png Graphic file (type png)
+<use brute_4frames.png>
+Package pdftex.def Info: brute_4frames.png  used on input line 273.
+(pdftex.def)             Requested size: 229.5pt x 154.62498pt.
+! Preview: Snippet 93 ended.(13934591+0x15040512).
+<-><->
+      
+l.276 \end{figure}
+                  
+Not a real error.
+
+[93
+
+
+ <./brute_4frames.png>]
+! Preview: Snippet 94 started.
+<-><->
+      
+l.278 \begin{figure}
+                    
+Not a real error.
+
+<anneal_4frames.png, id=368, 442.65375pt x 287.99596pt>
+File: anneal_4frames.png Graphic file (type png)
+<use anneal_4frames.png>
+Package pdftex.def Info: anneal_4frames.png  used on input line 280.
+(pdftex.def)             Requested size: 229.5pt x 149.3193pt.
+! Preview: Snippet 94 ended.(17519038+0x15040512).
+<-><->
+      
+l.283 \end{figure}
+                  
+Not a real error.
+
+[94
+
+
+ <./anneal_4frames.png>]
+! Preview: Snippet 95 started.
+<-><->
+      
+l.285 \section
+              {Discussion}
+Not a real error.
+
+! Preview: Snippet 95 ended.(655359+0x15040512).
+<-><->
+      
+l.285 \section{Discussion}
+                          
+Not a real error.
+
+[95
+
+]
+! Preview: Snippet 96 started.
+<-><->
+      
+l.286 ... two people having the same birthday as $
+                                                  1/365$ would lead to a low...
+Not a real error.
+
+! Preview: Snippet 96 ended.(491520+163840x1638405).
+<-><->
+      
+l.286 ...eople having the same birthday as $1/365$
+                                                   would lead to a low likel...
+Not a real error.
+
+[96]
+! Preview: Snippet 97 started.
+<-><->
+      
+l.286 ...ed a birthday. It was found that nearly $
+                                                  70\%$ of rooms had a birth...
+Not a real error.
+
+! Preview: Snippet 97 ended.(491520+36408x1201497).
+<-><->
+      
+l.286 ...birthday. It was found that nearly $70\%$
+                                                   of rooms had a birthday m...
+Not a real error.
+
+[97]
+! Preview: Snippet 98 started.
+<-><->
+      
+l.292 ...or a walker. For this assignment, using $
+                                                  \delta = \pm \sigma$ where...
+Not a real error.
+
+! Preview: Snippet 98 ended.(455111+54613x2097600).
+<-><->
+      
+l.292 ...s assignment, using $\delta = \pm \sigma$
+                                                   where $\sigma$ was the st...
+Not a real error.
+
+[98]
+! Preview: Snippet 99 started.
+<-><->
+      
+l.292 ...ment, using $\delta = \pm \sigma$ where $
+                                                  \sigma$ was the standard d...
+Not a real error.
+
+! Preview: Snippet 99 ended.(282168+0x397994).
+<-><->
+      
+l.292 ...sing $\delta = \pm \sigma$ where $\sigma$
+                                                   was the standard deviatio...
+Not a real error.
+
+[99]
+! Preview: Snippet 100 started.
+<-><->
+      
+l.294 ...v chain. In effect, this meant that the $
+                                                  \chi^2$ proposal distribut...
+Not a real error.
+
+! Preview: Snippet 100 ended.(533465+127431x704056).
+<-><->
+      
+l.294 .... In effect, this meant that the $\chi^2$
+                                                   proposal distribution req...
+Not a real error.
+
+[100]
+! Preview: Snippet 101 started.
+<-><->
+      
+l.296 \section
+              {Conclusion}
+Not a real error.
+
+! Preview: Snippet 101 ended.(655359+0x15040512).
+<-><->
+      
+l.296 \section{Conclusion}
+                          
+Not a real error.
+
+[101
+
+]
+! Preview: Snippet 102 started.
+<-><->
+      
+l.300 \begin{thebibliography}{00}
+                                 
+Not a real error.
+
+! Preview: Snippet 102 ended.(655359+0x15040512).
+<-><->
+      
+l.300 \begin{thebibliography}{00}
+                                 
+Not a real error.
+
+[102]
+! Preview: Snippet 103 started.
+<-><->
+      
+l.309 \section
+              {Appendix}
+Not a real error.
+
+! Preview: Snippet 103 ended.(655359+183500x15040512).
+<-><->
+      
+l.309 \section{Appendix}
+                        
+Not a real error.
+
+[103
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 312.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 312.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 312.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 312.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 312.
+ ) 
+Here is how much of TeX's memory you used:
+ 885 strings out of 486577
+ 13233 string characters out of 6043513
+ 197875 words of memory out of 5000000
+ 10719 multiletter control sequences out of 15000+600000
+ 12681 words of font info for 49 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 28i,21n,38p,1243b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on _region_.pdf (103 pages, 1058276 bytes).
+PDF statistics:
+ 459 PDF objects out of 1000 (max. 8388607)
+ 309 compressed objects within 4 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+

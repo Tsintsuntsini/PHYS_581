@@ -1,0 +1,1159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="New document 1">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4273">
+      <stop
+         style="stop-color:#dee1de;stop-opacity:1;"
+         offset="0"
+         id="stop4275" />
+      <stop
+         style="stop-color:#dee1de;stop-opacity:0;"
+         offset="1"
+         id="stop4277" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective4215" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4273"
+       id="radialGradient4285"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,0.97297293,0,18.59669)"
+       cx="1332.4108"
+       cy="688.07648"
+       fx="1332.4108"
+       fy="688.07648"
+       r="3.3035715" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="1154.0931"
+     inkscape:cy="339.31874"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g4418"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\3d volume.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200">
+      <path
+         d="m 1430.7142,632.27289 a 11.875,11.875 0 1 1 -23.75,0 11.875,11.875 0 1 1 23.75,0 z"
+         sodipodi:ry="11.875"
+         sodipodi:rx="11.875"
+         sodipodi:cy="632.27289"
+         sodipodi:cx="1418.8392"
+         id="path4395"
+         style="opacity:0.50884956;fill:#000080;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         d="m 1451.25,580.48718 a 10.446428,10.446428 0 1 1 -20.8928,0 10.446428,10.446428 0 1 1 20.8928,0 z"
+         sodipodi:ry="10.446428"
+         sodipodi:rx="10.446428"
+         sodipodi:cy="580.48718"
+         sodipodi:cx="1440.8036"
+         id="path4397"
+         style="opacity:0.50884956;fill:#000080;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         id="path4399"
+         d="M 1440.8125 570.03125 C 1435.9207 570.03125 1431.7924 573.39781 1430.6562 577.9375 L 1430.5312 577.90625 L 1408.75 626.03125 C 1407.6259 627.84564 1406.9688 629.98996 1406.9688 632.28125 C 1406.9688 638.83963 1412.2854 644.15625 1418.8438 644.15625 C 1424.4048 644.15625 1429.0526 640.31717 1430.3438 635.15625 L 1450 585.46875 C 1450.0223 585.42764 1450.0407 585.38519 1450.0625 585.34375 C 1450.8254 583.89308 1451.25 582.25287 1451.25 580.5 C 1451.25 574.7306 1446.5819 570.03125 1440.8125 570.03125 z "
+         style="fill:#000080;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;opacity:0.51327434" />
+      <path
+         d="m 1459.2857,580.66577 a 17.857143,18.303572 0 1 1 -35.7143,0 17.857143,18.303572 0 1 1 35.7143,0 z"
+         sodipodi:ry="18.303572"
+         sodipodi:rx="17.857143"
+         sodipodi:cy="580.66577"
+         sodipodi:cx="1441.4286"
+         id="path4406"
+         style="opacity:0.51327431;fill:#000080;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         sodipodi:nodetypes="ccssscc"
+         inkscape:connector-curvature="0"
+         id="path4408"
+         d="m 1445.5312,564.5 c -6.7442,-0.12176 -12.0485,1.80617 -18.0011,4.49889 -2.4026,4.09473 -3.6204,5.55637 -3.9676,11.65736 -0.5744,10.09245 8.0128,18.3125 17.875,18.3125 9.8622,0 17.8437,-8.20372 17.8437,-18.3125 0,-2.13967 -0.3729,-4.18514 -1.0312,-6.09375 -3.5842,-3.68672 -7.6691,-7.38429 -12.7188,-10.0625 z"
+         style="opacity:0.50884956;fill:#000080;fill-opacity:1;stroke:none" />
+    </g>
+    <rect
+       y="593.24786"
+       x="325.7742"
+       height="47.477169"
+       width="47.477169"
+       id="rect4054"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4022"
+       width="47.477169"
+       height="47.477169"
+       x="165.66501"
+       y="593.24786"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <rect
+       y="593.24786"
+       x="245.7196"
+       height="47.477169"
+       width="47.477169"
+       id="rect4024"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <rect
+       y="593.24786"
+       x="405.8288"
+       height="47.477169"
+       width="47.477169"
+       id="rect4028"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4030"
+       width="47.477169"
+       height="47.477169"
+       x="485.88339"
+       y="593.24786"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <rect
+       y="670.52454"
+       x="165.66501"
+       height="47.477169"
+       width="47.477169"
+       id="rect4044"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4046"
+       width="47.477169"
+       height="47.477169"
+       x="245.7196"
+       y="670.52454"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <rect
+       y="670.52454"
+       x="325.7742"
+       height="47.477169"
+       width="47.477169"
+       id="rect4048"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4050"
+       width="47.477169"
+       height="47.477169"
+       x="405.8288"
+       y="670.52454"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <rect
+       y="670.52454"
+       x="485.88339"
+       height="47.477169"
+       width="47.477169"
+       id="rect4052"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 181.82746,76.554824 0,383.857966"
+       id="path3757"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\checker-color.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3759"
+       d="m 244.25489,76.554824 0,383.857966"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\checker-color.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 306.68231,76.554824 0,383.857966"
+       id="path3761"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\checker-color.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3763"
+       d="m 369.10974,76.554824 0,383.857966"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\checker-color.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 431.53716,76.554824 0,383.857966"
+       id="path3765"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\checker-color.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3767"
+       d="m 493.9646,76.554824 0,383.857966"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\checker-color.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3769"
+       d="m 530.83516,116.45585 -383.85796,0"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\checker-color.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 530.83516,178.88328 -383.85796,0"
+       id="path3771"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\checker-color.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3773"
+       d="m 530.83516,241.3107 -383.85796,0"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\checker-color.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 530.83516,303.73813 -383.85796,0"
+       id="path3775"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\checker-color.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3777"
+       d="m 530.83516,366.16555 -383.85796,0"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\checker-color.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 530.83516,428.59299 -383.85796,0"
+       id="path3779"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\checker-color.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:#2bff2e;fill-opacity:0.65957445;stroke:none"
+       d="M 337.65625 178.59375 C 321.34622 178.59375 307.96565 191.35273 306.6875 207.59375 L 306.625 207.5 C 299.90422 224.0864 286.75124 232.07921 274.5625 241.375 L 274.90625 241.71875 C 258.03583 242.05274 244.46875 256.0566 244.46875 273.28125 C 244.46875 290.48496 258.00186 304.47698 274.84375 304.84375 C 291.42727 312.83299 298.32349 325.66663 305.96875 338.125 L 306.78125 337.28125 C 308.44455 353.12212 321.62739 365.46875 337.65625 365.46875 C 354.00205 365.46875 367.36602 352.63558 368.59375 336.34375 L 369.78125 337.59375 C 377.25468 325.41539 383.99182 312.86411 399.78125 304.84375 C 416.93642 304.84375 430.84375 290.71537 430.84375 273.28125 C 430.84375 256.56605 418.04855 242.88112 401.875 241.78125 L 401.90625 241.75 C 389.71751 232.45421 376.56453 224.43015 369.84375 207.84375 L 368.6875 209.09375 C 368.13534 192.15225 354.46102 178.59375 337.65625 178.59375 z M 338.75 241.6875 C 354.50242 249.20343 361.54205 261.10246 368.71875 272.90625 C 368.71731 273.03158 368.71875 273.15557 368.71875 273.28125 C 362.18269 286.91869 351.05854 294.44461 340.3125 302.46875 C 339.43107 302.39237 338.55714 302.3125 337.65625 302.3125 C 336.68079 302.3125 335.7025 302.37935 334.75 302.46875 C 324.20013 294.61901 313.38945 287.11571 307 273.71875 C 314.32776 261.7092 321.23524 249.5098 337 241.71875 C 337.21537 241.72323 337.43983 241.71875 337.65625 241.71875 C 338.02423 241.71875 338.38512 241.7004 338.75 241.6875 z "
+       id="path3963" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3889"
+       y="280.76138"
+       x="390.70419"
+       style="font-size:32.60249329px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+       xml:space="preserve"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\checker-color.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         y="280.76138"
+         x="390.70419"
+         id="tspan3891"
+         sodipodi:role="line">5</tspan></text>
+    <path
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil.png"
+       inkscape:connector-curvature="0"
+       id="path3980"
+       d="m 540.43161,694.56615 -383.85796,0"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 540.43161,616.7844 -383.85796,0"
+       id="path3982"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       transform="translate(-96.21703,78.286822)"
+       d="m 387.89857,615.97626 a 22.728432,22.728432 0 1 1 -45.45687,0 22.728432,22.728432 0 1 1 45.45687,0 z"
+       sodipodi:ry="22.728432"
+       sodipodi:rx="22.728432"
+       sodipodi:cy="615.97626"
+       sodipodi:cx="365.17014"
+       id="path3998"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       sodipodi:type="arc"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       id="path4000"
+       sodipodi:cx="365.17014"
+       sodipodi:cy="615.97626"
+       sodipodi:rx="22.728432"
+       sodipodi:ry="22.728432"
+       d="m 387.89857,615.97626 a 22.728432,22.728432 0 1 1 -45.45687,0 22.728432,22.728432 0 1 1 45.45687,0 z"
+       transform="translate(64.902309,77.781746)"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:#2bff2e;fill-opacity:0.65882355000000004;stroke:none;stroke-width:1;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       d="M 325.28125 593.25 C 324.70596 594.07666 323.82425 594.77118 323.59375 595.75 C 316.64983 625.23843 302.98403 655.55377 268.9375 671.03125 L 269.40625 671.53125 C 269.25225 671.52817 269.09224 671.53125 268.9375 671.53125 C 256.38493 671.53125 246.21875 681.69743 246.21875 694.25 C 246.21875 706.80257 256.38493 717 268.9375 717 C 281.49007 717 291.6875 706.80257 291.6875 694.25 C 291.6875 694.14406 291.68894 694.0431 291.6875 693.9375 C 300.63177 674.96457 303.95642 653.30809 325.78125 640.46875 L 325.28125 593.25 z M 325.78125 640.46875 L 325.78125 640.71875 L 373.25 640.71875 L 373.25 593.25 L 325.78125 593.25 L 325.78125 640.46875 z M 374 593.25 L 373.5 640.46875 C 395.13086 653.19398 398.57624 674.58687 407.34375 693.4375 C 407.34231 693.5431 407.34375 693.64406 407.34375 693.75 C 407.34375 706.30257 417.50993 716.5 430.0625 716.5 C 442.61507 716.5 452.8125 706.30257 452.8125 693.75 C 452.8125 681.27996 442.75116 671.16384 430.3125 671.03125 C 396.26597 655.55377 382.63142 625.23843 375.6875 595.75 C 375.457 594.77118 374.57529 594.07666 374 593.25 z "
+       id="rect4026"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       id="path3984"
+       sodipodi:cx="365.17014"
+       sodipodi:cy="615.97626"
+       sodipodi:rx="22.728432"
+       sodipodi:ry="22.728432"
+       d="m 387.89857,615.97626 a 22.728432,22.728432 0 1 1 -45.45687,0 22.728432,22.728432 0 1 1 45.45687,0 z"
+       transform="translate(-15.657364,1.0101525)"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       id="path3988"
+       sodipodi:cx="365.17014"
+       sodipodi:cy="615.97626"
+       sodipodi:rx="22.728432"
+       sodipodi:ry="22.728432"
+       d="m 387.89857,615.97626 a 22.728432,22.728432 0 1 1 -45.45687,0 22.728432,22.728432 0 1 1 45.45687,0 z"
+       transform="translate(-96.21703,1.0101525)"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       transform="translate(64.902309,0.50507619)"
+       d="m 387.89857,615.97626 a 22.728432,22.728432 0 1 1 -45.45687,0 22.728432,22.728432 0 1 1 45.45687,0 z"
+       sodipodi:ry="22.728432"
+       sodipodi:rx="22.728432"
+       sodipodi:cy="615.97626"
+       sodipodi:cx="365.17014"
+       id="path3990"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       sodipodi:type="arc"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       id="path3992"
+       sodipodi:cx="365.17014"
+       sodipodi:cy="615.97626"
+       sodipodi:rx="22.728432"
+       sodipodi:ry="22.728432"
+       d="m 387.89857,615.97626 a 22.728432,22.728432 0 1 1 -45.45687,0 22.728432,22.728432 0 1 1 45.45687,0 z"
+       transform="translate(145.46197,0.50507619)"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       transform="translate(-176.7767,1.0101525)"
+       d="m 387.89857,615.97626 a 22.728432,22.728432 0 1 1 -45.45687,0 22.728432,22.728432 0 1 1 45.45687,0 z"
+       sodipodi:ry="22.728432"
+       sodipodi:rx="22.728432"
+       sodipodi:cy="615.97626"
+       sodipodi:cx="365.17014"
+       id="path3994"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       sodipodi:type="arc"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       id="path3996"
+       sodipodi:cx="365.17014"
+       sodipodi:cy="615.97626"
+       sodipodi:rx="22.728432"
+       sodipodi:ry="22.728432"
+       d="m 387.89857,615.97626 a 22.728432,22.728432 0 1 1 -45.45687,0 22.728432,22.728432 0 1 1 45.45687,0 z"
+       transform="translate(-15.657352,78.286822)"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       transform="translate(145.46197,77.781746)"
+       d="m 387.89857,615.97626 a 22.728432,22.728432 0 1 1 -45.45687,0 22.728432,22.728432 0 1 1 45.45687,0 z"
+       sodipodi:ry="22.728432"
+       sodipodi:rx="22.728432"
+       sodipodi:cy="615.97626"
+       sodipodi:cx="365.17014"
+       id="path4002"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       sodipodi:type="arc"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       id="path4004"
+       sodipodi:cx="365.17014"
+       sodipodi:cy="615.97626"
+       sodipodi:rx="22.728432"
+       sodipodi:ry="22.728432"
+       d="m 387.89857,615.97626 a 22.728432,22.728432 0 1 1 -45.45687,0 22.728432,22.728432 0 1 1 45.45687,0 z"
+       transform="translate(-176.7767,78.286822)"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <g
+       id="g4079"
+       transform="translate(-22.223356,23.738585)"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4065"
+         d="m 130.71429,675.21933 0,74.28571 65,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4067"
+         d="m 130.63028,664.59667 -6.45299,11.17692 13.65033,0 z"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 207.3052,749.45581 -11.17692,-6.45299 1e-5,13.65033 z"
+         id="path4069"
+         inkscape:connector-curvature="0" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text4071"
+         y="779.77673"
+         x="158.87419"
+         style="font-size:32.60249329px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+         xml:space="preserve"
+         inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\checker-color.png"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200"><tspan
+           y="779.77673"
+           x="158.87419"
+           id="tspan4073"
+           sodipodi:role="line">x</tspan></text>
+      <text
+         inkscape:export-ydpi="200"
+         inkscape:export-xdpi="200"
+         inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\checker-color.png"
+         xml:space="preserve"
+         style="font-size:32.60249329px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+         x="105.33611"
+         y="719.67261"
+         id="text4075"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4077"
+           x="105.33611"
+           y="719.67261">t</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 540.43161,938.01291 -383.85796,0"
+       id="path4108"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil_staggered.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <rect
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil_staggered.png"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.53115183;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4092"
+       width="25.217587"
+       height="25.217587"
+       x="164.67297"
+       y="924.84851" />
+    <g
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil_staggered.png"
+       transform="translate(-22.223356,267.18535)"
+       id="g4134">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 130.71429,675.21933 0,74.28571 65,0"
+         id="path4136"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 130.63028,664.59667 -6.45299,11.17692 13.65033,0 z"
+         id="path4138"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4140"
+         d="m 207.3052,749.45581 -11.17692,-6.45299 1e-5,13.65033 z"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <text
+         inkscape:export-ydpi="200"
+         inkscape:export-xdpi="200"
+         inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\checker-color.png"
+         xml:space="preserve"
+         style="font-size:32.60249329px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+         x="158.87419"
+         y="779.77673"
+         id="text4142"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4144"
+           x="158.87419"
+           y="779.77673">x</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4146"
+         y="719.67261"
+         x="105.33611"
+         style="font-size:32.60249329px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+         xml:space="preserve"
+         inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\checker-color.png"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200"><tspan
+           y="719.67261"
+           x="105.33611"
+           id="tspan4148"
+           sodipodi:role="line">t</tspan></text>
+    </g>
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       id="path4150"
+       sodipodi:cx="365.17014"
+       sodipodi:cy="615.97626"
+       sodipodi:rx="22.728432"
+       sodipodi:ry="22.728432"
+       d="m 387.89857,615.97626 a 22.728432,22.728432 0 1 1 -45.45687,0 22.728432,22.728432 0 1 1 45.45687,0 z"
+       transform="matrix(0.54337848,0,0,0.54337848,279.37658,603.0016)"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil_staggered.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       id="path4152"
+       sodipodi:cx="365.17014"
+       sodipodi:cy="615.97626"
+       sodipodi:rx="22.728432"
+       sodipodi:ry="22.728432"
+       d="m 387.89857,615.97626 a 22.728432,22.728432 0 1 1 -45.45687,0 22.728432,22.728432 0 1 1 45.45687,0 z"
+       transform="matrix(0.54337848,0,0,0.54337848,21.787666,603.0016)"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil_staggered.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil_staggered.png"
+       transform="matrix(0.54337848,0,0,0.54337848,107.65063,603.0016)"
+       d="m 387.89857,615.97626 a 22.728432,22.728432 0 1 1 -45.45687,0 22.728432,22.728432 0 1 1 45.45687,0 z"
+       sodipodi:ry="22.728432"
+       sodipodi:rx="22.728432"
+       sodipodi:cy="615.97626"
+       sodipodi:cx="365.17014"
+       id="path4154"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       sodipodi:type="arc" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       id="path4156"
+       sodipodi:cx="365.17014"
+       sodipodi:cy="615.97626"
+       sodipodi:rx="22.728432"
+       sodipodi:ry="22.728432"
+       d="m 387.89857,615.97626 a 22.728432,22.728432 0 1 1 -45.45687,0 22.728432,22.728432 0 1 1 45.45687,0 z"
+       transform="matrix(0.54337848,0,0,0.54337848,193.5136,603.0016)"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil_staggered.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <rect
+       y="924.84851"
+       x="250.53595"
+       height="25.217587"
+       width="25.217587"
+       id="rect4158"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.53115183;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil_staggered.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <rect
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil_staggered.png"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.53115183;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4160"
+       width="25.217587"
+       height="25.217587"
+       x="336.39893"
+       y="924.84851" />
+    <rect
+       y="924.84851"
+       x="422.2619"
+       height="25.217587"
+       width="25.217587"
+       id="rect4162"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.53115183;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil_staggered.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <rect
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil_staggered.png"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.53115183;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4184"
+       width="25.217587"
+       height="25.217587"
+       x="509.13501"
+       y="924.84851" />
+    <path
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil_staggered.png"
+       inkscape:connector-curvature="0"
+       id="path4186"
+       d="m 540.43161,886.49513 -383.85796,0"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <rect
+       y="873.33075"
+       x="164.67297"
+       height="25.217587"
+       width="25.217587"
+       id="rect4188"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.53115183;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil_staggered.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil_staggered.png"
+       transform="matrix(0.54337848,0,0,0.54337848,279.37658,551.48382)"
+       d="m 387.89857,615.97626 a 22.728432,22.728432 0 1 1 -45.45687,0 22.728432,22.728432 0 1 1 45.45687,0 z"
+       sodipodi:ry="22.728432"
+       sodipodi:rx="22.728432"
+       sodipodi:cy="615.97626"
+       sodipodi:cx="365.17014"
+       id="path4190"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       sodipodi:type="arc" />
+    <path
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil_staggered.png"
+       transform="matrix(0.54337848,0,0,0.54337848,21.787666,551.48382)"
+       d="m 387.89857,615.97626 a 22.728432,22.728432 0 1 1 -45.45687,0 22.728432,22.728432 0 1 1 45.45687,0 z"
+       sodipodi:ry="22.728432"
+       sodipodi:rx="22.728432"
+       sodipodi:cy="615.97626"
+       sodipodi:cx="365.17014"
+       id="path4192"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       sodipodi:type="arc" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       id="path4194"
+       sodipodi:cx="365.17014"
+       sodipodi:cy="615.97626"
+       sodipodi:rx="22.728432"
+       sodipodi:ry="22.728432"
+       d="m 387.89857,615.97626 a 22.728432,22.728432 0 1 1 -45.45687,0 22.728432,22.728432 0 1 1 45.45687,0 z"
+       transform="matrix(0.54337848,0,0,0.54337848,107.65063,551.48382)"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil_staggered.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil_staggered.png"
+       transform="matrix(0.54337848,0,0,0.54337848,193.5136,551.48382)"
+       d="m 387.89857,615.97626 a 22.728432,22.728432 0 1 1 -45.45687,0 22.728432,22.728432 0 1 1 45.45687,0 z"
+       sodipodi:ry="22.728432"
+       sodipodi:rx="22.728432"
+       sodipodi:cy="615.97626"
+       sodipodi:cx="365.17014"
+       id="path4196"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       sodipodi:type="arc" />
+    <rect
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil_staggered.png"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.53115183;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4198"
+       width="25.217587"
+       height="25.217587"
+       x="250.53595"
+       y="873.33075" />
+    <rect
+       y="873.33075"
+       x="336.39893"
+       height="25.217587"
+       width="25.217587"
+       id="rect4200"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.53115183;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil_staggered.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <rect
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil_staggered.png"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.53115183;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4202"
+       width="25.217587"
+       height="25.217587"
+       x="422.2619"
+       y="873.33075" />
+    <rect
+       y="873.33075"
+       x="509.13501"
+       height="25.217587"
+       width="25.217587"
+       id="rect4204"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.53115183;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil_staggered.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:#2bff2e;fill-opacity:0.65882355000000004;stroke:none;stroke-width:0.53115182999999999;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       d="M 336.25 873.0625 C 327.21988 896.05947 314.33664 914.48811 297.6875 928.4375 L 297.84375 928.53125 C 295.32417 930.7923 293.71875 934.06691 293.71875 937.71875 C 293.71875 944.53954 299.24171 950.0625 306.0625 950.0625 C 312.65951 950.0625 318.05975 944.88564 318.40625 938.375 L 318.5625 938.4375 C 330.03292 920.57585 335.90165 898.91531 348.9375 898.96875 C 360.83767 898.65427 371.2519 924.10407 379.46875 937.90625 L 379.59375 937.78125 C 379.62807 944.57272 385.13797 950.0625 391.9375 950.0625 C 398.75829 950.0625 404.28125 944.53954 404.28125 937.71875 C 404.28125 931.24984 399.30059 925.96789 392.96875 925.4375 L 393.5625 924.875 C 381.85062 910.29885 368.46538 899.6531 361.625 873.5625 L 361.625 873.34375 L 355.25 873.34375 L 336.25 873.0625 z "
+       id="rect4206"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\1-d_stencil_staggered.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:3,3;stroke-dashoffset:0"
+       d="m 1361.4286,840.57647 0,-128.92857"
+       id="path4287"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\3d volume.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <g
+       id="g4338"
+       transform="matrix(0,1.5164884,1.5164884,0,386.17005,-1799.72)"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\3d volume.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200">
+      <path
+         transform="matrix(0.59375001,0,0,0.59375001,670.2455,207.05337)"
+         d="m 1672.1428,560.2193 c 0,3.15591 -7.3553,5.71429 -16.4286,5.71429 -9.0732,0 -16.4285,-2.55838 -16.4285,-5.71429 0,-3.15591 7.3553,-5.71429 16.4285,-5.71429 9.0733,0 16.4286,2.55838 16.4286,5.71429 z"
+         sodipodi:ry="5.7142859"
+         sodipodi:rx="16.428572"
+         sodipodi:cy="560.2193"
+         sodipodi:cx="1655.7142"
+         id="path4340"
+         style="opacity:0.53097343;fill:#000080;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="translate(4.6428572,19.642857)"
+         d="m 1667.5,470.93362 c 0,2.95867 -8.3147,5.35715 -18.5714,5.35715 -10.2567,0 -18.5714,-2.39848 -18.5714,-5.35715 0,-2.95866 8.3147,-5.35714 18.5714,-5.35714 10.2567,0 18.5714,2.39848 18.5714,5.35714 z"
+         sodipodi:ry="5.3571429"
+         sodipodi:rx="18.571428"
+         sodipodi:cy="470.93362"
+         sodipodi:cx="1648.9286"
+         id="path4342"
+         style="opacity:0.53097343;fill:#000080;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4344"
+         d="m 1643.5714,539.32647 c 0.2168,5.11484 19.4937,4.98965 19.2857,0.17857 l 0.1634,-48.71516 c -1.0378,-3.93471 -17.9741,-4.5925 -19.4621,0.01 z"
+         style="opacity:0.53097343;fill:#000080;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:type="arc"
+         style="opacity:0.53097343;fill:#000080;fill-opacity:1;stroke:none"
+         id="path4346"
+         sodipodi:cx="1655.7142"
+         sodipodi:cy="560.2193"
+         sodipodi:rx="16.428572"
+         sodipodi:ry="5.7142859"
+         d="m 1672.1428,560.2193 c 0,3.15591 -7.3553,5.71429 -16.4286,5.71429 -9.0732,0 -16.4285,-2.55838 -16.4285,-5.71429 0,-3.15591 7.3553,-5.71429 16.4285,-5.71429 9.0733,0 16.4286,2.55838 16.4286,5.71429 z"
+         transform="matrix(0.59375001,0,0,0.59375001,670.20085,158.3435)" />
+      <path
+         sodipodi:nodetypes="cccccc"
+         inkscape:connector-curvature="0"
+         id="path4348"
+         d="m 1635.0893,490.95818 c -0.4142,-0.92002 0.5375,-1.98134 1.835,-3.07842 l 17.0712,-16.65597 17.2322,17.70754 c 1.3035,0.95776 0.8711,2.23946 0.5132,2.62798 -3.319,5.66258 -34.2503,5.99038 -36.6516,-0.60113 z"
+         style="opacity:0.5442478;fill:#000080;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       transform="matrix(1.5562183,0,0,-1.5562183,-1210.8406,1684.3222)"
+       id="g4350"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\3d volume.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200">
+      <path
+         sodipodi:type="arc"
+         style="opacity:0.53097343;fill:#000080;fill-opacity:1;stroke:none"
+         id="path4352"
+         sodipodi:cx="1655.7142"
+         sodipodi:cy="560.2193"
+         sodipodi:rx="16.428572"
+         sodipodi:ry="5.7142859"
+         d="m 1672.1428,560.2193 c 0,3.15591 -7.3553,5.71429 -16.4286,5.71429 -9.0732,0 -16.4285,-2.55838 -16.4285,-5.71429 0,-3.15591 7.3553,-5.71429 16.4285,-5.71429 9.0733,0 16.4286,2.55838 16.4286,5.71429 z"
+         transform="matrix(0.59375001,0,0,0.59375001,670.2455,207.05337)" />
+      <path
+         sodipodi:type="arc"
+         style="opacity:0.53097343;fill:#000080;fill-opacity:1;stroke:none"
+         id="path4354"
+         sodipodi:cx="1648.9286"
+         sodipodi:cy="470.93362"
+         sodipodi:rx="18.571428"
+         sodipodi:ry="5.3571429"
+         d="m 1667.5,470.93362 c 0,2.95867 -8.3147,5.35715 -18.5714,5.35715 -10.2567,0 -18.5714,-2.39848 -18.5714,-5.35715 0,-2.95866 8.3147,-5.35714 18.5714,-5.35714 10.2567,0 18.5714,2.39848 18.5714,5.35714 z"
+         transform="translate(4.6428572,19.642857)" />
+      <path
+         style="opacity:0.53097343;fill:#000080;fill-opacity:1;stroke:none"
+         d="m 1643.5714,539.32647 c 0.2168,5.11484 19.4937,4.98965 19.2857,0.17857 l 0.1634,-48.71516 c -1.0378,-3.93471 -17.9741,-4.5925 -19.4621,0.01 z"
+         id="path4356"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         transform="matrix(0.59375001,0,0,0.59375001,670.20085,158.3435)"
+         d="m 1672.1428,560.2193 c 0,3.15591 -7.3553,5.71429 -16.4286,5.71429 -9.0732,0 -16.4285,-2.55838 -16.4285,-5.71429 0,-3.15591 7.3553,-5.71429 16.4285,-5.71429 9.0733,0 16.4286,2.55838 16.4286,5.71429 z"
+         sodipodi:ry="5.7142859"
+         sodipodi:rx="16.428572"
+         sodipodi:cy="560.2193"
+         sodipodi:cx="1655.7142"
+         id="path4358"
+         style="opacity:0.53097343;fill:#000080;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         style="opacity:0.5442478;fill:#000080;fill-opacity:1;stroke:none"
+         d="m 1635.0893,490.95818 c -0.4142,-0.92002 0.5375,-1.98134 1.835,-3.07842 l 17.0712,-16.65597 17.2322,17.70754 c 1.3035,0.95776 0.8711,2.23946 0.5132,2.62798 -3.319,5.66258 -34.2503,5.99038 -36.6516,-0.60113 z"
+         id="path4360"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccc" />
+    </g>
+    <g
+       id="g4261"
+       transform="translate(241.42646,-16.162441)"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\3d volume.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200">
+      <rect
+         y="516.98132"
+         x="1041.4673"
+         height="258.59906"
+         width="258.59906"
+         id="rect4247"
+         style="opacity:0.5;fill:#869186;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4249"
+         d="m 1040.4571,775.58039 260.6194,0 -50.9693,190.22012 -341.98006,0 z"
+         style="opacity:0.52212387;fill:#6a746a;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4253"
+         d="m 1248.6748,626.20408 50.3814,-108.21259 1.0101,261.62951 -50.0026,185.7418 z"
+         style="opacity:0.53097343;fill:#869186;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4255"
+         d="m 1042.1429,517.36218 -130.36306,109.27581 336.79156,0.01 51.0715,-110.35715 z"
+         style="opacity:0.49557519;fill:#869186;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4257"
+         d="M 908.21429,964.50504 1041.7857,775.21933 1041.4286,517.36218 911.78572,626.6479 z"
+         style="fill:#869186;fill-opacity:0.31382979;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4259"
+         d="m 911.75737,626.59866 337.04373,-0.26831 1.0101,339.03244 -341.17898,0.50508 z"
+         style="fill:#869186;fill-opacity:0.31382979;stroke:none" />
+    </g>
+    <path
+       sodipodi:type="arc"
+       style="fill:#d40000;fill-opacity:1;stroke:none"
+       id="path4269"
+       sodipodi:cx="1333.9065"
+       sodipodi:cy="690.22247"
+       sodipodi:rx="7.5761442"
+       sodipodi:ry="7.5761442"
+       d="m 1341.4826,690.22247 a 7.5761442,7.5761442 0 1 1 -15.1523,0 7.5761442,7.5761442 0 1 1 15.1523,0 z"
+       transform="translate(27.857143,18.928572)"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\3d volume.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       sodipodi:type="arc"
+       style="fill:url(#radialGradient4285);fill-opacity:1;stroke:none"
+       id="path4271"
+       sodipodi:cx="1332.4108"
+       sodipodi:cy="688.07648"
+       sodipodi:rx="3.3035715"
+       sodipodi:ry="3.2142856"
+       d="m 1335.7143,688.07648 a 3.3035715,3.2142856 0 1 1 -6.6071,0 3.3035715,3.2142856 0 1 1 6.6071,0 z"
+       transform="translate(27.857143,18.928572)"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\3d volume.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1310.7143,780.21933 -37.1429,79.28571"
+       id="path4297"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\3d volume.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <g
+       id="g4319"
+       transform="matrix(1.5562183,0,0,1.5562183,-1210.8406,-292.1033)"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\3d volume.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200">
+      <path
+         transform="matrix(0.59375001,0,0,0.59375001,670.2455,207.05337)"
+         d="m 1672.1428,560.2193 c 0,3.15591 -7.3553,5.71429 -16.4286,5.71429 -9.0732,0 -16.4285,-2.55838 -16.4285,-5.71429 0,-3.15591 7.3553,-5.71429 16.4285,-5.71429 9.0733,0 16.4286,2.55838 16.4286,5.71429 z"
+         sodipodi:ry="5.7142859"
+         sodipodi:rx="16.428572"
+         sodipodi:cy="560.2193"
+         sodipodi:cx="1655.7142"
+         id="path4307"
+         style="opacity:0.53097343;fill:#000080;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="translate(4.6428572,19.642857)"
+         d="m 1667.5,470.93362 c 0,2.95867 -8.3147,5.35715 -18.5714,5.35715 -10.2567,0 -18.5714,-2.39848 -18.5714,-5.35715 0,-2.95866 8.3147,-5.35714 18.5714,-5.35714 10.2567,0 18.5714,2.39848 18.5714,5.35714 z"
+         sodipodi:ry="5.3571429"
+         sodipodi:rx="18.571428"
+         sodipodi:cy="470.93362"
+         sodipodi:cx="1648.9286"
+         id="path4309"
+         style="opacity:0.53097343;fill:#000080;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4311"
+         d="m 1643.5714,539.32647 c 0.2168,5.11484 19.4937,4.98965 19.2857,0.17857 l 0.1634,-48.71516 c -1.0378,-3.93471 -17.9741,-4.5925 -19.4621,0.01 z"
+         style="opacity:0.53097343;fill:#000080;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:type="arc"
+         style="opacity:0.53097343;fill:#000080;fill-opacity:1;stroke:none"
+         id="path4313"
+         sodipodi:cx="1655.7142"
+         sodipodi:cy="560.2193"
+         sodipodi:rx="16.428572"
+         sodipodi:ry="5.7142859"
+         d="m 1672.1428,560.2193 c 0,3.15591 -7.3553,5.71429 -16.4286,5.71429 -9.0732,0 -16.4285,-2.55838 -16.4285,-5.71429 0,-3.15591 7.3553,-5.71429 16.4285,-5.71429 9.0733,0 16.4286,2.55838 16.4286,5.71429 z"
+         transform="matrix(0.59375001,0,0,0.59375001,670.20085,158.3435)" />
+      <path
+         sodipodi:nodetypes="cccccc"
+         inkscape:connector-curvature="0"
+         id="path4317"
+         d="m 1635.0893,490.95818 c -0.4142,-0.92002 0.5375,-1.98134 1.835,-3.07842 l 17.0712,-16.65597 17.2322,17.70754 c 1.3035,0.95776 0.8711,2.23946 0.5132,2.62798 -3.319,5.66258 -34.2503,5.99038 -36.6516,-0.60113 z"
+         style="opacity:0.5442478;fill:#000080;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       transform="matrix(0,1.5164884,-1.5164884,0,2337.2951,-1809.0058)"
+       id="g4326"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\3d volume.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200">
+      <path
+         sodipodi:type="arc"
+         style="opacity:0.53097343;fill:#000080;fill-opacity:1;stroke:none"
+         id="path4328"
+         sodipodi:cx="1655.7142"
+         sodipodi:cy="560.2193"
+         sodipodi:rx="16.428572"
+         sodipodi:ry="5.7142859"
+         d="m 1672.1428,560.2193 c 0,3.15591 -7.3553,5.71429 -16.4286,5.71429 -9.0732,0 -16.4285,-2.55838 -16.4285,-5.71429 0,-3.15591 7.3553,-5.71429 16.4285,-5.71429 9.0733,0 16.4286,2.55838 16.4286,5.71429 z"
+         transform="matrix(0.59375001,0,0,0.59375001,670.2455,207.05337)" />
+      <path
+         sodipodi:type="arc"
+         style="opacity:0.53097343;fill:#000080;fill-opacity:1;stroke:none"
+         id="path4330"
+         sodipodi:cx="1648.9286"
+         sodipodi:cy="470.93362"
+         sodipodi:rx="18.571428"
+         sodipodi:ry="5.3571429"
+         d="m 1667.5,470.93362 c 0,2.95867 -8.3147,5.35715 -18.5714,5.35715 -10.2567,0 -18.5714,-2.39848 -18.5714,-5.35715 0,-2.95866 8.3147,-5.35714 18.5714,-5.35714 10.2567,0 18.5714,2.39848 18.5714,5.35714 z"
+         transform="translate(4.6428572,19.642857)" />
+      <path
+         style="opacity:0.53097343;fill:#000080;fill-opacity:1;stroke:none"
+         d="m 1643.5714,539.32647 c 0.2168,5.11484 19.4937,4.98965 19.2857,0.17857 l 0.1634,-48.71516 c -1.0378,-3.93471 -17.9741,-4.5925 -19.4621,0.01 z"
+         id="path4332"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         transform="matrix(0.59375001,0,0,0.59375001,670.20085,158.3435)"
+         d="m 1672.1428,560.2193 c 0,3.15591 -7.3553,5.71429 -16.4286,5.71429 -9.0732,0 -16.4285,-2.55838 -16.4285,-5.71429 0,-3.15591 7.3553,-5.71429 16.4285,-5.71429 9.0733,0 16.4286,2.55838 16.4286,5.71429 z"
+         sodipodi:ry="5.7142859"
+         sodipodi:rx="16.428572"
+         sodipodi:cy="560.2193"
+         sodipodi:cx="1655.7142"
+         id="path4334"
+         style="opacity:0.53097343;fill:#000080;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         style="opacity:0.5442478;fill:#000080;fill-opacity:1;stroke:none"
+         d="m 1635.0893,490.95818 c -0.4142,-0.92002 0.5375,-1.98134 1.835,-3.07842 l 17.0712,-16.65597 17.2322,17.70754 c 1.3035,0.95776 0.8711,2.23946 0.5132,2.62798 -3.319,5.66258 -34.2503,5.99038 -36.6516,-0.60113 z"
+         id="path4336"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccc" />
+    </g>
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.5442478;fill:#000080;fill-opacity:1;stroke:none"
+       id="path4374"
+       sodipodi:cx="1311.8093"
+       sodipodi:cy="783.03027"
+       sodipodi:rx="14.773481"
+       sodipodi:ry="14.773481"
+       d="m 1326.5828,783.03027 a 14.773481,14.773481 0 1 1 -29.547,0 14.773481,14.773481 0 1 1 29.547,0 z"
+       transform="translate(-1.5152288,-2.7779195)"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\3d volume.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       transform="matrix(1.2296586,0,0,1.2296586,-337.60496,-109.21471)"
+       d="m 1326.5828,783.03027 a 14.773481,14.773481 0 1 1 -29.547,0 14.773481,14.773481 0 1 1 29.547,0 z"
+       sodipodi:ry="14.773481"
+       sodipodi:rx="14.773481"
+       sodipodi:cy="783.03027"
+       sodipodi:cx="1311.8093"
+       id="path4376"
+       style="opacity:0.5442478;fill:#000080;fill-opacity:1;stroke:none"
+       sodipodi:type="arc"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\3d volume.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:#000080;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;opacity:0.45575221"
+       d="M 1310.2812 765.46875 C 1303.2643 765.46875 1297.4134 770.37794 1295.9062 776.9375 L 1260.5938 843.25 C 1259.7418 844.46593 1259.0365 845.7784 1258.5 847.1875 L 1258.2188 847.71875 L 1258.3125 847.75 C 1257.6758 849.60225 1257.3125 851.58792 1257.3125 853.65625 C 1257.3125 863.68924 1265.4358 871.8125 1275.4688 871.8125 C 1285.0342 871.8125 1292.8527 864.41504 1293.5625 855.03125 L 1325 783.78125 L 1324.6562 783.6875 C 1324.9204 782.582 1325.0625 781.43642 1325.0625 780.25 C 1325.0625 772.09083 1318.4404 765.46875 1310.2812 765.46875 z "
+       id="path4378"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\3d volume.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.4557522;fill:#000080;fill-opacity:1;stroke:none"
+       id="path4385"
+       sodipodi:cx="1281.6311"
+       sodipodi:cy="860.18066"
+       sodipodi:rx="29.7995"
+       sodipodi:ry="29.7995"
+       d="m 1311.4306,860.18066 a 29.7995,29.7995 0 1 1 -59.599,0 29.7995,29.7995 0 1 1 59.599,0 z"
+       transform="translate(-6.3134534,-5.0507627)"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\3d volume.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:#000080;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;opacity:0.50884956"
+       d="M 1275.3125 825.34375 C 1258.8547 825.34375 1245.5312 838.66719 1245.5312 855.125 C 1245.5312 857.48295 1245.7948 859.7688 1246.3125 861.96875 L 1246.2812 861.9375 L 1246.4375 862.375 C 1246.4528 862.43623 1246.453 862.50142 1246.4688 862.5625 C 1246.7962 863.83517 1247.2021 865.08033 1247.6875 866.28125 L 1256.625 893.78125 L 1287.6875 882.40625 L 1287.5312 882.3125 C 1297.8956 877.64696 1305.125 867.22842 1305.125 855.125 C 1305.125 838.66719 1291.7703 825.34375 1275.3125 825.34375 z "
+       id="path4389"
+       inkscape:export-filename="C:\cygwin64\home\Alex\PHYS_581\Presentation3\3d volume.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+import numpy as np
+import matplotlib.pyplot plt
+
+with open('random_walk.txt','r') as file:
+    rw = np.array(list(map(float, file.read().split())))
+
+means = np.array([np.mean(rw[:i]) for i in range(rw.shape)])
+
+plt.plot(mean)
+plt.plot(np.arange(0, rw.shape))
+
+plt.savefig('random_walk.png')

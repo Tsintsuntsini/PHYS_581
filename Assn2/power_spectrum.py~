@@ -1,0 +1,11 @@
+# Part 1: Selected Topics
+# =========================
+import numpy as np
+
+# 1.2: Power Spectrum and Filtering
+# -----------------------------------
+def V(t, amp, freq, phase):
+    return amp * np.sin(2 * np.pi * freq * t - phase)
+N = 250    # number of samples
+A = 10     # uV
+f = 60
