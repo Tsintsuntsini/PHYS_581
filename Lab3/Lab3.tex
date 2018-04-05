@@ -95,6 +95,30 @@ As expected according to the text, the central method was more accurate. The res
 	D. Hathaway, "The Sunspot Cycle",  NASA, accessed at \url{ https://solarscience.msfc.nasa.gov/SunspotCycle.shtml}
 \end{thebibliography}
 
+There are many different finite difference schemes that may be employed. 
+
+\begin{table*}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			Name & FD Scheme & Order & CFL \\
+			\hline
+			Forward Euler & $u_{k}^{l+1} = u_k^l +r(u_{k+1}^l - u_k^l) $ & 1 & $r\leq 1$ \\
+			\hline
+			Upwind & $ u_{k}^{l+1} = u_k^l +r(u_{k}^l - u_{k-1}^l) $ & 1 & $r\leq 1$ \\
+			\hline
+			Leap Frog & $u_{k}^{l+1} = u_k^{l-1} +r(u_{k+1}^l - u_{-1}^l) $ & 2 & $r\leq 1$ \\
+			\hline
+			Lax-Wendoff & $u_{k}^{l+1} = u_k^l - \frac{r}{2}(u_{k+1}^l - u_{k-1}^l) + \frac{r^2}{2}(u_{k+1}^l - 2u_k^l + u_{k-1}^l) $ & 2 & $r\leq 1$ \\
+			\hline
+			Backward Euler & $u_{k}^{l+1} = (1 + r)^{-1}(u_k^l + ru_{k+1}{l+1}) $ & 1 &  None\\
+			\hline
+			Crank-Nicholson & $u_{k}^{l+1} = u_k^l +\frac{r}{2 \Delta x}(u_{k+1}^{l+1} - 2u_k^{l+1} +u_{k-1}^{l+1} + u_{k+1}^l -2u_k^l + u_{k-1}^l) $ & 2 & None \\
+			\hline
+		\end{tabular}
+	\end{center}
+\end{table*}
+
 \section{Appendix}
 For access to the source codes used in this project, please visit \url{https://github.com/Tsintsuntsini/PHYS_581} for a list of files and times of most recent update.
 	
