@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-def centre_diff_1D(x, dx, n, order=1):
+def centre_diff_1D(x, dx, order=1):
     """Computes the first or second derivative using centred finite
     difference method.
 
@@ -11,23 +11,22 @@ def centre_diff_1D(x, dx, n, order=1):
     ------------
     x     : (np.array) the values used to compute the derivative.
     dx    : (float)    the distance between points in x.
-    n     : (int)      the size of the ghost zones on both ends of x.
     order : (int)      the order of derivative, can be 1 or 2.
 
     Returns
     ---------
-    An array with the same size as x. The values in the ghost zones are
-    set to zero.
+    An array with the same size as x. The derivatives on the boundary
+    are set to 0.
     """
     diff = np.zeros(x.size)
     if order == 1:
-        diff[n:-n] = (x[n+1:] - x[:-n-1]) / (2 * dx)
+        diff[1:-1] = (x[2:] - x[:-2]) / (2 * dx)
     elif order == 2:
-        diff[n:-n] = (x[n+1:] - 2 * x[n:-n] + x[:-n-1]) / dx**2
+        diff[1:-1] = (x[2:] - 2 * x[1:-1] + x[:-2]) / dx**2
 
     return diff
 
-def forward_euler_1D(x, dx, r, n):
+def forward_euler_1D(x, dx, r):
     """Computes the next time iteration using the explicit forward Euler
     method with centred finite differencing to compute the spatial
     derivatives.
@@ -37,15 +36,14 @@ def forward_euler_1D(x, dx, r, n):
     x  : (np.array) the current values.
     dx : (float)    the distance between the points in x.
     r  : (float)    the Courant number.
-    n  : (int)      the size of the ghost zones on both ends of x.
 
     Returns:
     ----------
     An array with the updated values of x.
     """
-    return x + r * centre_diff_1D(x, dx, n, order=1) * dx
+    return x + r * centre_diff_1D(x, dx, order=1) * dx
 
-def backward_euler_1D(x, r, n, eps=1e-4):
+def backward_euler_1D(x, r, eps=1e-4):
     """Computes the next time iteration using the implicit backward
     Euler method with centred finite differencing to compute the spatial
     derivatives.
@@ -56,7 +54,6 @@ def backward_euler_1D(x, r, n, eps=1e-4):
     ------------
     x   : (np.array) the current values.
     r   : (float)    the Courant number.
-    n   : (int)      the size of the ghost zones on both ends of x.
     eps : (float)    the maximum error value. The default value is 1e-4.
 
     Returns
@@ -64,18 +61,18 @@ def backward_euler_1D(x, r, n, eps=1e-4):
     An array of the updated values of x.
     """
     guess = np.zeros(x.size)
-    guess[:n] = x[:n]
-    guess[-n:] = x[-n:]
+    guess[:1] = x[:1]
+    guess[-1:] = x[-1:]
 
     current = x
 
     while np.max(np.abs(guess - current)) > eps:
         current = np.copy(guess)
-        guess[n:-n] = x[n:-n] + 0.5 * r * (current[n+1:] - current[:-n-1])
+        guess[1:-1] = x[1:-1] + 0.5 * r * (current[2:] - current[:-2])
 
     return guess
 
-def lax_wendroff_1D(x, dx, r, n):
+def lax_wendroff_1D(x, dx, r):
     """Computes the next time iteration using the explicit Lax-Wendroff
     mathod to compute the spatial derivatives.
 
@@ -84,79 +81,62 @@ def lax_wendroff_1D(x, dx, r, n):
     x: (np.array) the current values.
     dx: (float) the distance between points in x.
     r: (float) the Courant number.
-    n: (int) the size of the ghost zones on both ends of x.
 
     Returns
     ---------
     An array with the updated values of x.
     """
-    xh = 0.5 * (x[:-n] + x[n:]) + 0.5 * r * (x[n:] - x[:-n])
+    xh = 0.5 * (x[:-1] + x[1:]) + 0.5 * r * (x[1:] - x[:-1])
 
     xw = np.copy(x)
-    xw[n:-n] = x[n:-n] + r * (xh[1:] - xh[:-1])
+    xw[1:-1] = x[1:-1] + r * (xh[1:] - xh[:-1])
 
     return xw
 
-def crank_nicholson_1D(x, dx, r, n, eps=1e-4):
+def crank_nicholson_1D(x, dx, r, eps=1e-4):
     guess = np.zeros(x.size)
-    guess[:n] = x[:n]
-    guess[-n:] = x[-n:]
+    guess[:1] = x[:1]
+    guess[-1:] = x[-1:]
 
     current = x
 
-    forward = x[n+1:] - 2 * x[n:-n] + x[:-n-1]
-    print(forward)
+    forward = x[2:] - 2 * x[1:-1] + x[:-2]
 
     while np.max(np.abs(guess - current)) > eps:
         current = np.copy(guess)
 
-        backward = current[n+1:] - 2 * current[n:-n] + current[:-n-1]
-        guess[n:-n] = x[n:-n] + 0.5 * r * (forward + backward) / dx
-        print(np.max(np.abs(guess - current)))
+        backward = current[2:] - 2 * current[1:-1] + current[:-2]
+        guess[1:-1] = x[1:-1] + 0.5 * r * (forward + backward) / dx
 
     return guess
 
+
 class Advection1D:
-    def __init__(self, initial_state, c, dx, dt, r, ghost_size):
+    def __init__(self, initial_state, c, dx, dt, r):
         self.current_state = np.array(initial_state)
 
-        if isinstance(ghost_size, int):
-            self.ghost_size = ghost_size
-        else:
-            raise TypeError('Number of ghost zones should be type int')
-
-        self.c = c
-        self.dx = dx
-        self.dt = dt
-        self.r = r
-
-    def boundary():
-        pass
+        self.c = float(c)
+        self.dx = float(dx)
+        self.dt = float(dt)
+        self.r = float(r)
 
     def step(self, method):
         self.current_state = getattr(self, method)()
         return self.current_state
 
     def forward_euler(self):
-        return forward_euler_1D(
-            self.current_state, self.dx, self.r, self.ghost_size
-        )
+        return forward_euler_1D(self.current_state, self.dx, self.r)
 
     def backward_euler(self):
-        return backward_euler_1D(
-            self.current_state, self.r, self.ghost_size
-        )
+        return backward_euler_1D(self.current_state, self.r)
 
     def lax_wendroff(self):
-        return lax_wendroff_1D(
-            self.current_state, self.dx, self.r, self.ghost_size
-        )
+        return lax_wendroff_1D(self.current_state, self.dx, self.r)
 
     def crank_nicholson(self):
-        return crank_nicholson_1D(
-            self.current_state, self.dx, self.r, self.ghost_size
-        )
+        return crank_nicholson_1D(self.current_state, self.dx, self.r)
 
+    
 def main():
     # Conduct 7 trials with different parameters
     cs =  [0.5,  0.5,  0.5,    0.5,    0.5,    0.5,  0.5 ]
@@ -168,7 +148,7 @@ def main():
     # Solve advection equation for each set of parameters
     for trial_num, (c, dx, dt, r) in enumerate(params):
         # Create variables
-        x = np.linspace(-2.0 - dx, +2.0 + dx, int(4.0 / dx) + 2)
+        x = np.linspace(-2.0, +2.0, int(4.0 / dx))
         ts = np.linspace(0.0, 2.0, int(2.0 / dt))
 
         # Initial conditions for 4 cases
@@ -210,7 +190,9 @@ def main():
             subs[3].plot(x, bw.current_state)
             subs[4].plot(x, lw.current_state)
             subs[5].plot(x, cn.current_state)
-            plt.savefig('forward_euler_case_{}_trial_{}'.format(case_num, trial_num))
+            plt.savefig(
+                'forward_euler_case_{}_trial_{}'.format(case_num, trial_num)
+            )
             plt.close(fig)
 
 

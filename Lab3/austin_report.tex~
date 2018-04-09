@@ -1,0 +1,20 @@
+\documentclass{article}
+
+\begin{document}
+\section{The Assignment}
+
+\subsection{Time Dependent PDEs}
+
+\subsubsection{The Advection Equation}
+
+\subsubsection{The Diffusion Equation}
+For the pure diffusion equation describes an initial pulse which diffuses into the surrounding fluid. The one dimensional diffusion equation is:
+\begin{equation}
+  u_t = \beta u_{xx}
+\end{equation}
+where $\beta$ is the diffusion coefficient. The exact solution for $x$ over the interval $\[0, 1\]$ for the initial condition $u(0, x) = \sin(\pi x)$ and boundary conditions $u(t, 0) = u(t, 1) = 0$ is:
+\begin{equation}
+  u(t, x) = e^{- \beta \pi^2 t} \sin(\pi x)
+\end{equation}
+
+\end{document}
