@@ -25,10 +25,11 @@ class Diffusion1D:
 def main():
     # Define constants
     beta = 1.0
-    dx = 1.0 / 50.0
+    dx = 1.0 / 51.0
     dt = 0.9 * dx**2 / (2.0 * beta)
+    r = beta * dt / dx**2
     ts = np.arange(0, 300) * dt
-    x = np.linspace(0, 1, 50)
+    x = np.linspace(0, 1, 51)
 
     # Initial conditions
     u_0 = np.sin(np.pi * x)
