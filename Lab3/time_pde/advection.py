@@ -1,4 +1,5 @@
 # 1.3.1 Advection equation
+import logging
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -64,7 +65,7 @@ def backward_euler_1D(x, r, eps=1e-4):
     guess[:1] = x[:1]
     guess[-1:] = x[-1:]
 
-    current = x
+    current = np.copy(x)
 
     while np.max(np.abs(guess - current)) > eps:
         current = np.copy(guess)
@@ -74,7 +75,7 @@ def backward_euler_1D(x, r, eps=1e-4):
 
 def lax_wendroff_1D(x, dx, r):
     """Computes the next time iteration using the explicit Lax-Wendroff
-    mathod to compute the spatial derivatives.
+    method to compute the spatial derivatives.
 
     Parameters
     ------------
@@ -86,27 +87,29 @@ def lax_wendroff_1D(x, dx, r):
     ---------
     An array with the updated values of x.
     """
-    xh = 0.5 * (x[:-1] + x[1:]) + 0.5 * r * (x[1:] - x[:-1])
+    diff1 = x[2:] - x[:-2]
+    diff2 = x[2:] - 2 * x[1:-1] + x[:-2]
 
-    xw = np.copy(x)
-    xw[1:-1] = x[1:-1] + r * (xh[1:] - xh[:-1])
+    lw = np.copy(x)
+    lw[1:-1] = x[1:-1] + 0.5 * r * diff1 + 0.5 * r**2 * diff2
 
-    return xw
+    return lw
 
 def crank_nicholson_1D(x, dx, r, eps=1e-4):
+    print('computing crank-nicholson')
     guess = np.zeros(x.size)
     guess[:1] = x[:1]
     guess[-1:] = x[-1:]
 
-    current = x
+    current = np.copy(x)
 
-    forward = x[2:] - 2 * x[1:-1] + x[:-2]
+    forward = x[2:] - x[:-2]
 
     while np.max(np.abs(guess - current)) > eps:
         current = np.copy(guess)
 
-        backward = current[2:] - 2 * current[1:-1] + current[:-2]
-        guess[1:-1] = x[1:-1] + 0.5 * r * (forward + backward) / dx
+        backward = current[2:] - current[:-2]
+        guess[1:-1] = x[1:-1] + 0.25 * r * (forward + backward)
 
     return guess
 
@@ -164,16 +167,16 @@ def main():
         exact_1 = np.sin(2 * x_ct)
         exact_2 = 1.0 * (x_ct >= 0.0)
         exact_3 = np.zeros(x_ct.size)
-        exact_3[int(x_ct.size / 2)] = 1.0 / dx
+        exact_3[int(x_ct.size / 4)] = 1.0 / dx
         exact_4 = np.exp(- 4.0 * x_ct**2)
         exacts = np.array([exact_1, exact_2, exact_3, exact_4])
 
         for case_num, (case, exact) in enumerate(zip(cases, exacts)):
             # Create different steppers
-            fw = Advection1D(case, c, dx, dt, r, ghost_size=1)
-            bw = Advection1D(case, c, dx, dt, r, ghost_size=1)
-            lw = Advection1D(case, c, dx, dt, r, ghost_size=1)
-            cn = Advection1D(case, c, dx, dt, r, ghost_size=1)
+            fw = Advection1D(case, c, dx, dt, r)
+            bw = Advection1D(case, c, dx, dt, r)
+            lw = Advection1D(case, c, dx, dt, r)
+            cn = Advection1D(case, c, dx, dt, r)
 
             # Solve each case
             for t in ts:
@@ -183,7 +186,7 @@ def main():
                 cn.step('crank_nicholson')
 
             plt.clf()
-            fig, subs = plt.subplots(nrows=5)
+            fig, subs = plt.subplots(nrows=6)
             subs[0].plot(x, case)
             subs[1].plot(x, exact)
             subs[2].plot(x, fw.current_state)
