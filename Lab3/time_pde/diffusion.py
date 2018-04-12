@@ -47,10 +47,13 @@ def main():
         df.step()
 
     # Plot solution
-    fig, subs = plt.subplots(nrows=3)
-    subs[0].plot(x, u_0)
-    subs[1].plot(x, df.current_state)
-    subs[2].plot(x, exact)
+    fig, subs = plt.subplots(nrows=2, sharex=True, figsize=[12, 8])
+    subs[0].set_title('Diffusion of $\sin(\pi x)$')
+    subs[0].plot(x, u_0, color='blue', label='Initial State')
+    subs[0].legend(loc='best')
+    subs[1].plot(x, df.current_state, color='black', label='Exact Solution')
+    subs[1].plot(x, exact, color='red', label='Numerical Solution')
+    subs[1].legend(loc='best')
     plt.savefig('diffusion')
 
 

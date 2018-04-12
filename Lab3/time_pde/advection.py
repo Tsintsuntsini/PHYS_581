@@ -96,7 +96,6 @@ def lax_wendroff_1D(x, dx, r):
     return lw
 
 def crank_nicholson_1D(x, dx, r, eps=1e-4):
-    print('computing crank-nicholson')
     guess = np.zeros(x.size)
     guess[:1] = x[:1]
     guess[-1:] = x[-1:]
@@ -165,12 +164,14 @@ def main():
         # Exact solutions
         x_ct = x + c * ts[-1] * np.ones(x.size)
         exact_1 = np.sin(2 * x_ct)
+        exact_1[int(0.75 * x.size):] = case_1[-1]
         exact_2 = 1.0 * (x_ct >= 0.0)
         exact_3 = np.zeros(x_ct.size)
         exact_3[int(x_ct.size / 4)] = 1.0 / dx
         exact_4 = np.exp(- 4.0 * x_ct**2)
         exacts = np.array([exact_1, exact_2, exact_3, exact_4])
-
+        
+           
         for case_num, (case, exact) in enumerate(zip(cases, exacts)):
             # Create different steppers
             fw = Advection1D(case, c, dx, dt, r)
@@ -186,17 +187,30 @@ def main():
                 cn.step('crank_nicholson')
 
             plt.clf()
-            fig, subs = plt.subplots(nrows=6)
-            subs[0].plot(x, case)
-            subs[1].plot(x, exact)
-            subs[2].plot(x, fw.current_state)
-            subs[3].plot(x, bw.current_state)
-            subs[4].plot(x, lw.current_state)
-            subs[5].plot(x, cn.current_state)
-            plt.savefig(
-                'forward_euler_case_{}_trial_{}'.format(case_num, trial_num)
-            )
+            fig, subs = plt.subplots(nrows=2, sharex=True, figsize=[12, 8], dpi=300)
+            subs[0].set_ylim(np.min(case) - 0.1, np.max(case) + 0.1)
+            subs[0].plot(x, case, color='orange', label='Initial State')
+            subs[0].legend(loc='best')
+            subs[1].set_ylim(np.min(case) - 0.1, np.max(case) + 0.1)
+            subs[1].plot(x, exact, color='black', label='Exact Solution')
+            subs[1].legend(loc='best')
+            plt.savefig('case_{}_trial_{}_exact'.format(case_num, trial_num))
             plt.close(fig)
+ 
+            plt.clf()
+            fig, subs = plt.subplots(nrows=4, sharex=True, figsize=[12, 8], dpi=300)
+            subs[0].plot(x, fw.current_state, color='red', label='Forward Euler')
+            subs[0].legend(loc='best')
+            subs[1].plot(x, bw.current_state, color='blue', label='Backward Euler')
+            subs[1].legend(loc='best')
+            subs[2].plot(x, lw.current_state, color='green', label='Lax-Wendroff')
+            subs[2].legend(loc='best')
+            subs[3].plot(x, cn.current_state, color='purple', label='Crank-Nicholson')
+            subs[3].legend(loc='best')
+            plt.savefig(
+                'case_{}_trial_{}'.format(case_num, trial_num)
+            )
+            plt.close()
 
 
 if __name__ == '__main__':

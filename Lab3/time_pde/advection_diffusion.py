@@ -1,6 +1,7 @@
 # 1.3.3 The Advection-Diffusion Equation
 import matplotlib.pyplot as plt
 import numpy as np
+import datetime
 
 
 class AdvectionDiffusion1D:
@@ -24,26 +25,12 @@ class AdvectionDiffusion1D:
         ---------
         An array with the updated values.
         """
-        print('computing')
-        current = np.copy(self.current_state)
-        
-        diff2 = current[2:] + 2 * current[1:-1] + current[:-2]
+        diff1 = 0.5 * (self.current_state[1:-1] - self.current_state[0:-2])
+        diff2 = self.current_state[2:] - 2 * self.current_state[1:-1] + self.current_state[:-2]
 
-        guess = np.zeros(current.size)
-        guess[:1] = current[:1]
-        guess[-1:] = current[-1:]
+        self.current_state[1:-1] += self.s * diff2 - self.r * diff1
 
-        while np.max(np.abs(guess - current)) > eps:
-            current = np.copy(guess)
-
-            backward = guess[2:] - guess[:-2]
-            guess[1:-1] = self.current_state[1:-1] \
-                + self.s * diff2 \
-                - 0.5 * self.r * backward
-
-        self.current_state = guess
-
-        return guess
+        return self.current_state
 
 
 def main():
@@ -67,10 +54,17 @@ def main():
 
     # Solve the equation
     ad = AdvectionDiffusion1D(u_0, r, s)
-    for t in ts:
+    for step, t in enumerate(ts):
         ad.step()
+        if step == int(0.25 * ts.size):
+            plt.plot(x, ad.current_state)
+        if step == int(0.5 * ts.size):
+            plt.plot(x, ad.current_state)
+        if step == int(0.75 * ts.size):
+            plt.plot(x, ad.current_state)
 
     # Plot the solution
+    plt.title('Advection-Diffusion of $\sin(\pi x)$')
     plt.plot(x, u_0, label='$t=0$s')
     plt.plot(x, ad.current_state, label='$t=57$s')
     plt.legend()
