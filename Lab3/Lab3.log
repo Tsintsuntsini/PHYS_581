@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.9.10)  11 APR 2018 20:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.9.10)  12 APR 2018 20:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -348,11 +348,6 @@ Underfull \hbox (badness 1205) in paragraph at lines 19--20
 
 
 ]
-Underfull \hbox (badness 1546) in paragraph at lines 29--30
-[]\OT1/cmr/m/n/10 The afore-men-tioned meth-ods can be used to
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
@@ -389,20 +384,20 @@ OML/cmm/m/it/10 x; \OT1/cmr/m/n/10 0) = \OML/cmm/m/it/10 u\OT1/cmr/m/n/10 (\OML
 /cmm/m/it/10 x; \OT1/cmr/m/n/10 10\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0) =
  []
 
-<low_res_iterative.png, id=73, 433.62pt x 289.08pt>
+<low_res_iterative.png, id=101, 433.62pt x 289.08pt>
 File: low_res_iterative.png Graphic file (type png)
 
 <use low_res_iterative.png>
 Package pdftex.def Info: low_res_iterative.png used on input line 151.
 (pdftex.def)             Requested size: 229.5pt x 152.99994pt.
- <relaxation.png, id=75, 433.62pt x 289.08pt>
+ <relaxation.png, id=103, 433.62pt x 289.08pt>
 File: relaxation.png Graphic file (type png)
 
 <use relaxation.png>
 Package pdftex.def Info: relaxation.png used on input line 158.
 (pdftex.def)             Requested size: 229.5pt x 152.99994pt.
  [4 <./low_res_iterative.png>]
-<capacitor_methods.png, id=91, 433.62pt x 289.08pt>
+<capacitor_methods.png, id=119, 433.62pt x 289.08pt>
 File: capacitor_methods.png Graphic file (type png)
 
 <use capacitor_methods.png>
@@ -433,74 +428,170 @@ Underfull \hbox (badness 10000) in paragraph at lines 198--198
 \OT1/cmr/m/n/10 com-pute
  []
 
-<schroe_alpha_1.png, id=94, 1156.32pt x 722.7pt>
+<schroe_alpha_1.png, id=122, 1156.32pt x 722.7pt>
 File: schroe_alpha_1.png Graphic file (type png)
  <use schroe_alpha_1.png>
 Package pdftex.def Info: schroe_alpha_1.png used on input line 220.
 (pdftex.def)             Requested size: 469.0pt x 293.12196pt.
 
-<schroe_alpha_1000.png, id=95, 1156.32pt x 722.7pt>
+<schroe_alpha_1000.png, id=123, 1156.32pt x 722.7pt>
 File: schroe_alpha_1000.png Graphic file (type png)
 
 <use schroe_alpha_1000.png>
 Package pdftex.def Info: schroe_alpha_1000.png used on input line 227.
 (pdftex.def)             Requested size: 469.0pt x 293.12196pt.
 
-Underfull \hbox (badness 1394) in paragraph at lines 232--232
-[]\OT1/cmr/bx/n/12 Hydrodynamics Code In-tro-duc-
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5 <./relaxation.png> <./capacitor_methods.png>] [6 <./schroe_alpha_1.png>] [7
  <./schroe_alpha_1000.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 241.
- [8
+<phys581-Lab3-package-2018/exe-dir/drops.png, id=149, 1204.5pt x 1003.75pt>
+File: phys581-Lab3-package-2018/exe-dir/drops.png Graphic file (type png)
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 241.
+<use phys581-Lab3-package-2018/exe-dir/drops.png>
+Package pdftex.def Info: phys581-Lab3-package-2018/exe-dir/drops.png used on in
+put line 243.
+(pdftex.def)             Requested size: 229.5pt x 191.25053pt.
+
+<phys581-Lab3-package-2018/exe-dir/drops_vector.png, id=150, 2409.0pt x 2007.5p
+t>
+File: phys581-Lab3-package-2018/exe-dir/drops_vector.png Graphic file (type png
+)
+ <use phys581-Lab3-package-2018/exe-dir/drops_vector.png>
+Package pdftex.def Info: phys581-Lab3-package-2018/exe-dir/drops_vector.png use
+d on input line 250.
+(pdftex.def)             Requested size: 229.5pt x 191.23523pt.
+ [8 <./phys581-Lab3-package-2018/exe-dir/drops.png>] [9 <./phys581-Lab3-package
+-2018/exe-dir/drops_vector.png>]
+<phys581-Lab3-package-2018/exe-dir/jet.png, id=173, 1204.5pt x 1003.75pt>
+File: phys581-Lab3-package-2018/exe-dir/jet.png Graphic file (type png)
+
+<use phys581-Lab3-package-2018/exe-dir/jet.png>
+Package pdftex.def Info: phys581-Lab3-package-2018/exe-dir/jet.png used on inpu
+t line 288.
+(pdftex.def)             Requested size: 229.5pt x 191.25053pt.
+
+<phys581-Lab3-package-2018/exe-dir/jet_vector.png, id=174, 2409.0pt x 2007.5pt>
+File: phys581-Lab3-package-2018/exe-dir/jet_vector.png Graphic file (type png)
+<use phys581-Lab3-package-2018/exe-dir/jet_vector.png>
+Package pdftex.def Info: phys581-Lab3-package-2018/exe-dir/jet_vector.png used 
+on input line 295.
+(pdftex.def)             Requested size: 160.64929pt x 133.86159pt.
+
+Underfull \vbox (badness 1137) has occurred while \output is active []
+
+
+<phys581-Lab3-package-2018/exe-dir/vertWall.png, id=177, 1204.5pt x 1003.75pt>
+File: phys581-Lab3-package-2018/exe-dir/vertWall.png Graphic file (type png)
+
+<use phys581-Lab3-package-2018/exe-dir/vertWall.png>
+Package pdftex.def Info: phys581-Lab3-package-2018/exe-dir/vertWall.png used on
+ input line 304.
+(pdftex.def)             Requested size: 229.5pt x 191.25053pt.
+
+<phys581-Lab3-package-2018/exe-dir/vertWall_vector.png, id=178, 2409.0pt x 2007
+.5pt>
+File: phys581-Lab3-package-2018/exe-dir/vertWall_vector.png Graphic file (type 
+png)
+ <use phys581-Lab3-package-2018/exe-dir/vertWall_vector.png>
+Package pdftex.def Info: phys581-Lab3-package-2018/exe-dir/vertWall_vector.png 
+used on input line 311.
+(pdftex.def)             Requested size: 229.5pt x 191.23523pt.
+
+<phys581-Lab3-package-2018/exe-dir/horiWall.png, id=181, 1204.5pt x 1003.75pt>
+File: phys581-Lab3-package-2018/exe-dir/horiWall.png Graphic file (type png)
+
+<use phys581-Lab3-package-2018/exe-dir/horiWall.png>
+Package pdftex.def Info: phys581-Lab3-package-2018/exe-dir/horiWall.png used on
+ input line 320.
+(pdftex.def)             Requested size: 229.5pt x 191.25053pt.
+
+<phys581-Lab3-package-2018/exe-dir/horiWall_vector.png, id=182, 2409.0pt x 2007
+.5pt>
+File: phys581-Lab3-package-2018/exe-dir/horiWall_vector.png Graphic file (type 
+png)
+ <use phys581-Lab3-package-2018/exe-dir/horiWall_vector.png>
+Package pdftex.def Info: phys581-Lab3-package-2018/exe-dir/horiWall_vector.png 
+used on input line 327.
+(pdftex.def)             Requested size: 229.5pt x 191.23523pt.
+ [10 <./phys581-Lab3-package-2018/exe-dir/jet.png> <./phys581-Lab3-package-2018
+/exe-dir/jet_vector.png>] [11 <./phys581-Lab3-package-2018/exe-dir/vertWall.png
+> <./phys581-Lab3-package-2018/exe-dir/vertWall_vector.png> <./phys581-Lab3-pac
+kage-2018/exe-dir/horiWall.png> <./phys581-Lab3-package-2018/exe-dir/horiWall_v
+ector.png>]
+<phys581-Lab3-package-2018/exe-dir/triWall.png, id=199, 1204.5pt x 1003.75pt>
+File: phys581-Lab3-package-2018/exe-dir/triWall.png Graphic file (type png)
+
+<use phys581-Lab3-package-2018/exe-dir/triWall.png>
+Package pdftex.def Info: phys581-Lab3-package-2018/exe-dir/triWall.png used on 
+input line 336.
+(pdftex.def)             Requested size: 229.5pt x 191.25053pt.
+
+<phys581-Lab3-package-2018/exe-dir/tri_vector.png, id=200, 2409.0pt x 2007.5pt>
+File: phys581-Lab3-package-2018/exe-dir/tri_vector.png Graphic file (type png)
+<use phys581-Lab3-package-2018/exe-dir/tri_vector.png>
+Package pdftex.def Info: phys581-Lab3-package-2018/exe-dir/tri_vector.png used 
+on input line 343.
+(pdftex.def)             Requested size: 160.64929pt x 133.86159pt.
+
+<phys581-Lab3-package-2018/exe-dir/normal.png, id=201, 1204.5pt x 1003.75pt>
+File: phys581-Lab3-package-2018/exe-dir/normal.png Graphic file (type png)
+
+<use phys581-Lab3-package-2018/exe-dir/normal.png>
+Package pdftex.def Info: phys581-Lab3-package-2018/exe-dir/normal.png used on i
+nput line 359.
+(pdftex.def)             Requested size: 229.5pt x 191.25053pt.
+
+<phys581-Lab3-package-2018/exe-dir/swept.png, id=202, 1204.5pt x 1003.75pt>
+File: phys581-Lab3-package-2018/exe-dir/swept.png Graphic file (type png)
+
+<use phys581-Lab3-package-2018/exe-dir/swept.png>
+Package pdftex.def Info: phys581-Lab3-package-2018/exe-dir/swept.png used on in
+put line 366.
+(pdftex.def)             Requested size: 160.64929pt x 133.86159pt.
+ [12 <./phys581-Lab3-package-2018/exe-dir/triWall.png> <./phys581-Lab3-package-
+2018/exe-dir/tri_vector.png>]
+[13 <./phys581-Lab3-package-2018/exe-dir/normal.png> <./phys581-Lab3-package-20
+18/exe-dir/swept.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 393.
+ [14]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 393.
  (./Lab3.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 241.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 241.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 393.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 393.
+Package rerunfilecheck Info: File `Lab3.out' has not changed.
+(rerunfilecheck)             Checksum: E1EFFA2D5C1B9435B29A30255CF5F1A7;880.
 
-
-Package rerunfilecheck Warning: File `Lab3.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Lab3.out':
-(rerunfilecheck)             Before: 39FE4B389DE0BEFA8EB044F1684C3D04;421
-(rerunfilecheck)             After:  D96C2145DFBAD3E4E997E9BAF160A5B4;501.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 241.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 393.
  ) 
 Here is how much of TeX's memory you used:
- 7080 strings out of 493091
- 105247 string characters out of 6138525
- 203865 words of memory out of 5000000
- 10458 multiletter control sequences out of 15000+600000
+ 7190 strings out of 493091
+ 108615 string characters out of 6138525
+ 205937 words of memory out of 5000000
+ 10525 multiletter control sequences out of 15000+600000
  12636 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,16n,38p,1514b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,16n,38p,1515b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2015/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2015/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr17.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.p
-fb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2015/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2015/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2015/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Lab3.pdf (8 pages, 805601 bytes).
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2015/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2015/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2015/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr12.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17
+.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2015/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2015/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmtt10.pfb>
+Output written on Lab3.pdf (14 pages, 7446259 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 145 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
- 82 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 288 PDF objects out of 1000 (max. 8388607)
+ 231 compressed objects within 3 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 198 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -24,9 +24,9 @@ Finite differences allows one to set up an equation relating the value of a vari
 
 Iterative methods involve "guessing" a solution to the equation, and then continually refining the results until they converge to a solution (note that convergence tests may be required to ensure that the system converges to the correct solution). Given a series of boundary values, the inner values may then all be guessed. Next, finite differences may be used to determine an equation that defines the value of a cell based on its neighbors. Whereas the direct method tried to simultaneously determine all cells, the iterative starts with a guess, then uses the  finite difference equation to create a new "generation" of grid based on the previous grid's values. In the earlier example, this equation would be $u_{i,j}^{k+1} = (u_{i+1,j}^{k} + u_{i-1,j}^{k} + u_{i,j+1}^{k} + u_{i,j-1}^{k})/4 $ where $k$ signifies the current iteration of the system. This method continues until certain criteria are met, though the final result will have some associated error. The method benefits, however, by generally performing faster than direct methods, especially when the guess is close to the actual answer.
 
-There are different ways to implement iterative methods. The Jacobi method is closest to what has been described so far. In the Jacobi method, the grid is solved at some iteration $k$. Once the iteration is complete, the system is compared to exit conditions, and then the next iteration is generated. The Gauss-Seidel method considers a different approach. We know that the more iterations take place, the more likely a value at a particular point is to be correct. For the first point in a grid we consider, we use all the neighbor values from the previous iteration. In the Jacobi method, the next point also uses all the neighbor points from the previous iteration. The Gauss-Seidel method realizes that for the second point, we already have one "updated" point that should be closer than the previous iteration, so we use the updated neighbor when available instead of the previous iteration to approach the solution more quickly. In practice, the Gauss-Seigel method uses a checkerboard scheme, where points alternate between usng only previous iteration values and using a mixture of previous -  and current iteration values. This scheme maximizes the number of updated points used in the calculation, speeding up the algorithm. The Jacobi method is more intuitive to implement, since it completes one iteration at a time. The Jacobi method can also be split apart into different intersecting independent grids for parallelization, whereas the Gauss-Seigel method cannot be parallelized easily.
+There are different ways to implement iterative methods. The Jacobi method is closest to what has been described so far. In the Jacobi method, the grid is solved at some iteration $k$. Once the iteration is complete, the system is compared to exit conditions, and then the next iteration is generated. The Gauss-Seidel method considers a different approach. We know that the more iterations take place, the more likely a value at a particular point is to be correct. For the first point in a grid we consider, we use all the neighbor values from the previous iteration. In the Jacobi method, the next point also uses all the neighbor points from the previous iteration. The Gauss-Seidel method realizes that for the second point, we already have one "updated" point that should be closer than the previous iteration, so we use the updated neighbor when available instead of the previous iteration to approach the solution more quickly. In practice, the Gauss-Seigel method uses a checkerboard scheme, where points alternate between using only previous iteration values and using a mixture of previous -  and current iteration values. This scheme maximizes the number of updated points used in the calculation, speeding up the algorithm. The Jacobi method is more intuitive to implement, since it completes one iteration at a time. The Jacobi method can also be split apart into different intersecting independent grids for parallelization, whereas the Gauss-Seigel method cannot be parallelized easily.
 
-The aforementioned methods can be used to solve numerous physical systems. Many differential equaitons have general forms that have been given names over time.
+The aforementioned methods can be used to solve numerous physical systems. Many differential equations have general forms that have been given names over time.
 
 \begin{table*}
 \begin{center}
@@ -37,7 +37,7 @@ The aforementioned methods can be used to solve numerous physical systems. Many 
 	\hline 3-Dimensional Wave equation & $u_{tt} = c^2\nabla^2 u$            & 2 \\ 
 	\hline 1-Dimensional Heat equation & $u_t -\alpha u_{xx} = 0$            & 2 \\ 
 	\hline 1-Dimensional Wave equation & $u_{tt} = c^2 u_{xx} $              & 2 \\ 
-	\hline Ginzburg-Landau equation    & $A_t = A_{xx} + \sigma A - |A|^2 A $& 2 \\ 
+	\hline Ginsburg-Landau equation    & $A_t = A_{xx} + \sigma A - |A|^2 A $& 2 \\ 
 	\hline Korteweg-de Vries equation  & $u_t + u_{xxx} - 6u u_{x} = 0 $     & 3 \\ 
 	\hline 
 \end{tabular}  
@@ -46,7 +46,7 @@ The aforementioned methods can be used to solve numerous physical systems. Many 
 \end{center}
 \end{table*}
 
-Differential equations may be classified according to the descriminant of the generalized form $au_{xx} + bu_{xy} + cu_{yy} + du_{x} +eu_y +fu + g =0$. A zero discriminant is classified as parabolic, whereas positive and negative are hyperbolic and elliptic respectively. Based on this, three sample PDEs may be considered. The equation $u_{tt} = 2u_{xx}$ is hyperbolic with a discriminant of 8, $u_{xx} + u_{yy} = 0$ is elliptic with a discriminat of -4, and $u_t - u_{xx}$ is parabolic with a discriminant of 0.
+Differential equations may be classified according to the discriminant of the generalized form $au_{xx} + bu_{xy} + cu_{yy} + du_{x} +eu_y +fu + g =0$. A zero discriminant is classified as parabolic, whereas positive and negative are hyperbolic and elliptic respectively. Based on this, three sample PDEs may be considered. The equation $u_{tt} = 2u_{xx}$ is hyperbolic with a discriminant of 8, $u_{xx} + u_{yy} = 0$ is elliptic with a discriminant of -4, and $u_t - u_{xx}$ is parabolic with a discriminant of 0.
 
 There are three different first order FD operators that may be used on a function. For the function $u(x)=x^2$, the forward FD is as follows:
 \begin{equation}
@@ -122,16 +122,16 @@ There are many different finite difference schemes that may be employed. Table \
 	\end{center}
 \end{table*}
 
-Of the schemes covered, they could be divided into two types: explicit and implicit. Explicit schemes may be solved cell-by-cell. That is, a cell at time $l+1$ could be found using a single equation, since it was dependant only on cells at time $l$. Implicit schemes on the other hand, require that the values in all cells be solved simultaneously, since a variable at time $l+1$ will be dependant on the values in other cells at time $l+1$ in such schemes. Implicit schemes therefore require the use of linear algebra to solve equations simultandously, usually using some matrix-solving method such as LU decomposition. Implicit schemes have the benefit of always being stable, meaning one is free to chose time and space resolutions as one wishes. The downside of the implicit method is that simultaneous solving is more computationally expensive. One needs to weigh the tradeoff between run-time and resolutions when deciding on a method to use. 
+Of the schemes covered, they could be divided into two types: explicit and implicit. Explicit schemes may be solved cell-by-cell. That is, a cell at time $l+1$ could be found using a single equation, since it was dependent only on cells at time $l$. Implicit schemes on the other hand, require that the values in all cells be solved simultaneously, since a variable at time $l+1$ will be dependent on the values in other cells at time $l+1$ in such schemes. Implicit schemes therefore require the use of linear algebra to solve equations simultaneously, usually using some matrix-solving method such as LU decomposition. Implicit schemes have the benefit of always being stable, meaning one is free to chose time and space resolutions as one wishes. The downside of the implicit method is that simultaneous solving is more computationally expensive. One needs to weigh the trade off between run-time and resolutions when deciding on a method to use. 
 
-In the previous paragraph, stability of a discrete approximation was touched upon. A simulation becomes unstable if its values begin to explode contrary to physical conservation laws. Given enough time, the values of the variable of interest will explode to infinity. This instability is the result of selecting certain grid spacings that prevent proper transfer of information. To determine when a scheme becomes unstable, Von Neumann stability analysis may be applied. Von Neumann stability analysis takes advantage of the Fourier representation of a function. Out value $u$ is some linear sum of waves. At some future time $u^{l+1}$ our system should be the same set of waves, but evolved. This may be represented as a constituent wave being multiplied by some factor $A$. If $A>1$, then after some period of time, that constituent wave will dominate the variable, and explode to infinity. The Van Neumann method therefore determines the domain of such amplitudes, and determines under what conditions $A>1$. By plugging in the Fourier representation of a variable into our finite difference stencil, we may re-arrange to determine the value of A with respect to the courant number.
+In the previous paragraph, stability of a discrete approximation was touched upon. A simulation becomes unstable if its values begin to explode contrary to physical conservation laws. Given enough time, the values of the variable of interest will explode to infinity. This instability is the result of selecting certain grid spacings that prevent proper transfer of information. To determine when a scheme becomes unstable, Von Neumann stability analysis may be applied. Von Neumann stability analysis takes advantage of the Fourier representation of a function. Out value $u$ is some linear sum of waves. At some future time $u^{l+1}$ our system should be the same set of waves, but evolved. This may be represented as a constituent wave being multiplied by some factor $A$. If $A>1$, then after some period of time, that constituent wave will dominate the variable, and explode to infinity. The Van Neumann method therefore determines the domain of such amplitudes, and determines under what conditions $A>1$. By plugging in the Fourier representation of a variable into our finite difference stencil, we may re-arrange to determine the value of A with respect to the Courant number.
 
 % DERIVE A VAN NEUMANN STABILITY HERE
 
 \subsection{Time Independent PDEs}
 \subsubsection{Relaxation Methods}
 
-The laplacian equation was considered as an example of a time independent PDE. The equation could be converted into a stencil as shown below:
+The Laplacian equation was considered as an example of a time independent PDE. The equation could be converted into a stencil as shown below:
 \begin{equation}
 \begin{split}
 u_{xx} + u_{yy} &= 0 \\
@@ -144,7 +144,7 @@ u_{i+1,j} + u_{i-1,j} + u_{i,j+1} + u_{i,j-1} - 4u_{i,j}=0
 \end{equation}
 These equations may be solved using matrix methods, given some boundary conditions, or may be solved iteratively. Iterative solving uses the notion that the limit of $\partial u/ \partial t$ should be zero for a time independent system. Therefore, setting non-boundary values to some initial guess should yield a correct solution if the zero in the Laplace stencil is replaced with  $\partial u/ \partial t$ and allowed to evolve for sufficient time. 
 
-The iterative method was tested using a set of boundary conditions $u(x,0) = u(x,10.0) = u(0.0,y)=0$ and $u(20.0,y)=100.0$. The system was tested beginning with a resolution $\Delta x = \Delta y = 5.0$. A code was written to evaluate and display this. Figure \ref{fig:low_res_iterative} shows the results of this system. The result was extremely low resolution, and was thus liable to be innacurate compared to the analytical solution. To improve the accuracy, the resolution of the system was successively doubled four times. This is shown in figure \ref{fig:relaxation}. 
+The iterative method was tested using a set of boundary conditions $u(x,0) = u(x,10.0) = u(0.0,y)=0$ and $u(20.0,y)=100.0$. The system was tested beginning with a resolution $\Delta x = \Delta y = 5.0$. A code was written to evaluate and display this. Figure \ref{fig:low_res_iterative} shows the results of this system. The result was extremely low resolution, and was thus liable to be inaccurate compared to the analytical solution. To improve the accuracy, the resolution of the system was successively doubled four times. This is shown in figure \ref{fig:relaxation}. 
 
 \begin{figure}
 \centering
@@ -225,18 +225,18 @@ Another method used to evaluate such systems was a weighted Jacobi method. In es
 \begin{figure*}
 	\centering
 	\includegraphics[width=\textwidth]{schroe_alpha_1000}
-	\caption{Solution to a model Schr\"{o}dinger equation with $\alpha=1000$. All methods produced aproximately the same result, with the only difference being in computation time.}
+	\caption{Solution to a model Schr\"{o}dinger equation with $\alpha=1000$. All methods produced proximately the same result, with the only difference being in computation time.}
 	\label{fig:schroe_alpha_1000}
 \end{figure*}
 
 \subsection{Hydrodynamics}
 \subsubsection{Code Introduction}
 
-An example of rigorous code that simulates hydrodynamics in 2 dimensions was provided for the purposes of this lab. The code simulates the pressure, flow velocity, and density of a fluid or gas using the Navier-Stokes equations and related advection, diffusion, and dispersion terms such as those described in this lab. The code takes advantage of a staggered mesh. A staggered mesh is where different quantities are not evaluated at the same points, and instead are stored in separate meshes. In the case of this code, the scalar quantities (density, pressure) were located co-locally and the vector quentities (x and y flow velocity) were located at half steps to either side of the scalars. This functioned as the scalars being located in the middle of some unit cell, and the vectors (used as a flux quantity) located at the faces of the unit cube. Staggered grids are desirable, as they eliminate odd-even decoupling that can occur in co-local schemes.
+An example of rigorous code that simulates hydrodynamics in 2 dimensions was provided for the purposes of this lab. The code simulates the pressure, flow velocity, and density of a fluid or gas using the Navies-Stokes equations and related advection, diffusion, and dispersion terms such as those described in this lab. The code takes advantage of a staggered mesh. A staggered mesh is where different quantities are not evaluated at the same points, and instead are stored in separate meshes. In the case of this code, the scalar quantities (density, pressure) were located co-locally and the vector quantities (x and y flow velocity) were located at half steps to either side of the scalars. This functioned as the scalars being located in the middle of some unit cell, and the vectors (used as a flux quantity) located at the faces of the unit cube. Staggered grids are desirable, as they eliminate odd-even decoupling that can occur in co-local schemes.
 
 As the code provided was written in Fortran, it required compilation. The various dependencies in the source code were managed using a makefile. This makefile was written to compile the code, create a new sub-directory containing set-up documents, and to clean directories of old compiled versions. 
 
-The code provided contained a default implementation of four initial high pressure points that were then allowed to diffuse. The code was compiled and allowed to run. Figure \ref{fig:drops} shows the resulting behaviour. The pressurized points diffuse as expected. When encountering the obstacle, the pressure waves appear to reflect. No reflections occurred at the edges, indicating that matter in the simulation zone was allowed to leave the active zone and flow out.
+The code provided contained a default implementation of four initial high pressure points that were then allowed to diffuse. The code was compiled and allowed to run. Figure \ref{fig:drops} shows the resulting behaviour. The pressurized points diffuse as expected. When encountering the obstacle, the pressure waves appear to reflect. No reflections occurred at the edges, indicating that matter in the simulation zone was allowed to leave the active zone and flow out. Figure \ref{fig:drops_vector} shows the flow velocity behaviour for the same simulation.
 
 \begin{figure}
 \centering
@@ -245,12 +245,19 @@ The code provided contained a default implementation of four initial high pressu
 \label{fig:drops}
 \end{figure}
 
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth]{phys581-Lab3-package-2018/exe-dir/drops_vector}
+	\caption{Initial configuration of the hydrodynamics simulation in terms of velocities. Vectors point in the direction of velocity and are both scaled and color coded by magnitude. A square obstacle has been placed at the centre of the active zone, which is shown as white in this figure.}
+	\label{fig:drops_vector}
+\end{figure}
+
 \subsubsection{CFL Condition}
 The code as distributed did not have a proper CFL condition implemented. This prevented the code from running at an optimal speed. In order to compute the CFL at any given step, the speed of sound everywhere must be known. The speed of sound may be defined by the equation:
 \begin{equation}
 c_s = \sqrt{(\frac{\partial p}{\partial \rho})_s}
 \end{equation}
-A further equation used by the simulation used an adiabiatic equation to define the pressure relative to the density:
+A further equation used by the simulation used an adiabatic equation to define the pressure relative to the density:
 \begin{equation}
 p = \rho^\gamma
 \end{equation}
@@ -267,24 +274,118 @@ To implement this CFL condition, the general 2D CFL condition was used:
 \begin{equation}
 C = \frac{u_x \Delta t}{Delta x} + \frac{u_y \Delta t}{\Delta y}
 \end{equation}
-Where $u$ is the speed of the medium in that direction, which will usually be c_s. This could be re-arranged using $C=0.5$ to find $\Delta t$ at each step. Important to note is that $u$ is not the same at all points being simulated. To determine the $u$ value to use, the maximum $u$ occurring in the grid must be used. This maximum value is either the speed of sound, or the highest flow speed in the medium, whichever is higher. 
+Where $u$ is the speed of the medium in that direction, which will usually be $c_s$. This could be re-arranged using $C=0.5$ to find $\Delta t$ at each step. Important to note is that $u$ is not the same at all points being simulated. To determine the $u$ value to use, the maximum $u$ occurring in the grid must be used. This maximum value is either the speed of sound, or the highest flow speed in the medium, whichever is higher. 
 
 The CFL file was modified to determine both the maximum speed and the CFL condition using the speed of sound equation defined above. Before running the CFL condition, the default simulation running to $t=10.0$ took $135.7s$ with an improper $dt=10^{-3}$. After implementing dynamic CFL, the same simulation took $14.1s$. The speed difference is due to the CFL condition choosing the highest $dt$ possible without causing instability. This allows the system to reach its time-goal much more quickly in runtime. 
 
 \subsubsection{Injection Inlet}
-Once the simulation was optimized, physical situations could be modeled. One such application is a wind-tunnel, where a stream of high velocity fluid is injected from the left. The 
+Once the simulation was optimized, physical situations could be modeled. One such application is a wind-tunnel, where a stream of high velocity fluid is injected from the left. The setobjects and studentsetup files were modified to add a jet in the x direction, entering from the left. Figures \ref{fig:jet} and \ref{fig:jet_vector} show the behaviour of both the pressure and the velocity for this setup. 
 
-% FIGURES OF JET, COMMENTS ON DIFFERENT DENSITIES
+Further experimentation was performed by varying the density and the velocity of the jet. Increasing the jet density resulted in a very sudden high-density front moving across the active zone: much more pronounced than in figure \ref{fig:jet}. The shape of the pressure wave also changed, with the front of the pressure-wave being much thicker and flatter. Where the default jet had been almost parabolic in shape, the increased density jet looked more like a rounded rectangle. Increased density also caused a change in the velocity profile, with the former tapering bean of high velocity becoming a broad cone of high velocity, trapped behind the pressure front. Increasing the x velocity also changed the behaviour of the system. The pressure front was narrow, and didn't spread out very much. The pressure also tapered off rather quickly. The velocity was again a very strong, narrow beam. Where in the default jet, velocity spread out in a circular shape around the beam, the high velocity variant had velocity turbulations extending out in a planar manner parallel to the jet.
 
-Once the jet was established, different solid shapes could be placed in the path of the jet in order to examine aerodynamic properties. First, built-in subroutines were used to place a vertical wall in the path of the jet. 
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{phys581-Lab3-package-2018/exe-dir/jet}
+\caption{Pressure simulation of a jet of fluid entering from the right. The fluid is allowed to flow unimpeded to the right side boundary.}
+\label{fig:jet}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{phys581-Lab3-package-2018/exe-dir/jet_vector}
+\caption{Velocity simulation of a jet of high speed fluid entering from the left. The fluid is left unimpeded to flow to the right boundary. The vectors have been scaled and color coded according to magnitude.}
+\label{fig:jet_vector}
+\end{figure}
+
+Once the jet was established, different solid shapes could be placed in the path of the jet in order to examine aerodynamic properties. First, built-in subroutines were used to place a vertical wall in the path of the jet. The pressure and velocity simulations are shown in figures \ref{fig:vertWall} and \ref{fig:vertWall_vector} respectively. The fluid does not show and reflection, instead the pressure simulation shows a high pressure buildup in front of the wall. This is likely due to the boundary conditions imposed by the wall. Once particles come in contact with the wall, their velocity is set to $0$. This causes particles to build up in front of the wall, and not be moved around it. Looking at the velocity figure seems to confirm this, with the jet largely halted by the wall, with some spill off around the edges of the jet that roughly correspond to the edge of the wall. This is different to the edges of the active zone, where there are not solid walls. This allows particles to flow out of the active zone. One can imagine that if the active zone was bounded by a box with similar velocity properties to the wall, there would be similar pressure build-ups around the active zone.
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{phys581-Lab3-package-2018/exe-dir/vertWall}
+\caption{Pressure evolution of a jet pointed at a vertical wall.}
+\label{fig:vertWall}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{phys581-Lab3-package-2018/exe-dir/vertWall_vector}
+\caption{Velocity evolution of a jet pointed at a vertical wall.}
+\label{fig:vertWall_vector}
+\end{figure}
+
+The next obstacle considered was a wall oriented parallel to the jet's path. Figures \ref{fig:horiWall} and \ref{fig:horiWall_vector} show the density and velocity simulations. In this case, density once again built up in front of the leading edge. Since the wall was now smaller than the width of the jet, the jet was able to pass around the obstacle around the sides. The wall left as pressure wake behind it, which collapsed in on itself to form a slightly more turbulent pressure front once again, with some pressure oscillations between the front and the wall. The velocity profile shows the jet being split into two beams, diverging away from the wall at approximately $45^o$ each. This makes sense, as any particles moving back towards the wall would lose their velocity. This reinforces the velocities away from the wall, causing the stream to diverge away from the wall.
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{phys581-Lab3-package-2018/exe-dir/horiWall}
+\caption{Pressure simulation of a horizontal placed in the path of a fluid jet.}
+\label{fig:horiWall}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{phys581-Lab3-package-2018/exe-dir/horiWall_vector}
+\caption{}
+\label{fig:horiWall_vector}
+\end{figure}
+
+Lastly, an isosceles triangle was placed in the path of the jet, as documented in figures \ref{fig:triWall} and \ref{fig:tri_vector}. As in the previous example, there is a pressure buildup immediately in front of the object, however it is greatly reduced compared to previous examples. This is sensible due to the more aerodynamic shape. As density builds up, it is easy for it to slide at an angle compared to the flat surfaces examined so far. The velocity profile again shows the stream being diverted by the wall, however the smaller profile of this object allows dispersion to merge the two streams somewhat together again.
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{phys581-Lab3-package-2018/exe-dir/triWall}
+\caption{Pressure simulation for a triangular obstacle in the path of the injection jet.}
+\label{fig:triWall}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{phys581-Lab3-package-2018/exe-dir/tri_vector}
+\caption{Velocity simulation for a triangular obstacle in the path of an injection jet.}
+\label{fig:tri_vector}
+\end{figure}
+ 
 
 \subsubsection{Airplane Aerodynamics}
+The code built in this lab can function as a test for aerodynamic properties. Using the shapes constructed in the previous section, a crude airplane silhouette was constructed. It no longer made sense to consider a narrow jet. Instead, the system was modified to be a unidirectional flow throughout the active zone. For the following exercises, the flow velocity was varied to simulate an an airplane moving at the same speed through the air. The density of the fluid considered was set to enter at a value of $5$. In the previous CFL section, it was shown that the speed of sound in a medium depends on the density of the material. For this density, the speed of sound was as follows:
+\begin{equation}
+\sqrt{\gamma \rho^{\gamma-1}} = \sqrt{\frac{5}{3} \times 5^{\frac{2}{3}}}
+\end{equation}
 
+An area of particular interest in aviation is the behaviour of vehicles relative to the speed of sound. The Mach number is a way to characteristic speed relative to a medium. The Mach number $M$ is defined as how fast something is traveling relative to the speed of sound of the surrounding medium. For this exercise, a model airplane was simulated traveling at four different Mach numbers: $M=0.2$, $M=1.1$, $M=3.0$, and $M=7.5$.
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{phys581-Lab3-package-2018/exe-dir/normal}
+\caption{Pressure profile surrounding a crude airplane traveling at high speeds. The text above each panel indicate the Mach number of the airplane's speed in that panel. All panels were snapshots taken at $t=44$.}
+\label{fig:normal}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{phys581-Lab3-package-2018/exe-dir/swept}
+\caption{Pressure profile of a crude airplane with a swept wing design. The same numbering convention as figure \ref{fig:normal} was used. All panels were snapshots taken at $t=44$.}
+\label{fig:swept}
+\end{figure}
+
+Looking at figure \ref{fig:normal}, the general behaviour is similar between plots. In front of the plane wings is a region of high pressure, known as a bow-shock. Trailing behind is a region of generally low pressure compared to the undisturbed medium. There is significant turbulence in the wake of the plane. As the speed of the plane increases, the pressure in front of the wings grows significantly. In addition, the bow-shock grows, so that the region of high pressure thickens in front of the wings. 
+
+Modern aircraft use a swept-wing design, where the wing tapers backward at an angle. Figure \ref{fig:swept} shows the difference that is made by using a swept-wing design. It can be seen that the swept-wing design reduces the bow-shock in advance of the wing. While it cannot be seen in this figure, the growth rate of the bow-shock is also greatly reduced as well. Where the broad-wing design of the original plane showed stronger bow-shocks progressively as the speed of the plane increased, this effect was not nearly as strong in the swept-wing case. These two designs suggest that the swept-wing design is better for strength and stability. The strong pressure in advance of the wing contrasted with the low pressure following causes shear and strain on the wings - reducing this would be crucial in ensuring that the wings are not torn off in high-speed flights.
+
+The success of these simulations was dependent upon staggered grids and the finite volume method. Used together, the model may be seen as a series of volume elements with flow defined on the faces of volume-cubes. If a finite element method had instead been used, angled obstacles may have caused problems. This is because velocities became zero when hitting an object. For finite elements, this would cause a loss of both x and y velocity in the pixel ahead of the obstacle. By using the staggered grid, the y velocity may still be preserved in the case of triangles, allowing the fluid to flow along a triangle edge. 
 
 \section{Discussion}
 
-\section{Conclusion}
+This lab examined both iterative and direct methods for the solution of differential equations. Of the two methods, direct methods were found to be faster. This however may be misleading, due to the choice of python for solving these systems. In the code written, iterative methods were solved index-by-index, over a series of loops. While understandable, this code may not have taken complete advantage of the tools available both within python and other languages. The code for the direct method, by comparison, used a publicly available library, that took advantage of the banded nature of stencil matrices to better optimise the problem. The relative timing of the two methods presented in this lab should then be taken with a grain of salt. As with many areas of coding, a more through examination of optimization methods may be required for a definitive answer of which method is faster, and by what margin.
 
+There are a multitude of recipes available for using finite differences to solve differential equations. Many of these recipes were created to address shortcomings that arise from the simple central difference method. For instance, simple methods may have difficulty dealing with shock behaviour. All of these methods have different combinations of accuracy and stability that must be accounted for when choosing which system to use. The choice of method should depend on the problem at hand. For instance, if you only have an initial condition at a single time step, it would likely not be suitable to choose a method that requires two time steps. Likewise, not every problem has sudden shocks and discontinuities; simpler methods that assume continuous functions may suffice. Another factor to consider when choosing methods is how the method physically relates to the system being studied. Methods using advection models should be considered if the system itself is expected to physically experience this. In some cases, the information gained from a physically intuitive system may outweigh the error that accompanies it.
+
+Time dependent methods were shown to be of use to steady state systems as well, taking advantage of the tendency of some recipes to tend towards equilibrium. This lab showed a few examples where spacial systems were examined by allowing the system to evolve from an initial guess. In these cases, the stencils used allowed information from a boundary condition to migrate to all areas under consideration. One particular method applied demonstrated this migratory behaviour. The weighted Jacobi method essentially weighted whether the stencil placed more priority on the neighboring cells, or the cell's own previous state. It was found that preferring the neighboring cells allowed the system to converge faster. This may be interpreted as the boundary information migrating more quickly through the solution.
+
+Hydrodynamics was shown as an important application of finite difference and finite volume methods. The code was able to demonstrate its applicability to the design of aerodynamic surfaces. The examples in this lab showed that symmetry played a large part in how simulations fared. Because of the construction of the system, edges of surfaces were pixelated, and differences in rounding to place points on the pixelated grid sometimes resulted in asymmetrical designs. In such cases, it was seen that even these slight asymmetries would cause different jet reflections. The most prominent of these issues took place with the simulation of aircraft. Due to some slight asymmetries, the upper wing of the aircraft generated a significantly smalled bow-shock. This effect was amplified as time went on. This asymmetry carried through to the chosen points of the swept-wing aircraft. The top wing in this design experienced significantly less bow-shock, while the lower wing was substantially larger. This made the lower wing almost as poor as the un-swept wing. Errors such as these are fixed by higher resolution methods, and by ensuring that designs are placed in a perfectly symmetrical manner.
+
+\section{Conclusion}
+Finite differences is a starting point to the discrete simulation of differential equations. This lab has shown how a simple discretization of the definition of the derivative may be expanded into a cornucopia of different recipes to model differential equations. Prior to the advent of computers, much of physics was devoted to the understanding and classification of differential equations. The use of finite differencing allows these models and advances to be transferred to high-power computational methods with minimal loss of accuracy. The use of finite differences allows the simulation of change with respect to time, providing a push to the forecasting nature of modern science.
 
 \section{Appendix}
 For access to the source codes used in this project, please visit \url{https://github.com/Tsintsuntsini/PHYS_581} for a list of files and times of most recent update.
