@@ -26,7 +26,7 @@ Iterative methods involve "guessing" a solution to the equation, and then contin
 
 There are different ways to implement iterative methods. The Jacobi method is closest to what has been described so far. In the Jacobi method, the grid is solved at some iteration $k$. Once the iteration is complete, the system is compared to exit conditions, and then the next iteration is generated. The Gauss-Seidel method considers a different approach. We know that the more iterations take place, the more likely a value at a particular point is to be correct. For the first point in a grid we consider, we use all the neighbor values from the previous iteration. In the Jacobi method, the next point also uses all the neighbor points from the previous iteration. The Gauss-Seidel method realizes that for the second point, we already have one "updated" point that should be closer than the previous iteration, so we use the updated neighbor when available instead of the previous iteration to approach the solution more quickly. In practice, the Gauss-Seigel method uses a checkerboard scheme, where points alternate between using only previous iteration values and using a mixture of previous -  and current iteration values. This scheme maximizes the number of updated points used in the calculation, speeding up the algorithm. The Jacobi method is more intuitive to implement, since it completes one iteration at a time. The Jacobi method can also be split apart into different intersecting independent grids for parallelization, whereas the Gauss-Seigel method cannot be parallelized easily.
 
-The aforementioned methods can be used to solve numerous physical systems. Many differential equations have general forms that have been given names over time.
+The aforementioned methods can be used to solve numerous physical systems. Many differential equations have general forms that have been given names over time. Table \ref{eq:diff_equations} shows a number of equations and their order.
 
 \begin{table*}
 \begin{center}
@@ -84,19 +84,7 @@ Another FD method is the central method. The same two examples may be computed u
 \end{equation}
 As expected according to the text, the central method was more accurate. The result matched the analytical solution exactly.
 
-%SHOW IT IS SECOND ORDER ACCURATE
-\begin{thebibliography}{00}
-	\bibitem{ouyed}
-	Ouyed and Dobler, PHYS 581 course notes, Department of Physics and Astrophysics, University of Calgary (2016).
-	\bibitem{NR}
-	W. Press et al., \emph{Numerical Recipes} (Cambridge University Press, 2010) 2nd. Ed.
-	\bibitem{pulsar}
-	T. O'Brian, "Properties of Pulsars", University of Manchester Jordell Bank Observatory, accessed at \url{http://www.jb.man.ac.uk/distance/frontiers/pulsars/section1.html}.
-	\bibitem{sunspots}
-	D. Hathaway, "The Sunspot Cycle",  NASA, accessed at \url{ https://solarscience.msfc.nasa.gov/SunspotCycle.shtml}
-\end{thebibliography}
-
-There are many different finite difference schemes that may be employed. Table \ref{schemes} shows many of the different schemes covered in the course. 
+There are many different finite difference schemes that may be employed. Table \ref{Schemes} shows many of the different schemes covered in the course. 
 
 \begin{table*}
 	\begin{center}
@@ -114,7 +102,7 @@ There are many different finite difference schemes that may be employed. Table \
 			\hline
 			Backward Euler & $u_{k}^{l+1} = (1 + r)^{-1}(u_k^l + ru_{k+1}{l+1}) $ & 1 &  None\\
 			\hline
-			Crank-Nicholson & $u_{k}^{l+1} = u_k^l +\frac{r}{2 \Delta x}(u_{k+1}^{l+1} - 2u_k^{l+1} +u_{k-1}^{l+1} + u_{k+1}^l -2u_k^l + u_{k-1}^l) $ & 2 & None \\
+			Crank-Nicholson & $u_{k}^{l+1} = u_k^l +\frac{r}{2}(u_{k+1}^{l+1} - 2u_k^{l+1} +u_{k-1}^{l+1} + u_{k+1}^l -2u_k^l + u_{k-1}^l) $ & 2 & None \\
 			\hline
 		\end{tabular}
 		\label{Schemes}
@@ -126,17 +114,32 @@ Of the schemes covered, they could be divided into two types: explicit and impli
 
 In the previous paragraph, stability of a discrete approximation was touched upon. A simulation becomes unstable if its values begin to explode contrary to physical conservation laws. Given enough time, the values of the variable of interest will explode to infinity. This instability is the result of selecting certain grid spacings that prevent proper transfer of information. To determine when a scheme becomes unstable, Von Neumann stability analysis may be applied. Von Neumann stability analysis takes advantage of the Fourier representation of a function. Out value $u$ is some linear sum of waves. At some future time $u^{l+1}$ our system should be the same set of waves, but evolved. This may be represented as a constituent wave being multiplied by some factor $A$. If $A>1$, then after some period of time, that constituent wave will dominate the variable, and explode to infinity. The Van Neumann method therefore determines the domain of such amplitudes, and determines under what conditions $A>1$. By plugging in the Fourier representation of a variable into our finite difference stencil, we may re-arrange to determine the value of A with respect to the Courant number.
 
-% DERIVE A VAN NEUMANN STABILITY HERE
+One benefit of the Crank-Nicholson scheme is that it is always stable. This may be proved from the stencil above. Equations \ref{eq:CNderive} show a final value for $A$. This value is indeed above zero, since both the numerator will always be smaller than the denominator.
+\begin{equation}
+\begin{split}
+u_{k}^{l+1} =& u_k^l +\frac{r}{2}(u_{k+1}^{l+1} - 2u_k^{l+1} +u_{k-1}^{l+1} \\
+             & + u_{k+1}^l -2u_k^l + u_{k-1}^l)  \\
+let \quad z =& e^{ik\Delta x} \\
+let \quad u_{j}^{l+1}& = Az^j \\
+Az^j =& z^j + \frac{r}{2} (Az^{j+1} -2Az^j +Az^{j-1}\\
+      & +z^{j+1} -2z^j + z^{j-1}) \\
+A =& 1 + \frac{r}{2} (A+1)(z - 2 - z^{-1}) \\
+A =& 1 + \frac{r}{2} (A+1)(e^{ik\Delta x} + e^{-ik\Delta x} - 2) \\
+A =& 1 + \frac{r}{2} (A+1)(e^{ik\Delta x} - e^{-ik\Delta x})^2 \\
+A =& 1 + \frac{r}{2} (A+1)(2i \sin(k\Delta x/2))^2 \\
+A =& \frac{1 - 2r \sin^2(k\Delta x/2)}{1 - 2r \sin^2(k\Delta x/2)}
+\end{split} \label{eq:CNderive}
+\end{equation}
 
 \subsection{Time Independent PDEs}
 \subsubsection{Relaxation Methods}
 
 The Laplacian equation was considered as an example of a time independent PDE. The equation could be converted into a stencil as shown below:
 \begin{equation}
-\begin{split}
-u_{xx} + u_{yy} &= 0 \\
-\frac{u_{i+1,j} - 2u_{i,j} + u_{i-1,j}}{(\Delta x)^2} + \frac{u_{i,j+1} - 2u_{i,j} + u_{i,j-1}}{(\Delta{y})^2} =&0 
-\end{split}
+u_{xx} + u_{yy} = 0
+\end{equation}
+\begin{equation}
+\frac{u_{i+1,j} - 2u_{i,j} + u_{i-1,j}}{(\Delta x)^2} + \frac{u_{i,j+1} - 2u_{i,j} + u_{i,j-1}}{(\Delta{y})^2} =0 
 \end{equation}
 If the grid spacing in each dimension is equal, the denominators may vanish yielding:
 \begin{equation}
@@ -146,14 +149,14 @@ These equations may be solved using matrix methods, given some boundary conditio
 
 The iterative method was tested using a set of boundary conditions $u(x,0) = u(x,10.0) = u(0.0,y)=0$ and $u(20.0,y)=100.0$. The system was tested beginning with a resolution $\Delta x = \Delta y = 5.0$. A code was written to evaluate and display this. Figure \ref{fig:low_res_iterative} shows the results of this system. The result was extremely low resolution, and was thus liable to be inaccurate compared to the analytical solution. To improve the accuracy, the resolution of the system was successively doubled four times. This is shown in figure \ref{fig:relaxation}. 
 
-\begin{figure}
+\begin{figure}[t]
 \centering
 \includegraphics[width=\linewidth]{low_res_iterative}
 \caption{Solution to the Laplace equation for a set of boundary conditions. The wall at $x=20.0$ is set to $u=100.0$ while the other edges are set to $u=0$. The image is low-resolution, measuring $2\times4$ cells.}
 \label{fig:low_res_iterative}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[t]
 \centering
 \includegraphics[width=\linewidth]{relaxation}
 \caption{Solution to the same Laplace system as figure \ref{fig:low_res_iterative}. The system has been evaluated at a higher resolution for each successive panel.}
@@ -190,7 +193,7 @@ The stencil for this differential equation was largely similar to that of the La
 
 As previously mentioned, this system may be solved as a series of linear equations using matrix methods. To demonstrate this solution, the problem was considered for a square of length $1$, resolution $50\times50$, with $u$ at all boundaries set to $1$. A python script was written to evaluate the system of equations, by flattening the 2D $u$ array into a one dimensional array. Next, the stencil was also flattened into a $50^2 \times 50^2$ 2D matrix. These terms could then be used to solve an $A\mathbf{x} = \mathbf{b}$ system. The script was made more quickly using a variant of LU decomposition for banded matrices that sped the execution time to approximately $1.3$ seconds. The result is shown in panel 1 of figure \ref{fig:schroe_alpha_1}.
 
-Another method used to evaluate such systems was a weighted Jacobi method. In essence, the method weights how heavily to consider the stencil terms rising from the time derivative versus how heavily to consider the stencil terms from the spacial derivatives. A series of 5 weighting coefficients were examined for the same problem as above with $\alpha = 1$. The results of this method are shown alongside the direct method in figure $\ref{fig:schroe_alpha_1}$. The method was also tested for a variant equation with $\alpha=1000$. The com
+Another method used to evaluate such systems was a weighted Jacobi method. In essence, the method weights how heavily to consider the stencil terms rising from the time derivative versus how heavily to consider the stencil terms from the spacial derivatives. A series of 5 weighting coefficients were examined for the same problem as above with $\alpha = 1$. The results of this method are shown alongside the direct method in figure $\ref{fig:schroe_alpha_1}$. The method was also tested for a variant equation with $\alpha=1000$. The result for this different $\alpha$ value is shown in figure \ref{fig:schroe_alpha_1000}. Table \ref{Jacobi compare} shows both how many iterations and how many seconds it took to get a convergent result for the direct method and different weights. For both methods, the solution converged significantly faster with a higher $w$. For the $\alpha = 1000$ equation this was especially true. This is because increasing the $\alpha$ had a similar effect to weighting, since the coefficient was applied to all terms except a single $u_{i,j}$ term. This caused the neighbor cells to have a higher contribution each step.
 
 \begin{table*}
 	\begin{center}
@@ -222,12 +225,311 @@ Another method used to evaluate such systems was a weighted Jacobi method. In es
 \label{fig:schroe_alpha_1}
 \end{figure*}
 
-\begin{figure*}
+\begin{figure*}[t]
 	\centering
 	\includegraphics[width=\textwidth]{schroe_alpha_1000}
 	\caption{Solution to a model Schr\"{o}dinger equation with $\alpha=1000$. All methods produced proximately the same result, with the only difference being in computation time.}
 	\label{fig:schroe_alpha_1000}
 \end{figure*}
+
+\subsection{Time Dependent PDEs}
+
+In this section, we begin exploring time-dependent partial
+differential equations, specifically building up to the
+advection-diffusion equation by considering each case individually
+first, then combining them into one equation. We will also test
+different explicit and implicit finite differencing schemes to step
+forward in time and test the Courant-Fiedrichs-Lewy (CFL) condition,
+which is usually used to determine the size of the time step.
+
+\subsubsection{The Advection Equation}
+
+The one-dimensional advection equation is a function of
+concentration $u(t, x)$ over time:
+\begin{equation}
+u_t = c u_x
+\end{equation}
+where $c$ is the speed of flow. In a similar vein to d'Alembert's
+solution to the wave equation, the exact solution to the 1D advection
+equation is found by shifting the initial conditions, $u(0, x)$, along
+the $x$-axis:
+\begin{equation}
+u(t, x) = u(0, x + ct)
+\end{equation}
+This means that if $c$ is positive, the initial function is shifted to
+the left. The opposite is true if $c$ is negative, the initial
+function is shifted to the right.
+
+To find a numerical solution to the advection equation, we applied
+four different finite difference schemes: forward and backward Euler,
+Lax-Wendroff, and Crank-Nicholson. These four schemes will be used on
+four different initial conditions, shown in table \ref{table:cases}
+with seven different sets of parameters, shown in table
+\ref{table:advection}. The value $r$ is the Courant number, which is a
+result of the CFL condition. This is a way to determing the stability
+of the system. Generally, the Courant number is set to be less than
+one for the system to be stable.
+
+\begin{table}
+	\begin{centering}
+		\begin{tabular}{c|c}
+			Case & Function \\ \hline \hline
+			0    & $u(0, x) = \sin(2 x)$ \\ \hline
+			1    & $u(0, x) = \begin{cases} 0 & \text{if} \; x < 0 \\ 1 &
+			\text{if} \; x \geq 0 \end{cases}$ \\ \hline
+			2    & $u(0, x) = \delta_{x, 0} / \Delta x$ \\ \hline
+			3    & $\exp(- 4 x^2)$
+		\end{tabular}
+		\caption{The initial conditions for the advection equation.}
+		\label{table:cases}
+	\end{centering}
+\end{table}
+
+\begin{table}
+	\begin{centering}
+		\begin{tabular}{c|c|c|c|c}
+			Trial & $c$ & $\Delta x$ & $\Delta t$ & $r = c \Delta t / \Delta x$ \\ \hline \hline
+			0     & 0.5 & 0.04       & 0.02       & 0.25                        \\ \hline
+			1     & 0.5 & 0.02       & 0.02       & 0.5                         \\ \hline
+			2     & 0.5 & 0.0137     & 0.02       & 0.728                       \\ \hline
+			3     & 0.5 & 0.0101     & 0.02       & 0.99                        \\ \hline
+			4     & 0.5 & 0.0099     & 0.02       & 1.11                        \\ \hline
+			5     & 0.5 & 0.02       & 0.01       & 0.25                        \\ \hline
+			6     & 0.5 & 0.02       & 0.04       & 1
+		\end{tabular}
+		\caption{The sets of parameters used when computing the advection equation.}
+		\label{table:advection}
+	\end{centering}
+\end{table}
+
+\begin{figure*}[ph]
+	\centering
+	\includegraphics[width=\textwidth, trim=0 0 0 4.5cm]{case0}
+	\caption{
+		The numerical solution to case $0$ from table \ref{table:cases}
+		for seven trials, a simple sinusoid. The initial condition and
+		exact solutions are shown in the top left and the solutions are
+		are for $t=2$.
+	}
+	\label{fig:case0}
+\end{figure*}
+
+The first case, shown in figure \ref{fig:case0} is a simple
+sinusoid. Since the pulse propogates to the left, the right side of
+the exact solution remains constant at the value of the boundary. The
+first trial, with $r = 0.25$, all methods are able to approximate the
+solution, though there are oscillations on the left side due to the
+boundary condition. Once $r >= 0.5$, the explicit forward Euler scheme
+no longer propogates the initial pulse correctly and flatlines at zero
+while the areas around the boundary increase to infinity. The smaller
+values of $\Delta x$ also increase the oscillations seen in the
+implicit methods. For trial $4$, $r = 1.11$, and all methods become
+unstable except for the Crank-Nicholson scheme, which combines the
+explicit and implicit Euler methods.
+
+\begin{figure*}[ph]
+	\centering
+	\includegraphics[width=\textwidth, trim=0 0 0 4.5cm]{case1}
+	\caption{
+		The numerical solution to case $1$, a Heaviside function. The
+		initial condition and exact solution are shown in the top left
+		corner and the solutions are for $t=2$.
+	}
+	\label{fig:case1}
+\end{figure*}
+
+The second case, shown in figure \ref{fig:case1} is a Heaviside
+function centred at $x=0$. Similarly to the first case, the forward
+Euler method is the most unstable, unable to approximate the solution
+in any of the cases. Trial $4$ also shows once again that the
+Crank-Nicholson scheme is the most stable while the other methods lose
+their stability once $r >= 1$. However, the explicit Lax-Wendroff
+scheme is the most accurate and has the fewest oscillations as $\Delta
+x$ decreases.
+
+\begin{figure*}[ph]
+	\includegraphics[width=\textwidth, trim=0 0 0 4.5cm]{case2}
+	\caption{
+		The numerical solution to case $2$, a delta function. The initial
+		condition and exact solution are shown in the top left corner and
+		the solutions are for $t=2$. It should be noted that the size of
+		the pulse is dependent on the value of $\Delta x$ for each trial.
+	}
+	\label{fig:case2}
+\end{figure*}
+
+The third case, shown in figure \ref{fig:case2} is a delta
+function. The magnitude of the pulse is dependent on the value $\Delta
+x$, and is thus dependent on the parameters defined in the
+trial. Regardless of the magnitude of the pulse, it propogates the
+same way. Many of the properties seen in the previous case are present
+here as well: forward Euler is very unstable, Crank-Nicholson is the
+most stable, and Lax-Wendroff gives the most accurate result when the
+CFL condition is maintained. The unique aspects of this case are from
+the oscillations. In both the backward Euler and Crank-Nicholson
+schemes, there is a large oscillation on the other side of where the
+actual pulse is. The oscilations in the latter, however, become so
+large and numerous that it is difficult to tell where the important
+information is and which peaks are noise. This would also imply that
+the Crank-Nicholson scheme is very sensitive to sharp spikes in data
+while the Lax-Wendroff scheme is able to propogate them better.
+
+\begin{figure*}[ph]
+	\includegraphics[width=\textwidth, trim=0 0 0 4.5cm]{case3}
+	\caption{
+		The numerical solution to case $3$, a Gaussian distribution with
+		its peak centred about $x=0$. The initial condition and exact
+		solution are shown in the top left corner and the solutions are
+		for $t=2$.
+	}
+	\label{fig:case3}
+\end{figure*}
+
+The final case we are considering a a Gaussian distribution centred
+about $x=0$. Since this case does not have sharp abrupt changes in
+slope, all the methods are able to propagate it a little better and
+the oscillations present in the implicit methods are greatly reduced.
+
+\subsubsection{The Diffusion Equation}
+
+The pure diffusion equation describes an initial pulse which diffuses into
+the surrounding fluid. The one dimensional diffusion equation is:
+\begin{equation}
+u_t = \beta u_{xx}
+\end{equation}
+where $\beta$ is the diffusion coefficient. The exact solution for $x$ over the
+interval $\left[0, 1 \right]$ for the initial condition $u(0, x) = \sin(\pi x)$ and
+boundary conditions $u(t, 0) = u(t, 1) = 0$ is:
+\begin{equation}
+\label{eq:diffusion}
+u(t, x) = e^{- \beta \pi^2 t} \sin(\pi x)
+\end{equation}
+In order to solve the equation numerically, we can change the diffusion equation
+into a FD equation. Replacing the time derivative with a first order forward
+difference scheme and the spatial derivative by a centred difference scheme
+results in the equation:
+\begin{equation}
+u_i^{n+1} = u_i^n + r \left( u_{i+1}^n - 2 u_i^n + u_{i-1}^n \right)
+\end{equation}
+where the Courant number is $r = \frac{\beta \Delta t}{(\Delta x)^2}$,
+$n$ is along the time axis and $j$ is along the $x$-axis.
+The conditions for stability can be found through von Neumann
+stability analysis. Starting from the finite difference equation,
+stepping forward in time and centred stepping in space:
+\begin{equation}
+\frac{u_j^{n+1} - u_j^n}{\Delta t} = \beta \frac{u_{j+1}^n - 2 u_j^n
+	+ u_{j-1}^n}{\Delta x^2}
+\end{equation}
+we first assume that the each step can be represented as a product of
+an amplification factor $G^n$ and an exponential term so that $u_j^n =
+G^n e^{i k j \Delta x}$. This form of $u_j^n$ is then substituted into
+the FD equation and solved for $G^1$:
+\begin{equation}
+\begin{aligned}
+e^{i k j \Delta x} \frac{G^{n+1} - G^n}{\Delta t} &= \beta G^n
+\frac{e^{i k (j + 1) \Delta x} - 2 e^{i k j \Delta x} + e^{i k (j
+		- 1) \Delta x}}{\Delta x^2} \\
+G^1 - 1 &= \frac{\beta \Delta t}{\Delta x^2} \left(e^{- i k \Delta
+	x} - 2 + e^{+ i k \Delta x} \right) \\
+\therefore G^1 &= \left( 1 - 2 r \right) + 2 r \cos(k \Delta x)
+\end{aligned}
+\end{equation}
+where $r = \frac{\beta \Delta t}{\Delta x^2}$ in the last
+substitution.
+
+For stability, we impose the condition that $|G^n| \leq 1$. If the
+cosine term is equal to one ($\cos(k \Delta x) = 1$), then $|G^n| =
+1$, which satisfies the stability condition. However, if the cosine
+term is equal to negative one, we use the fact that $r > 0$, so the
+stability condition becomes:
+\begin{equation}
+\begin{aligned}
+|G^n| &\leq 1 - 4 r \\
+- 1 &\leq 1 - 4 r \\
+\therefore \Delta t &\leq \Delta t_{max} = \frac{\Delta x^2}{2 \beta}
+\end{aligned}
+\end{equation}
+
+When the diffusion equation was solved numerically for the conditions
+described in equation \ref{eq:diffusion}, it was run for $300$ time
+steps, $51$ grid points, $\beta = 1$, and $\Delta t = 0.9 \Delta
+t_{max}$, the results shown in figure \ref{fig:diffusion}. Since the
+CFL conditions are met, the solution is stable and very closely
+approximates the exact solution, though the height of the peak is
+slightly overestimated.
+
+\begin{figure}
+	\includegraphics[width=\linewidth]{diffusion.png}
+	\caption{
+		The diffusion of a simple sinusoid. The pulse is simply spread out
+		and the peak falls.
+	}
+	\label{fig:diffusion}
+\end{figure}
+
+\subsubsection{The Advection-Diffusion Equation}
+
+By combining the two previous sections on advection and diffusion, the
+advection-diffusion equation is:
+\begin{equation}
+u_t = \beta u_xx - c u_x
+\end{equation}
+where the initial condition is advected with speed $c$ and diffusing
+with rate $\beta$. The finite difference equation, stepping forward in
+time, using the centred difference scheme for the second derivative
+and backward for the first derivative, is:
+\begin{equation}
+\frac{u_j^{n+1} - u_j^n}{\Delta t} = \beta \frac{u_{j+1}^n + 2 u_j^n
+	+ u_{j-1}^n}{\Delta x^2} - c \frac{u_j^n - u_{j-1}^n}{\Delta x}
+\end{equation}
+
+The von Neumann stability analysis is done similarly to before,
+subsituting $u_j^n = G^n e^{i k j \Delta x}$ and solving for $G^1$:
+\begin{equation}
+\begin{aligned}
+e^{i k j \Delta x} \frac{G^{n+1} - G^n}{\Delta t} &=
+\beta G^n \frac{e^{i k (j + 1) \Delta x} - 2 e^{i k j \Delta x}
+	+ e^{i k (j - 1) \Delta x}}{\Delta x^2} \\
+&- c G^n \frac{e^{i k j \Delta x}
+	e^{i k (j - 1) \Delta x}}{\Delta x} \\
+\frac{G^1 - 1}{\Delta t} &= \beta \frac{e^{i k \Delta x} - 2 +
+	e^{- i k \Delta x}}{\Delta x^2} \\
+&- c \frac{1 - e^{- i k \Delta
+		x}}{\Delta x} \\
+\therefore G^1 &= 1 + 2 s \left( \cos(k \Delta x) - 1 \right) \\
+&+ r \left(e^{-i k \Delta x} - 1 \right)
+\end{aligned}
+\end{equation}
+Looking at the extreme values of $G^1$ and imposing the stability
+condition $|G^1| \leq 1$, the upper extreme when $\cos(k \Delta x) =
+1$ results in $|G^1| = 1$. On the lower extreme, when $\cos(k \Delta x
+= -1$, the condition is:
+\begin{equation}
+\begin{aligned}
+-1 &\leq 1 - 4s - 2r =1 - 2 \Delta t \left( \frac{2 \beta}{\Delta
+	x^2} + \frac{2 c}{\Delta x} \right) \\
+\therefore \Delta t &\leq \Delta t_{max} = \frac{\Delta x^2}{c
+	\Delta x + 2 \beta}
+\end{aligned}
+\end{equation}
+
+This time, the grid has $101$ points, $c = 0.5$, $\beta = 0.1$,
+$\Delta t = 0.9 \Delta t_{max}$, and the solution is run until $t =
+57$s, shown in figure \ref{fig:advec_diffuse}. The entire simulation
+took $2277$ time steps. The behaviour is a combination of what was
+observed in the advection equation, since the peak has moved from
+$x=0.5$ to $x=0.61$, while the height of the peak has also decreased,
+resulting from the diffusion.
+
+\begin{figure}
+	\includegraphics[width=\linewidth]{advection_diffusion.png}
+	\caption{
+		The advection-diffusion equation applied on a simple
+		sinusoid. This is a combination of the advection and diffusion
+		behaviour observed in the previous two parts.
+	}
+	\label{fig:advec_diffuse}
+\end{figure}
 
 \subsection{Hydrodynamics}
 \subsubsection{Code Introduction}
@@ -238,19 +540,19 @@ As the code provided was written in Fortran, it required compilation. The variou
 
 The code provided contained a default implementation of four initial high pressure points that were then allowed to diffuse. The code was compiled and allowed to run. Figure \ref{fig:drops} shows the resulting behaviour. The pressurized points diffuse as expected. When encountering the obstacle, the pressure waves appear to reflect. No reflections occurred at the edges, indicating that matter in the simulation zone was allowed to leave the active zone and flow out. Figure \ref{fig:drops_vector} shows the flow velocity behaviour for the same simulation.
 
-\begin{figure}
+\begin{figure*}
 \centering
 \includegraphics[width=\linewidth]{phys581-Lab3-package-2018/exe-dir/drops}
 \caption{Initial configuration of the hydrodynamics simulation. Initial conditions specify four high pressure zones. No additional forcing was provided, and the subsequent frames allow the pressure zones to disperse. A square obstacle has been placed at the centre of the active zone, and can be seen as a solid zone of colour when pressure disturbances approach.}
 \label{fig:drops}
-\end{figure}
+\end{figure*}
 
-\begin{figure}
+\begin{figure*}
 	\centering
 	\includegraphics[width=\linewidth]{phys581-Lab3-package-2018/exe-dir/drops_vector}
 	\caption{Initial configuration of the hydrodynamics simulation in terms of velocities. Vectors point in the direction of velocity and are both scaled and color coded by magnitude. A square obstacle has been placed at the centre of the active zone, which is shown as white in this figure.}
 	\label{fig:drops_vector}
-\end{figure}
+\end{figure*}
 
 \subsubsection{CFL Condition}
 The code as distributed did not have a proper CFL condition implemented. This prevented the code from running at an optimal speed. In order to compute the CFL at any given step, the speed of sound everywhere must be known. The speed of sound may be defined by the equation:
@@ -272,7 +574,7 @@ The code manipulates this result to take both pressure and density into account,
 
 To implement this CFL condition, the general 2D CFL condition was used:
 \begin{equation}
-C = \frac{u_x \Delta t}{Delta x} + \frac{u_y \Delta t}{\Delta y}
+C = \frac{u_x \Delta t}{\Delta x} + \frac{u_y \Delta t}{\Delta y}
 \end{equation}
 Where $u$ is the speed of the medium in that direction, which will usually be $c_s$. This could be re-arranged using $C=0.5$ to find $\Delta t$ at each step. Important to note is that $u$ is not the same at all points being simulated. To determine the $u$ value to use, the maximum $u$ occurring in the grid must be used. This maximum value is either the speed of sound, or the highest flow speed in the medium, whichever is higher. 
 
@@ -283,67 +585,67 @@ Once the simulation was optimized, physical situations could be modeled. One suc
 
 Further experimentation was performed by varying the density and the velocity of the jet. Increasing the jet density resulted in a very sudden high-density front moving across the active zone: much more pronounced than in figure \ref{fig:jet}. The shape of the pressure wave also changed, with the front of the pressure-wave being much thicker and flatter. Where the default jet had been almost parabolic in shape, the increased density jet looked more like a rounded rectangle. Increased density also caused a change in the velocity profile, with the former tapering bean of high velocity becoming a broad cone of high velocity, trapped behind the pressure front. Increasing the x velocity also changed the behaviour of the system. The pressure front was narrow, and didn't spread out very much. The pressure also tapered off rather quickly. The velocity was again a very strong, narrow beam. Where in the default jet, velocity spread out in a circular shape around the beam, the high velocity variant had velocity turbulations extending out in a planar manner parallel to the jet.
 
-\begin{figure}
+\begin{figure*}
 \centering
 \includegraphics[width=\linewidth]{phys581-Lab3-package-2018/exe-dir/jet}
 \caption{Pressure simulation of a jet of fluid entering from the right. The fluid is allowed to flow unimpeded to the right side boundary.}
 \label{fig:jet}
-\end{figure}
+\end{figure*}
 
-\begin{figure}
+\begin{figure*}
 \centering
-\includegraphics[width=0.7\linewidth]{phys581-Lab3-package-2018/exe-dir/jet_vector}
+\includegraphics[width=\linewidth]{phys581-Lab3-package-2018/exe-dir/jet_vector}
 \caption{Velocity simulation of a jet of high speed fluid entering from the left. The fluid is left unimpeded to flow to the right boundary. The vectors have been scaled and color coded according to magnitude.}
 \label{fig:jet_vector}
-\end{figure}
+\end{figure*}
 
 Once the jet was established, different solid shapes could be placed in the path of the jet in order to examine aerodynamic properties. First, built-in subroutines were used to place a vertical wall in the path of the jet. The pressure and velocity simulations are shown in figures \ref{fig:vertWall} and \ref{fig:vertWall_vector} respectively. The fluid does not show and reflection, instead the pressure simulation shows a high pressure buildup in front of the wall. This is likely due to the boundary conditions imposed by the wall. Once particles come in contact with the wall, their velocity is set to $0$. This causes particles to build up in front of the wall, and not be moved around it. Looking at the velocity figure seems to confirm this, with the jet largely halted by the wall, with some spill off around the edges of the jet that roughly correspond to the edge of the wall. This is different to the edges of the active zone, where there are not solid walls. This allows particles to flow out of the active zone. One can imagine that if the active zone was bounded by a box with similar velocity properties to the wall, there would be similar pressure build-ups around the active zone.
 
-\begin{figure}
+\begin{figure*}
 \centering
 \includegraphics[width=\linewidth]{phys581-Lab3-package-2018/exe-dir/vertWall}
 \caption{Pressure evolution of a jet pointed at a vertical wall.}
 \label{fig:vertWall}
-\end{figure}
+\end{figure*}
 
-\begin{figure}
+\begin{figure*}
 \centering
 \includegraphics[width=\linewidth]{phys581-Lab3-package-2018/exe-dir/vertWall_vector}
 \caption{Velocity evolution of a jet pointed at a vertical wall.}
 \label{fig:vertWall_vector}
-\end{figure}
+\end{figure*}
 
 The next obstacle considered was a wall oriented parallel to the jet's path. Figures \ref{fig:horiWall} and \ref{fig:horiWall_vector} show the density and velocity simulations. In this case, density once again built up in front of the leading edge. Since the wall was now smaller than the width of the jet, the jet was able to pass around the obstacle around the sides. The wall left as pressure wake behind it, which collapsed in on itself to form a slightly more turbulent pressure front once again, with some pressure oscillations between the front and the wall. The velocity profile shows the jet being split into two beams, diverging away from the wall at approximately $45^o$ each. This makes sense, as any particles moving back towards the wall would lose their velocity. This reinforces the velocities away from the wall, causing the stream to diverge away from the wall.
 
-\begin{figure}
+\begin{figure*}
 \centering
 \includegraphics[width=\linewidth]{phys581-Lab3-package-2018/exe-dir/horiWall}
-\caption{Pressure simulation of a horizontal placed in the path of a fluid jet.}
+\caption{Pressure simulation of a horizontal slab placed in the path of a fluid jet.}
 \label{fig:horiWall}
-\end{figure}
+\end{figure*}
 
-\begin{figure}
+\begin{figure*}
 \centering
 \includegraphics[width=\linewidth]{phys581-Lab3-package-2018/exe-dir/horiWall_vector}
-\caption{}
+\caption{Velocity simulation of a horizontal slab placed in the path of a fluid jet}
 \label{fig:horiWall_vector}
-\end{figure}
+\end{figure*}
 
 Lastly, an isosceles triangle was placed in the path of the jet, as documented in figures \ref{fig:triWall} and \ref{fig:tri_vector}. As in the previous example, there is a pressure buildup immediately in front of the object, however it is greatly reduced compared to previous examples. This is sensible due to the more aerodynamic shape. As density builds up, it is easy for it to slide at an angle compared to the flat surfaces examined so far. The velocity profile again shows the stream being diverted by the wall, however the smaller profile of this object allows dispersion to merge the two streams somewhat together again.
 
-\begin{figure}
+\begin{figure*}
 \centering
 \includegraphics[width=\linewidth]{phys581-Lab3-package-2018/exe-dir/triWall}
 \caption{Pressure simulation for a triangular obstacle in the path of the injection jet.}
 \label{fig:triWall}
-\end{figure}
+\end{figure*}
 
-\begin{figure}
+\begin{figure*}
 \centering
-\includegraphics[width=0.7\linewidth]{phys581-Lab3-package-2018/exe-dir/tri_vector}
+\includegraphics[width=\linewidth]{phys581-Lab3-package-2018/exe-dir/tri_vector}
 \caption{Velocity simulation for a triangular obstacle in the path of an injection jet.}
 \label{fig:tri_vector}
-\end{figure}
+\end{figure*}
  
 
 \subsubsection{Airplane Aerodynamics}
@@ -354,19 +656,19 @@ The code built in this lab can function as a test for aerodynamic properties. Us
 
 An area of particular interest in aviation is the behaviour of vehicles relative to the speed of sound. The Mach number is a way to characteristic speed relative to a medium. The Mach number $M$ is defined as how fast something is traveling relative to the speed of sound of the surrounding medium. For this exercise, a model airplane was simulated traveling at four different Mach numbers: $M=0.2$, $M=1.1$, $M=3.0$, and $M=7.5$.
 
-\begin{figure}
+\begin{figure*}
 \centering
 \includegraphics[width=\linewidth]{phys581-Lab3-package-2018/exe-dir/normal}
 \caption{Pressure profile surrounding a crude airplane traveling at high speeds. The text above each panel indicate the Mach number of the airplane's speed in that panel. All panels were snapshots taken at $t=44$.}
 \label{fig:normal}
-\end{figure}
+\end{figure*}
 
-\begin{figure}
+\begin{figure*}
 \centering
-\includegraphics[width=0.7\linewidth]{phys581-Lab3-package-2018/exe-dir/swept}
+\includegraphics[width=\linewidth]{phys581-Lab3-package-2018/exe-dir/swept}
 \caption{Pressure profile of a crude airplane with a swept wing design. The same numbering convention as figure \ref{fig:normal} was used. All panels were snapshots taken at $t=44$.}
 \label{fig:swept}
-\end{figure}
+\end{figure*}
 
 Looking at figure \ref{fig:normal}, the general behaviour is similar between plots. In front of the plane wings is a region of high pressure, known as a bow-shock. Trailing behind is a region of generally low pressure compared to the undisturbed medium. There is significant turbulence in the wake of the plane. As the speed of the plane increases, the pressure in front of the wings grows significantly. In addition, the bow-shock grows, so that the region of high pressure thickens in front of the wings. 
 
@@ -382,10 +684,27 @@ There are a multitude of recipes available for using finite differences to solve
 
 Time dependent methods were shown to be of use to steady state systems as well, taking advantage of the tendency of some recipes to tend towards equilibrium. This lab showed a few examples where spacial systems were examined by allowing the system to evolve from an initial guess. In these cases, the stencils used allowed information from a boundary condition to migrate to all areas under consideration. One particular method applied demonstrated this migratory behaviour. The weighted Jacobi method essentially weighted whether the stencil placed more priority on the neighboring cells, or the cell's own previous state. It was found that preferring the neighboring cells allowed the system to converge faster. This may be interpreted as the boundary information migrating more quickly through the solution.
 
+The sections on the advection-diffusion serve to show the importance
+of the CFL conditions and the effect they have on the various schemes
+used to step forward in time. In general, the implicit methods
+(backward Euler and Crank-Nicholson) were more stable, even as the
+Courant number was increased to be over $1$. However, the implicit
+methods were also observed to exhibit high frequency oscillations at
+the boundary and from sharp abrupt changes in slope. Von Neumann
+stability analysis proved to be a reliable way to define an
+appropriate size for the time step.
+
 Hydrodynamics was shown as an important application of finite difference and finite volume methods. The code was able to demonstrate its applicability to the design of aerodynamic surfaces. The examples in this lab showed that symmetry played a large part in how simulations fared. Because of the construction of the system, edges of surfaces were pixelated, and differences in rounding to place points on the pixelated grid sometimes resulted in asymmetrical designs. In such cases, it was seen that even these slight asymmetries would cause different jet reflections. The most prominent of these issues took place with the simulation of aircraft. Due to some slight asymmetries, the upper wing of the aircraft generated a significantly smalled bow-shock. This effect was amplified as time went on. This asymmetry carried through to the chosen points of the swept-wing aircraft. The top wing in this design experienced significantly less bow-shock, while the lower wing was substantially larger. This made the lower wing almost as poor as the un-swept wing. Errors such as these are fixed by higher resolution methods, and by ensuring that designs are placed in a perfectly symmetrical manner.
 
 \section{Conclusion}
 Finite differences is a starting point to the discrete simulation of differential equations. This lab has shown how a simple discretization of the definition of the derivative may be expanded into a cornucopia of different recipes to model differential equations. Prior to the advent of computers, much of physics was devoted to the understanding and classification of differential equations. The use of finite differencing allows these models and advances to be transferred to high-power computational methods with minimal loss of accuracy. The use of finite differences allows the simulation of change with respect to time, providing a push to the forecasting nature of modern science.
+
+\begin{thebibliography}{00}
+	\bibitem{ouyed}
+	Ouyed and Dobler, PHYS 581 course notes, Department of Physics and Astrophysics, University of Calgary (2016).
+	\bibitem{NR}
+	W. Press et al., \emph{Numerical Recipes} (Cambridge University Press, 2010) 2nd. Ed.
+\end{thebibliography}
 
 \section{Appendix}
 For access to the source codes used in this project, please visit \url{https://github.com/Tsintsuntsini/PHYS_581} for a list of files and times of most recent update.
