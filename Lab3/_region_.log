@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=prv_austin_report 2018.4.12)  12 APR 2018 13:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=prv_austin_report 2018.4.12)  12 APR 2018 17:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -53,7 +53,7 @@ l.7 \section
 Not a real error.
 
 Preview: Tightpage -32891 -32891 32891 32891
-! Preview: Snippet 1 ended.(655359+183500x22609920).
+! Preview: Snippet 1 ended.(655359+183500x15040512).
 <-><->
       
 l.7 \section{The Assignment}
@@ -70,7 +70,7 @@ l.9 \subsection
                {Time Dependent PDEs}
 Not a real error.
 
-! Preview: Snippet 2 ended.(546132+152916x22609920).
+! Preview: Snippet 2 ended.(546132+152916x15040512).
 <-><->
       
 l.9 \subsection{Time Dependent PDEs}
@@ -83,14 +83,14 @@ Not a real error.
 ! Preview: Snippet 3 started.
 <-><->
       
-l.16 \subsubsection
+l.19 \subsubsection
                    {The Advection Equation}
 Not a real error.
 
-! Preview: Snippet 3 ended.(455111+127431x22609920).
+! Preview: Snippet 3 ended.(455111+127431x15040512).
 <-><->
       
-l.16 \subsubsection{The Advection Equation}
+l.19 \subsubsection{The Advection Equation}
                                            
 Not a real error.
 
@@ -100,14 +100,14 @@ Not a real error.
 ! Preview: Snippet 4 started.
 <-><->
       
-l.18 concentration $
+l.22 concentration $
                     u(t, x)$ over time:
 Not a real error.
 
 ! Preview: Snippet 4 ended.(491520+163840x1787375).
 <-><->
       
-l.18 concentration $u(t, x)$
+l.22 concentration $u(t, x)$
                              over time:
 Not a real error.
 
@@ -115,14 +115,14 @@ Not a real error.
 ! Preview: Snippet 5 started.
 <-><->
       
-l.19 \begin{equation}
+l.23 \begin{equation}
                      
 Not a real error.
 
-! Preview: Snippet 5 ended.(655360+0x22609920).
+! Preview: Snippet 5 ended.(655360+0x15040512).
 <-><->
       
-l.21 \end{equation}
+l.25 \end{equation}
                    
 Not a real error.
 
@@ -130,14 +130,14 @@ Not a real error.
 ! Preview: Snippet 6 started.
 <-><->
       
-l.22 where $
+l.26 where $
             c$ is the speed of flow. In a similar vein to d'Alembert's
 Not a real error.
 
 ! Preview: Snippet 6 ended.(282168+0x283611).
 <-><->
       
-l.22 where $c$
+l.26 where $c$
                is the speed of flow. In a similar vein to d'Alembert's
 Not a real error.
 
@@ -145,14 +145,14 @@ Not a real error.
 ! Preview: Snippet 7 started.
 <-><->
       
-l.24 ...ound by shifting the initial conditions, $
+l.28 ...ound by shifting the initial conditions, $
                                                   u(0, x)$, along
 Not a real error.
 
 ! Preview: Snippet 7 ended.(491520+163840x1878398).
 <-><->
       
-l.24 ...shifting the initial conditions, $u(0, x)$
+l.28 ...shifting the initial conditions, $u(0, x)$
                                                   , along
 Not a real error.
 
@@ -160,14 +160,14 @@ Not a real error.
 ! Preview: Snippet 8 started.
 <-><->
       
-l.25 the $
+l.29 the $
           x$-axis:
 Not a real error.
 
 ! Preview: Snippet 8 ended.(282168+0x374556).
 <-><->
       
-l.25 the $x$
+l.29 the $x$
             -axis:
 Not a real error.
 
@@ -175,14 +175,14 @@ Not a real error.
 ! Preview: Snippet 9 started.
 <-><->
       
-l.26 \begin{equation}
+l.30 \begin{equation}
                      
 Not a real error.
 
-! Preview: Snippet 9 ended.(655360+0x22609920).
+! Preview: Snippet 9 ended.(655360+0x15040512).
 <-><->
       
-l.28 \end{equation}
+l.32 \end{equation}
                    
 Not a real error.
 
@@ -190,14 +190,14 @@ Not a real error.
 ! Preview: Snippet 10 started.
 <-><->
       
-l.29 This means that if $
+l.33 This means that if $
                          c$ is positive, the initial function is shifted to
 Not a real error.
 
 ! Preview: Snippet 10 ended.(282168+0x283611).
 <-><->
       
-l.29 This means that if $c$
+l.33 This means that if $c$
                             is positive, the initial function is shifted to
 Not a real error.
 
@@ -205,134 +205,479 @@ Not a real error.
 ! Preview: Snippet 11 started.
 <-><->
       
-l.30 the left. The opposite is true if $
+l.34 the left. The opposite is true if $
                                         c$ is negative, the initial
 Not a real error.
 
 ! Preview: Snippet 11 ended.(282168+0x283611).
 <-><->
       
-l.30 the left. The opposite is true if $c$
+l.34 the left. The opposite is true if $c$
                                            is negative, the initial
 Not a real error.
 
 [11]
 
-LaTeX Warning: Reference `table:advection' on page 1 undefined on input line 37
+LaTeX Warning: Reference `table:cases' on page 1 undefined on input line 40.
+
+
+LaTeX Warning: Reference `table:advection' on page 1 undefined on input line 42
 .
 
 ! Preview: Snippet 12 started.
 <-><->
       
-l.40   Trial & $
-                c$ & $\Delta x$ & $\Delta t$ & $r = c \Delta t / \Delta x$ \...
-
+l.46   0    & $
+               u(0, x) = \sin(2 x)$ \\ \hline
 Not a real error.
 
-! Preview: Snippet 12 ended.(282168+0x283611).
+! Preview: Snippet 12 ended.(491520+163840x4768805).
 <-><->
       
-l.40   Trial & $c$
-                   & $\Delta x$ & $\Delta t$ & $r = c \Delta t / \Delta x$ \...
-
+l.46   0    & $u(0, x) = \sin(2 x)$
+                                    \\ \hline
 Not a real error.
 
 [12]
 ! Preview: Snippet 13 started.
 <-><->
       
-l.40   Trial & $c$ & $
-                      \Delta x$ & $\Delta t$ & $r = c \Delta t / \Delta x$ \...
-
+l.47   1    & $
+               u(0, x) = \begin{cases} 0 & \text{if} \; x < 0 \\ 1
 Not a real error.
 
-! Preview: Snippet 13 ended.(447828+0x920691).
+! Extra }, or forgotten \endgroup.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.47   1    & $u(0, x) = \begin{cases} 0 &
+                                           \text{if} \; x < 0 \\ 1
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.47   1    & $u(0, x) = \begin{cases} 0 &
+                                           \text{if} \; x < 0 \\ 1
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.47   1    & $u(0, x) = \begin{cases} 0 &
+                                           \text{if} \; x < 0 \\ 1
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Preview: Snippet 13 ended.(491520+163840x3988649).
 <-><->
       
-l.40   Trial & $c$ & $\Delta x$
-                                & $\Delta t$ & $r = c \Delta t / \Delta x$ \...
-
+l.47   1    & $u(0, x) = \begin{cases} 0 &
+                                           \text{if} \; x < 0 \\ 1
 Not a real error.
 
 [13]
+! Missing } inserted.
+<inserted text> 
+                }
+l.47   1    & $u(0, x) = \begin{cases} 0 &
+                                           \text{if} \; x < 0 \\ 1
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.47   1    & $u(0, x) = \begin{cases} 0 &
+                                           \text{if} \; x < 0 \\ 1
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Undefined control sequence.
+l.47   1    & $u(0, x) = \begin{cases} 0 & \text
+                                                {if} \; x < 0 \\ 1
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.47 ... $u(0, x) = \begin{cases} 0 & \text{if} \;
+                                                   x < 0 \\ 1
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.47 ... \begin{cases} 0 & \text{if} \; x < 0 \\ 1
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.47 ... \begin{cases} 0 & \text{if} \; x < 0 \\ 1
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.47 ... \begin{cases} 0 & \text{if} \; x < 0 \\ 1
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+l.48     \text
+              {if} \; x \geq 0 \end{cases}$ \\ \hline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.48     \text{if} \;
+                      x \geq 0 \end{cases}$ \\ \hline
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: \begin{tabular} on input line 44 ended by \end{cases}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48     \text{if} \; x \geq 0 \end{cases}
+                                          $ \\ \hline
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.48     \text{if} \; x \geq 0 \end{cases}
+                                          $ \\ \hline
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.48     \text{if} \; x \geq 0 \end{cases}
+                                          $ \\ \hline
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.48     \text{if} \; x \geq 0 \end{cases}
+                                          $ \\ \hline
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.48     \text{if} \; x \geq 0 \end{cases}
+                                          $ \\ \hline
+I'm guessing that you meant to end an alignment here.
+
+! Missing { inserted.
+<inserted text> 
+                {
+l.48     \text{if} \; x \geq 0 \end{cases}
+                                          $ \\ \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.48     \text{if} \; x \geq 0 \end{cases}
+                                          $ \\ \hline
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.48     \text{if} \; x \geq 0 \end{cases}
+                                          $ \\ \hline
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.48     \text{if} \; x \geq 0 \end{cases}
+                                          $ \\ \hline
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
 ! Preview: Snippet 14 started.
 <-><->
       
-l.40   Trial & $c$ & $\Delta x$ & $
-                                   \Delta t$ & $r = c \Delta t / \Delta x$ \...
-
+l.48     \text{if} \; x \geq 0 \end{cases}$
+                                            \\ \hline
 Not a real error.
 
-! Preview: Snippet 14 ended.(447828+0x782793).
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.48 ...ext{if} \; x \geq 0 \end{cases}$ \\ \hline
+                                                  
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.48 ...ext{if} \; x \geq 0 \end{cases}$ \\ \hline
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.48 ...ext{if} \; x \geq 0 \end{cases}$ \\ \hline
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Preview: Snippet 14 ended.(786432+0x15040512).
 <-><->
       
-l.40   Trial & $c$ & $\Delta x$ & $\Delta t$
-                                             & $r = c \Delta t / \Delta x$ \...
-
+l.48 ...ext{if} \; x \geq 0 \end{cases}$ \\ \hline
+                                                  
 Not a real error.
 
 [14]
+! Too many }'s.
+\@xhline ... -\arrayrulewidth \fi \ifnum 0=`{\fi }
+                                                  
+l.49   2
+            & $u(0, x) = \frac{\delta_{x, 0}}{\Delta x}$ \\ \hline
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Misplaced alignment tab character &.
+l.49   2    &
+              $u(0, x) = \frac{\delta_{x, 0}}{\Delta x}$ \\ \hline
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
 ! Preview: Snippet 15 started.
 <-><->
       
-l.40   Trial & $c$ & $\Delta x$ & $\Delta t$ & $
-                                                r = c \Delta t / \Delta x$ \...
-
+l.49   2    & $
+               u(0, x) = \frac{\delta_{x, 0}}{\Delta x}$ \\ \hline
 Not a real error.
 
-! Preview: Snippet 15 ended.(491520+163840x3502458).
+! Preview: Snippet 15 ended.(650988+225995x3813075).
 <-><->
       
-l.40 ...& $\Delta t$ & $r = c \Delta t / \Delta x$
+l.49 ...$u(0, x) = \frac{\delta_{x, 0}}{\Delta x}$
                                                    \\ \hline
 Not a real error.
 
 [15]
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.49 ... \frac{\delta_{x, 0}}{\Delta x}$ \\ \hline
+                                                  
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced alignment tab character &.
+l.50   3    &
+              $e^{- 4 x^2}$ \\ \hline
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
 ! Preview: Snippet 16 started.
 <-><->
       
-l.55 \subsubsection
-                   {The Diffusion Equation}
+l.50   3    & $
+               e^{- 4 x^2}$ \\ \hline
 Not a real error.
 
-! Preview: Snippet 16 ended.(455111+127431x22609920).
+! Preview: Snippet 16 ended.(646770+0x1561721).
 <-><->
       
-l.55 \subsubsection{The Diffusion Equation}
-                                           
+l.50   3    & $e^{- 4 x^2}$
+                            \\ \hline
 Not a real error.
 
-[16
+[16]
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.50   3    & $e^{- 4 x^2}$ \\ \hline
+                                     
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
 
-]
+! Misplaced \crcr.
+\endtabular ->\crcr 
+                    \egroup \egroup $\egroup 
+l.52 \end{tabular}
+                  
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Too many }'s.
+\endtabular ->\crcr \egroup 
+                            \egroup $\egroup 
+l.52 \end{tabular}
+                  
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Too many }'s.
+\endtabular ->\crcr \egroup \egroup 
+                                    $\egroup 
+l.52 \end{tabular}
+                  
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.52 \end{tabular}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: \begin{document} ended by \end{tabular}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{tabular}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.52 \end{tabular}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.52 \end{tabular}
+                  
+Things are pretty mixed up, but I think the worst is over.
+
 ! Preview: Snippet 17 started.
 <-><->
       
-l.59 \begin{equation}
-                     
+l.55   Trial & $
+                c$ & $\Delta x$ & $\Delta t$ & $r = c \Delta t / \Delta x$ \...
+
 Not a real error.
 
-! Preview: Snippet 17 ended.(655360+0x22609920).
+! Preview: Snippet 17 ended.(282168+0x283611).
 <-><->
       
-l.61 \end{equation}
-                   
+l.55   Trial & $c$
+                   & $\Delta x$ & $\Delta t$ & $r = c \Delta t / \Delta x$ \...
+
 Not a real error.
 
 [17]
 ! Preview: Snippet 18 started.
 <-><->
       
-l.62 where $
-            \beta$ is the diffusion coefficient. The exact solution for $x$ ...
+l.55   Trial & $c$ & $
+                      \Delta x$ & $\Delta t$ & $r = c \Delta t / \Delta x$ \...
 
 Not a real error.
 
-! Preview: Snippet 18 ended.(455111+127431x405276).
+! Preview: Snippet 18 ended.(447828+0x920691).
 <-><->
       
-l.62 where $\beta$
-                   is the diffusion coefficient. The exact solution for $x$ ...
+l.55   Trial & $c$ & $\Delta x$
+                                & $\Delta t$ & $r = c \Delta t / \Delta x$ \...
 
 Not a real error.
 
@@ -340,22 +685,104 @@ Not a real error.
 ! Preview: Snippet 19 started.
 <-><->
       
-l.62 ...sion coefficient. The exact solution for $
-                                                  x$ over the
+l.55   Trial & $c$ & $\Delta x$ & $
+                                   \Delta t$ & $r = c \Delta t / \Delta x$ \...
+
 Not a real error.
 
-! Preview: Snippet 19 ended.(282168+0x374556).
+! Preview: Snippet 19 ended.(447828+0x782793).
 <-><->
       
-l.62 ...on coefficient. The exact solution for $x$
-                                                   over the
+l.55   Trial & $c$ & $\Delta x$ & $\Delta t$
+                                             & $r = c \Delta t / \Delta x$ \...
+
 Not a real error.
 
 [19]
 ! Preview: Snippet 20 started.
 <-><->
       
-l.63 interval $
+l.55   Trial & $c$ & $\Delta x$ & $\Delta t$ & $
+                                                r = c \Delta t / \Delta x$ \...
+
+Not a real error.
+
+! Preview: Snippet 20 ended.(491520+163840x3502458).
+<-><->
+      
+l.55 ...& $\Delta t$ & $r = c \Delta t / \Delta x$
+                                                   \\ \hline
+Not a real error.
+
+[20]
+! Preview: Snippet 21 started.
+<-><->
+      
+l.70 \subsubsection
+                   {The Diffusion Equation}
+Not a real error.
+
+! Preview: Snippet 21 ended.(455111+127431x15040512).
+<-><->
+      
+l.70 \subsubsection{The Diffusion Equation}
+                                           
+Not a real error.
+
+[21
+
+]
+! Preview: Snippet 22 started.
+<-><->
+      
+l.74 \begin{equation}
+                     
+Not a real error.
+
+! Preview: Snippet 22 ended.(655360+0x15040512).
+<-><->
+      
+l.76 \end{equation}
+                   
+Not a real error.
+
+[22]
+! Preview: Snippet 23 started.
+<-><->
+      
+l.77 where $
+            \beta$ is the diffusion coefficient. The exact solution for $x$ ...
+
+Not a real error.
+
+! Preview: Snippet 23 ended.(455111+127431x405276).
+<-><->
+      
+l.77 where $\beta$
+                   is the diffusion coefficient. The exact solution for $x$ ...
+
+Not a real error.
+
+[23]
+! Preview: Snippet 24 started.
+<-><->
+      
+l.77 ...sion coefficient. The exact solution for $
+                                                  x$ over the
+Not a real error.
+
+! Preview: Snippet 24 ended.(282168+0x374556).
+<-><->
+      
+l.77 ...on coefficient. The exact solution for $x$
+                                                   over the
+Not a real error.
+
+[24]
+! Preview: Snippet 25 started.
+<-><->
+      
+l.78 interval $
                \[0, 1\]$ for the initial condition $u(0, x) = \sin(\pi x)$ and
 Not a real error.
 
@@ -366,7 +793,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.63 interval $\[
+l.78 interval $\[
                  0, 1\]$ for the initial condition $u(0, x) = \sin(\pi x)$ and
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -379,86 +806,86 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.63 interval $\[0, 1\]
+l.78 interval $\[0, 1\]
                        $ for the initial condition $u(0, x) = \sin(\pi x)$ and
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Preview: Snippet 20 ended.(422343+127431x946631).
+! Preview: Snippet 25 ended.(422343+127431x946631).
 <-><->
       
-l.63 interval $\[0, 1\]$
+l.78 interval $\[0, 1\]$
                          for the initial condition $u(0, x) = \sin(\pi x)$ and
 Not a real error.
 
-[20]
-! Preview: Snippet 21 started.
+[25]
+! Preview: Snippet 26 started.
 <-><->
       
-l.63 ...val $\[0, 1\]$ for the initial condition $
+l.78 ...val $\[0, 1\]$ for the initial condition $
                                                   u(0, x) = \sin(\pi x)$ and
 Not a real error.
 
-! Preview: Snippet 21 ended.(491520+163840x4838210).
+! Preview: Snippet 26 ended.(491520+163840x4838210).
 <-><->
       
-l.63 ... initial condition $u(0, x) = \sin(\pi x)$
+l.78 ... initial condition $u(0, x) = \sin(\pi x)$
                                                    and
 Not a real error.
 
-[21]
-! Preview: Snippet 22 started.
+[26]
+! Preview: Snippet 27 started.
 <-><->
       
-l.64 boundary conditions $
+l.79 boundary conditions $
                           u(t, 0) = u(t, 1) = 0$ is:
 Not a real error.
 
-! Preview: Snippet 22 ended.(491520+163840x5556293).
+! Preview: Snippet 27 ended.(491520+163840x5556293).
 <-><->
       
-l.64 boundary conditions $u(t, 0) = u(t, 1) = 0$
+l.79 boundary conditions $u(t, 0) = u(t, 1) = 0$
                                                  is:
 Not a real error.
 
-[22]
-! Preview: Snippet 23 started.
+[27]
+! Preview: Snippet 28 started.
 <-><->
       
-l.65 \begin{equation}
+l.80 \begin{equation}
                      
 Not a real error.
 
-! Preview: Snippet 23 ended.(843378+0x22609920).
+! Preview: Snippet 28 ended.(843378+0x15040512).
 <-><->
       
-l.68 \end{equation}
+l.83 \end{equation}
                    
 Not a real error.
 
-[23
+[28
 
 ]
-! Preview: Snippet 24 started.
+! Preview: Snippet 29 started.
 <-><->
       
-l.73 \begin{equation}
+l.88 \begin{equation}
                      
 Not a real error.
 
-! Preview: Snippet 24 ended.(805368+0x22609920).
+! Preview: Snippet 29 ended.(805368+0x15040512).
 <-><->
       
-l.75 \end{equation}
+l.90 \end{equation}
                    
 Not a real error.
 
-[24]
-! Preview: Snippet 25 started.
+[29]
+! Preview: Snippet 30 started.
 <-><->
       
-l.76 where the Courant number is $
+l.91 where the Courant number is $
                                   r = \frac{\beta \Delta t}{(\Delta x)^2$,
 Not a real error.
 
@@ -467,7 +894,7 @@ Runaway argument?
 ! Paragraph ended before \frac was complete.
 <to be read again> 
                    \par 
-l.101 
+l.116 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -476,83 +903,83 @@ My plan is to forget the whole thing and hope for the best.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.101 
+l.116 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-! Preview: Snippet 25 ended.(282168+0x1005642).
+! Preview: Snippet 30 ended.(282168+0x1005642).
 <-><->
       
-l.101 
+l.116 
       
 Not a real error.
 
-[25]
-! Preview: Snippet 26 started.
+[30]
+! Preview: Snippet 31 started.
 <-><->
       
-l.102 ...stability, we impose the condition that $
+l.117 ...stability, we impose the condition that $
                                                   |G^n| \leq 1$. If the
 Not a real error.
 
-! Preview: Snippet 26 ended.(491520+163840x2437587).
+! Preview: Snippet 31 ended.(491520+163840x2437587).
 <-><->
       
-l.102 ... impose the condition that $|G^n| \leq 1$
+l.117 ... impose the condition that $|G^n| \leq 1$
                                                   . If the
 Not a real error.
 
-[26]
-! Preview: Snippet 27 started.
+[31]
+! Preview: Snippet 32 started.
 <-><->
       
-l.103 cosine term is equal to one ($
+l.118 cosine term is equal to one ($
                                     \cos(k \Delta x) = 1$), then $|G^n| =
 Not a real error.
 
-! Preview: Snippet 27 ended.(491520+163840x3871173).
+! Preview: Snippet 32 ended.(491520+163840x3871173).
 <-><->
       
-l.103 ...m is equal to one ($\cos(k \Delta x) = 1$
+l.118 ...m is equal to one ($\cos(k \Delta x) = 1$
                                                   ), then $|G^n| =
 Not a real error.
 
-[27]
-! Preview: Snippet 28 started.
+[32]
+! Preview: Snippet 33 started.
 <-><->
       
-l.103 ...l to one ($\cos(k \Delta x) = 1$), then $
+l.118 ...l to one ($\cos(k \Delta x) = 1$), then $
                                                   |G^n| =
 Not a real error.
 
-! Preview: Snippet 28 ended.(491520+163840x2437587).
+! Preview: Snippet 33 ended.(491520+163840x2437587).
 <-><->
       
-l.104 1$
+l.119 1$
         , which satisfies the stability condition. However, if the cosine
 Not a real error.
 
-[28]
-! Preview: Snippet 29 started.
+[33]
+! Preview: Snippet 34 started.
 <-><->
       
-l.105 ...l to negative one, we use the fact that $
+l.120 ...l to negative one, we use the fact that $
                                                   r > 0$, so the
 Not a real error.
 
-! Preview: Snippet 29 ended.(422343+25623x1515363).
+! Preview: Snippet 34 ended.(422343+25623x1515363).
 <-><->
       
-l.105 ...egative one, we use the fact that $r > 0$
+l.120 ...egative one, we use the fact that $r > 0$
                                                   , so the
 Not a real error.
 
-[29]
-! Preview: Snippet 30 started.
+[34]
+! Preview: Snippet 35 started.
 <-><->
       
-l.107 \begin{equation}
+l.122 \begin{equation}
                       
 Not a real error.
 
@@ -563,14 +990,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.108   \begin{aligned}
+l.123   \begin{aligned}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Misplaced alignment tab character &.
-l.109     |G^n| &
+l.124     |G^n| &
                  \leq 1 - 4 r \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -580,7 +1007,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.110     - 1 &
+l.125     - 1 &
                \leq 1 - 4 r \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -592,7 +1019,7 @@ might try typing `S' now just to see what is salvageable.
 ! Undefined control sequence.
 <recently read> \therefore 
                            
-l.111     \therefore
+l.126     \therefore
                      \Delta t &\leq \Delta t_{max} = \frac{\Delta x^2}{2 \beta}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -601,7 +1028,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.111     \therefore \Delta t &
+l.126     \therefore \Delta t &
                                \leq \Delta t_{max} = \frac{\Delta x^2}{2 \beta}
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -611,204 +1038,204 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-! LaTeX Error: \begin{equation} on input line 107 ended by \end{aligned}.
+! LaTeX Error: \begin{equation} on input line 122 ended by \end{aligned}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.112   \end{aligned}
+l.127   \end{aligned}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Preview: Snippet 30 ended.(1553797+0x22609920).
+! Preview: Snippet 35 ended.(1553797+0x15040512).
 <-><->
       
-l.113 \end{equation}
+l.128 \end{equation}
                     
 Not a real error.
 
-[30]
+[35]
 
-LaTeX Warning: Reference `eq:diffusion' on page 1 undefined on input line 116.
+LaTeX Warning: Reference `eq:diffusion' on page 1 undefined on input line 131.
 
-! Preview: Snippet 31 started.
-<-><->
-      
-l.116 ...tion \ref{eq:diffusion}, it was run for $
-                                                  300$ time
-Not a real error.
-
-! Preview: Snippet 31 ended.(422343+0x983043).
-<-><->
-      
-l.116 ... \ref{eq:diffusion}, it was run for $300$
-                                                   time
-Not a real error.
-
-[31]
-! Preview: Snippet 32 started.
-<-><->
-      
-l.117 steps, $
-              51$ grid points, $\beta = 1$, and $\Delta t = 0.9 \Delta
-Not a real error.
-
-! Preview: Snippet 32 ended.(422343+0x655362).
-<-><->
-      
-l.117 steps, $51$
-                  grid points, $\beta = 1$, and $\Delta t = 0.9 \Delta
-Not a real error.
-
-[32]
-! Preview: Snippet 33 started.
-<-><->
-      
-l.117 steps, $51$ grid points, $
-                                \beta = 1$, and $\Delta t = 0.9 \Delta
-Not a real error.
-
-! Preview: Snippet 33 ended.(455111+127431x1606763).
-<-><->
-      
-l.117 steps, $51$ grid points, $\beta = 1$
-                                          , and $\Delta t = 0.9 \Delta
-Not a real error.
-
-[33]
-! Preview: Snippet 34 started.
-<-><->
-      
-l.117 steps, $51$ grid points, $\beta = 1$, and $
-                                                 \Delta t = 0.9 \Delta
-Not a real error.
-
-! Preview: Snippet 34 ended.(447828+98303x4356078).
-<-><->
-      
-l.118 t_{max}$
-              , the results shown in figure \ref{fig:diffusion}.
-Not a real error.
-
-[34]
-
-LaTeX Warning: Reference `fig:diffusion' on page 1 undefined on input line 118.
-
-
-! Preview: Snippet 35 started.
-<-><->
-      
-l.120 \subsubsection
-                    {The Advection-Diffusion Equation}
-Not a real error.
-
-! Preview: Snippet 35 ended.(455111+127431x22609920).
-<-><->
-      
-l.120 ...section{The Advection-Diffusion Equation}
-                                                  
-Not a real error.
-
-[35
-
-]
 ! Preview: Snippet 36 started.
 <-><->
       
-l.124 \begin{equation}
-                      
+l.131 ...tion \ref{eq:diffusion}, it was run for $
+                                                  300$ time
 Not a real error.
 
-! Preview: Snippet 36 ended.(655360+0x22609920).
+! Preview: Snippet 36 ended.(422343+0x983043).
 <-><->
       
-l.126 \end{equation}
-                    
+l.131 ... \ref{eq:diffusion}, it was run for $300$
+                                                   time
 Not a real error.
 
 [36]
 ! Preview: Snippet 37 started.
 <-><->
       
-l.127 ...nitial condition is advected with speed $
-                                                  c$ and diffusing
+l.132 steps, $
+              51$ grid points, $\beta = 1$, and $\Delta t = 0.9 \Delta
 Not a real error.
 
-! Preview: Snippet 37 ended.(282168+0x283611).
+! Preview: Snippet 37 ended.(422343+0x655362).
 <-><->
       
-l.127 ...tial condition is advected with speed $c$
-                                                   and diffusing
+l.132 steps, $51$
+                  grid points, $\beta = 1$, and $\Delta t = 0.9 \Delta
 Not a real error.
 
 [37]
 ! Preview: Snippet 38 started.
 <-><->
       
-l.128 with rate $
-                 \beta$. The finite difference equation, stepping forward in
+l.132 steps, $51$ grid points, $
+                                \beta = 1$, and $\Delta t = 0.9 \Delta
 Not a real error.
 
-! Preview: Snippet 38 ended.(455111+127431x405276).
+! Preview: Snippet 38 ended.(455111+127431x1606763).
 <-><->
       
-l.128 with rate $\beta$
-                       . The finite difference equation, stepping forward in
+l.132 steps, $51$ grid points, $\beta = 1$
+                                          , and $\Delta t = 0.9 \Delta
 Not a real error.
 
 [38]
 ! Preview: Snippet 39 started.
 <-><->
       
-l.131 \begin{equation}
-                      
+l.132 steps, $51$ grid points, $\beta = 1$, and $
+                                                 \Delta t = 0.9 \Delta
 Not a real error.
 
-! Preview: Snippet 39 ended.(1552996+0x22609920).
+! Preview: Snippet 39 ended.(447828+98303x4356078).
 <-><->
       
-l.134 \end{equation}
-                    
+l.133 t_{max}$
+              , the results shown in figure \ref{fig:diffusion}.
 Not a real error.
 
 [39]
+
+LaTeX Warning: Reference `fig:diffusion' on page 1 undefined on input line 133.
+
+
 ! Preview: Snippet 40 started.
 <-><->
       
-l.137 subsituting $
-                   u_j^n = G^n e^{i k j \Delta x}$ and solving for $G^1$:
+l.135 \subsubsection
+                    {The Advection-Diffusion Equation}
 Not a real error.
 
-! Preview: Snippet 40 ended.(556402+259786x4261834).
+! Preview: Snippet 40 ended.(455111+127431x15040512).
 <-><->
       
-l.137 subsituting $u_j^n = G^n e^{i k j \Delta x}$
-                                                   and solving for $G^1$:
+l.135 ...section{The Advection-Diffusion Equation}
+                                                  
 Not a real error.
 
-[40]
+[40
+
+]
 ! Preview: Snippet 41 started.
 <-><->
       
-l.137 ...G^n e^{i k j \Delta x}$ and solving for $
-                                                  G^1$:
+l.139 \begin{equation}
+                      
 Not a real error.
 
-! Preview: Snippet 41 ended.(533465+0x809279).
+! Preview: Snippet 41 ended.(655360+0x15040512).
 <-><->
       
-l.137 ...e^{i k j \Delta x}$ and solving for $G^1$
-                                                  :
+l.141 \end{equation}
+                    
 Not a real error.
 
 [41]
 ! Preview: Snippet 42 started.
 <-><->
       
-l.138 \begin{equation}
+l.142 ...nitial condition is advected with speed $
+                                                  c$ and diffusing
+Not a real error.
+
+! Preview: Snippet 42 ended.(282168+0x283611).
+<-><->
+      
+l.142 ...tial condition is advected with speed $c$
+                                                   and diffusing
+Not a real error.
+
+[42]
+! Preview: Snippet 43 started.
+<-><->
+      
+l.143 with rate $
+                 \beta$. The finite difference equation, stepping forward in
+Not a real error.
+
+! Preview: Snippet 43 ended.(455111+127431x405276).
+<-><->
+      
+l.143 with rate $\beta$
+                       . The finite difference equation, stepping forward in
+Not a real error.
+
+[43]
+! Preview: Snippet 44 started.
+<-><->
+      
+l.146 \begin{equation}
+                      
+Not a real error.
+
+! Preview: Snippet 44 ended.(2273892+0x15040512).
+<-><->
+      
+l.149 \end{equation}
+                    
+Not a real error.
+
+[44]
+! Preview: Snippet 45 started.
+<-><->
+      
+l.152 subsituting $
+                   u_j^n = G^n e^{i k j \Delta x}$ and solving for $G^1$:
+Not a real error.
+
+! Preview: Snippet 45 ended.(556402+259786x4261834).
+<-><->
+      
+l.152 subsituting $u_j^n = G^n e^{i k j \Delta x}$
+                                                   and solving for $G^1$:
+Not a real error.
+
+[45]
+! Preview: Snippet 46 started.
+<-><->
+      
+l.152 ...G^n e^{i k j \Delta x}$ and solving for $
+                                                  G^1$:
+Not a real error.
+
+! Preview: Snippet 46 ended.(533465+0x809279).
+<-><->
+      
+l.152 ...e^{i k j \Delta x}$ and solving for $G^1$
+                                                  :
+Not a real error.
+
+[46]
+! Preview: Snippet 47 started.
+<-><->
+      
+l.153 \begin{equation}
                       
 Not a real error.
 
@@ -819,14 +1246,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.139   \begin{aligned}
+l.154   \begin{aligned}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Misplaced alignment tab character &.
-l.140 ...Delta x} \frac{G^{n+1} - G^n}{\Delta t} &
+l.155 ...Delta x} \frac{G^{n+1} - G^n}{\Delta t} &
                                                   = \beta G^n
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -836,7 +1263,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.144     \frac{G^1 - 1}{\Delta t} &
+l.159     \frac{G^1 - 1}{\Delta t} &
                                     = \beta \frac{e^{i k \Delta x} - 2 +
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -848,7 +1275,7 @@ might try typing `S' now just to see what is salvageable.
 ! Undefined control sequence.
 <recently read> \therefore 
                            
-l.147     \therefore
+l.162     \therefore
                      G^1 &= 1 + 2 s \left( \cos(k \Delta x) - 1 \right) + r
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -857,7 +1284,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.147     \therefore G^1 &
+l.162     \therefore G^1 &
                           = 1 + 2 s \left( \cos(k \Delta x) - 1 \right) + r
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -867,105 +1294,105 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-! LaTeX Error: \begin{equation} on input line 138 ended by \end{aligned}.
+! LaTeX Error: \begin{equation} on input line 153 ended by \end{aligned}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.149   \end{aligned}
+l.164   \end{aligned}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Preview: Snippet 42 ended.(2195686+0x22609920).
+! Preview: Snippet 47 ended.(2195686+0x15040512).
 <-><->
       
-l.150 \end{equation}
+l.165 \end{equation}
                     
-Not a real error.
-
-[42]
-! Preview: Snippet 43 started.
-<-><->
-      
-l.151 Looking at the extreme values of $
-                                        G^1$ and imposing the stability
-Not a real error.
-
-! Preview: Snippet 43 ended.(533465+0x809279).
-<-><->
-      
-l.151 Looking at the extreme values of $G^1$
-                                             and imposing the stability
-Not a real error.
-
-[43]
-! Preview: Snippet 44 started.
-<-><->
-      
-l.152 condition $
-                 |G^1| \leq 1$, the upper extreme when $\cos(k \Delta x) =
-Not a real error.
-
-! Preview: Snippet 44 ended.(533465+163840x2374856).
-<-><->
-      
-l.152 condition $|G^1| \leq 1$
-                              , the upper extreme when $\cos(k \Delta x) =
-Not a real error.
-
-[44]
-! Preview: Snippet 45 started.
-<-><->
-      
-l.152 ... $|G^1| \leq 1$, the upper extreme when $
-                                                  \cos(k \Delta x) =
-Not a real error.
-
-! Preview: Snippet 45 ended.(491520+163840x3871173).
-<-><->
-      
-l.153 1$
-         results in $|G^1| = 1$. On the lower extreme, when $\cos(k \Delta x
-Not a real error.
-
-[45]
-! Preview: Snippet 46 started.
-<-><->
-      
-l.153 1$ results in $
-                     |G^1| = 1$. On the lower extreme, when $\cos(k \Delta x
-Not a real error.
-
-! Preview: Snippet 46 ended.(533465+163840x2374856).
-<-><->
-      
-l.153 1$ results in $|G^1| = 1$
-                               . On the lower extreme, when $\cos(k \Delta x
-Not a real error.
-
-[46]
-! Preview: Snippet 47 started.
-<-><->
-      
-l.153 ...$|G^1| = 1$. On the lower extreme, when $
-                                                  \cos(k \Delta x
-Not a real error.
-
-! Preview: Snippet 47 ended.(491520+163840x4126036).
-<-><->
-      
-l.154 = -1$
-           , the condition is:
 Not a real error.
 
 [47]
 ! Preview: Snippet 48 started.
 <-><->
       
-l.155 \begin{equation}
+l.166 Looking at the extreme values of $
+                                        G^1$ and imposing the stability
+Not a real error.
+
+! Preview: Snippet 48 ended.(533465+0x809279).
+<-><->
+      
+l.166 Looking at the extreme values of $G^1$
+                                             and imposing the stability
+Not a real error.
+
+[48]
+! Preview: Snippet 49 started.
+<-><->
+      
+l.167 condition $
+                 |G^1| \leq 1$, the upper extreme when $\cos(k \Delta x) =
+Not a real error.
+
+! Preview: Snippet 49 ended.(533465+163840x2374856).
+<-><->
+      
+l.167 condition $|G^1| \leq 1$
+                              , the upper extreme when $\cos(k \Delta x) =
+Not a real error.
+
+[49]
+! Preview: Snippet 50 started.
+<-><->
+      
+l.167 ... $|G^1| \leq 1$, the upper extreme when $
+                                                  \cos(k \Delta x) =
+Not a real error.
+
+! Preview: Snippet 50 ended.(491520+163840x3871173).
+<-><->
+      
+l.168 1$
+         results in $|G^1| = 1$. On the lower extreme, when $\cos(k \Delta x
+Not a real error.
+
+[50]
+! Preview: Snippet 51 started.
+<-><->
+      
+l.168 1$ results in $
+                     |G^1| = 1$. On the lower extreme, when $\cos(k \Delta x
+Not a real error.
+
+! Preview: Snippet 51 ended.(533465+163840x2374856).
+<-><->
+      
+l.168 1$ results in $|G^1| = 1$
+                               . On the lower extreme, when $\cos(k \Delta x
+Not a real error.
+
+[51]
+! Preview: Snippet 52 started.
+<-><->
+      
+l.168 ...$|G^1| = 1$. On the lower extreme, when $
+                                                  \cos(k \Delta x
+Not a real error.
+
+! Preview: Snippet 52 ended.(491520+163840x4126036).
+<-><->
+      
+l.169 = -1$
+           , the condition is:
+Not a real error.
+
+[52]
+! Preview: Snippet 53 started.
+<-><->
+      
+l.170 \begin{equation}
                       
 Not a real error.
 
@@ -976,14 +1403,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.156   \begin{aligned}
+l.171   \begin{aligned}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Misplaced alignment tab character &.
-l.157     -1 &
+l.172     -1 &
               \leq 1 - 4s - 2r =1 - 2 \Delta t \left( \frac{2 \beta}{\Delta
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -995,7 +1422,7 @@ might try typing `S' now just to see what is salvageable.
 ! Undefined control sequence.
 <recently read> \therefore 
                            
-l.159     \therefore
+l.174     \therefore
                      \Delta t &\leq \Delta t_{max} = \frac{\Delta x^2}{c
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1004,7 +1431,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.159     \therefore \Delta t &
+l.174     \therefore \Delta t &
                                \leq \Delta t_{max} = \frac{\Delta x^2}{c
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1014,52 +1441,53 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-! LaTeX Error: \begin{equation} on input line 155 ended by \end{aligned}.
+! LaTeX Error: \begin{equation} on input line 170 ended by \end{aligned}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.161   \end{aligned}
+l.176   \end{aligned}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Preview: Snippet 48 ended.(1599421+0x22609920).
+! Preview: Snippet 53 ended.(2320317+0x15040512).
 <-><->
       
-l.162 \end{equation}
+l.177 \end{equation}
                     
 Not a real error.
 
-[48]
+[53]
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 186 strings out of 493071
- 2489 string characters out of 6137027
- 61293 words of memory out of 5000000
- 3927 multiletter control sequences out of 15000+600000
+ 189 strings out of 493071
+ 2514 string characters out of 6137027
+ 63296 words of memory out of 5000000
+ 3930 multiletter control sequences out of 15000+600000
  6635 words of font info for 24 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 22i,9n,22p,170b,124s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 22i,15n,22p,170b,142s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy7.pfb>
-Output written on _region_.pdf (48 pages, 105795 bytes).
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y7.pfb>
+Output written on _region_.pdf (53 pages, 115281 bytes).
 PDF statistics:
- 200 PDF objects out of 1000 (max. 8388607)
- 138 compressed objects within 2 object streams
+ 220 PDF objects out of 1000 (max. 8388607)
+ 152 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

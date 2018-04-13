@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.8.23)  12 APR 2018 10:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.8.23)  12 APR 2018 17:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -38,7 +38,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 Beginning to dump on file prv_austin_report.fmt
  (format=prv_austin_report 2018.4.12)
 6929 strings of total length 112973
-51097 memory locations dumped; current usage is 219&49252
+51097 memory locations dumped; current usage is 219&49262
 3766 multiletter control sequences
 \font\nullfont=nullfont
 \font\OMX/cmex/m/n/5=cmex10

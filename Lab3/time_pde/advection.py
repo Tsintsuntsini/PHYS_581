@@ -188,6 +188,7 @@ def main():
 
             plt.clf()
             fig, subs = plt.subplots(nrows=2, sharex=True, figsize=[12, 8], dpi=300)
+            subs[0].set_title('Initial Condition and Exact Solution of Case {}'.format(case_num))
             subs[0].set_ylim(np.min(case) - 0.1, np.max(case) + 0.1)
             subs[0].plot(x, case, color='orange', label='Initial State')
             subs[0].legend(loc='best')
@@ -199,6 +200,7 @@ def main():
  
             plt.clf()
             fig, subs = plt.subplots(nrows=4, sharex=True, figsize=[12, 8], dpi=300)
+            subs[0].set_title('Case {}, Trial {}'.format(case_num, trial_num))
             subs[0].plot(x, fw.current_state, color='red', label='Forward Euler')
             subs[0].legend(loc='best')
             subs[1].plot(x, bw.current_state, color='blue', label='Backward Euler')

@@ -70,6 +70,8 @@ def main():
     plt.legend()
     plt.savefig('advection_diffusion')
 
+    print('Number of time steps: {}'.format(ts.size))
+    print('Location of peak: {}'.format(x[ad.current_state == np.max(ad.current_state)]))
 
 if __name__ == '__main__':
     main()
