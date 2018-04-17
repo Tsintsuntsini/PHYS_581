@@ -1,3 +1,3 @@
-# Markoc Chain Monte Carlo
+# Markov Chain Monte Carlo
 from .distributions import gaussian
-from .random_distributions import random_gaussian, random_uniform
+from .rng import autocorrelation, chi_square, rng_gaussian, rng_uniform

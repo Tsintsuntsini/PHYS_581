@@ -1,7 +1,7 @@
 # Random Distributions
 import numpy as np
 
-from . import gaussian
+from .distributions import gaussian
 
 
 def autocorrelation(sequence, periodic=False):
@@ -20,17 +20,17 @@ def autocorrelation(sequence, periodic=False):
     ---------
     np.array of autocorrelation values corresponding to the interval.
     """
-    N = sequenced.size
-    mean = np.mean(sequence)
-
     if periodic:
         x = np.append(sequence, sequence)
     else:
         x = np.copy(sequence)
 
+    N = x.size
+    mean = np.mean(sequence)
+
     ac = np.array([
         np.sum((x[:N-k] - mean) * (x[k:] - mean)) / np.sum((x[:N-k] - mean)**2)
-        for k in range(N)
+        for k in range(sequence.size)
     ])
 
     return ac
@@ -97,10 +97,10 @@ def rng_gaussian(
         peak = gaussian(mu, mu, sigma)
         trial = rng_uniform(size, minum, maxum)
 
-        condition = gaussian(trial, mu, sigma) < rng_uniform(maxum=peak)
+        condition = gaussian(trial, mu, sigma) < rng_uniform(size, maxum=peak)
         while np.any(condition):
-            trial[condition] = rng_uniform(condition.size, minum, maxum)
-            condition = gaussian(trial, mu, sigma) < rng_uniform(maxum=peak)
+            trial[condition] = rng_uniform(np.sum(condition), minum, maxum)
+            condition = gaussian(trial, mu, sigma) < rng_uniform(size, maxum=peak)
 
         z = trial
 
@@ -129,3 +129,34 @@ def rng_uniform(size=1, minum=0.0, maxum=1.0):
     np.array of random numbers.
     """
     return (maxum - minum) * np.random.random(size) + minum
+
+
+def main():
+    import matplotlib.pyplot as plt
+
+    # Test autocorrelation
+    random = np.random.random(100)
+    auto = autocorrelation(random)
+    plt.plot(auto)
+    plt.show()
+
+    auto = autocorrelation(random, periodic=True)
+    plt.plot(auto)
+    plt.show()
+
+    # Test chi-square
+    freqs = np.array([np.sum(np.logical_and(0.1 * k < random, random < 0.1 * k + 0.1)) for k in range(0, 9)])
+    print(chi_square(freqs))
+
+    # Test Gaussian
+    g = rng_gaussian(100, 0, 1, method='box_muller')
+    plt.hist(g)
+    plt.show()
+
+    g = rng_gaussian(100, 0, 1, method='accept_reject', minum=-4.0, maxum=4.0)
+    plt.hist(g)
+    plt.show()
+
+
+if __name__ == '__main__':
+    main()
