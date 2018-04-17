@@ -20,6 +20,8 @@ def autocorrelation(sequence, periodic=False):
     ---------
     np.array of autocorrelation values corresponding to the interval.
     """
+    sequence = np.array(sequence)
+
     if periodic:
         x = np.append(sequence, sequence)
     else:
@@ -28,12 +30,12 @@ def autocorrelation(sequence, periodic=False):
     N = x.size
     mean = np.mean(sequence)
 
-    ac = np.array([
+    ac = [
         np.sum((x[:N-k] - mean) * (x[k:] - mean)) / np.sum((x[:N-k] - mean)**2)
         for k in range(sequence.size)
-    ])
+    ]
 
-    return ac
+    return np.array(ac)
 
 
 def chi_square(observed, expected=None):
@@ -55,6 +57,8 @@ def chi_square(observed, expected=None):
     ---------
     The chi-square value.
     """
+    observed = np.array(observed)
+
     if expected is None:
         expected = np.sum(observed) / observed.size
 
@@ -86,6 +90,10 @@ def rng_gaussian(
     ---------
     np.array of random numbers.
     """
+    size = int(size)
+    mu = float(mu)
+    sigma = float(sigma)
+    
     if method == 'box_muller':
         u1 = rng_uniform(size)
         u2 = rng_uniform(size)
@@ -94,13 +102,21 @@ def rng_gaussian(
         z = z * sigma + mu
 
     elif method == 'accept_reject':
+        minum = float(minum)
+        maxum = float(maxum)
+
         peak = gaussian(mu, mu, sigma)
         trial = rng_uniform(size, minum, maxum)
 
-        condition = gaussian(trial, mu, sigma) < rng_uniform(size, maxum=peak)
+        condition = gaussian(trial, mu, sigma) \
+            < rng_uniform(size, minum=0.0, maxum=peak)
         while np.any(condition):
             trial[condition] = rng_uniform(np.sum(condition), minum, maxum)
-            condition = gaussian(trial, mu, sigma) < rng_uniform(size, maxum=peak)
+            condition = np.logical_and(
+                condition, 
+                gaussian(trial, mu, sigma) \
+                    < rng_uniform(size, minum=0.0, maxum=peak)
+            )
 
         z = trial
 
@@ -128,6 +144,10 @@ def rng_uniform(size=1, minum=0.0, maxum=1.0):
     ---------
     np.array of random numbers.
     """
+    size = int(size)
+    minum = float(minum)
+    maxum = float(maxum)
+
     return (maxum - minum) * np.random.random(size) + minum
 
 
@@ -137,11 +157,12 @@ def main():
     # Test autocorrelation
     random = np.random.random(100)
     auto = autocorrelation(random)
-    plt.plot(auto)
-    plt.show()
+    plt.plot(auto, label='non-periodic')
 
     auto = autocorrelation(random, periodic=True)
-    plt.plot(auto)
+    plt.plot(auto, label='periodic')
+
+    plt.legend()
     plt.show()
 
     # Test chi-square
@@ -149,12 +170,20 @@ def main():
     print(chi_square(freqs))
 
     # Test Gaussian
-    g = rng_gaussian(100, 0, 1, method='box_muller')
-    plt.hist(g)
+    g = rng_gaussian(1000, 0, 1, method='box_muller')
+    plt.hist(g, bins=50, alpha=0.5, normed=True, label='box-muller')
+
+    g = rng_gaussian(1000, 0, 1, method='accept_reject', minum=-4.0, maxum=4.0)
+    plt.hist(g, bins=50, alpha=0.5, normed=True, label='accept-reject')
+
+    plt.legend()
     plt.show()
 
-    g = rng_gaussian(100, 0, 1, method='accept_reject', minum=-4.0, maxum=4.0)
-    plt.hist(g)
+    # Test uniform
+    u = rng_uniform(1000, -4, 4)
+    plt.hist(u, bins=50, normed=True, label='uniform')
+    
+    plt.legend()
     plt.show()
 
 
