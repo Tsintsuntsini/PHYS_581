@@ -6,24 +6,52 @@ class MetropolisHastings:
 
     Parameters
     ------------
+    eval_target   : (function) target distribution which evaluates the
+                               position of the walkers. Should take
+                               arguments
+
+        eval_target(x, y, **kwargs)
+
+    eval_proposal : (function) proposal distribution which evaluates the
+                               position of the walkers. Should take
+                               arugments
+
+        eval_proposal(x, y, **kwargs)
+
+    draw_proposal : (function) draws random numbers from the proposal
+                               distribution. Should take arugments
+
+        draw_proposal(size, **kwargs)
+
+    n_walkers     : (int)      the number of walkers to keep track of.
+    target_args   : (dict)     keyword arguments for eval_target.
+    proposal_args : (dict)     keyword arguments for proposal_target.
+    draw_args     : (dict)     keyword arguments for draw_proposal.
     """
-    def __init__(self, eval_target, eval_proposal, draw_proposal, n_walkers=1, **kwargs):
+    def __init__(
+        self, eval_target, eval_proposal, draw_proposal, n_walkers=1,
+        target_args={}, proposal_args={}, draw_args={}
+    ):
         self.eval_target = eval_target
         self.eval_proposal = eval_proposal
         self.draw_proposal = draw_proposal
 
         self.walkers = np.zeros(n_walkers)
 
-        self.kwargs = kwargs
+        self.target_args = target_args
+        self.proposal_args = proposal_args
+        self.draw_args = draw_args
 
     def step(self):
-        proposal = self.draw_proposal(self.walkers, self.kwargs)
+        proposal = self.draw_proposal(
+            self.walkers.size, self.walkers, **self.draw_args
+        )
         acceptance = (
-            self.target(proposal, self.kwargs)
-            * self.eval_proposal(proposal, self.walkers, self.kwargs)
+            self.target(proposal, **self.target_args)
+            * self.eval_proposal(proposal, self.walkers, **self.proposal_args)
         ) / (
-            self.target(self.walkers, self.kwargs)
-            * self.eval_proposal(self.walkers, proposal, self.kwargs)
+            self.target(self.walkers, **self.target_args)
+            * self.eval_proposal(self.walkers, proposal, **self.proposal_args)
         )
 
         accepted = rng_uniform(self.walker.size) < acceptance
@@ -31,3 +59,24 @@ class MetropolisHastings:
         self.walkers[accepted] = proposal[accepted]
 
         return self.walker
+
+
+def main():
+    import matplotlib.pyplot as plt
+
+    from . import gaussian, rng_gaussian
+
+    # Test Metropolis-Hastings
+    def target(x):
+        return x**(-5.0/2.0) * np.exp(-2.0 / x)
+
+    mh = MetropolisHastings(
+        target, gaussian, rng_gaussian,
+        eval_proposal_args={'sigma': 1.0},
+        draw_proposal_args={'sigma': 1.0})
+
+    mh.step()
+
+
+if __name__ == '__main__':
+    main()
