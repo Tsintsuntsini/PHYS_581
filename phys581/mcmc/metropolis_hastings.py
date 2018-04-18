@@ -19,7 +19,7 @@ class MetropolisHastings:
         eval_proposal(x, y, **kwargs)
 
     draw_proposal : (function) draws random numbers from the proposal
-                               distribution. Should take arugments
+                               distribution. Should take arguments
 
         draw_proposal(size, **kwargs)
 
@@ -42,7 +42,20 @@ class MetropolisHastings:
         self.proposal_args = proposal_args
         self.draw_args = draw_args
 
-    def step(self):
+    def step(self, T=1.0):
+        """Takes a single Metropolis-Hastings step.
+
+        Parameters
+        ------------
+        T: (float) the temperature for stimulated annealing. This
+                   variable is not stored in the class and should be
+                   kept track of outside of the class. Default value is
+                   T=1.
+
+        Returns
+        ---------
+        np.array with the updated position of the walkers.
+        """
         proposal = self.draw_proposal(
             self.walkers.size, self.walkers, **self.draw_args
         )
@@ -52,7 +65,7 @@ class MetropolisHastings:
         ) / (
             self.target(self.walkers, **self.target_args)
             * self.eval_proposal(self.walkers, proposal, **self.proposal_args)
-        )
+        )**(1.0 / T)
 
         accepted = rng_uniform(self.walker.size) < acceptance
 
