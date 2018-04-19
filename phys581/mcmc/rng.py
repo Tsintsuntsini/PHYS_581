@@ -4,7 +4,7 @@ import numpy as np
 from .distributions import gaussian
 
 
-def autocorrelation(sequence, periodic=False):
+def autocorrelation(sequence, wrap=False):
     """Autocorrelation test for random numbers.
 
     The autocorrelation tests for independence and how a sequence of
@@ -13,16 +13,14 @@ def autocorrelation(sequence, periodic=False):
     Parameters
     ------------
     sequence : (np.array) array of random numbers.
-    periodic : (bool)     true if the sequence is to be evaluated as a
+    wrap     : (bool)     true if the sequence is to be evaluated as a
                           periodic sequence.
 
     Returns
     ---------
     np.array of autocorrelation values corresponding to the interval.
     """
-    sequence = np.array(sequence)
-
-    if periodic:
+    if wrap:
         x = np.append(sequence, sequence)
     else:
         x = np.copy(sequence)
@@ -38,7 +36,7 @@ def autocorrelation(sequence, periodic=False):
     return np.array(ac)
 
 
-def chi_square(observed, expected=None):
+def chi_square_test(observed, expected=None):
     """Chi-square test for random numbers.
 
     The chi-square tests for uniformity and to check if a random
@@ -57,8 +55,6 @@ def chi_square(observed, expected=None):
     ---------
     The chi-square value.
     """
-    observed = np.array(observed)
-
     if expected is None:
         expected = np.sum(observed) / observed.size
 
@@ -90,10 +86,6 @@ def rng_gaussian(
     ---------
     np.array of random numbers.
     """
-    size = int(size)
-    mu = float(mu)
-    sigma = float(sigma)
-    
     if method == 'box_muller':
         u1 = rng_uniform(size)
         u2 = rng_uniform(size)
@@ -102,9 +94,6 @@ def rng_gaussian(
         z = z * sigma + mu
 
     elif method == 'accept_reject':
-        minum = float(minum)
-        maxum = float(maxum)
-
         peak = gaussian(mu, mu, sigma)
         trial = rng_uniform(size, minum, maxum)
 
@@ -113,7 +102,7 @@ def rng_gaussian(
         while np.any(condition):
             trial[condition] = rng_uniform(np.sum(condition), minum, maxum)
             condition = np.logical_and(
-                condition, 
+                condition,
                 gaussian(trial, mu, sigma) \
                     < rng_uniform(size, minum=0.0, maxum=peak)
             )
@@ -127,6 +116,34 @@ def rng_gaussian(
         )
 
     return z
+
+
+def rng_lcg(size, seed, A, C, M, normalize=True):
+    """Draws random numbers from a uniform distribution using linear
+    congruential method.
+
+    Parameters
+    ------------
+    size      : (int)   size of the output array.
+    seed      : (float) initial seed value.
+    A         : (float) multiplicative factor.
+    C         : (float) additive factor.
+    M         : (float) modular factor.
+    normalize : (bool)  True to normalize values so numbers are in range
+                        [0,1]. Default value is True.
+
+    Returns
+    ---------
+    np.array of random numbers.
+    """
+    lcg = seed * np.ones(size)
+    for indx in range(0, size):
+        lcg[indx] = int(A * lcg[i-1] + C) % M
+
+    if normalize:
+        lcg /= M
+
+    return lcg
 
 
 def rng_uniform(size=1, minum=0.0, maxum=1.0):
@@ -144,10 +161,6 @@ def rng_uniform(size=1, minum=0.0, maxum=1.0):
     ---------
     np.array of random numbers.
     """
-    size = int(size)
-    minum = float(minum)
-    maxum = float(maxum)
-
     return (maxum - minum) * np.random.random(size) + minum
 
 
@@ -182,7 +195,7 @@ def main():
     # Test uniform
     u = rng_uniform(1000, -4, 4)
     plt.hist(u, bins=50, normed=True, label='uniform')
-    
+
     plt.legend()
     plt.show()
 

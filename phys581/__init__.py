@@ -7,9 +7,9 @@
 from .fft import hanning_window, hamming_window, blackmann_window, \
     blackmann_harris_window
 
-from .mcmc import gaussian, \
+from .mcmc import chi_square, gaussian, \
     MetropolisHastings, \
-    autocorrelation, chi_square, rng_guassian, rng_uniform
+    autocorrelation, chi_square_test, rng_guassian, rng_lcg, rng_uniform
 
 from .pde import centre_diff, \
     runge_kutta

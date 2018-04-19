@@ -1,4 +1,7 @@
 # Metropolis-Hastings Algorithm
+import numpy as np
+
+from .rng import rng_uniform
 
 
 class MetropolisHastings:
@@ -60,18 +63,17 @@ class MetropolisHastings:
             self.walkers.size, self.walkers, **self.draw_args
         )
         acceptance = (
-            self.target(proposal, **self.target_args)
+            self.eval_target(proposal, **self.target_args)
             * self.eval_proposal(proposal, self.walkers, **self.proposal_args)
         ) / (
-            self.target(self.walkers, **self.target_args)
+            self.eval_target(self.walkers, **self.target_args)
             * self.eval_proposal(self.walkers, proposal, **self.proposal_args)
         )**(1.0 / T)
 
-        accepted = rng_uniform(self.walker.size) < acceptance
-
+        accepted = rng_uniform(self.walkers.size) < acceptance
         self.walkers[accepted] = proposal[accepted]
 
-        return self.walker
+        return np.copy(self.walkers)
 
 
 def main():
@@ -81,14 +83,19 @@ def main():
 
     # Test Metropolis-Hastings
     def target(x):
-        return x**(-5.0/2.0) * np.exp(-2.0 / x)
+        return 1.0 / (2.0 * np.sqrt(2.0)) * (np.sin(5.0 * x) + np.sin(2.0 * x) + 2.0) * np.exp(-x**2)
 
     mh = MetropolisHastings(
         target, gaussian, rng_gaussian,
-        eval_proposal_args={'sigma': 1.0},
-        draw_proposal_args={'sigma': 1.0})
+        proposal_args={'sigma': 1.0},
+        draw_args={'sigma': 1.0})
 
-    mh.step()
+    x = np.linspace(-3, 3, 100)
+    burn = [mh.step(1.0) for step in range(300)]
+    steps = np.array([mh.step() for T in np.linspace(1, 0.1, 1000)])
+    plt.plot(x, target(x))
+    plt.hist(steps[:,0], bins=50, normed=True)
+    plt.show()
 
 
 if __name__ == '__main__':
